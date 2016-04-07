@@ -344,7 +344,7 @@ if (args.search is not None ) or (args.list is not None ):
         			artista=m.split("artista:")[1]
         			if "musica:" in artista:
         				artista=artista.split("musica:")[0]
- 			buscaf(musica,artista)
+ 		buscaf(musica,artista)
 	else:
 		buscaf(args.search)
 
