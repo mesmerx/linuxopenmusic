@@ -13,4 +13,7 @@ comandos:
 <br>-f força o update do database ao invez de procurar, caso vc ache q tem poucos resultados
 <br>-p: vai pelas categorias populares, ex: 1 é rock
 <br>-u faz update das categorias populares
+<<<<<<< HEAD
 
+=======
+>>>>>>> 74918510c00a9272afbf88a824163949c4292a59
