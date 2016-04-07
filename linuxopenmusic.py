@@ -119,14 +119,14 @@ def login():
 	print "login done"
 	return
 
-def busca(ge,busca):
+def busca(ge,busca,artista):
 	if ge is not None:
 		qs = urlencode({'act': 'popular', 'genre': ge})
 		g.go('http://vk.com/audios328513317?%s' % qs)
 		gen=ge
 	if busca is not None:
 		a=re.sub(' ','+',busca,5)
-		if args.artista is not None:
+		if artista is not None:
 			qs = urlencode({'c[performer]': '1','c[q]': a, 'c[section]': 'audio'})
 		else:
 			qs = urlencode({'c[q]': a, 'c[section]': 'audio'})
@@ -211,7 +211,7 @@ sql_command = """
 	artista VARCHAR(30)
 	);"""
 cursor.execute(sql_command)
-def buscaf(termos2):
+def buscaf(termos2,artista):
 	links= []
 	musicas= []
 	artistas= []
@@ -220,8 +220,8 @@ def buscaf(termos2):
 	termos="nome LIKE '%%'"
 	for n in buscas:
 		termos=termos+" AND nome LIKE '%"+n+"%'"
-	if args.artista is not None:
-		termos=termos+" AND artista LIKE '%"+args.artista+"%'"
+	if artista is not None:
+		termos=termos+" AND artista LIKE '%"+artista+"%'"
 	sqlb="SELECT * FROM musica WHERE (%s)"%termos
 	cursor.execute(sqlb)
 	data=cursor.fetchall()
@@ -233,7 +233,7 @@ def buscaf(termos2):
 		i=1
 		print "buscando"
 		print termos2
-		busca(None,termos2)
+		busca(None,termos2,artista)
 	else:
 		os.system('clear')
 		print " um total de %s musicas encontradas \n listando a seguir:"% len(data)
@@ -298,13 +298,13 @@ if args.spotify is not None:
 	if (args.save_list is True):
 		d = open('playlist'+datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S')+'.txt','wb')
 		for n in spotifymusica:
-			d.write(spotifymusica[int(b)-1]+" "+spotifyartista[int(b)-1]+'\n')
+			d.write("musica:"+spotifymusica[int(b)-1]+" artista:"+spotifyartista[int(b)-1]+'\n')
 			b=b+1
 	if (args.force_update is True):
 		print "atualizando db"
 		for n in spotifymusica:
 			print str(float(f)/float(len(spotifymusica))*100)+"%"
-			buscaf(spotifymusica[int(f)-1]+" "+spotifyartista[int(f)-1])
+			buscaf(spotifymusica[int(f)-1],spotifyartista[int(f)-1])
 			f=f+1
 	else:
 		os.system('clear')
@@ -322,20 +322,21 @@ if args.spotify is not None:
 				first,last = int(b[0]),int(b[1])
 				for n in range(first,last+1):
 					os.system('clear')
-					buscaf(spotifymusica[int(n)-1]+" "+spotifyartista[int(n)-1])
+					buscaf(spotifymusica[int(n)-1],spotifyartista[int(n)-1])
 			else:
 				for n in p:
 					os.system('clear')
-					buscaf(spotifymusica[int(n)-1]+" "+spotifyartista[int(n)-1])
+					buscaf(spotifymusica[int(n)-1],spotifyartista[int(n)-1])
 						
 if (args.search is not None ) or (args.list is not None ): 
 	if args.list is not None:
 		with open(args.list) as f:
     			content = f.read().splitlines()
-    			print content
 		for m in content:
         		print m
-        		buscaf(m)
+        		musica=m.split(":")[1].replace(" artista","")
+        		artista=m.split(":")[2]
+        		buscaf(musica,artista)
 	else:
 		buscaf(args.search)
 
