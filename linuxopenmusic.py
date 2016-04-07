@@ -277,13 +277,20 @@ def buscaf(termos2,artista):
 		print "all songs has been downloaded, have a nice day"
 
 def listaspotify(user, playlist):
-	headers = {"Authorization":"Bearer "+refresh_token() ,"Accept": "application/json"}
-	r = requests.get('https://api.spotify.com/v1/users/'+user+'/playlists/'+playlist+'/tracks',headers=headers)
-	data= r.content
-	for n in json.loads(data)['items']: 
-		spotifymusica.append(n['track']['name'].encode('utf8'))
-		spotifyartista.append(n['track']['artists'][0]['name'].encode('utf8'))
-		spotifyalbum.append(n['track']['album']['name'].encode('utf8'))
+	offset=0
+	i=0
+	parar=[1]
+	while parar:	
+		headers = {"Authorization":"Bearer "+refresh_token() ,"Accept": "application/json"}
+		r = requests.get('https://api.spotify.com/v1/users/'+user+'/playlists/'+playlist+'/tracks?items(track(name,album(name)))&offset='+str(offset),headers=headers)
+		data= r.content
+		parar=json.loads(data)['items']
+		for n in json.loads(data)['items']: 
+			spotifymusica.append(n['track']['name'].encode('utf8'))
+			spotifyartista.append(n['track']['artists'][0]['name'].encode('utf8'))
+			spotifyalbum.append(n['track']['album']['name'].encode('utf8'))
+		i=i+1
+		offset=100*i
 	
 if args.spotify is not None:
 	if "user:" in args.spotify:
