@@ -44,6 +44,7 @@ parser.add_argument('-l','--list',help='update')
 parser.add_argument('-y','--spotify',help='update')
 parser.add_argument('-L','--save-list',help='update', action='store_true')
 parser.add_argument('-a','--artista',help='update')
+parser.add_argument('-A','--only_artista',help='update', action='store_true')
 
 
 
@@ -126,10 +127,10 @@ def busca(ge,busca,artista):
 		gen=ge
 	if busca is not None:
 		a=re.sub(' ','+',busca,5)
-		if artista is not None:
-			qs = urlencode({'c[performer]': '1','c[q]': a, 'c[section]': 'audio'})
+		if args.only_artista is not None:
+			qs = urlencode({'c[performer]': '1','c[q]': artista, 'c[section]': 'audio'})
 		else:
-			qs = urlencode({'c[q]': a, 'c[section]': 'audio'})
+			qs = urlencode({'c[q]': a+"+"+artista, 'c[section]': 'audio'})
 		g.go('http://vk.com/search?%s' % qs)
 		gen=99	
 	print "now saving informarion for the downloads, this will be slow"
@@ -344,12 +345,12 @@ if (args.search is not None ) or (args.list is not None ):
         			artista=m.split("artista:")[1]
         			if "musica:" in artista:
         				artista=artista.split("musica:")[0]
- 		buscaf(musica,artista)
+ 				buscaf(musica,artista)
 	else:
-		buscaf(args.search)
+		buscaf(args.search,args.artista)
 
-		sys.exit()
-		
+if (args.search is None ) and (args.artista is not None):
+		buscaf(args.search,args.artista)	
 	
 if args.update is True:
 	login()
