@@ -1,5 +1,18 @@
 # linuxopenmusic
 <br>
+# dependencias
+<br> 
+transliterate
+<br>grab
+<br>pycurl
+<br>argparse
+<br>pycurl
+<br>requests
+<br>pip -r "requeriments.txt"
+
+<br>
+# COMANDOS
+<br>
 comandos:
 <br>
 -s <string> busca algo

@@ -1,0 +1,7 @@
+transliterate
+grab
+pycurl
+argparse
+pycurl
+requests
+
