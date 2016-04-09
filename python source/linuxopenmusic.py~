@@ -305,8 +305,9 @@ if args.spotify is not None:
     if (args.save_list is True):
         d = open('playlist'+datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S')+'.txt','w')
         for n in spotifymusica:
-            d.write("musica:"+spotifymusica[int(b)]+" artista:"+spotifyartista[int(b)]+'\n')
+            d.write("musica:"+spotifymusica[int(b)-1]+" artista:"+spotifyartista[int(b)-1]+'\n')
             b=b+1
+        d.write("musica:"+spotifymusica[int(b)]+" artista:"+spotifyartista[int(b)]+'\n')
     if (args.force_update is True):
         print ("atualizando db")
         for n in spotifymusica:

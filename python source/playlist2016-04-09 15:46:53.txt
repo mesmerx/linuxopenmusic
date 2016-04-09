@@ -1,0 +1,548 @@
+musica:For You I Will (Confidence) artista:Teddy Geiger
+musica:You And Me artista:Lifehouse
+musica:Hanging By A Moment artista:Lifehouse
+musica:Everything artista:Lifehouse
+musica:Broken artista:Lifehouse
+musica:Only One artista:Lifehouse
+musica:Breathing artista:Lifehouse
+musica:Somewhere Only We Know artista:Keane
+musica:Everybody's Changing artista:Keane
+musica:Here Without You artista:3 Doors Down
+musica:Here Without You - Acoustic Version artista:3 Doors Down
+musica:Kryptonite artista:3 Doors Down
+musica:When I'm Gone artista:3 Doors Down
+musica:Let Me Go artista:3 Doors Down
+musica:It's Not My Time artista:3 Doors Down
+musica:My Sacrifice artista:Creed
+musica:One Last Breath artista:Creed
+musica:Torn artista:Natalie Imbruglia
+musica:Broken artista:Seether
+musica:.Hack - Fake Wings artista:The Stereoscopic Orchestra
+musica:Dear God artista:Avenged Sevenfold
+musica:Behind Blue Eyes artista:Limp Bizkit
+musica:Every Breath You Take - 2003 Stereo Remastered Version artista:The Police
+musica:Every Little Thing She Does Is Magic - 2003 Stereo Remastered Version artista:The Police
+musica:Losing My Religion artista:R.E.M.
+musica:Everybody Hurts artista:R.E.M.
+musica:Iris artista:The Goo Goo Dolls
+musica:Tears In Heaven artista:Eric Clapton
+musica:Lovebug artista:Jonas Brothers
+musica:Hey There Delilah artista:Plain White T's
+musica:Here Is Gone artista:The Goo Goo Dolls
+musica:Wonderwall - Remastered artista:Oasis
+musica:Champagne Supernova - Remastered artista:Oasis
+musica:Supersonic - Remastered artista:Oasis
+musica:Sad Song - Remastered artista:Oasis
+musica:What's My Age Again? artista:blink-182
+musica:All The Small Things artista:blink-182
+musica:I Miss You artista:blink-182
+musica:Adam's Song artista:blink-182
+musica:In Too Deep artista:Sum 41
+musica:Still Waiting artista:Sum 41
+musica:Pieces artista:Sum 41
+musica:The Hell Song artista:Sum 41
+musica:Karma Chameleon artista:Culture Cl
+musica:Good Riddance (Time Of Your Life) artista:Green Day
+musica:Wake Me Up When September Ends artista:Green Day
+musica:21 Guns artista:Green Day
+musica:Jesus Of Suburbia artista:Green Day
+musica:You Raise Me Up artista:Westlife
+musica:Push artista:Matchbox Twenty
+musica:3AM artista:Matchbox Twenty
+musica:If You're Gone artista:Matchbox Twenty
+musica:Unwell artista:Matchbox Twenty
+musica:Paci\xc3\xaancia artista:Lenine
+musica:Jack Soul Brasileiro artista:Lenine
+musica:Catedral - Catedral Song artista:Z\xc3\xa9lia Duncan
+musica:Alma artista:Z\xc3\xa9lia Duncan
+musica:N\xc3\xa3o V\xc3\xa1 Ainda artista:Z\xc3\xa9lia Duncan
+musica:Tudo Sobre Voc\xc3\xaa artista:Z\xc3\xa9lia Duncan
+musica:Enquanto Durmo artista:Z\xc3\xa9lia Duncan
+musica:Verbos Sujeitos artista:Z\xc3\xa9lia Duncan
+musica:Imorais artista:Z\xc3\xa9lia Duncan
+musica:Quase Sem Querer artista:Z\xc3\xa9lia Duncan
+musica:Vi, N\xc3\xa3o Vivi artista:Z\xc3\xa9lia Duncan
+musica:Boas Raz\xc3\xb5es (De Bonnes Raisons) artista:Z\xc3\xa9lia Duncan
+musica:Todos Os Verbos artista:Z\xc3\xa9lia Duncan
+musica:Telhados De Paris artista:Z\xc3\xa9lia Duncan
+musica:Tudo Sobre Voc\xc3\xaa artista:Z\xc3\xa9lia Duncan
+musica:Pelo Sabor Do Gesto (As-Tu D\xc3\xa9j\xc3\xa0 Aim\xc3\xa9?) artista:Z\xc3\xa9lia Duncan
+musica:Os Dentes Brancos Do Mundo artista:Z\xc3\xa9lia Duncan
+musica:Duas Namoradas artista:Z\xc3\xa9lia Duncan
+musica:Pensando Em Voc\xc3\xaa artista:Paulinho Moska
+musica:A Idade do C\xc3\xa9u (La Edad del Cielo) - Ao Vivo artista:Paulinho Moska
+musica:A Flor e o Espinho - Voice artista:Nelson Cavaquinho
+musica:O \xc3\x9atimo Dia artista:Moska
+musica:Son\xc3\xadfera Ilha artista:Moska
+musica:A Seta E O Alvo artista:Moska
+musica:Relampiano artista:Lenine
+musica:Certas Coisas artista:Lulu Santos
+musica:Certas Coisas artista:Lenine
+musica:Rock You Like a Hurricane - 2011 Version artista:Scorpions
+musica:Still Loving You - 2011 Version artista:Scorpions
+musica:Send Me An Angel artista:Scorpions
+musica:Maybe I Maybe You artista:Scorpions
+musica:Don't Stop Believin' artista:Journey
+musica:Faithfully artista:Journey
+musica:Open Arms artista:Journey
+musica:Leaving, on a Jet Plane artista:John Denver
+musica:Moves Like Jagger - Studio Recording From The Voice Performance artista:Maroon 5
+musica:Harder To Breathe artista:Maroon 5
+musica:This Love artista:Maroon 5
+musica:She Will Be Loved artista:Maroon 5
+musica:Sunday Morning artista:Maroon 5
+musica:I Don\'t Want to Miss a Thing - From the Touchstone film, "Armageddon" artista:Aerosmith
+musica:Dream On artista:Aerosmith
+musica:The Phantom Of The Opera artista:Nightwish
+musica:Amaranth artista:Nightwish
+musica:Nemo artista:Tarja
+musica:Lonely Day artista:System of a Down
+musica:Aerials artista:System of a Down
+musica:Fear Of The Dark - 1998 Remastered Version artista:Iron Maiden
+musica:The Number Of The Beast - 1998 Remastered Version artista:Iron Maiden
+musica:Run to the Hills - 1998 Remastered Version artista:Iron Maiden
+musica:Flight Of Icarus - 1998 Remastered Version artista:Iron Maiden
+musica:2 Minutes To Midnight - 1998 Remastered Version artista:Iron Maiden
+musica:Wasted Years - 1998 Remastered Version artista:Iron Maiden
+musica:Can I Play With Madness - 1998 Remastered Version artista:Iron Maiden
+musica:The Evil That Men Do - 1998 Remastered Version artista:Iron Maiden
+musica:Seventh Son Of A Seventh Son - 1998 Remastered Version artista:Iron Maiden
+musica:Wasting Love - 1998 Remastered Version artista:Iron Maiden
+musica:Brave New World artista:Iron Maiden
+musica:Rainmaker artista:Iron Maiden
+musica:Dance Of Death artista:Iron Maiden
+musica:Going Under artista:Evanescence
+musica:My Last Breath artista:Evanescence
+musica:My Immortal artista:Nazareno Aversa
+musica:My Immortal - Live From Le Z\xc3\xa9nith,France/2004 artista:Evanescence
+musica:Paradise City artista:Guns N' Roses
+musica:Welcome To The Jungle artista:Guns N' Roses
+musica:November Rain artista:Guns N' Roses
+musica:Knockin' On Heaven's Door artista:Guns N' Roses
+musica:Sweet Child O' Mine artista:Guns N' Roses
+musica:Carry On My Wayward Son artista:Starship
+musica:Anna J\xc3\xbalia artista:Los Hermanos
+musica:\xc3\x9altimo Romance artista:Los Hermanos
+musica:O Vento artista:Los Hermanos
+musica:O Vencedor artista:Los Hermanos
+musica:Todo Carnaval Tem Seu Fim artista:Los Hermanos
+musica:A Flor artista:Los Hermanos
+musica:Assim Ser\xc3\xa1 artista:Los Hermanos
+musica:Sentimental artista:Los Hermanos
+musica:Mais uma Can\xc3\xa7\xc3\xa3o artista:Los Hermanos
+musica:Deixa Estar artista:Los Hermanos
+musica:Veja Bem Meu Bem artista:Los Hermanos
+musica:Adeus Voc\xc3\xaa artista:Los Hermanos
+musica:De Onde Vem a Calma artista:Los Hermanos
+musica:Man! I Feel Like A Woman! artista:Shania Twain
+musica:How You Remind Me - LP Mix artista:Nickelback
+musica:Fly artista:Nickelback
+musica:Breathe artista:Nickelback
+musica:Leader Of Men - Acoustic artista:Nickelback
+musica:Never Again artista:Nickelback
+musica:Too Bad artista:Nickelback
+musica:Someday artista:Nickelback
+musica:Feelin' Way Too Damn Good artista:Nickelback
+musica:Figured You Out artista:Nickelback
+musica:Fight For All The Wrong Reasons artista:Nickelback
+musica:Follow You Home artista:Nickelback
+musica:Photograph artista:Nickelback
+musica:Savin' Me artista:Nickelback
+musica:Animals artista:Nickelback
+musica:Far Away artista:Nickelback
+musica:Next Contestant artista:Nickelback
+musica:Side Of A Bullet artista:Nickelback
+musica:If Everyone Cared artista:Nickelback
+musica:Someone That You're With artista:Nickelback
+musica:Rockstar artista:Nickelback
+musica:Photograph - Live In Atlanta artista:Nickelback
+musica:Animals - Live In Atlanta artista:Nickelback
+musica:Follow You Home - Live In Atlanta artista:Nickelback
+musica:Never Again - Live In Atlanta artista:Nickelback
+musica:True Colors artista:Cyndi Lauper
+musica:Girls Just Wanna Have Fun - Girls Just Wanna Have Fun artista:Cyndi Lauper
+musica:Someday We'll Know artista:Mandy Moore
+musica:Someday We'll Know artista:New Radicals
+musica:Be Yourself artista:Audioslave
+musica:Like a Stone artista:Audioslave
+musica:Closing Time artista:Semisonic
+musica:Secret Smile artista:Semisonic
+musica:Singing In My Sleep artista:Semisonic
+musica:Man in the Box artista:Alice In Chains
+musica:Wherever You Will Go artista:The Calling
+musica:Wherever You Will Go - Acoustic artista:The Calling
+musica:The Messiah Will Come Again artista:Gary Moore
+musica:Man in the Box artista:Alice In Chains
+musica:Ain't That Unusual artista:The Goo Goo Dolls
+musica:Lost in America artista:Helloween
+musica:Heroes artista:Helloween
+musica:Battle's Won artista:Helloween
+musica:My God-Given Right artista:Helloween
+musica:Stay Crazy artista:Helloween
+musica:Lost in America artista:Helloween
+musica:Russian Roul\xc3\xa9 artista:Helloween
+musica:The Swing of a Fallen World artista:Helloween
+musica:Like Everybody Else artista:Helloween
+musica:Creatures in Heaven artista:Helloween
+musica:If God Loves Rock 'N' Roll artista:Helloween
+musica:Living on the Edge artista:Helloween
+musica:Claws artista:Helloween
+musica:You, Still of War artista:Helloween
+musica:Wicked Game artista:Helloween
+musica:Free World - Bonus Track artista:Helloween
+musica:Through Glass artista:Stone Sour
+musica:Fruitcake artista:Stone Sour
+musica:Come On Get Up artista:Adrenaline M
+musica:Breathless artista:The Corrs
+musica:Breathless - Live In Dublin artista:The Corrs
+musica:Ghost of a Rose artista:Blackmore's Night
+musica:Beautiful Things artista:SayWeCanFly
+musica:Stardust artista:SayWeCanFly
+musica:Way Away artista:Yellowcard
+musica:Ocean Avenue artista:Yellowcard
+musica:Only One artista:Yellowcard
+musica:Bohemian Rhapsody - Remastered 2011 artista:Queen
+musica:Fireflies artista:Hearts & Colors
+musica:Sweet Dreams (Are Made of This) - Remastered Version artista:Eurythmics
+musica:Smoke On The Water artista:Deep Purple
+musica:Slow Ride artista:Foghat
+musica:Simple Man artista:Lynyrd Skynyrd
+musica:I Wanna Rock artista:Twisted Sister
+musica:Carry On Wayward Son artista:Kansas
+musica:Don't Bring Me Down artista:Electric Light Orchestra
+musica:Talkin' Bout A Revolution artista:Tracy Chapman
+musica:Fast Car artista:Tracy Chapman
+musica:Across The Lines artista:Tracy Chapman
+musica:Behind The Wall artista:Tracy Chapman
+musica:Baby Can I Hold You artista:Tracy Chapman
+musica:Mountains O' Things artista:Tracy Chapman
+musica:She's Got Her Ticket artista:Tracy Chapman
+musica:Why? artista:Tracy Chapman
+musica:For My Lover artista:Tracy Chapman
+musica:If Not Now... artista:Tracy Chapman
+musica:For You artista:Tracy Chapman
+musica:Opaline artista:Dishwalla
+musica:Angels Or Devils artista:Dishwalla
+musica:Somewhere in the Middle artista:Dishwalla
+musica:Every Little Thing artista:Dishwalla
+musica:When Morning Comes artista:Dishwalla
+musica:Home artista:Dishwalla
+musica:Today, Tonight artista:Dishwalla
+musica:Mad Life artista:Dishwalla
+musica:Candleburn artista:Dishwalla
+musica:Nashville Skyline artista:Dishwalla
+musica:Drawn Out artista:Dishwalla
+musica:Angels Or Devils artista:Dishwalla
+musica:Angels Or Devils artista:Dishwalla
+musica:Opaline artista:Dishwalla
+musica:Angels Or Devils artista:Dishwalla
+musica:Somewhere in the Middle artista:Dishwalla
+musica:Every Little Thing artista:Dishwalla
+musica:When Morning Comes artista:Dishwalla
+musica:Home artista:Dishwalla
+musica:Today, Tonight artista:Dishwalla
+musica:Mad Life artista:Dishwalla
+musica:Candleburn artista:Dishwalla
+musica:Nashville Skyline artista:Dishwalla
+musica:Drawn Out artista:Dishwalla
+musica:When It Rains, It Floods artista:Samuel Little
+musica:What's Left Of Me artista:Nick Lachey
+musica:Smooth Criminal artista:2Cellos
+musica:Hurt artista:Johnny Cash
+musica:Easy artista:Faith No More
+musica:Jeremy artista:Pearl Jam
+musica:Even Flow artista:Pearl Jam
+musica:Black artista:Pearl Jam
+musica:18 Days artista:Saving Abel
+musica:Running From You artista:Saving Abel
+musica:Sailed Away artista:Saving Abel
+musica:Addicted artista:Saving Abel
+musica:In A Darkened Room artista:Skid Row
+musica:Don't Cha artista:The Pussycat Dolls
+musica:Hush Hush; Hush Hush artista:The Pussycat Dolls
+musica:And I Am Telling You I'm Not Going artista:Jennifer Hudson
+musica:Your Love artista:The Outfield
+musica:Barricades artista:Evergrey
+musica:Radio artista:Raphael Saadiq
+musica:Ain't It Fun artista:Paramore
+musica:Fast In My Car artista:Paramore
+musica:Now artista:Paramore
+musica:Grow Up artista:Paramore
+musica:Daydreaming artista:Paramore
+musica:Interlude: Moving On artista:Paramore
+musica:Ain't It Fun artista:Paramore
+musica:Part II artista:Paramore
+musica:Last Hope artista:Paramore
+musica:Still Into You artista:Paramore
+musica:Anklebiters artista:Paramore
+musica:Interlude: Holiday artista:Paramore
+musica:Proof artista:Paramore
+musica:Hate To See Your Heart Break artista:Paramore
+musica:(One Of Those) Crazy Girls artista:Paramore
+musica:Interlude: I'm Not Angry Anymore artista:Paramore
+musica:Be Alone artista:Paramore
+musica:Future artista:Paramore
+musica:Hate To See Your Heart Break (feat. Joy Williams) artista:Paramore
+musica:Escape Route - Bonus Track artista:Paramore
+musica:Native Tongue - Bonus Track artista:Paramore
+musica:Tell Me It's Okay - Self-Titled Demo artista:Paramore
+musica:Still Into You - Live at Red Rocks artista:Paramore
+musica:Decode - Live at Red Rocks artista:Paramore
+musica:The Only Exception - Live at Red Rocks artista:Paramore
+musica:Brick by Boring Brick - Live at Red Rocks artista:Paramore
+musica:Let The Flames Begin - Live at Red Rocks artista:Paramore
+musica:Part II - Live at Red Rocks artista:Paramore
+musica:Proof - Live at Red Rocks artista:Paramore
+musica:Ain't It Fun - Live at Red Rocks artista:Paramore
+musica:Fast In My Car artista:Paramore
+musica:Now artista:Paramore
+musica:Grow Up artista:Paramore
+musica:Daydreaming artista:Paramore
+musica:Interlude: Moving On artista:Paramore
+musica:Part II artista:Paramore
+musica:Last Hope artista:Paramore
+musica:Still Into You artista:Paramore
+musica:Anklebiters artista:Paramore
+musica:Interlude: Holiday artista:Paramore
+musica:Proof artista:Paramore
+musica:Hate To See Your Heart Break artista:Paramore
+musica:(One Of Those) Crazy Girls artista:Paramore
+musica:Interlude: I'm Not Angry Anymore artista:Paramore
+musica:Be Alone artista:Paramore
+musica:Future artista:Paramore
+musica:Careful artista:Paramore
+musica:Ignorance artista:Paramore
+musica:Playing God artista:Paramore
+musica:Brick By Boring Brick artista:Paramore
+musica:Turn It Off artista:Paramore
+musica:The Only Exception artista:Paramore
+musica:Feeling Sorry artista:Paramore
+musica:Looking Up artista:Paramore
+musica:Where The Lines Overlap artista:Paramore
+musica:Misguided Ghosts artista:Paramore
+musica:All I Wanted artista:Paramore
+musica:For A Pessimist, I'm Pretty Optimistic artista:Paramore
+musica:That's What You Get artista:Paramore
+musica:Misery Business artista:Paramore
+musica:When It Rains artista:Paramore
+musica:Let The Flames Begin artista:Paramore
+musica:Miracle artista:Paramore
+musica:crushcrushcrush artista:Paramore
+musica:We Are Broken artista:Paramore
+musica:Fences artista:Paramore
+musica:Born For This artista:Paramore
+musica:Stop This Song (Love Sick Melody) - Bonus Version artista:Paramore
+musica:Rewind - Demo artista:Paramore
+musica:Emergency - Live Version artista:Paramore
+musica:All We Know artista:Paramore
+musica:Pressure artista:Paramore
+musica:Emergency artista:Paramore
+musica:Brighter artista:Paramore
+musica:Here We Go Again artista:Paramore
+musica:Never Let This Go artista:Paramore
+musica:Whoa artista:Paramore
+musica:Conspiracy artista:Paramore
+musica:Franklin artista:Paramore
+musica:My Heart artista:Paramore
+musica:Ain't It Fun - Radio Edit artista:Paramore
+musica:Ain't It Fun - Dutch Uncles Remix artista:Paramore
+musica:Ain't It Fun - Kye Kye Remix artista:Paramore
+musica:Ain't It Fun - Smash Mode Remix artista:Paramore
+musica:Still Into You artista:Paramore
+musica:Now artista:Paramore
+musica:Monster artista:Paramore
+musica:Ignorance artista:Paramore
+musica:Ignorance - Acoustic Version artista:Paramore
+musica:Misery Business - Live From Chicago artista:Paramore
+musica:That's What You Get - Live From Chicago artista:Paramore
+musica:Decode artista:Paramore
+musica:Decode - Acoustic Version artista:Paramore
+musica:Misery Business - Single Version artista:Paramore
+musica:My Hero - Electronic Mix artista:Paramore
+musica:Stop This Song (Love Sick Melody) - Bonus Version artista:Paramore
+musica:That's What You Get artista:Paramore
+musica:Misery Business - Live in Astoria artista:Paramore
+musica:For A Pessimist, I'm Pretty Optimistic - Live from London artista:Paramore
+musica:Forever artista:KISS
+musica:Equalize artista:Pitty
+musica:One Of Us artista:Joan Osborne
+musica:Private Idaho artista:The B-52's
+musica:King Of Pain artista:The Police
+musica:King Of Pain - Live/Unplugged Version artista:Alanis Morissette
+musica:The One I Love artista:R.E.M.
+musica:No Rain artista:Blind Melon
+musica:Mmm Mmm Mmm Mmm artista:Crash Test Dummies
+musica:New Age Girl artista:Deadeye Dick
+musica:Friday I'm In Love artista:The Cure
+musica:Don't You Want Me - 2002 - Remaster artista:The Human League
+musica:It's My Life artista:No Doubt
+musica:What I Got artista:Sublime
+musica:What I Like About You artista:The Romantics
+musica:Tubthumping artista:Chumbawamba
+musica:Who Let The Dogs Out artista:Baha Men
+musica:I'd Do Anything For Love (But I Won't Do That) artista:Meat Loaf
+musica:Bitch - Edit artista:Meredith Brooks
+musica:Spaceman artista:Babylon Zoo
+musica:Boombastic artista:Shaggy
+musica:U Can't Touch This artista:MC Hammer
+musica:Ice Ice Baby - Radio Edit artista:Vanilla Ice
+musica:It's Raining Men artista:Geri Halliwell
+musica:Naked artista:Louise
+musica:What I Am artista:Tin Tin Out featuring Emma Bunton
+musica:Would I Lie To You? artista:Charles & Eddie
+musica:The One and Only artista:Chesney Hawkes
+musica:(I Can't Help) Falling In Love With You artista:UB40
+musica:Baby Come Back (With Ali & Robin Campbell) artista:Pato Banton And The Reggae Revolution
+musica:Right Now artista:Atomic Kitten
+musica:Sleeping Satellite artista:Tasmin Archer
+musica:The Life Of Riley artista:The Lightning Seeds
+musica:Alright artista:Supergrass
+musica:Unbelievable artista:EMF
+musica:It's the End of the World As We Know It (And I Feel Fine) artista:R.E.M.
+musica:She artista:Elvis Costello
+musica:Everything You Want artista:Boyce Avenue
+musica:If You Could Only See artista:Boyce Avenue
+musica:Rude (Acoustic) artista:MAGIC!
+musica:Sexy And I Know It artista:LMFAO
+musica:Sorry For Party Rocking artista:LMFAO
+musica:Sing artista:Ed Sheeran
+musica:Give Up The Funk (Tear The Roof Off The Sucker) artista:Parliament
+musica:Mannish Boy artista:Muddy Waters
+musica:Mary Had a Little La artista:Stevie Ray Vaughan
+musica:Texas Flood artista:Stevie Ray Vaughan
+musica:Californication artista:Red Hot Chili Peppers
+musica:Sweet Home Alabama artista:Lynyrd Skynyrd
+musica:Free Bird artista:Lynyrd Skynyrd
+musica:Untitled artista:Simple Plan
+musica:Checkmate artista:Smash Into Pieces
+musica:Come Together artista:The New Beatles
+musica:Wake Up Call artista:Maroon 5
+musica:Head Over Heels artista:Tears For Fears
+musica:Notorious artista:Duran Duran
+musica:Alone Again (Naturally) artista:Gilbert O'Sullivan
+musica:Littlest Things artista:Lily Allen
+musica:F**k You artista:Lily Allen
+musica:Throne artista:Bring Me The Horizon
+musica:Bring Me To Life artista:Evanescence
+musica:Irresistible - Remix artista:Fall Out Boy
+musica:American Beauty/American Psycho - Remix artista:Fall Out Boy
+musica:Centuries - Remix artista:Fall Out Boy
+musica:The Kids Aren't Alright - Remix artista:Fall Out Boy
+musica:Uma Thurman - Remix artista:Fall Out Boy
+musica:Jet Pack Blues - Remix artista:Fall Out Boy
+musica:Novocaine - Remix artista:Fall Out Boy
+musica:Fourth Of July - Remix artista:Fall Out Boy
+musica:Favorite Record - Remix artista:Fall Out Boy
+musica:Immortals - Remix artista:Fall Out Boy
+musica:Twin Skeleton's (Hotel In NYC) - Remix artista:Fall Out Boy
+musica:Irresistible artista:Fall Out Boy
+musica:American Beauty/American Psycho artista:Fall Out Boy
+musica:Centuries artista:Fall Out Boy
+musica:The Kids Aren't Alright artista:Fall Out Boy
+musica:Uma Thurman artista:Fall Out Boy
+musica:Jet Pack Blues artista:Fall Out Boy
+musica:Novocaine artista:Fall Out Boy
+musica:Fourth Of July artista:Fall Out Boy
+musica:Favorite Record artista:Fall Out Boy
+musica:Immortals artista:Fall Out Boy
+musica:Twin Skeleton's (Hotel In NYC) artista:Fall Out Boy
+musica:We Were Doomed From The Start (The King Is Dead) artista:Fall Out Boy
+musica:Art Of Keeping Up Disappearances artista:Fall Out Boy
+musica:Hot To The Touch, Cold On The Inside artista:Fall Out Boy
+musica:Love, Sex, Death artista:Fall Out Boy
+musica:Eternal Summer artista:Fall Out Boy
+musica:Demigods artista:Fall Out Boy
+musica:American Made artista:Fall Out Boy
+musica:Caffeine Cold artista:Fall Out Boy
+musica:The Phoenix artista:Fall Out Boy
+musica:My Songs Know What You Did In The Dark (Light Em Up) artista:Fall Out Boy
+musica:Alone Together artista:Fall Out Boy
+musica:Where Did The Party Go artista:Fall Out Boy
+musica:Just One Yesterday artista:Fall Out Boy
+musica:The Mighty Fall artista:Fall Out Boy
+musica:Miss Missing You artista:Fall Out Boy
+musica:Death Valley artista:Fall Out Boy
+musica:Young Volcanoes artista:Fall Out Boy
+musica:Rat A Tat artista:Fall Out Boy
+musica:Save Rock And Roll artista:Fall Out Boy
+musica:Thriller - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Grand Theft Autumn / Where Is Your Boy - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Sugar, We're Goin Down - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Our Lawyer Made Us Change The Name Of This Song So We Wouldn't Get Sued - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Hum Hallelujah - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Tell That Mick He Just Made My List Of Things To Do Today - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:I'm Like A Lawyer With The Way I'm Always Trying To Get You Off (Me & You) - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:A Little Less Sixteen Candles, A Little More "Touch Me" - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Beat It - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Golden - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:This Ain't A Scene, It's An Arms Race - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Thnks fr th Mmrs - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:"The Take Over, The Breaks Over" - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Dance, Dance - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Saturday - Live At The Cricket Pavillion /2007 artista:Fall Out Boy
+musica:Beat It - Studio Version artista:Fall Out Boy
+musica:Disloyal Order Of Water Buffaloes artista:Fall Out Boy
+musica:I Don't Care artista:Fall Out Boy
+musica:She's My Winona artista:Fall Out Boy
+musica:America's Suitehearts artista:Fall Out Boy
+musica:Headfirst Slide Into Cooperstown On A Bad Bet artista:Fall Out Boy
+musica:The (Shipped) Gold Standard artista:Fall Out Boy
+musica:(Coffee's For Closers) artista:Fall Out Boy
+musica:What A Catch, Donnie artista:Fall Out Boy
+musica:27 artista:Fall Out Boy
+musica:Tiffany Blews artista:Fall Out Boy
+musica:w.a.m.s. artista:Fall Out Boy
+musica:20 Dollar Nose Bleed artista:Fall Out Boy
+musica:West Coast Smoker artista:Fall Out Boy
+musica:Thriller artista:Fall Out Boy
+musica:"The Take Over, The Breaks Over" artista:Fall Out Boy
+musica:This Ain't A Scene, It's An Arms Race artista:Fall Out Boy
+musica:I'm Like A Lawyer With The Way I'm Always Trying To Get You Off (Me & You) artista:Fall Out Boy
+musica:Hum Hallelujah artista:Fall Out Boy
+musica:Golden artista:Fall Out Boy
+musica:Thnks fr th Mmrs artista:Fall Out Boy
+musica:Don't You Know Who I Think I Am? artista:Fall Out Boy
+musica:The (After) Life Of The Party artista:Fall Out Boy
+musica:The Carpal Tunnel Of Love artista:Fall Out Boy
+musica:Bang The Doldrums artista:Fall Out Boy
+musica:Fame < Infamy artista:Fall Out Boy
+musica:You're Crashing, But You're No Wave artista:Fall Out Boy
+musica:I've Got All This Ringing In My Ears And None On My Fingers artista:Fall Out Boy
+musica:G.I.N.A.S.F.S. artista:Fall Out Boy
+musica:It\'s Hard To Say "I Do", When I Don\'t artista:Fall Out Boy
+musica:Dance, Dance - Live From Hammersmith Palais artista:Fall Out Boy
+musica:This Ain't A Scene, It's An Arms Race - Live From Hammersmith Palais artista:Fall Out Boy
+musica:Thriller - Live From Hammersmith Palais artista:Fall Out Boy
+musica:Our Lawyer Made Us Change The Name Of This Song So We Wouldn't Get Sued artista:Fall Out Boy
+musica:Of All The Gin Joints In All The World artista:Fall Out Boy
+musica:Dance, Dance artista:Fall Out Boy
+musica:Sugar, We're Goin Down artista:Fall Out Boy
+musica:Nobody Puts Baby In The Corner artista:Fall Out Boy
+musica:I've Got A Dark Alley And A Bad Idea That Says You Should Shut Your Mouth (Summer Song) artista:Fall Out Boy
+musica:7 Minutes In Heaven (Atavan Halen) artista:Fall Out Boy
+musica:Sophomore Slump Or Comeback Of The Year artista:Fall Out Boy
+musica:Champagne For My Real Friends, Real Pain For My Sham Friends artista:Fall Out Boy
+musica:I Slept With Someone In Fall Out Boy And All I Got Was This Stupid Song Written About Me artista:Fall Out Boy
+musica:A Little Less Sixteen Candles, A Little More "Touch Me" artista:Fall Out Boy
+musica:Get Busy Living Or Get Busy Dying (Do Your Part To Save The Scene And Stop Going To Shows) artista:Fall Out Boy
+musica:XO artista:Fall Out Boy
+musica:Snitches And Talkers Get Stitches And Walkers artista:Fall Out Boy
+musica:The Music Or The Misery artista:Fall Out Boy
+musica:My Heart Is The Worst Kind Of Weapon - Demo artista:Fall Out Boy
+musica:Sugar, We're Goin Down - Patrick Stump Remix artista:Fall Out Boy
+musica:Dance, Dance - The Lindbergh Palace Remix artista:Fall Out Boy
+musica:Tell That Mick He Just Made My List Of Things To Do Today artista:Fall Out Boy
+musica:Dead On Arrival artista:Fall Out Boy
+musica:Grand Theft Autumn/Where Is Your Boy artista:Fall Out Boy
+musica:Saturday artista:Fall Out Boy
+musica:Homesick At Space Camp artista:Fall Out Boy
+musica:Sending Postcards From A Plane Crash [Wish You Were Here] artista:Fall Out Boy
+musica:Chicago Is So Two Years Ago artista:Fall Out Boy
+musica:The Pros And Cons Of Breathing artista:Fall Out Boy
+musica:Grenade Jumper artista:Fall Out Boy
+musica:Calm Before The Storm artista:Fall Out Boy
+musica:Reinventing The Wheel To Run Myself Over artista:Fall Out Boy
+musica:The Patron Saint Of Liars And Fakes artista:Fall Out Boy
+musica:Pieces Of Me artista:Ashlee Simpson
+musica:My Escape artista:Ravenscode
+musica:She Will Be Loved - Live artista:Maroon 5
