@@ -42,14 +42,13 @@ extern PyObject *const_str_plain_object;
 extern PyObject *const_str_plain___file__;
 extern PyObject *const_str_plain_backoff_factor;
 extern PyObject *const_str_plain_total;
-extern PyObject *const_tuple_f1dfbf06b4d03b216c756abf83b9bc28_tuple;
 extern PyObject *const_str_plain_PUT;
 extern PyObject *const_str_plain_err;
 extern PyObject *const_str_plain_from_int;
+extern PyObject *const_str_plain_raise_on_status;
 extern PyObject *const_str_plain_default;
 extern PyObject *const_str_digest_54874c179a81b955e41d4fd1580cddd0;
 extern PyObject *const_str_plain_GET;
-extern PyObject *const_str_digest_f27eafd9c7b931c70af36c03335c22a1;
 extern PyObject *const_str_plain_get_redirect_location;
 extern PyObject *const_tuple_str_plain_self_str_plain_kw_str_plain_params_tuple;
 extern PyObject *const_str_plain_classmethod;
@@ -59,6 +58,7 @@ extern PyObject *const_str_plain_sleep;
 extern PyObject *const_str_plain_cls;
 extern PyObject *const_str_plain__observed_errors;
 extern PyObject *const_str_plain_read;
+static PyObject *const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple;
 extern PyObject *const_str_digest_297455e155b6c9736d87529e14591c5d;
 extern PyObject *const_str_plain_connect;
 extern PyObject *const_str_plain___doc__;
@@ -151,6 +151,7 @@ extern PyObject *const_str_plain___init__;
 extern PyObject *const_int_pos_3;
 extern PyObject *const_str_plain_url;
 extern PyObject *const_str_plain_self;
+static PyObject *const_str_digest_060355f4e6f471be7ae361d398b8a340;
 extern PyObject *const_str_plain___repr__;
 extern PyObject *const_tuple_str_plain_six_tuple;
 extern PyObject *const_str_plain_method;
@@ -177,10 +178,23 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_b6ebd7edb958fb0b6c3fab72a5281cdd = UNSTREAM_STRING( &constant_bin[ 183358 ], 18, 0 );
+    const_str_digest_b6ebd7edb958fb0b6c3fab72a5281cdd = UNSTREAM_STRING( &constant_bin[ 194660 ], 18, 0 );
+    const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple = PyTuple_New( 11 );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 0, const_str_plain_self ); Py_INCREF( const_str_plain_self );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 1, const_str_plain_total ); Py_INCREF( const_str_plain_total );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 2, const_str_plain_connect ); Py_INCREF( const_str_plain_connect );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 3, const_str_plain_read ); Py_INCREF( const_str_plain_read );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 4, const_str_plain_redirect ); Py_INCREF( const_str_plain_redirect );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 5, const_str_plain_method_whitelist ); Py_INCREF( const_str_plain_method_whitelist );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 6, const_str_plain_status_forcelist ); Py_INCREF( const_str_plain_status_forcelist );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 7, const_str_plain_backoff_factor ); Py_INCREF( const_str_plain_backoff_factor );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 8, const_str_plain_raise_on_redirect ); Py_INCREF( const_str_plain_raise_on_redirect );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 9, const_str_plain_raise_on_status ); Py_INCREF( const_str_plain_raise_on_status );
+    PyTuple_SET_ITEM( const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 10, const_str_plain__observed_errors ); Py_INCREF( const_str_plain__observed_errors );
     const_tuple_str_digest_b6ebd7edb958fb0b6c3fab72a5281cdd_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_digest_b6ebd7edb958fb0b6c3fab72a5281cdd_tuple, 0, const_str_digest_b6ebd7edb958fb0b6c3fab72a5281cdd ); Py_INCREF( const_str_digest_b6ebd7edb958fb0b6c3fab72a5281cdd );
-    const_str_digest_e9622ec017bbf597a8310acfd4d6e6f7 = UNSTREAM_STRING( &constant_bin[ 718014 ], 54, 0 );
+    const_str_digest_e9622ec017bbf597a8310acfd4d6e6f7 = UNSTREAM_STRING( &constant_bin[ 741539 ], 54, 0 );
+    const_str_digest_060355f4e6f471be7ae361d398b8a340 = UNSTREAM_STRING( &constant_bin[ 741593 ], 3489, 0 );
 
     constants_created = true;
 }
@@ -197,35 +211,35 @@ void checkModuleConstants_urllib3$util$retry( void )
 
 // The module code objects.
 static PyCodeObject *codeobj_21b57f99288088315e7418d0e18e6014;
-static PyCodeObject *codeobj_64a1931cf84614f86ab65d01bcfa6e3f;
-static PyCodeObject *codeobj_2b0addadd2363b12f43bbaa3eed9df64;
-static PyCodeObject *codeobj_96c26ac1e13952ad4ccf26996a7dbc9c;
-static PyCodeObject *codeobj_e55a0e390b321af06178c34bbbc80c07;
-static PyCodeObject *codeobj_5bf136cbfbbdc942eed0aeff05d84264;
-static PyCodeObject *codeobj_38587494f193bbf37db0b9b993e4cb84;
-static PyCodeObject *codeobj_8785ac5a6a3b50a074216488e682cb5e;
-static PyCodeObject *codeobj_a2e75aa4ecc1aaefeb46aa3c3241f2d6;
-static PyCodeObject *codeobj_056d32ddda2819fcd64981c4c7fc6148;
-static PyCodeObject *codeobj_042124711a1d109fdbe7cdfe78f8eaed;
+static PyCodeObject *codeobj_958b7f468369e365fa6eea998ee91f47;
+static PyCodeObject *codeobj_5e54e2b7c0413067e9bc091e3126cc13;
+static PyCodeObject *codeobj_3c800057d622a1666d68871656e53ab4;
+static PyCodeObject *codeobj_ee10d9960e092ece5da2c479f121532d;
+static PyCodeObject *codeobj_a0b3d92cc86266da53d1010c34e94fdb;
+static PyCodeObject *codeobj_20496b13a0b0cce76a73b04cb4b3b889;
+static PyCodeObject *codeobj_25e9f2ca2f346bc6e0a9fc1a1140d3ef;
+static PyCodeObject *codeobj_133f08e7a195874634abc40733cf7f52;
+static PyCodeObject *codeobj_8770ebb68cb3d13f188fbefb90c414d2;
+static PyCodeObject *codeobj_4db18c37cebb4f8c7feabea6804b0aef;
 static PyCodeObject *codeobj_fe7a43822ee1a505a61a211634f34411;
-static PyCodeObject *codeobj_b7004e04d830eab1432f960d39b650de;
+static PyCodeObject *codeobj_876e26c34f591b827b45ff5c4856d5a3;
 
 static void createModuleCodeObjects(void)
 {
     module_filename_obj = const_str_digest_e9622ec017bbf597a8310acfd4d6e6f7;
     codeobj_21b57f99288088315e7418d0e18e6014 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_Retry, 18, const_tuple_empty, 0, 0, CO_NOFREE );
-    codeobj_64a1931cf84614f86ab65d01bcfa6e3f = MAKE_CODEOBJ( module_filename_obj, const_str_plain___init__, 113, const_tuple_f1dfbf06b4d03b216c756abf83b9bc28_tuple, 10, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_2b0addadd2363b12f43bbaa3eed9df64 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___repr__, 279, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_96c26ac1e13952ad4ccf26996a7dbc9c = MAKE_CODEOBJ( module_filename_obj, const_str_plain__is_connection_error, 181, const_tuple_str_plain_self_str_plain_err_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_e55a0e390b321af06178c34bbbc80c07 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__is_read_error, 187, const_tuple_str_plain_self_str_plain_err_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_5bf136cbfbbdc942eed0aeff05d84264 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_from_int, 145, const_tuple_bcd1deaf1773ebd24911636fbe7aa8b1_tuple, 4, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_38587494f193bbf37db0b9b993e4cb84 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_get_backoff_time, 159, const_tuple_str_plain_self_str_plain_backoff_value_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_8785ac5a6a3b50a074216488e682cb5e = MAKE_CODEOBJ( module_filename_obj, const_str_plain_increment, 210, const_tuple_196388050fe41430203b557a8cabdd29_tuple, 7, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_a2e75aa4ecc1aaefeb46aa3c3241f2d6 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_is_exhausted, 201, const_tuple_str_plain_self_str_plain_retry_counts_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_056d32ddda2819fcd64981c4c7fc6148 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_is_forced_retry, 193, const_tuple_str_plain_self_str_plain_method_str_plain_status_code_tuple, 3, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_042124711a1d109fdbe7cdfe78f8eaed = MAKE_CODEOBJ( module_filename_obj, const_str_plain_new, 132, const_tuple_str_plain_self_str_plain_kw_str_plain_params_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
+    codeobj_958b7f468369e365fa6eea998ee91f47 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___init__, 118, const_tuple_8ab755f0d6ca0b6bd4a4572ed1488a7b_tuple, 11, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_5e54e2b7c0413067e9bc091e3126cc13 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___repr__, 287, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_3c800057d622a1666d68871656e53ab4 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__is_connection_error, 189, const_tuple_str_plain_self_str_plain_err_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_ee10d9960e092ece5da2c479f121532d = MAKE_CODEOBJ( module_filename_obj, const_str_plain__is_read_error, 195, const_tuple_str_plain_self_str_plain_err_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_a0b3d92cc86266da53d1010c34e94fdb = MAKE_CODEOBJ( module_filename_obj, const_str_plain_from_int, 153, const_tuple_bcd1deaf1773ebd24911636fbe7aa8b1_tuple, 4, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_20496b13a0b0cce76a73b04cb4b3b889 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_get_backoff_time, 167, const_tuple_str_plain_self_str_plain_backoff_value_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_25e9f2ca2f346bc6e0a9fc1a1140d3ef = MAKE_CODEOBJ( module_filename_obj, const_str_plain_increment, 218, const_tuple_196388050fe41430203b557a8cabdd29_tuple, 7, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_133f08e7a195874634abc40733cf7f52 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_is_exhausted, 209, const_tuple_str_plain_self_str_plain_retry_counts_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_8770ebb68cb3d13f188fbefb90c414d2 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_is_forced_retry, 201, const_tuple_str_plain_self_str_plain_method_str_plain_status_code_tuple, 3, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_4db18c37cebb4f8c7feabea6804b0aef = MAKE_CODEOBJ( module_filename_obj, const_str_plain_new, 139, const_tuple_str_plain_self_str_plain_kw_str_plain_params_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
     codeobj_fe7a43822ee1a505a61a211634f34411 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_retry, 1, const_tuple_empty, 0, 0, CO_NOFREE );
-    codeobj_b7004e04d830eab1432f960d39b650de = MAKE_CODEOBJ( module_filename_obj, const_str_plain_sleep, 170, const_tuple_str_plain_self_str_plain_backoff_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_876e26c34f591b827b45ff5c4856d5a3 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_sleep, 178, const_tuple_str_plain_self_str_plain_backoff_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
 }
 
 // The module function declarations.
@@ -354,7 +368,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_1_Retry_of_urllib3$util$retry( PyObject
     Py_INCREF( tmp_assign_source_1 );
     var___module__ = tmp_assign_source_1;
 
-    tmp_assign_source_2 = const_str_digest_f27eafd9c7b931c70af36c03335c22a1;
+    tmp_assign_source_2 = const_str_digest_060355f4e6f471be7ae361d398b8a340;
     assert( var___doc__ == NULL );
     Py_INCREF( tmp_assign_source_2 );
     var___doc__ = tmp_assign_source_2;
@@ -383,7 +397,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_1_Retry_of_urllib3$util$retry( PyObject
     tmp_called_name_1 = LOOKUP_BUILTIN( const_str_plain_frozenset );
     assert( tmp_called_name_1 != NULL );
     tmp_call_arg_element_1 = LIST_COPY( const_list_ba42ffc828ddfcf79c24367abe35499c_list );
-    frame_function->f_lineno = 108;
+    frame_function->f_lineno = 113;
     {
         PyObject *call_args[] = { tmp_call_arg_element_1 };
         tmp_assign_source_4 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -397,7 +411,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_1_Retry_of_urllib3$util$retry( PyObject
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 108;
+        exception_lineno = 113;
         goto frame_exception_exit_1;
     }
     assert( var_DEFAULT_METHOD_WHITELIST == NULL );
@@ -408,7 +422,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_1_Retry_of_urllib3$util$retry( PyObject
     Py_INCREF( tmp_assign_source_5 );
     var_BACKOFF_MAX = tmp_assign_source_5;
 
-    tmp_defaults_1 = PyTuple_New( 9 );
+    tmp_defaults_1 = PyTuple_New( 10 );
     tmp_tuple_element_1 = const_int_pos_10;
     Py_INCREF( tmp_tuple_element_1 );
     PyTuple_SET_ITEM( tmp_defaults_1, 0, tmp_tuple_element_1 );
@@ -434,9 +448,12 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_1_Retry_of_urllib3$util$retry( PyObject
     tmp_tuple_element_1 = Py_True;
     Py_INCREF( tmp_tuple_element_1 );
     PyTuple_SET_ITEM( tmp_defaults_1, 7, tmp_tuple_element_1 );
-    tmp_tuple_element_1 = const_int_0;
+    tmp_tuple_element_1 = Py_True;
     Py_INCREF( tmp_tuple_element_1 );
     PyTuple_SET_ITEM( tmp_defaults_1, 8, tmp_tuple_element_1 );
+    tmp_tuple_element_1 = const_int_0;
+    Py_INCREF( tmp_tuple_element_1 );
+    PyTuple_SET_ITEM( tmp_defaults_1, 9, tmp_tuple_element_1 );
     tmp_assign_source_6 = MAKE_FUNCTION_function_1___init___of_class_1_Retry_of_urllib3$util$retry( tmp_defaults_1 );
     assert( var___init__ == NULL );
     var___init__ = tmp_assign_source_6;
@@ -449,7 +466,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_1_Retry_of_urllib3$util$retry( PyObject
     assert( tmp_called_name_2 != NULL );
     tmp_defaults_2 = const_tuple_true_none_tuple;
     tmp_args_element_name_1 = MAKE_FUNCTION_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry( INCREASE_REFCOUNT( tmp_defaults_2 ) );
-    frame_function->f_lineno = 145;
+    frame_function->f_lineno = 153;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_assign_source_8 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, call_args );
@@ -463,7 +480,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_1_Retry_of_urllib3$util$retry( PyObject
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 145;
+        exception_lineno = 153;
         goto frame_exception_exit_1;
     }
     assert( var_from_int == NULL );
@@ -1164,7 +1181,8 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
     PyObject *par_status_forcelist = python_pars[ 6 ];
     PyObject *par_backoff_factor = python_pars[ 7 ];
     PyObject *par_raise_on_redirect = python_pars[ 8 ];
-    PyObject *par__observed_errors = python_pars[ 9 ];
+    PyObject *par_raise_on_status = python_pars[ 9 ];
+    PyObject *par__observed_errors = python_pars[ 10 ];
     PyObject *exception_type = NULL, *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
     NUITKA_MAY_BE_UNUSED int exception_lineno = -1;
@@ -1181,6 +1199,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
     PyObject *tmp_assattr_name_7;
     PyObject *tmp_assattr_name_8;
     PyObject *tmp_assattr_name_9;
+    PyObject *tmp_assattr_name_10;
     PyObject *tmp_assattr_target_1;
     PyObject *tmp_assattr_target_2;
     PyObject *tmp_assattr_target_3;
@@ -1190,6 +1209,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
     PyObject *tmp_assattr_target_7;
     PyObject *tmp_assattr_target_8;
     PyObject *tmp_assattr_target_9;
+    PyObject *tmp_assattr_target_10;
     PyObject *tmp_assign_source_1;
     PyObject *tmp_assign_source_2;
     PyObject *tmp_compexpr_left_1;
@@ -1215,7 +1235,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_64a1931cf84614f86ab65d01bcfa6e3f, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_958b7f468369e365fa6eea998ee91f47, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -1242,7 +1262,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 117;
+        exception_lineno = 123;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_2 = par_connect;
@@ -1259,7 +1279,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 118;
+        exception_lineno = 124;
         goto frame_exception_exit_1;
     }
 
@@ -1271,7 +1291,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 118;
+        exception_lineno = 124;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_3 = par_read;
@@ -1288,7 +1308,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 119;
+        exception_lineno = 125;
         goto frame_exception_exit_1;
     }
 
@@ -1300,7 +1320,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 119;
+        exception_lineno = 125;
         goto frame_exception_exit_1;
     }
     tmp_compexpr_left_1 = par_redirect;
@@ -1330,7 +1350,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 121;
+        exception_lineno = 127;
         goto frame_exception_exit_1;
     }
 
@@ -1382,7 +1402,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 125;
+        exception_lineno = 131;
         goto frame_exception_exit_1;
     }
 
@@ -1398,7 +1418,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 125;
+        exception_lineno = 131;
         goto frame_exception_exit_1;
     }
 
@@ -1410,7 +1430,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 125;
+        exception_lineno = 131;
         goto frame_exception_exit_1;
     }
     tmp_or_left_value_2 = par_status_forcelist;
@@ -1423,7 +1443,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 126;
+        exception_lineno = 132;
         goto frame_exception_exit_1;
     }
     if ( tmp_or_left_truth_2 == 1 )
@@ -1454,7 +1474,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 126;
+        exception_lineno = 132;
         goto frame_exception_exit_1;
     }
 
@@ -1466,7 +1486,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assattr_name_5 );
 
-        exception_lineno = 126;
+        exception_lineno = 132;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_assattr_name_5 );
@@ -1484,7 +1504,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 127;
+        exception_lineno = 133;
         goto frame_exception_exit_1;
     }
 
@@ -1496,7 +1516,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 127;
+        exception_lineno = 133;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_7 = par_backoff_factor;
@@ -1513,7 +1533,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 128;
+        exception_lineno = 134;
         goto frame_exception_exit_1;
     }
 
@@ -1525,7 +1545,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 128;
+        exception_lineno = 134;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_8 = par_raise_on_redirect;
@@ -1540,7 +1560,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 129;
+        exception_lineno = 135;
         goto frame_exception_exit_1;
     }
 
@@ -1556,7 +1576,7 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 129;
+        exception_lineno = 135;
         goto frame_exception_exit_1;
     }
 
@@ -1568,10 +1588,10 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 129;
+        exception_lineno = 135;
         goto frame_exception_exit_1;
     }
-    tmp_assattr_name_9 = par__observed_errors;
+    tmp_assattr_name_9 = par_raise_on_status;
 
     tmp_assattr_target_9 = par_self;
 
@@ -1585,11 +1605,11 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 130;
+        exception_lineno = 136;
         goto frame_exception_exit_1;
     }
 
-    tmp_result = SET_ATTRIBUTE( tmp_assattr_target_9, const_str_plain__observed_errors, tmp_assattr_name_9 );
+    tmp_result = SET_ATTRIBUTE( tmp_assattr_target_9, const_str_plain_raise_on_status, tmp_assattr_name_9 );
     if ( tmp_result == false )
     {
         assert( ERROR_OCCURRED() );
@@ -1597,7 +1617,36 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 130;
+        exception_lineno = 136;
+        goto frame_exception_exit_1;
+    }
+    tmp_assattr_name_10 = par__observed_errors;
+
+    tmp_assattr_target_10 = par_self;
+
+    if ( tmp_assattr_target_10 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "self" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 137;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_result = SET_ATTRIBUTE( tmp_assattr_target_10, const_str_plain__observed_errors, tmp_assattr_name_10 );
+    if ( tmp_result == false )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 137;
         goto frame_exception_exit_1;
     }
 
@@ -1737,6 +1786,17 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
                 assert( res == 0 );
             }
 
+            if ( par_raise_on_status )
+            {
+                int res = PyDict_SetItem(
+                    tmp_frame_locals,
+                    const_str_plain_raise_on_status,
+                    par_raise_on_status
+                );
+
+                assert( res == 0 );
+            }
+
             if ( par__observed_errors )
             {
                 int res = PyDict_SetItem(
@@ -1801,6 +1861,9 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
     Py_XDECREF( par_raise_on_redirect );
     par_raise_on_redirect = NULL;
 
+    Py_XDECREF( par_raise_on_status );
+    par_raise_on_status = NULL;
+
     Py_XDECREF( par__observed_errors );
     par__observed_errors = NULL;
 
@@ -1842,6 +1905,9 @@ static PyObject *impl_function_1___init___of_class_1_Retry_of_urllib3$util$retry
 
     Py_XDECREF( par_raise_on_redirect );
     par_raise_on_redirect = NULL;
+
+    Py_XDECREF( par_raise_on_status );
+    par_raise_on_status = NULL;
 
     Py_XDECREF( par__observed_errors );
     par__observed_errors = NULL;
@@ -1903,6 +1969,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
     PyObject *tmp_dict_key_7;
     PyObject *tmp_dict_key_8;
     PyObject *tmp_dict_key_9;
+    PyObject *tmp_dict_key_10;
     PyObject *tmp_dict_value_1;
     PyObject *tmp_dict_value_2;
     PyObject *tmp_dict_value_3;
@@ -1912,6 +1979,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
     PyObject *tmp_dict_value_7;
     PyObject *tmp_dict_value_8;
     PyObject *tmp_dict_value_9;
+    PyObject *tmp_dict_value_10;
     PyObject *tmp_dircall_arg1_1;
     PyObject *tmp_dircall_arg2_1;
     PyObject *tmp_frame_locals;
@@ -1926,6 +1994,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
     PyObject *tmp_source_name_8;
     PyObject *tmp_source_name_9;
     PyObject *tmp_source_name_10;
+    PyObject *tmp_source_name_11;
     PyObject *tmp_type_arg_1;
     NUITKA_MAY_BE_UNUSED PyObject *tmp_unused;
     static PyFrameObject *cache_frame_function = NULL;
@@ -1936,7 +2005,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_042124711a1d109fdbe7cdfe78f8eaed, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_4db18c37cebb4f8c7feabea6804b0aef, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -1951,7 +2020,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
 #endif
 
     // Framed code:
-    tmp_assign_source_1 = _PyDict_NewPresized( 9 );
+    tmp_assign_source_1 = _PyDict_NewPresized( 10 );
     tmp_dict_key_1 = const_str_plain_total;
     tmp_source_name_1 = par_self;
 
@@ -1963,7 +2032,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 134;
+        exception_lineno = 141;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_1, tmp_dict_value_1 );
@@ -1981,7 +2050,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 135;
+        exception_lineno = 142;
         goto frame_exception_exit_1;
     }
 
@@ -1993,7 +2062,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 135;
+        exception_lineno = 142;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_2, tmp_dict_value_2 );
@@ -2011,7 +2080,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 135;
+        exception_lineno = 142;
         goto frame_exception_exit_1;
     }
 
@@ -2023,7 +2092,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 135;
+        exception_lineno = 142;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_3, tmp_dict_value_3 );
@@ -2041,7 +2110,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 135;
+        exception_lineno = 142;
         goto frame_exception_exit_1;
     }
 
@@ -2053,7 +2122,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 135;
+        exception_lineno = 142;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_4, tmp_dict_value_4 );
@@ -2071,7 +2140,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 136;
+        exception_lineno = 143;
         goto frame_exception_exit_1;
     }
 
@@ -2083,7 +2152,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 136;
+        exception_lineno = 143;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_5, tmp_dict_value_5 );
@@ -2101,7 +2170,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 137;
+        exception_lineno = 144;
         goto frame_exception_exit_1;
     }
 
@@ -2113,7 +2182,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 137;
+        exception_lineno = 144;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_6, tmp_dict_value_6 );
@@ -2131,7 +2200,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 138;
+        exception_lineno = 145;
         goto frame_exception_exit_1;
     }
 
@@ -2143,7 +2212,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 138;
+        exception_lineno = 145;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_7, tmp_dict_value_7 );
@@ -2161,7 +2230,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 139;
+        exception_lineno = 146;
         goto frame_exception_exit_1;
     }
 
@@ -2173,12 +2242,12 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 139;
+        exception_lineno = 146;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_8, tmp_dict_value_8 );
     Py_DECREF( tmp_dict_value_8 );
-    tmp_dict_key_9 = const_str_plain__observed_errors;
+    tmp_dict_key_9 = const_str_plain_raise_on_status;
     tmp_source_name_9 = par_self;
 
     if ( tmp_source_name_9 == NULL )
@@ -2191,11 +2260,11 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 140;
+        exception_lineno = 147;
         goto frame_exception_exit_1;
     }
 
-    tmp_dict_value_9 = LOOKUP_ATTRIBUTE( tmp_source_name_9, const_str_plain__observed_errors );
+    tmp_dict_value_9 = LOOKUP_ATTRIBUTE( tmp_source_name_9, const_str_plain_raise_on_status );
     if ( tmp_dict_value_9 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -2203,17 +2272,47 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 140;
+        exception_lineno = 147;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_9, tmp_dict_value_9 );
     Py_DECREF( tmp_dict_value_9 );
+    tmp_dict_key_10 = const_str_plain__observed_errors;
+    tmp_source_name_10 = par_self;
+
+    if ( tmp_source_name_10 == NULL )
+    {
+        Py_DECREF( tmp_assign_source_1 );
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "self" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 148;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_dict_value_10 = LOOKUP_ATTRIBUTE( tmp_source_name_10, const_str_plain__observed_errors );
+    if ( tmp_dict_value_10 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_assign_source_1 );
+
+        exception_lineno = 148;
+        goto frame_exception_exit_1;
+    }
+    PyDict_SetItem( tmp_assign_source_1, tmp_dict_key_10, tmp_dict_value_10 );
+    Py_DECREF( tmp_dict_value_10 );
     assert( var_params == NULL );
     var_params = tmp_assign_source_1;
 
-    tmp_source_name_10 = var_params;
+    tmp_source_name_11 = var_params;
 
-    tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_10, const_str_plain_update );
+    tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_11, const_str_plain_update );
     if ( tmp_called_name_1 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -2221,12 +2320,12 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 142;
+        exception_lineno = 150;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = par_kw;
 
-    frame_function->f_lineno = 142;
+    frame_function->f_lineno = 150;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -2240,7 +2339,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 142;
+        exception_lineno = 150;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -2256,7 +2355,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 143;
+        exception_lineno = 151;
         goto frame_exception_exit_1;
     }
 
@@ -2268,7 +2367,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 143;
+        exception_lineno = 151;
         goto frame_exception_exit_1;
     }
     tmp_dircall_arg2_1 = var_params;
@@ -2283,7 +2382,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 143;
+        exception_lineno = 151;
         goto frame_exception_exit_1;
     }
 
@@ -2300,7 +2399,7 @@ static PyObject *impl_function_2_new_of_class_1_Retry_of_urllib3$util$retry( Nui
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 143;
+        exception_lineno = 151;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -2525,7 +2624,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_5bf136cbfbbdc942eed0aeff05d84264, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_a0b3d92cc86266da53d1010c34e94fdb, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -2578,7 +2677,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 149;
+        exception_lineno = 157;
         goto frame_exception_exit_1;
     }
 
@@ -2595,7 +2694,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 149;
+        exception_lineno = 157;
         goto frame_exception_exit_1;
     }
     condexpr_end_1:;
@@ -2618,7 +2717,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 151;
+        exception_lineno = 159;
         goto frame_exception_exit_1;
     }
 
@@ -2639,7 +2738,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 151;
+        exception_lineno = 159;
         goto frame_exception_exit_1;
     }
 
@@ -2651,7 +2750,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 151;
+        exception_lineno = 159;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -2675,7 +2774,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 152;
+        exception_lineno = 160;
         goto frame_exception_exit_1;
     }
 
@@ -2692,7 +2791,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 154;
+        exception_lineno = 162;
         goto frame_exception_exit_1;
     }
     tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
@@ -2703,7 +2802,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 154;
+        exception_lineno = 162;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -2741,7 +2840,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 155;
+        exception_lineno = 163;
         goto frame_exception_exit_1;
     }
 
@@ -2758,7 +2857,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 155;
+        exception_lineno = 163;
         goto frame_exception_exit_1;
     }
 
@@ -2769,7 +2868,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
     tmp_dict_value_1 = par_redirect;
 
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_1, tmp_dict_value_1 );
-    frame_function->f_lineno = 155;
+    frame_function->f_lineno = 163;
     tmp_assign_source_3 = CALL_FUNCTION( tmp_called_name_1, tmp_args_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_args_name_1 );
     Py_DECREF( tmp_kw_name_1 );
@@ -2780,7 +2879,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 155;
+        exception_lineno = 163;
         goto frame_exception_exit_1;
     }
     assert( var_new_retries == NULL );
@@ -2803,7 +2902,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 156;
+        exception_lineno = 164;
         goto frame_exception_exit_1;
     }
 
@@ -2815,7 +2914,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 156;
+        exception_lineno = 164;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = const_str_digest_3ff146bf2cbf06e10d34294d9109668e;
@@ -2831,7 +2930,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 156;
+        exception_lineno = 164;
         goto frame_exception_exit_1;
     }
 
@@ -2847,11 +2946,11 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 156;
+        exception_lineno = 164;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 156;
+    frame_function->f_lineno = 164;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_2, call_args );
@@ -2865,7 +2964,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 156;
+        exception_lineno = 164;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -2881,7 +2980,7 @@ static PyObject *impl_function_3_from_int_of_class_1_Retry_of_urllib3$util$retry
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 157;
+        exception_lineno = 165;
         goto frame_exception_exit_1;
     }
 
@@ -3127,7 +3226,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_38587494f193bbf37db0b9b993e4cb84, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_20496b13a0b0cce76a73b04cb4b3b889, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -3152,7 +3251,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 164;
+        exception_lineno = 172;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_1 = const_int_pos_1;
@@ -3164,7 +3263,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_left_1 );
 
-        exception_lineno = 164;
+        exception_lineno = 172;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_compare_left_1 );
@@ -3193,7 +3292,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 167;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
 
@@ -3205,7 +3304,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 167;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
     tmp_left_name_2 = const_int_pos_2;
@@ -3221,7 +3320,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 167;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
 
@@ -3233,7 +3332,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_left_name_1 );
 
-        exception_lineno = 167;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
     tmp_right_name_3 = const_int_pos_1;
@@ -3246,7 +3345,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_left_name_1 );
 
-        exception_lineno = 167;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
     tmp_right_name_1 = POWER_OPERATION( tmp_left_name_2, tmp_right_name_2 );
@@ -3258,7 +3357,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_left_name_1 );
 
-        exception_lineno = 167;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
     tmp_assign_source_1 = BINARY_OPERATION_MUL( tmp_left_name_1, tmp_right_name_1 );
@@ -3271,7 +3370,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 167;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
     assert( var_backoff_value == NULL );
@@ -3291,7 +3390,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 168;
+        exception_lineno = 176;
         goto frame_exception_exit_1;
     }
 
@@ -3303,7 +3402,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 168;
+        exception_lineno = 176;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_2 = var_backoff_value;
@@ -3318,11 +3417,11 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 168;
+        exception_lineno = 176;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 168;
+    frame_function->f_lineno = 176;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
         tmp_return_value = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_1, call_args );
@@ -3336,7 +3435,7 @@ static PyObject *impl_function_4_get_backoff_time_of_class_1_Retry_of_urllib3$ut
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 168;
+        exception_lineno = 176;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -3522,7 +3621,7 @@ static PyObject *impl_function_5_sleep_of_class_1_Retry_of_urllib3$util$retry( N
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_b7004e04d830eab1432f960d39b650de, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_876e26c34f591b827b45ff5c4856d5a3, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -3547,10 +3646,10 @@ static PyObject *impl_function_5_sleep_of_class_1_Retry_of_urllib3$util$retry( N
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 176;
+        exception_lineno = 184;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 176;
+    frame_function->f_lineno = 184;
     tmp_assign_source_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_assign_source_1 == NULL )
@@ -3560,7 +3659,7 @@ static PyObject *impl_function_5_sleep_of_class_1_Retry_of_urllib3$util$retry( N
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 176;
+        exception_lineno = 184;
         goto frame_exception_exit_1;
     }
     assert( var_backoff == NULL );
@@ -3577,7 +3676,7 @@ static PyObject *impl_function_5_sleep_of_class_1_Retry_of_urllib3$util$retry( N
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 177;
+        exception_lineno = 185;
         goto frame_exception_exit_1;
     }
     if ( tmp_cmp_LtE_1 == 1 )
@@ -3610,7 +3709,7 @@ static PyObject *impl_function_5_sleep_of_class_1_Retry_of_urllib3$util$retry( N
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 179;
+        exception_lineno = 187;
         goto frame_exception_exit_1;
     }
 
@@ -3622,7 +3721,7 @@ static PyObject *impl_function_5_sleep_of_class_1_Retry_of_urllib3$util$retry( N
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 179;
+        exception_lineno = 187;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = var_backoff;
@@ -3637,11 +3736,11 @@ static PyObject *impl_function_5_sleep_of_class_1_Retry_of_urllib3$util$retry( N
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 179;
+        exception_lineno = 187;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 179;
+    frame_function->f_lineno = 187;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, call_args );
@@ -3655,7 +3754,7 @@ static PyObject *impl_function_5_sleep_of_class_1_Retry_of_urllib3$util$retry( N
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 179;
+        exception_lineno = 187;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -3836,7 +3935,7 @@ static PyObject *impl_function_6__is_connection_error_of_class_1_Retry_of_urllib
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_96c26ac1e13952ad4ccf26996a7dbc9c, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_3c800057d622a1666d68871656e53ab4, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -3870,7 +3969,7 @@ static PyObject *impl_function_6__is_connection_error_of_class_1_Retry_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 185;
+        exception_lineno = 193;
         goto frame_exception_exit_1;
     }
 
@@ -3882,7 +3981,7 @@ static PyObject *impl_function_6__is_connection_error_of_class_1_Retry_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 185;
+        exception_lineno = 193;
         goto frame_exception_exit_1;
     }
     Py_INCREF( tmp_return_value );
@@ -4064,7 +4163,7 @@ static PyObject *impl_function_7__is_read_error_of_class_1_Retry_of_urllib3$util
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_e55a0e390b321af06178c34bbbc80c07, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_ee10d9960e092ece5da2c479f121532d, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -4099,7 +4198,7 @@ static PyObject *impl_function_7__is_read_error_of_class_1_Retry_of_urllib3$util
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 191;
+        exception_lineno = 199;
         goto frame_exception_exit_1;
     }
 
@@ -4122,7 +4221,7 @@ static PyObject *impl_function_7__is_read_error_of_class_1_Retry_of_urllib3$util
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 191;
+        exception_lineno = 199;
         goto frame_exception_exit_1;
     }
 
@@ -4137,7 +4236,7 @@ static PyObject *impl_function_7__is_read_error_of_class_1_Retry_of_urllib3$util
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 191;
+        exception_lineno = 199;
         goto frame_exception_exit_1;
     }
     Py_INCREF( tmp_return_value );
@@ -4335,7 +4434,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_056d32ddda2819fcd64981c4c7fc6148, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_8770ebb68cb3d13f188fbefb90c414d2, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -4360,7 +4459,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 196;
+        exception_lineno = 204;
         goto frame_exception_exit_1;
     }
     tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
@@ -4371,7 +4470,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_and_left_value_1 );
 
-        exception_lineno = 196;
+        exception_lineno = 204;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -4394,10 +4493,10 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 196;
+        exception_lineno = 204;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 196;
+    frame_function->f_lineno = 204;
     tmp_compexpr_left_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_compexpr_left_1 == NULL )
@@ -4407,7 +4506,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 196;
+        exception_lineno = 204;
         goto frame_exception_exit_1;
     }
     tmp_source_name_3 = par_self;
@@ -4422,7 +4521,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 196;
+        exception_lineno = 204;
         goto frame_exception_exit_1;
     }
 
@@ -4434,7 +4533,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compexpr_left_1 );
 
-        exception_lineno = 196;
+        exception_lineno = 204;
         goto frame_exception_exit_1;
     }
     tmp_and_right_value_1 = SEQUENCE_CONTAINS_NOT( tmp_compexpr_left_1, tmp_compexpr_right_1 );
@@ -4447,7 +4546,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 196;
+        exception_lineno = 204;
         goto frame_exception_exit_1;
     }
     Py_INCREF( tmp_and_right_value_1 );
@@ -4464,7 +4563,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 196;
+        exception_lineno = 204;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -4493,7 +4592,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 199;
+        exception_lineno = 207;
         goto frame_exception_exit_1;
     }
 
@@ -4505,7 +4604,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 199;
+        exception_lineno = 207;
         goto frame_exception_exit_1;
     }
     tmp_and_left_truth_2 = CHECK_IF_TRUE( tmp_and_left_value_2 );
@@ -4516,7 +4615,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_and_left_value_2 );
 
-        exception_lineno = 199;
+        exception_lineno = 207;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_2 == 1 )
@@ -4543,7 +4642,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 199;
+        exception_lineno = 207;
         goto frame_exception_exit_1;
     }
 
@@ -4555,7 +4654,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 199;
+        exception_lineno = 207;
         goto frame_exception_exit_1;
     }
     tmp_and_right_value_2 = SEQUENCE_CONTAINS( tmp_compexpr_left_2, tmp_compexpr_right_2 );
@@ -4567,7 +4666,7 @@ static PyObject *impl_function_8_is_forced_retry_of_class_1_Retry_of_urllib3$uti
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 199;
+        exception_lineno = 207;
         goto frame_exception_exit_1;
     }
     Py_INCREF( tmp_and_right_value_2 );
@@ -4783,7 +4882,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_a2e75aa4ecc1aaefeb46aa3c3241f2d6, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_133f08e7a195874634abc40733cf7f52, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -4809,7 +4908,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 203;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_assign_source_1, 0, tmp_tuple_element_1 );
@@ -4825,7 +4924,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 203;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
 
@@ -4837,7 +4936,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 203;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_assign_source_1, 1, tmp_tuple_element_1 );
@@ -4853,7 +4952,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 203;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
 
@@ -4865,7 +4964,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 203;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_assign_source_1, 2, tmp_tuple_element_1 );
@@ -4881,7 +4980,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 203;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
 
@@ -4893,7 +4992,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assign_source_1 );
 
-        exception_lineno = 203;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_assign_source_1, 3, tmp_tuple_element_1 );
@@ -4905,7 +5004,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
     tmp_args_element_name_1 = Py_None;
     tmp_args_element_name_2 = var_retry_counts;
 
-    frame_function->f_lineno = 204;
+    frame_function->f_lineno = 212;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
         tmp_list_arg_1 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_1, call_args );
@@ -4918,7 +5017,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 204;
+        exception_lineno = 212;
         goto frame_exception_exit_1;
     }
     tmp_assign_source_2 = PySequence_List( tmp_list_arg_1 );
@@ -4930,7 +5029,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 204;
+        exception_lineno = 212;
         goto frame_exception_exit_1;
     }
     {
@@ -4950,7 +5049,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 205;
+        exception_lineno = 213;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -4980,11 +5079,11 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 208;
+        exception_lineno = 216;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 208;
+    frame_function->f_lineno = 216;
     {
         PyObject *call_args[] = { tmp_args_element_name_3 };
         tmp_compexpr_left_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, call_args );
@@ -4997,7 +5096,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 208;
+        exception_lineno = 216;
         goto frame_exception_exit_1;
     }
     tmp_compexpr_right_1 = const_int_0;
@@ -5010,7 +5109,7 @@ static PyObject *impl_function_9_is_exhausted_of_class_1_Retry_of_urllib3$util$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 208;
+        exception_lineno = 216;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -5352,7 +5451,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_8785ac5a6a3b50a074216488e682cb5e, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_25e9f2ca2f346bc6e0a9fc1a1140d3ef, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -5377,7 +5476,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 222;
+        exception_lineno = 230;
         goto frame_exception_exit_1;
     }
     tmp_compexpr_right_1 = Py_False;
@@ -5409,7 +5508,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 222;
+        exception_lineno = 230;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -5438,7 +5537,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 224;
+        exception_lineno = 232;
         goto frame_exception_exit_1;
     }
 
@@ -5450,7 +5549,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 224;
+        exception_lineno = 232;
         goto frame_exception_exit_1;
     }
     tmp_type_arg_1 = par_error;
@@ -5465,7 +5564,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 224;
+        exception_lineno = 232;
         goto frame_exception_exit_1;
     }
 
@@ -5477,7 +5576,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_1 );
 
-        exception_lineno = 224;
+        exception_lineno = 232;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_2 = par_error;
@@ -5493,13 +5592,13 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 224;
+        exception_lineno = 232;
         goto frame_exception_exit_1;
     }
 
     tmp_args_element_name_3 = par__stacktrace;
 
-    frame_function->f_lineno = 224;
+    frame_function->f_lineno = 232;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_1, call_args );
@@ -5514,11 +5613,11 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 224;
+        exception_lineno = 232;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_1;
-    exception_lineno = 224;
+    exception_lineno = 232;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_1:;
@@ -5534,7 +5633,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 226;
+        exception_lineno = 234;
         goto frame_exception_exit_1;
     }
 
@@ -5546,7 +5645,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 226;
+        exception_lineno = 234;
         goto frame_exception_exit_1;
     }
     assert( var_total == NULL );
@@ -5577,7 +5676,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 228;
+        exception_lineno = 236;
         goto frame_exception_exit_1;
     }
 
@@ -5591,7 +5690,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 228;
+        exception_lineno = 236;
         goto frame_exception_exit_1;
     }
     var_total = tmp_assign_source_2;
@@ -5609,7 +5708,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 230;
+        exception_lineno = 238;
         goto frame_exception_exit_1;
     }
 
@@ -5621,7 +5720,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 230;
+        exception_lineno = 238;
         goto frame_exception_exit_1;
     }
     assert( var__observed_errors == NULL );
@@ -5639,7 +5738,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 231;
+        exception_lineno = 239;
         goto frame_exception_exit_1;
     }
 
@@ -5651,7 +5750,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 231;
+        exception_lineno = 239;
         goto frame_exception_exit_1;
     }
     assert( var_connect == NULL );
@@ -5669,7 +5768,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 232;
+        exception_lineno = 240;
         goto frame_exception_exit_1;
     }
 
@@ -5681,7 +5780,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 232;
+        exception_lineno = 240;
         goto frame_exception_exit_1;
     }
     assert( var_read == NULL );
@@ -5699,7 +5798,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 233;
+        exception_lineno = 241;
         goto frame_exception_exit_1;
     }
 
@@ -5711,7 +5810,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 233;
+        exception_lineno = 241;
         goto frame_exception_exit_1;
     }
     assert( var_redirect == NULL );
@@ -5734,7 +5833,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 236;
+        exception_lineno = 244;
         goto frame_exception_exit_1;
     }
 
@@ -5746,7 +5845,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 236;
+        exception_lineno = 244;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_2 == 1 )
@@ -5770,7 +5869,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 236;
+        exception_lineno = 244;
         goto frame_exception_exit_1;
     }
 
@@ -5782,7 +5881,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 236;
+        exception_lineno = 244;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_4 = par_error;
@@ -5797,11 +5896,11 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 236;
+        exception_lineno = 244;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 236;
+    frame_function->f_lineno = 244;
     {
         PyObject *call_args[] = { tmp_args_element_name_4 };
         tmp_and_right_value_2 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, call_args );
@@ -5815,7 +5914,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 236;
+        exception_lineno = 244;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_2 = tmp_and_right_value_2;
@@ -5832,7 +5931,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_2 );
 
-        exception_lineno = 236;
+        exception_lineno = 244;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_2 );
@@ -5857,7 +5956,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 238;
+        exception_lineno = 246;
         goto frame_exception_exit_1;
     }
 
@@ -5889,7 +5988,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 239;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
 
@@ -5901,7 +6000,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 239;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
     tmp_type_arg_2 = par_error;
@@ -5916,7 +6015,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 239;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
 
@@ -5928,7 +6027,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_3 );
 
-        exception_lineno = 239;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_6 = par_error;
@@ -5944,13 +6043,13 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 239;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
 
     tmp_args_element_name_7 = par__stacktrace;
 
-    frame_function->f_lineno = 239;
+    frame_function->f_lineno = 247;
     {
         PyObject *call_args[] = { tmp_args_element_name_5, tmp_args_element_name_6, tmp_args_element_name_7 };
         tmp_raise_type_2 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_3, call_args );
@@ -5965,11 +6064,11 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 239;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_2;
-    exception_lineno = 239;
+    exception_lineno = 247;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     goto branch_end_4;
@@ -5986,7 +6085,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 240;
+        exception_lineno = 248;
         goto frame_exception_exit_1;
     }
 
@@ -6013,7 +6112,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 241;
+        exception_lineno = 249;
         goto frame_exception_exit_1;
     }
 
@@ -6027,7 +6126,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 241;
+        exception_lineno = 249;
         goto frame_exception_exit_1;
     }
     var_connect = tmp_assign_source_8;
@@ -6046,7 +6145,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 242;
+        exception_lineno = 250;
         goto frame_exception_exit_1;
     }
 
@@ -6060,7 +6159,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 242;
+        exception_lineno = 250;
         goto frame_exception_exit_1;
     }
     var__observed_errors = tmp_assign_source_9;
@@ -6079,7 +6178,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 244;
+        exception_lineno = 252;
         goto frame_exception_exit_1;
     }
 
@@ -6091,7 +6190,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 244;
+        exception_lineno = 252;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_3 == 1 )
@@ -6115,7 +6214,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 244;
+        exception_lineno = 252;
         goto frame_exception_exit_1;
     }
 
@@ -6127,7 +6226,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 244;
+        exception_lineno = 252;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_8 = par_error;
@@ -6142,11 +6241,11 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 244;
+        exception_lineno = 252;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 244;
+    frame_function->f_lineno = 252;
     {
         PyObject *call_args[] = { tmp_args_element_name_8 };
         tmp_and_right_value_3 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
@@ -6160,7 +6259,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 244;
+        exception_lineno = 252;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_3 = tmp_and_right_value_3;
@@ -6177,7 +6276,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_3 );
 
-        exception_lineno = 244;
+        exception_lineno = 252;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_3 );
@@ -6202,7 +6301,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 246;
+        exception_lineno = 254;
         goto frame_exception_exit_1;
     }
 
@@ -6234,7 +6333,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 247;
+        exception_lineno = 255;
         goto frame_exception_exit_1;
     }
 
@@ -6246,7 +6345,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 247;
+        exception_lineno = 255;
         goto frame_exception_exit_1;
     }
     tmp_type_arg_3 = par_error;
@@ -6261,7 +6360,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 247;
+        exception_lineno = 255;
         goto frame_exception_exit_1;
     }
 
@@ -6273,7 +6372,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_5 );
 
-        exception_lineno = 247;
+        exception_lineno = 255;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_10 = par_error;
@@ -6289,13 +6388,13 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 247;
+        exception_lineno = 255;
         goto frame_exception_exit_1;
     }
 
     tmp_args_element_name_11 = par__stacktrace;
 
-    frame_function->f_lineno = 247;
+    frame_function->f_lineno = 255;
     {
         PyObject *call_args[] = { tmp_args_element_name_9, tmp_args_element_name_10, tmp_args_element_name_11 };
         tmp_raise_type_3 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_5, call_args );
@@ -6310,11 +6409,11 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 247;
+        exception_lineno = 255;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_3;
-    exception_lineno = 247;
+    exception_lineno = 255;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     goto branch_end_7;
@@ -6331,7 +6430,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 248;
+        exception_lineno = 256;
         goto frame_exception_exit_1;
     }
 
@@ -6358,7 +6457,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 249;
+        exception_lineno = 257;
         goto frame_exception_exit_1;
     }
 
@@ -6372,7 +6471,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 249;
+        exception_lineno = 257;
         goto frame_exception_exit_1;
     }
     var_read = tmp_assign_source_10;
@@ -6391,7 +6490,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 250;
+        exception_lineno = 258;
         goto frame_exception_exit_1;
     }
 
@@ -6405,7 +6504,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 250;
+        exception_lineno = 258;
         goto frame_exception_exit_1;
     }
     var__observed_errors = tmp_assign_source_11;
@@ -6422,7 +6521,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 252;
+        exception_lineno = 260;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_4 == 1 )
@@ -6444,10 +6543,10 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 252;
+        exception_lineno = 260;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 252;
+    frame_function->f_lineno = 260;
     tmp_and_right_value_4 = CALL_FUNCTION_NO_ARGS( tmp_called_name_6 );
     Py_DECREF( tmp_called_name_6 );
     if ( tmp_and_right_value_4 == NULL )
@@ -6457,7 +6556,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 252;
+        exception_lineno = 260;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_4 = tmp_and_right_value_4;
@@ -6474,7 +6573,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_4 );
 
-        exception_lineno = 252;
+        exception_lineno = 260;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_4 );
@@ -6499,7 +6598,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 254;
+        exception_lineno = 262;
         goto frame_exception_exit_1;
     }
 
@@ -6526,7 +6625,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 255;
+        exception_lineno = 263;
         goto frame_exception_exit_1;
     }
 
@@ -6540,7 +6639,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 255;
+        exception_lineno = 263;
         goto frame_exception_exit_1;
     }
     var_redirect = tmp_assign_source_12;
@@ -6568,7 +6667,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 261;
+        exception_lineno = 269;
         goto frame_exception_exit_1;
     }
 
@@ -6582,7 +6681,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 261;
+        exception_lineno = 269;
         goto frame_exception_exit_1;
     }
     var__observed_errors = tmp_assign_source_14;
@@ -6604,7 +6703,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 262;
+        exception_lineno = 270;
         goto frame_exception_exit_1;
     }
 
@@ -6616,7 +6715,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 262;
+        exception_lineno = 270;
         goto frame_exception_exit_1;
     }
     {
@@ -6637,7 +6736,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 263;
+        exception_lineno = 271;
         goto frame_exception_exit_1;
     }
 
@@ -6649,7 +6748,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 263;
+        exception_lineno = 271;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_5 == 1 )
@@ -6673,7 +6772,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 263;
+        exception_lineno = 271;
         goto frame_exception_exit_1;
     }
 
@@ -6685,7 +6784,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 263;
+        exception_lineno = 271;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_5 = tmp_and_right_value_5;
@@ -6702,7 +6801,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_5 );
 
-        exception_lineno = 263;
+        exception_lineno = 271;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_5 );
@@ -6732,7 +6831,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 264;
+        exception_lineno = 272;
         goto frame_exception_exit_1;
     }
 
@@ -6744,7 +6843,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 264;
+        exception_lineno = 272;
         goto frame_exception_exit_1;
     }
     tmp_called_name_7 = LOOKUP_ATTRIBUTE( tmp_source_name_15, const_str_plain_format );
@@ -6756,7 +6855,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 264;
+        exception_lineno = 272;
         goto frame_exception_exit_1;
     }
     tmp_kw_name_1 = _PyDict_NewPresized( 1 );
@@ -6774,7 +6873,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 265;
+        exception_lineno = 273;
         goto frame_exception_exit_1;
     }
 
@@ -6787,12 +6886,12 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         Py_DECREF( tmp_called_name_7 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 265;
+        exception_lineno = 273;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_1, tmp_dict_value_1 );
     Py_DECREF( tmp_dict_value_1 );
-    frame_function->f_lineno = 265;
+    frame_function->f_lineno = 273;
     tmp_assign_source_16 = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_7, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_7 );
     Py_DECREF( tmp_kw_name_1 );
@@ -6803,7 +6902,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 265;
+        exception_lineno = 273;
         goto frame_exception_exit_1;
     }
     {
@@ -6828,7 +6927,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 267;
+        exception_lineno = 275;
         goto frame_exception_exit_1;
     }
 
@@ -6840,7 +6939,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 267;
+        exception_lineno = 275;
         goto frame_exception_exit_1;
     }
     tmp_kw_name_2 = _PyDict_NewPresized( 5 );
@@ -6858,7 +6957,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 268;
+        exception_lineno = 276;
         goto frame_exception_exit_1;
     }
 
@@ -6877,7 +6976,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 269;
+        exception_lineno = 277;
         goto frame_exception_exit_1;
     }
 
@@ -6896,7 +6995,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 269;
+        exception_lineno = 277;
         goto frame_exception_exit_1;
     }
 
@@ -6915,7 +7014,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 269;
+        exception_lineno = 277;
         goto frame_exception_exit_1;
     }
 
@@ -6934,12 +7033,12 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 270;
+        exception_lineno = 278;
         goto frame_exception_exit_1;
     }
 
     PyDict_SetItem( tmp_kw_name_2, tmp_dict_key_6, tmp_dict_value_6 );
-    frame_function->f_lineno = 270;
+    frame_function->f_lineno = 278;
     tmp_assign_source_17 = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_8, tmp_kw_name_2 );
     Py_DECREF( tmp_called_name_8 );
     Py_DECREF( tmp_kw_name_2 );
@@ -6950,7 +7049,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 270;
+        exception_lineno = 278;
         goto frame_exception_exit_1;
     }
     assert( var_new_retry == NULL );
@@ -6966,10 +7065,10 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 272;
+        exception_lineno = 280;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 272;
+    frame_function->f_lineno = 280;
     tmp_cond_value_6 = CALL_FUNCTION_NO_ARGS( tmp_called_name_9 );
     Py_DECREF( tmp_called_name_9 );
     if ( tmp_cond_value_6 == NULL )
@@ -6979,7 +7078,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 272;
+        exception_lineno = 280;
         goto frame_exception_exit_1;
     }
     tmp_cond_truth_6 = CHECK_IF_TRUE( tmp_cond_value_6 );
@@ -6990,7 +7089,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_6 );
 
-        exception_lineno = 272;
+        exception_lineno = 280;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_6 );
@@ -7020,7 +7119,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 273;
+        exception_lineno = 281;
         goto frame_exception_exit_1;
     }
 
@@ -7040,7 +7139,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 273;
+        exception_lineno = 281;
         goto frame_exception_exit_1;
     }
 
@@ -7052,7 +7151,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 273;
+        exception_lineno = 281;
         goto frame_exception_exit_1;
     }
     if ( tmp_or_left_truth_1 == 1 )
@@ -7081,7 +7180,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 273;
+        exception_lineno = 281;
         goto frame_exception_exit_1;
     }
 
@@ -7097,11 +7196,11 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 273;
+        exception_lineno = 281;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 273;
+    frame_function->f_lineno = 281;
     {
         PyObject *call_args[] = { tmp_args_element_name_15 };
         tmp_or_right_value_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_11, call_args );
@@ -7114,7 +7213,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 273;
+        exception_lineno = 281;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_14 = tmp_or_right_value_1;
@@ -7123,7 +7222,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
     Py_INCREF( tmp_or_left_value_1 );
     tmp_args_element_name_14 = tmp_or_left_value_1;
     or_end_1:;
-    frame_function->f_lineno = 273;
+    frame_function->f_lineno = 281;
     {
         PyObject *call_args[] = { tmp_args_element_name_12, tmp_args_element_name_13, tmp_args_element_name_14 };
         tmp_raise_type_4 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_10, call_args );
@@ -7137,11 +7236,11 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 273;
+        exception_lineno = 281;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_4;
-    exception_lineno = 273;
+    exception_lineno = 281;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_12:;
@@ -7162,7 +7261,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 275;
+        exception_lineno = 283;
         goto frame_exception_exit_1;
     }
 
@@ -7174,7 +7273,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 275;
+        exception_lineno = 283;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_16 = const_str_digest_adf0407d4b5f2535bca90601d487b350;
@@ -7192,11 +7291,11 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 275;
+        exception_lineno = 283;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 275;
+    frame_function->f_lineno = 283;
     {
         PyObject *call_args[] = { tmp_args_element_name_16, tmp_args_element_name_17, tmp_args_element_name_18 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_12, call_args );
@@ -7210,7 +7309,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 275;
+        exception_lineno = 283;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -7226,7 +7325,7 @@ static PyObject *impl_function_10_increment_of_class_1_Retry_of_urllib3$util$ret
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 277;
+        exception_lineno = 285;
         goto frame_exception_exit_1;
     }
 
@@ -7618,7 +7717,7 @@ static PyObject *impl_function_11___repr___of_class_1_Retry_of_urllib3$util$retr
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_2b0addadd2363b12f43bbaa3eed9df64, module_urllib3$util$retry );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_5e54e2b7c0413067e9bc091e3126cc13, module_urllib3$util$retry );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -7648,7 +7747,7 @@ static PyObject *impl_function_11___repr___of_class_1_Retry_of_urllib3$util$retr
     tmp_dict_value_2 = par_self;
 
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_2, tmp_dict_value_2 );
-    frame_function->f_lineno = 282;
+    frame_function->f_lineno = 290;
     tmp_return_value = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_1 );
     Py_DECREF( tmp_kw_name_1 );
@@ -7659,7 +7758,7 @@ static PyObject *impl_function_11___repr___of_class_1_Retry_of_urllib3$util$retr
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 282;
+        exception_lineno = 290;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -7800,7 +7899,7 @@ static PyObject *MAKE_FUNCTION_function_10_increment_of_class_1_Retry_of_urllib3
 #if PYTHON_VERSION >= 330
         const_str_digest_d3c5cf2f2d706173f393307c5fa372aa,
 #endif
-        codeobj_8785ac5a6a3b50a074216488e682cb5e,
+        codeobj_25e9f2ca2f346bc6e0a9fc1a1140d3ef,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -7823,7 +7922,7 @@ static PyObject *MAKE_FUNCTION_function_11___repr___of_class_1_Retry_of_urllib3$
 #if PYTHON_VERSION >= 330
         const_str_digest_4291b42c0261755daa9f58af16f24a8c,
 #endif
-        codeobj_2b0addadd2363b12f43bbaa3eed9df64,
+        codeobj_5e54e2b7c0413067e9bc091e3126cc13,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -7846,7 +7945,7 @@ static PyObject *MAKE_FUNCTION_function_1___init___of_class_1_Retry_of_urllib3$u
 #if PYTHON_VERSION >= 330
         const_str_digest_297455e155b6c9736d87529e14591c5d,
 #endif
-        codeobj_64a1931cf84614f86ab65d01bcfa6e3f,
+        codeobj_958b7f468369e365fa6eea998ee91f47,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -7869,7 +7968,7 @@ static PyObject *MAKE_FUNCTION_function_2_new_of_class_1_Retry_of_urllib3$util$r
 #if PYTHON_VERSION >= 330
         const_str_digest_ca693a71271df261e783dd0ecf309ae0,
 #endif
-        codeobj_042124711a1d109fdbe7cdfe78f8eaed,
+        codeobj_4db18c37cebb4f8c7feabea6804b0aef,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -7892,7 +7991,7 @@ static PyObject *MAKE_FUNCTION_function_3_from_int_of_class_1_Retry_of_urllib3$u
 #if PYTHON_VERSION >= 330
         const_str_digest_00aff75c087fe7f80636ea13a09e3e82,
 #endif
-        codeobj_5bf136cbfbbdc942eed0aeff05d84264,
+        codeobj_a0b3d92cc86266da53d1010c34e94fdb,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -7915,7 +8014,7 @@ static PyObject *MAKE_FUNCTION_function_4_get_backoff_time_of_class_1_Retry_of_u
 #if PYTHON_VERSION >= 330
         const_str_digest_e80b9085df081452c8caeed4571c51b7,
 #endif
-        codeobj_38587494f193bbf37db0b9b993e4cb84,
+        codeobj_20496b13a0b0cce76a73b04cb4b3b889,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -7938,7 +8037,7 @@ static PyObject *MAKE_FUNCTION_function_5_sleep_of_class_1_Retry_of_urllib3$util
 #if PYTHON_VERSION >= 330
         const_str_digest_b0594eafa05dc6a6810bb2c7c291548b,
 #endif
-        codeobj_b7004e04d830eab1432f960d39b650de,
+        codeobj_876e26c34f591b827b45ff5c4856d5a3,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -7961,7 +8060,7 @@ static PyObject *MAKE_FUNCTION_function_6__is_connection_error_of_class_1_Retry_
 #if PYTHON_VERSION >= 330
         const_str_digest_7e60379875538acb6d47a09b3bcd7fdf,
 #endif
-        codeobj_96c26ac1e13952ad4ccf26996a7dbc9c,
+        codeobj_3c800057d622a1666d68871656e53ab4,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -7984,7 +8083,7 @@ static PyObject *MAKE_FUNCTION_function_7__is_read_error_of_class_1_Retry_of_url
 #if PYTHON_VERSION >= 330
         const_str_digest_2d8b572caa8eac58f71c5c2fc1f268f9,
 #endif
-        codeobj_e55a0e390b321af06178c34bbbc80c07,
+        codeobj_ee10d9960e092ece5da2c479f121532d,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -8007,7 +8106,7 @@ static PyObject *MAKE_FUNCTION_function_8_is_forced_retry_of_class_1_Retry_of_ur
 #if PYTHON_VERSION >= 330
         const_str_digest_4ab4549b763ec56a33a68f0da0a025a6,
 #endif
-        codeobj_056d32ddda2819fcd64981c4c7fc6148,
+        codeobj_8770ebb68cb3d13f188fbefb90c414d2,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -8030,7 +8129,7 @@ static PyObject *MAKE_FUNCTION_function_9_is_exhausted_of_class_1_Retry_of_urlli
 #if PYTHON_VERSION >= 330
         const_str_digest_4506185023298da4a69876975fb76211,
 #endif
-        codeobj_a2e75aa4ecc1aaefeb46aa3c3241f2d6,
+        codeobj_133f08e7a195874634abc40733cf7f52,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -8808,11 +8907,11 @@ MOD_INIT_DECL( urllib3$util$retry )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 286;
+        exception_lineno = 294;
         goto frame_exception_exit_1;
     }
 
-    frame_module->f_lineno = 286;
+    frame_module->f_lineno = 294;
     tmp_assattr_name_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, &PyTuple_GET_ITEM( const_tuple_int_pos_3_tuple, 0 ) );
 
     if ( tmp_assattr_name_1 == NULL )
@@ -8822,7 +8921,7 @@ MOD_INIT_DECL( urllib3$util$retry )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 286;
+        exception_lineno = 294;
         goto frame_exception_exit_1;
     }
     tmp_assattr_target_1 = GET_STRING_DICT_VALUE( moduledict_urllib3$util$retry, (Nuitka_StringObject *)const_str_plain_Retry );
@@ -8842,7 +8941,7 @@ MOD_INIT_DECL( urllib3$util$retry )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 286;
+        exception_lineno = 294;
         goto frame_exception_exit_1;
     }
 
@@ -8854,7 +8953,7 @@ MOD_INIT_DECL( urllib3$util$retry )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assattr_name_1 );
 
-        exception_lineno = 286;
+        exception_lineno = 294;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_assattr_name_1 );

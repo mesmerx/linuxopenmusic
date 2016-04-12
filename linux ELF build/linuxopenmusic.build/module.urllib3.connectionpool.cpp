@@ -49,6 +49,7 @@ extern PyObject *const_str_plain_HTTPConnection;
 extern PyObject *const_str_plain_LocationValueError;
 extern PyObject *const_str_plain_object;
 extern PyObject *const_str_plain___file__;
+extern PyObject *const_tuple_str_digest_9613c3fc04783ef5920752aa27696d66_tuple;
 extern PyObject *const_str_digest_14bc662b49a023ba3c0202d6d37a96d4;
 extern PyObject *const_str_plain__make_request;
 extern PyObject *const_str_digest_9a7a0e57661a036d7bdd6ad9ff0a3de3;
@@ -63,8 +64,10 @@ extern PyObject *const_str_digest_4c69f4e03625ce3d56a911e633943cd5;
 extern PyObject *const_str_plain__proxy;
 extern PyObject *const_str_digest_c1505752b742bcc86d58c19fdc1683b9;
 extern PyObject *const_str_plain_default;
+extern PyObject *const_str_plain_raise_on_status;
 extern PyObject *const_tuple_4ed0995ef67f4af2789b999d673cabd1_tuple;
 extern PyObject *const_str_digest_1a5a126298fb29147b8bd2e44b30484d;
+extern PyObject *const_int_pos_80;
 extern PyObject *const_str_plain_GET;
 extern PyObject *const_str_plain_scheme;
 extern PyObject *const_str_plain_DEFAULT_TIMEOUT;
@@ -74,6 +77,8 @@ extern PyObject *const_str_plain_response_conn;
 extern PyObject *const_int_pos_6;
 extern PyObject *const_str_plain_is_connection_dropped;
 extern PyObject *const_str_plain_HTTPSConnection;
+static PyObject *const_str_digest_7a5fef0708d7a7bfaef81b4b11707a20;
+extern PyObject *const_str_plain_strip;
 extern PyObject *const_str_plain_assert_same_host;
 extern PyObject *const_str_plain___enter__;
 extern PyObject *const_str_digest_cf54d77232ad2ca3bd0a464156f88154;
@@ -157,6 +162,7 @@ extern PyObject *const_str_plain_pool_timeout;
 extern PyObject *const_str_plain_HeaderParsingError;
 extern PyObject *const_str_plain_connection_from_url;
 extern PyObject *const_str_plain_conn;
+extern PyObject *const_str_plain_clean_exit;
 extern PyObject *const_str_plain_buffering;
 extern PyObject *const_str_plain__stacktrace;
 extern PyObject *const_str_plain__validate_conn;
@@ -165,7 +171,6 @@ extern PyObject *const_str_plain_ProxyError;
 extern PyObject *const_str_digest_4eea8c9082b203b118b31282bad1c4ee;
 extern PyObject *const_tuple_str_plain_assert_header_parsing_tuple;
 extern PyObject *const_str_plain_EmptyPoolError;
-extern PyObject *const_tuple_f1c419470aa7501af23e41b76a45f195_tuple;
 extern PyObject *const_str_digest_66182be0b37ca85b95e225113c54e8b0;
 extern PyObject *const_tuple_str_plain_self_str_plain_conn_tuple;
 extern PyObject *const_str_plain_exc_type;
@@ -228,6 +233,7 @@ extern PyObject *const_str_digest_9e60e8a4a3f600866c5b2083f278d57a;
 extern PyObject *const_str_plain_response;
 extern PyObject *const_str_digest_e1f773e4dbf5fdc604f0ef0fb6409e99;
 extern PyObject *const_str_plain_msg;
+static PyObject *const_tuple_f121d45d911709c74105742fb9fc1609_tuple;
 extern PyObject *const_str_plain_urlopen;
 extern PyObject *const_str_digest_98b3dd6f4a9169b6d05d2bb6cb7939ae;
 extern PyObject *const_str_plain_connectionpool;
@@ -246,6 +252,7 @@ extern PyObject *const_str_plain_from_httplib;
 extern PyObject *const_str_plain_exc_info;
 extern PyObject *const_str_digest_bcdf6c34bab72e853b582d160e30d3e7;
 extern PyObject *const_str_plain_warning;
+extern PyObject *const_str_digest_9613c3fc04783ef5920752aa27696d66;
 extern PyObject *const_str_digest_0c2cfd5e87a8ed7cf1566521e8239646;
 extern PyObject *const_str_plain_increment;
 extern PyObject *const_str_digest_221813d9dea208dabe47488d35e93241;
@@ -262,6 +269,7 @@ extern PyObject *const_str_digest_d9281b7dcfb24131e3ae4fceb3078498;
 extern PyObject *const_str_plain___cached__;
 extern PyObject *const_str_digest_e49c4abd8cd8a855d785aa9a5398f4cd;
 extern PyObject *const_str_plain___class__;
+extern PyObject *const_str_plain_chunked;
 extern PyObject *const_tuple_str_plain_self_str_plain_old_pool_str_plain_conn_tuple;
 extern PyObject *const_str_plain_QueueCls;
 extern PyObject *const_str_plain__;
@@ -269,11 +277,13 @@ extern PyObject *const_tuple_none_tuple;
 extern PyObject *const_tuple_str_plain_self_str_plain_timeout_str_plain_conn_tuple;
 extern PyObject *const_str_digest_52af1425a80510e5c4b27876b0697f6f;
 extern PyObject *const_str_plain_socket_options;
-extern PyObject *const_tuple_str_plain_self_str_plain_conn_str_plain_set_tunnel_tuple;
+extern PyObject *const_str_plain_request_chunked;
+static PyObject *const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple;
 extern PyObject *const_str_plain_ClosedPoolError;
 extern PyObject *const_tuple_str_plain_get_host_str_plain_Url_tuple;
 extern PyObject *const_str_plain___module__;
 extern PyObject *const_str_plain___str__;
+extern PyObject *const_tuple_str_plain_self_str_plain_conn_str_plain_set_tunnel_tuple;
 extern PyObject *const_str_chr_47;
 extern PyObject *const_str_digest_fc56b82c6ed9045af311170020fca29b;
 extern PyObject *const_str_plain_sys;
@@ -286,9 +296,8 @@ extern PyObject *const_str_plain_update;
 extern PyObject *const_int_pos_1;
 extern PyObject *const_str_plain_socket;
 extern PyObject *const_str_plain_port;
-extern PyObject *const_str_digest_10f40d05348656b19de609b046927c1a;
-extern PyObject *const_str_digest_b596bee7f4c8cc1960a8eba47c61ba85;
 extern PyObject *const_str_plain_ca_certs;
+extern PyObject *const_str_digest_b596bee7f4c8cc1960a8eba47c61ba85;
 extern PyObject *const_str_plain_SocketTimeout;
 extern PyObject *const_int_pos_303;
 extern PyObject *const_str_plain_copy;
@@ -311,7 +320,6 @@ extern PyObject *const_str_plain_url;
 extern PyObject *const_str_plain_self;
 extern PyObject *const_tuple_str_plain_self_str_plain_host_str_plain_port_tuple;
 extern PyObject *const_str_plain_key_file;
-extern PyObject *const_tuple_bfa7cc03239efc8a8cfb594e99df6e0a_tuple;
 extern PyObject *const_str_plain_LifoQueue;
 extern PyObject *const_str_plain_version_info;
 extern PyObject *const_str_plain_is_new_proxy_conn;
@@ -356,10 +364,26 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_81976bc4c798bb1e8cf8844e6ac708d0 = UNSTREAM_STRING( &constant_bin[ 184060 ], 22, 0 );
+    const_str_digest_7a5fef0708d7a7bfaef81b4b11707a20 = UNSTREAM_STRING( &constant_bin[ 736053 ], 3830, 0 );
+    const_str_digest_81976bc4c798bb1e8cf8844e6ac708d0 = UNSTREAM_STRING( &constant_bin[ 195362 ], 22, 0 );
+    const_tuple_f121d45d911709c74105742fb9fc1609_tuple = PyMarshal_ReadObjectFromString( (char *)&constant_bin[ 739883 ], 252 );
+    const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple = PyTuple_New( 13 );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 0, const_str_plain_self ); Py_INCREF( const_str_plain_self );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 1, const_str_plain_conn ); Py_INCREF( const_str_plain_conn );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 2, const_str_plain_method ); Py_INCREF( const_str_plain_method );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 3, const_str_plain_url ); Py_INCREF( const_str_plain_url );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 4, const_str_plain_timeout ); Py_INCREF( const_str_plain_timeout );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 5, const_str_plain_chunked ); Py_INCREF( const_str_plain_chunked );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 6, const_str_plain_httplib_request_kw ); Py_INCREF( const_str_plain_httplib_request_kw );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 7, const_str_plain_timeout_obj ); Py_INCREF( const_str_plain_timeout_obj );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 8, const_str_plain_e ); Py_INCREF( const_str_plain_e );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 9, const_str_plain_read_timeout ); Py_INCREF( const_str_plain_read_timeout );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 10, const_str_plain_httplib_response ); Py_INCREF( const_str_plain_httplib_response );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 11, const_str_plain_http_version ); Py_INCREF( const_str_plain_http_version );
+    PyTuple_SET_ITEM( const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 12, const_str_plain_hpe ); Py_INCREF( const_str_plain_hpe );
     const_tuple_str_digest_81976bc4c798bb1e8cf8844e6ac708d0_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_digest_81976bc4c798bb1e8cf8844e6ac708d0_tuple, 0, const_str_digest_81976bc4c798bb1e8cf8844e6ac708d0 ); Py_INCREF( const_str_digest_81976bc4c798bb1e8cf8844e6ac708d0 );
-    const_str_digest_23a996893fdcbe974498fc49eb1ec6b1 = UNSTREAM_STRING( &constant_bin[ 716610 ], 58, 0 );
+    const_str_digest_23a996893fdcbe974498fc49eb1ec6b1 = UNSTREAM_STRING( &constant_bin[ 740135 ], 58, 0 );
 
     constants_created = true;
 }
@@ -376,65 +400,65 @@ void checkModuleConstants_urllib3$connectionpool( void )
 
 // The module code objects.
 static PyCodeObject *codeobj_7531e9399b17c238a7c2775079de8eab;
-static PyCodeObject *codeobj_21fddf43efea8df1b42c295ca73643be;
-static PyCodeObject *codeobj_db98a1bc6c2a4ec52552e79f52e5e851;
-static PyCodeObject *codeobj_0bbe0bb329a7c3a2e0958dd1ade8496a;
-static PyCodeObject *codeobj_75e0579352e3bc0a6855978a4259c9e9;
+static PyCodeObject *codeobj_9a647d6588e6650c16ff72bf6ff042fe;
+static PyCodeObject *codeobj_37643975f9b8f154e72d59f33a2c0b8b;
+static PyCodeObject *codeobj_718aa523b496568b537d1d0a3e39d0a1;
+static PyCodeObject *codeobj_56dbe861817b9c2cd6616984b1c86939;
 static PyCodeObject *codeobj_f9158e95fe01cafe2938d52a6a3ac644;
-static PyCodeObject *codeobj_7ddb14266c5c2f3af9a644b73ce96e79;
-static PyCodeObject *codeobj_7992c10076cfd02a660e7a4faa532db1;
-static PyCodeObject *codeobj_7ccedae2f665703fc5dd4de0ca0c9c8f;
-static PyCodeObject *codeobj_806d21b2cd5f2745fd1eb26679b291a3;
-static PyCodeObject *codeobj_26fab5acbc3977ffef3fd960fc369026;
-static PyCodeObject *codeobj_7fc276dcedbdacf4c735ffabc596d2f1;
-static PyCodeObject *codeobj_ac1e681ed2b3e2af078f06c941954a9e;
-static PyCodeObject *codeobj_770de26338e36f54a02d3ac550be2986;
-static PyCodeObject *codeobj_1d5ca060e34a4ec2a0d0f066be828c5e;
-static PyCodeObject *codeobj_e4a0e2a868f103a858341d6c8a2e6201;
-static PyCodeObject *codeobj_b74c8a17633d58d7d49602d34176039e;
-static PyCodeObject *codeobj_fcf6dac4ac5b56696de0d563ae80d6fb;
-static PyCodeObject *codeobj_181dce0e2c13b4f6bd264f92af463984;
-static PyCodeObject *codeobj_e2c9c7fadef0d693d5260ec639289f70;
-static PyCodeObject *codeobj_340c221618a7e371f03884180d7ac0f9;
-static PyCodeObject *codeobj_205408e50ed19353a2758c8a8af10df6;
-static PyCodeObject *codeobj_62b5057748b5ff2aec604f9440931c08;
-static PyCodeObject *codeobj_fa88edcd74ea853b92a03fc74d882e4f;
-static PyCodeObject *codeobj_77e7089b33530b130946e2a2bda80e0f;
+static PyCodeObject *codeobj_92b823aa21da1d76b95cebdad9a708e8;
+static PyCodeObject *codeobj_77919ab6ae80a92b65a2ba93fbf534e1;
+static PyCodeObject *codeobj_416a906a44b0a6e19a8cfb5af5ef7665;
+static PyCodeObject *codeobj_26b05fab306e9996a8f4da06de74971d;
+static PyCodeObject *codeobj_8de25d65f7e665126997fdc1a9d289b6;
+static PyCodeObject *codeobj_01397a963b182639018ec3fb50f35821;
+static PyCodeObject *codeobj_09b455938efc00ac1ecc9b62d5c93c87;
+static PyCodeObject *codeobj_4160be3ca5c939035b1a932ee07df764;
+static PyCodeObject *codeobj_2f807aca3e2d2006757a71f74ecc4511;
+static PyCodeObject *codeobj_ecce51ed886e8cdd5fe6da9c7a0931e4;
+static PyCodeObject *codeobj_b3ec545446bc14e435d908078dfce743;
+static PyCodeObject *codeobj_17665e5dd8294e665dd283468730876a;
+static PyCodeObject *codeobj_e377d05614d0422221a7f008324175bf;
+static PyCodeObject *codeobj_186c5bca50faa0ea5836c2c200c14464;
+static PyCodeObject *codeobj_07150fc06f58ee47d6b8622f93d4f38c;
+static PyCodeObject *codeobj_2b068536a390598d359321ca64b51f87;
+static PyCodeObject *codeobj_ffc6229123e1edbf5192cac6755c07d8;
+static PyCodeObject *codeobj_857956eea47b7619917c4ac9182c255b;
+static PyCodeObject *codeobj_90e72205a2f2499f1dda274d9827faf4;
 static PyCodeObject *codeobj_a2bf5f565dbebe5c08c6c5089a33786e;
-static PyCodeObject *codeobj_8ab326c36e5027ed4ee72f028c16c0e9;
-static PyCodeObject *codeobj_ef1316f278f6ad55eb5be8c303e88ed6;
+static PyCodeObject *codeobj_40627451f4b8cb7e3ce21d36c0b0410b;
+static PyCodeObject *codeobj_e0108ffd924d0be3e00bdc9ac5bd6544;
 
 static void createModuleCodeObjects(void)
 {
     module_filename_obj = const_str_digest_23a996893fdcbe974498fc49eb1ec6b1;
     codeobj_7531e9399b17c238a7c2775079de8eab = MAKE_CODEOBJ( module_filename_obj, const_str_plain_ConnectionPool, 59, const_tuple_empty, 0, 0, CO_NOFREE );
-    codeobj_21fddf43efea8df1b42c295ca73643be = MAKE_CODEOBJ( module_filename_obj, const_str_plain_HTTPConnectionPool, 98, const_tuple_empty, 0, 0, CO_NOFREE );
-    codeobj_db98a1bc6c2a4ec52552e79f52e5e851 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_HTTPSConnectionPool, 669, const_tuple_empty, 0, 0, CO_NOFREE );
-    codeobj_0bbe0bb329a7c3a2e0958dd1ade8496a = MAKE_CODEOBJ( module_filename_obj, const_str_plain___enter__, 79, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_75e0579352e3bc0a6855978a4259c9e9 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___exit__, 82, const_tuple_6e817ca9c0f5b8901da850442bb2575d_tuple, 4, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_9a647d6588e6650c16ff72bf6ff042fe = MAKE_CODEOBJ( module_filename_obj, const_str_plain_HTTPConnectionPool, 104, const_tuple_empty, 0, 0, CO_NOFREE );
+    codeobj_37643975f9b8f154e72d59f33a2c0b8b = MAKE_CODEOBJ( module_filename_obj, const_str_plain_HTTPSConnectionPool, 700, const_tuple_empty, 0, 0, CO_NOFREE );
+    codeobj_718aa523b496568b537d1d0a3e39d0a1 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___enter__, 85, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_56dbe861817b9c2cd6616984b1c86939 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___exit__, 88, const_tuple_6e817ca9c0f5b8901da850442bb2575d_tuple, 4, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
     codeobj_f9158e95fe01cafe2938d52a6a3ac644 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___init__, 68, const_tuple_str_plain_self_str_plain_host_str_plain_port_tuple, 3, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_7ddb14266c5c2f3af9a644b73ce96e79 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___init__, 161, const_tuple_366d6b5b00ba5d1d811f6b25d9c65ba8_tuple, 11, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
-    codeobj_7992c10076cfd02a660e7a4faa532db1 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___init__, 690, const_tuple_48dd06a5d8ab4d4c394f804f2e70d69d_tuple, 19, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
-    codeobj_7ccedae2f665703fc5dd4de0ca0c9c8f = MAKE_CODEOBJ( module_filename_obj, const_str_plain___str__, 75, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_806d21b2cd5f2745fd1eb26679b291a3 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__absolute_url, 397, const_tuple_str_plain_self_str_plain_path_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_26fab5acbc3977ffef3fd960fc369026 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__get_conn, 214, const_tuple_str_plain_self_str_plain_timeout_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_7fc276dcedbdacf4c735ffabc596d2f1 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__get_timeout, 292, const_tuple_str_plain_self_str_plain_timeout_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_ac1e681ed2b3e2af078f06c941954a9e = MAKE_CODEOBJ( module_filename_obj, const_str_plain__make_request, 321, const_tuple_f1c419470aa7501af23e41b76a45f195_tuple, 5, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
-    codeobj_770de26338e36f54a02d3ac550be2986 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__new_conn, 201, const_tuple_str_plain_self_str_plain_conn_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_1d5ca060e34a4ec2a0d0f066be828c5e = MAKE_CODEOBJ( module_filename_obj, const_str_plain__new_conn, 751, const_tuple_72fe7df3161073d1e7de2eb19a7e53b3_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_e4a0e2a868f103a858341d6c8a2e6201 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__prepare_conn, 715, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_b74c8a17633d58d7d49602d34176039e = MAKE_CODEOBJ( module_filename_obj, const_str_plain__prepare_proxy, 288, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_fcf6dac4ac5b56696de0d563ae80d6fb = MAKE_CODEOBJ( module_filename_obj, const_str_plain__prepare_proxy, 733, const_tuple_str_plain_self_str_plain_conn_str_plain_set_tunnel_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_181dce0e2c13b4f6bd264f92af463984 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__put_conn, 252, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_e2c9c7fadef0d693d5260ec639289f70 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__raise_timeout, 304, const_tuple_76ce546d292b5e0275b0b85d8f24991a_tuple, 4, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_340c221618a7e371f03884180d7ac0f9 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__validate_conn, 282, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_205408e50ed19353a2758c8a8af10df6 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__validate_conn, 775, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_62b5057748b5ff2aec604f9440931c08 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_close, 87, const_tuple_empty, 0, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_fa88edcd74ea853b92a03fc74d882e4f = MAKE_CODEOBJ( module_filename_obj, const_str_plain_close, 400, const_tuple_str_plain_self_str_plain_old_pool_str_plain_conn_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_77e7089b33530b130946e2a2bda80e0f = MAKE_CODEOBJ( module_filename_obj, const_str_plain_connection_from_url, 793, const_tuple_4ed0995ef67f4af2789b999d673cabd1_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
+    codeobj_92b823aa21da1d76b95cebdad9a708e8 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___init__, 167, const_tuple_366d6b5b00ba5d1d811f6b25d9c65ba8_tuple, 11, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
+    codeobj_77919ab6ae80a92b65a2ba93fbf534e1 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___init__, 721, const_tuple_48dd06a5d8ab4d4c394f804f2e70d69d_tuple, 19, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
+    codeobj_416a906a44b0a6e19a8cfb5af5ef7665 = MAKE_CODEOBJ( module_filename_obj, const_str_plain___str__, 81, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_26b05fab306e9996a8f4da06de74971d = MAKE_CODEOBJ( module_filename_obj, const_str_plain__absolute_url, 406, const_tuple_str_plain_self_str_plain_path_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_8de25d65f7e665126997fdc1a9d289b6 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__get_conn, 220, const_tuple_str_plain_self_str_plain_timeout_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_01397a963b182639018ec3fb50f35821 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__get_timeout, 298, const_tuple_str_plain_self_str_plain_timeout_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_09b455938efc00ac1ecc9b62d5c93c87 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__make_request, 327, const_tuple_d777a7ac85d7ce84279e54a406560e7a_tuple, 6, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
+    codeobj_4160be3ca5c939035b1a932ee07df764 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__new_conn, 207, const_tuple_str_plain_self_str_plain_conn_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_2f807aca3e2d2006757a71f74ecc4511 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__new_conn, 782, const_tuple_72fe7df3161073d1e7de2eb19a7e53b3_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_ecce51ed886e8cdd5fe6da9c7a0931e4 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__prepare_conn, 746, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_b3ec545446bc14e435d908078dfce743 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__prepare_proxy, 294, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_17665e5dd8294e665dd283468730876a = MAKE_CODEOBJ( module_filename_obj, const_str_plain__prepare_proxy, 764, const_tuple_str_plain_self_str_plain_conn_str_plain_set_tunnel_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_e377d05614d0422221a7f008324175bf = MAKE_CODEOBJ( module_filename_obj, const_str_plain__put_conn, 258, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_186c5bca50faa0ea5836c2c200c14464 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__raise_timeout, 310, const_tuple_76ce546d292b5e0275b0b85d8f24991a_tuple, 4, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_07150fc06f58ee47d6b8622f93d4f38c = MAKE_CODEOBJ( module_filename_obj, const_str_plain__validate_conn, 288, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_2b068536a390598d359321ca64b51f87 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__validate_conn, 806, const_tuple_str_plain_self_str_plain_conn_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_ffc6229123e1edbf5192cac6755c07d8 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_close, 93, const_tuple_empty, 0, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_857956eea47b7619917c4ac9182c255b = MAKE_CODEOBJ( module_filename_obj, const_str_plain_close, 409, const_tuple_str_plain_self_str_plain_old_pool_str_plain_conn_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_90e72205a2f2499f1dda274d9827faf4 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_connection_from_url, 824, const_tuple_4ed0995ef67f4af2789b999d673cabd1_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
     codeobj_a2bf5f565dbebe5c08c6c5089a33786e = MAKE_CODEOBJ( module_filename_obj, const_str_plain_connectionpool, 1, const_tuple_empty, 0, 0, CO_NOFREE );
-    codeobj_8ab326c36e5027ed4ee72f028c16c0e9 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_is_same_host, 416, const_tuple_84235f7fa9e49ebab2d25c0e79971897_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_ef1316f278f6ad55eb5be8c303e88ed6 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_urlopen, 435, const_tuple_bfa7cc03239efc8a8cfb594e99df6e0a_tuple, 11, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
+    codeobj_40627451f4b8cb7e3ce21d36c0b0410b = MAKE_CODEOBJ( module_filename_obj, const_str_plain_is_same_host, 425, const_tuple_84235f7fa9e49ebab2d25c0e79971897_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_e0108ffd924d0be3e00bdc9ac5bd6544 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_urlopen, 444, const_tuple_f121d45d911709c74105742fb9fc1609_tuple, 12, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
 }
 
 // The module function declarations.
@@ -1166,12 +1190,14 @@ static PyObject *impl_function_1___init___of_class_1_ConnectionPool_of_urllib3$c
     PyObject *tmp_assattr_target_1;
     PyObject *tmp_assattr_target_2;
     PyObject *tmp_called_name_1;
+    PyObject *tmp_called_name_2;
     int tmp_cond_truth_1;
     PyObject *tmp_cond_value_1;
     PyObject *tmp_frame_locals;
     PyObject *tmp_raise_type_1;
     bool tmp_result;
     PyObject *tmp_return_value;
+    PyObject *tmp_source_name_1;
     static PyFrameObject *cache_frame_function = NULL;
 
     PyFrameObject *frame_function;
@@ -1256,9 +1282,9 @@ static PyObject *impl_function_1___init___of_class_1_ConnectionPool_of_urllib3$c
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_1:;
-    tmp_assattr_name_1 = par_host;
+    tmp_source_name_1 = par_host;
 
-    if ( tmp_assattr_name_1 == NULL )
+    if ( tmp_source_name_1 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -1268,10 +1294,35 @@ static PyObject *impl_function_1___init___of_class_1_ConnectionPool_of_urllib3$c
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 72;
+        exception_lineno = 78;
         goto frame_exception_exit_1;
     }
 
+    tmp_called_name_2 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain_strip );
+    if ( tmp_called_name_2 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 78;
+        goto frame_exception_exit_1;
+    }
+    frame_function->f_lineno = 78;
+    tmp_assattr_name_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, &PyTuple_GET_ITEM( const_tuple_str_digest_9613c3fc04783ef5920752aa27696d66_tuple, 0 ) );
+
+    Py_DECREF( tmp_called_name_2 );
+    if ( tmp_assattr_name_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 78;
+        goto frame_exception_exit_1;
+    }
     tmp_assattr_target_1 = par_self;
 
     tmp_result = SET_ATTRIBUTE( tmp_assattr_target_1, const_str_plain_host, tmp_assattr_name_1 );
@@ -1280,11 +1331,12 @@ static PyObject *impl_function_1___init___of_class_1_ConnectionPool_of_urllib3$c
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_assattr_name_1 );
 
-
-        exception_lineno = 72;
+        exception_lineno = 78;
         goto frame_exception_exit_1;
     }
+    Py_DECREF( tmp_assattr_name_1 );
     tmp_assattr_name_2 = par_port;
 
     tmp_assattr_target_2 = par_self;
@@ -1299,7 +1351,7 @@ static PyObject *impl_function_1___init___of_class_1_ConnectionPool_of_urllib3$c
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 73;
+        exception_lineno = 79;
         goto frame_exception_exit_1;
     }
 
@@ -1311,7 +1363,7 @@ static PyObject *impl_function_1___init___of_class_1_ConnectionPool_of_urllib3$c
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 73;
+        exception_lineno = 79;
         goto frame_exception_exit_1;
     }
 
@@ -1501,7 +1553,7 @@ static PyObject *impl_function_2___str___of_class_1_ConnectionPool_of_urllib3$co
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_7ccedae2f665703fc5dd4de0ca0c9c8f, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_416a906a44b0a6e19a8cfb5af5ef7665, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -1531,7 +1583,7 @@ static PyObject *impl_function_2___str___of_class_1_ConnectionPool_of_urllib3$co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_right_name_1 );
 
-        exception_lineno = 76;
+        exception_lineno = 82;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_right_name_1, 0, tmp_tuple_element_1 );
@@ -1547,7 +1599,7 @@ static PyObject *impl_function_2___str___of_class_1_ConnectionPool_of_urllib3$co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 77;
+        exception_lineno = 83;
         goto frame_exception_exit_1;
     }
 
@@ -1559,7 +1611,7 @@ static PyObject *impl_function_2___str___of_class_1_ConnectionPool_of_urllib3$co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_right_name_1 );
 
-        exception_lineno = 77;
+        exception_lineno = 83;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_right_name_1, 1, tmp_tuple_element_1 );
@@ -1575,7 +1627,7 @@ static PyObject *impl_function_2___str___of_class_1_ConnectionPool_of_urllib3$co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 77;
+        exception_lineno = 83;
         goto frame_exception_exit_1;
     }
 
@@ -1587,7 +1639,7 @@ static PyObject *impl_function_2___str___of_class_1_ConnectionPool_of_urllib3$co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_right_name_1 );
 
-        exception_lineno = 77;
+        exception_lineno = 83;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_right_name_1, 2, tmp_tuple_element_1 );
@@ -1600,7 +1652,7 @@ static PyObject *impl_function_2___str___of_class_1_ConnectionPool_of_urllib3$co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 76;
+        exception_lineno = 82;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -1807,7 +1859,7 @@ static PyObject *impl_function_4___exit___of_class_1_ConnectionPool_of_urllib3$c
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_75e0579352e3bc0a6855978a4259c9e9, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_56dbe861817b9c2cd6616984b1c86939, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -1832,10 +1884,10 @@ static PyObject *impl_function_4___exit___of_class_1_ConnectionPool_of_urllib3$c
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 83;
+        exception_lineno = 89;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 83;
+    frame_function->f_lineno = 89;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_unused == NULL )
@@ -1845,7 +1897,7 @@ static PyObject *impl_function_4___exit___of_class_1_ConnectionPool_of_urllib3$c
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 83;
+        exception_lineno = 89;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -2157,7 +2209,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
     var_scheme = tmp_assign_source_4;
 
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_21fddf43efea8df1b42c295ca73643be, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_9a647d6588e6650c16ff72bf6ff042fe, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -2193,7 +2245,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
             NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
             CHAIN_EXCEPTION( exception_value );
 
-            exception_lineno = 159;
+            exception_lineno = 165;
             goto frame_exception_exit_1;
         }
 
@@ -2231,7 +2283,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
             NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
             CHAIN_EXCEPTION( exception_value );
 
-            exception_lineno = 162;
+            exception_lineno = 168;
             goto frame_exception_exit_1;
         }
 
@@ -2245,7 +2297,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_defaults_1 );
 
-        exception_lineno = 162;
+        exception_lineno = 168;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_defaults_1, 2, tmp_tuple_element_1 );
@@ -2300,7 +2352,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
     assert( var__raise_timeout == NULL );
     var__raise_timeout = tmp_assign_source_13;
 
-    tmp_defaults_3 = PyTuple_New( 1 );
+    tmp_defaults_3 = PyTuple_New( 2 );
     tmp_tuple_element_2 = PyDict_GetItem( locals_dict, const_str_plain__Default );
 
     if ( tmp_tuple_element_2 == NULL )
@@ -2322,7 +2374,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
             NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
             CHAIN_EXCEPTION( exception_value );
 
-            exception_lineno = 321;
+            exception_lineno = 327;
             goto frame_exception_exit_1;
         }
 
@@ -2330,6 +2382,9 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
 
     Py_INCREF( tmp_tuple_element_2 );
     PyTuple_SET_ITEM( tmp_defaults_3, 0, tmp_tuple_element_2 );
+    tmp_tuple_element_2 = Py_False;
+    Py_INCREF( tmp_tuple_element_2 );
+    PyTuple_SET_ITEM( tmp_defaults_3, 1, tmp_tuple_element_2 );
     tmp_assign_source_14 = MAKE_FUNCTION_function_9__make_request_of_class_2_HTTPConnectionPool_of_urllib3$connectionpool( tmp_defaults_3 );
     assert( var__make_request == NULL );
     var__make_request = tmp_assign_source_14;
@@ -2346,7 +2401,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
     assert( var_is_same_host == NULL );
     var_is_same_host = tmp_assign_source_17;
 
-    tmp_defaults_4 = PyTuple_New( 8 );
+    tmp_defaults_4 = PyTuple_New( 9 );
     tmp_tuple_element_3 = Py_None;
     Py_INCREF( tmp_tuple_element_3 );
     PyTuple_SET_ITEM( tmp_defaults_4, 0, tmp_tuple_element_3 );
@@ -2383,7 +2438,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
             NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
             CHAIN_EXCEPTION( exception_value );
 
-            exception_lineno = 436;
+            exception_lineno = 445;
             goto frame_exception_exit_1;
         }
 
@@ -2397,6 +2452,9 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
     tmp_tuple_element_3 = Py_None;
     Py_INCREF( tmp_tuple_element_3 );
     PyTuple_SET_ITEM( tmp_defaults_4, 7, tmp_tuple_element_3 );
+    tmp_tuple_element_3 = Py_False;
+    Py_INCREF( tmp_tuple_element_3 );
+    PyTuple_SET_ITEM( tmp_defaults_4, 8, tmp_tuple_element_3 );
     tmp_assign_source_18 = MAKE_FUNCTION_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urllib3$connectionpool( tmp_defaults_4 );
     assert( var_urlopen == NULL );
     var_urlopen = tmp_assign_source_18;
@@ -2449,7 +2507,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain___module__, var___module__ );
@@ -2461,7 +2519,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain___doc__, var___doc__ );
@@ -2473,7 +2531,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain___qualname__, var___qualname__ );
@@ -2485,7 +2543,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain_scheme, var_scheme );
@@ -2497,7 +2555,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain_ConnectionCls, var_ConnectionCls );
@@ -2509,7 +2567,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain___init__, var___init__ );
@@ -2521,7 +2579,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__new_conn, var__new_conn );
@@ -2533,7 +2591,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__get_conn, var__get_conn );
@@ -2545,7 +2603,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__put_conn, var__put_conn );
@@ -2557,7 +2615,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__validate_conn, var__validate_conn );
@@ -2569,7 +2627,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__prepare_proxy, var__prepare_proxy );
@@ -2581,7 +2639,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__get_timeout, var__get_timeout );
@@ -2593,7 +2651,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__raise_timeout, var__raise_timeout );
@@ -2605,7 +2663,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__make_request, var__make_request );
@@ -2617,7 +2675,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__absolute_url, var__absolute_url );
@@ -2629,7 +2687,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain_close, var_close );
@@ -2641,7 +2699,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain_is_same_host, var_is_same_host );
@@ -2653,7 +2711,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain_urlopen, var_urlopen );
@@ -2665,7 +2723,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_2_HTTPConnectionPool_of_urllib3$connect
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 98;
+                exception_lineno = 104;
                 goto frame_exception_exit_1;
             }
 
@@ -3217,7 +3275,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_7ddb14266c5c2f3af9a644b73ce96e79, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_92b823aa21da1d76b95cebdad9a708e8, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -3249,7 +3307,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 166;
+        exception_lineno = 172;
         goto frame_exception_exit_1;
     }
 
@@ -3261,7 +3319,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 166;
+        exception_lineno = 172;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = par_self;
@@ -3270,7 +3328,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
 
     tmp_args_element_name_3 = par_port;
 
-    frame_function->f_lineno = 166;
+    frame_function->f_lineno = 172;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_1, call_args );
@@ -3284,7 +3342,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 166;
+        exception_lineno = 172;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -3305,7 +3363,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 167;
+        exception_lineno = 173;
         goto frame_exception_exit_1;
     }
 
@@ -3317,7 +3375,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 167;
+        exception_lineno = 173;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_4 = par_self;
@@ -3332,13 +3390,13 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 167;
+        exception_lineno = 173;
         goto frame_exception_exit_1;
     }
 
     tmp_args_element_name_5 = par_headers;
 
-    frame_function->f_lineno = 167;
+    frame_function->f_lineno = 173;
     {
         PyObject *call_args[] = { tmp_args_element_name_4, tmp_args_element_name_5 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, call_args );
@@ -3352,7 +3410,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 167;
+        exception_lineno = 173;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -3370,7 +3428,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 169;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
 
@@ -3382,7 +3440,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 169;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
     tmp_isinstance_inst_1 = par_timeout;
@@ -3404,7 +3462,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 171;
+        exception_lineno = 177;
         goto frame_exception_exit_1;
     }
 
@@ -3416,7 +3474,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 171;
+        exception_lineno = 177;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -3445,7 +3503,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 172;
+        exception_lineno = 178;
         goto frame_exception_exit_1;
     }
 
@@ -3457,7 +3515,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 172;
+        exception_lineno = 178;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_6 = par_timeout;
@@ -3472,11 +3530,11 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 172;
+        exception_lineno = 178;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 172;
+    frame_function->f_lineno = 178;
     {
         PyObject *call_args[] = { tmp_args_element_name_6 };
         tmp_assign_source_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -3490,7 +3548,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 172;
+        exception_lineno = 178;
         goto frame_exception_exit_1;
     }
     {
@@ -3530,7 +3588,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 175;
+        exception_lineno = 181;
         goto frame_exception_exit_1;
     }
 
@@ -3542,7 +3600,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 175;
+        exception_lineno = 181;
         goto frame_exception_exit_1;
     }
     {
@@ -3564,7 +3622,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 177;
+        exception_lineno = 183;
         goto frame_exception_exit_1;
     }
 
@@ -3580,7 +3638,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 177;
+        exception_lineno = 183;
         goto frame_exception_exit_1;
     }
 
@@ -3592,7 +3650,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 177;
+        exception_lineno = 183;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_3 = par_retries;
@@ -3607,7 +3665,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 178;
+        exception_lineno = 184;
         goto frame_exception_exit_1;
     }
 
@@ -3623,7 +3681,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 178;
+        exception_lineno = 184;
         goto frame_exception_exit_1;
     }
 
@@ -3635,7 +3693,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 178;
+        exception_lineno = 184;
         goto frame_exception_exit_1;
     }
     tmp_source_name_5 = par_self;
@@ -3650,7 +3708,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 180;
+        exception_lineno = 186;
         goto frame_exception_exit_1;
     }
 
@@ -3662,12 +3720,12 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 180;
+        exception_lineno = 186;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_7 = par_maxsize;
 
-    frame_function->f_lineno = 180;
+    frame_function->f_lineno = 186;
     {
         PyObject *call_args[] = { tmp_args_element_name_7 };
         tmp_assattr_name_4 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
@@ -3681,7 +3739,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 180;
+        exception_lineno = 186;
         goto frame_exception_exit_1;
     }
     tmp_assattr_target_4 = par_self;
@@ -3696,7 +3754,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 180;
+        exception_lineno = 186;
         goto frame_exception_exit_1;
     }
 
@@ -3708,7 +3766,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assattr_name_4 );
 
-        exception_lineno = 180;
+        exception_lineno = 186;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_assattr_name_4 );
@@ -3726,7 +3784,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 181;
+        exception_lineno = 187;
         goto frame_exception_exit_1;
     }
 
@@ -3738,7 +3796,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 181;
+        exception_lineno = 187;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_6 = par__proxy;
@@ -3755,7 +3813,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 183;
+        exception_lineno = 189;
         goto frame_exception_exit_1;
     }
 
@@ -3767,7 +3825,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 183;
+        exception_lineno = 189;
         goto frame_exception_exit_1;
     }
     tmp_or_left_value_1 = par__proxy_headers;
@@ -3780,7 +3838,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 184;
+        exception_lineno = 190;
         goto frame_exception_exit_1;
     }
     if ( tmp_or_left_truth_1 == 1 )
@@ -3811,7 +3869,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 184;
+        exception_lineno = 190;
         goto frame_exception_exit_1;
     }
 
@@ -3823,7 +3881,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assattr_name_7 );
 
-        exception_lineno = 184;
+        exception_lineno = 190;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_assattr_name_7 );
@@ -3844,7 +3902,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 187;
+        exception_lineno = 193;
         goto frame_exception_exit_1;
     }
 
@@ -3860,11 +3918,11 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 187;
+        exception_lineno = 193;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 187;
+    frame_function->f_lineno = 193;
     {
         PyObject *call_args[] = { tmp_args_element_name_8 };
         tmp_iter_arg_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_5, call_args );
@@ -3877,7 +3935,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 187;
+        exception_lineno = 193;
         goto frame_exception_exit_1;
     }
     tmp_assign_source_3 = MAKE_ITERATOR( tmp_iter_arg_1 );
@@ -3889,7 +3947,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 187;
+        exception_lineno = 193;
         goto frame_exception_exit_1;
     }
     assert( tmp_for_loop_1__for_iterator == NULL );
@@ -3911,7 +3969,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         {
 
             FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-            frame_function->f_lineno = 187;
+            frame_function->f_lineno = 193;
             goto try_except_handler_2;
         }
     }
@@ -3943,7 +4001,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 188;
+        exception_lineno = 194;
         goto try_except_handler_2;
     }
 
@@ -3955,7 +4013,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 188;
+        exception_lineno = 194;
         goto try_except_handler_2;
     }
     tmp_called_name_6 = LOOKUP_ATTRIBUTE( tmp_source_name_6, const_str_plain_put );
@@ -3967,10 +4025,10 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 188;
+        exception_lineno = 194;
         goto try_except_handler_2;
     }
-    frame_function->f_lineno = 188;
+    frame_function->f_lineno = 194;
     tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_6, &PyTuple_GET_ITEM( const_tuple_none_tuple, 0 ) );
 
     Py_DECREF( tmp_called_name_6 );
@@ -3981,7 +4039,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 188;
+        exception_lineno = 194;
         goto try_except_handler_2;
     }
     Py_DECREF( tmp_unused );
@@ -3992,7 +4050,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 187;
+        exception_lineno = 193;
         goto try_except_handler_2;
     }
     goto loop_start_1;
@@ -4043,7 +4101,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 191;
+        exception_lineno = 197;
         goto frame_exception_exit_1;
     }
 
@@ -4055,7 +4113,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 191;
+        exception_lineno = 197;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_9 = const_int_0;
@@ -4071,7 +4129,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 192;
+        exception_lineno = 198;
         goto frame_exception_exit_1;
     }
 
@@ -4083,7 +4141,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 192;
+        exception_lineno = 198;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_10 = par_conn_kw;
@@ -4100,7 +4158,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 193;
+        exception_lineno = 199;
         goto frame_exception_exit_1;
     }
 
@@ -4112,7 +4170,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 193;
+        exception_lineno = 199;
         goto frame_exception_exit_1;
     }
     tmp_source_name_8 = par_self;
@@ -4127,7 +4185,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 195;
+        exception_lineno = 201;
         goto frame_exception_exit_1;
     }
 
@@ -4139,7 +4197,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 195;
+        exception_lineno = 201;
         goto frame_exception_exit_1;
     }
     tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
@@ -4150,7 +4208,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 195;
+        exception_lineno = 201;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -4175,7 +4233,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 199;
+        exception_lineno = 205;
         goto frame_exception_exit_1;
     }
 
@@ -4187,7 +4245,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 199;
+        exception_lineno = 205;
         goto frame_exception_exit_1;
     }
     tmp_called_name_7 = LOOKUP_ATTRIBUTE( tmp_source_name_9, const_str_plain_setdefault );
@@ -4199,12 +4257,12 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 199;
+        exception_lineno = 205;
         goto frame_exception_exit_1;
     }
     tmp_call_arg_element_1 = const_str_plain_socket_options;
     tmp_call_arg_element_2 = PyList_New( 0 );
-    frame_function->f_lineno = 199;
+    frame_function->f_lineno = 205;
     {
         PyObject *call_args[] = { tmp_call_arg_element_1, tmp_call_arg_element_2 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_7, call_args );
@@ -4219,7 +4277,7 @@ static PyObject *impl_function_1___init___of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 199;
+        exception_lineno = 205;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -4623,7 +4681,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_770de26338e36f54a02d3ac550be2986, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_4160be3ca5c939035b1a932ee07df764, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -4648,7 +4706,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 205;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
     assert( tmp_inplace_assign_attr_1__start == NULL );
@@ -4666,7 +4724,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 205;
+        exception_lineno = 211;
         goto try_except_handler_2;
     }
     assert( tmp_inplace_assign_attr_1__end == NULL );
@@ -4701,7 +4759,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 205;
+        exception_lineno = 211;
         goto try_except_handler_3;
     }
 
@@ -4713,7 +4771,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 205;
+        exception_lineno = 211;
         goto try_except_handler_3;
     }
     branch_no_1:;
@@ -4788,7 +4846,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 206;
+        exception_lineno = 212;
         goto frame_exception_exit_1;
     }
 
@@ -4800,7 +4858,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 206;
+        exception_lineno = 212;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = const_str_digest_412e854efdc3341c1cc42e3c7099361c;
@@ -4816,7 +4874,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 207;
+        exception_lineno = 213;
         goto frame_exception_exit_1;
     }
 
@@ -4828,7 +4886,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_1 );
 
-        exception_lineno = 207;
+        exception_lineno = 213;
         goto frame_exception_exit_1;
     }
     tmp_source_name_4 = par_self;
@@ -4844,7 +4902,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 207;
+        exception_lineno = 213;
         goto frame_exception_exit_1;
     }
 
@@ -4857,10 +4915,10 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_args_element_name_2 );
 
-        exception_lineno = 207;
+        exception_lineno = 213;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 207;
+    frame_function->f_lineno = 213;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_1, call_args );
@@ -4876,7 +4934,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 207;
+        exception_lineno = 213;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -4892,7 +4950,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 209;
+        exception_lineno = 215;
         goto frame_exception_exit_1;
     }
 
@@ -4904,7 +4962,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 209;
+        exception_lineno = 215;
         goto frame_exception_exit_1;
     }
     tmp_dircall_arg2_1 = _PyDict_NewPresized( 4 );
@@ -4922,7 +4980,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 209;
+        exception_lineno = 215;
         goto frame_exception_exit_1;
     }
 
@@ -4935,7 +4993,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 209;
+        exception_lineno = 215;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_dircall_arg2_1, tmp_dict_key_1, tmp_dict_value_1 );
@@ -4954,7 +5012,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 209;
+        exception_lineno = 215;
         goto frame_exception_exit_1;
     }
 
@@ -4967,7 +5025,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 209;
+        exception_lineno = 215;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_dircall_arg2_1, tmp_dict_key_2, tmp_dict_value_2 );
@@ -4986,7 +5044,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 210;
+        exception_lineno = 216;
         goto frame_exception_exit_1;
     }
 
@@ -4999,7 +5057,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 210;
+        exception_lineno = 216;
         goto frame_exception_exit_1;
     }
     tmp_dict_value_3 = LOOKUP_ATTRIBUTE( tmp_source_name_8, const_str_plain_connect_timeout );
@@ -5012,7 +5070,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 210;
+        exception_lineno = 216;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_dircall_arg2_1, tmp_dict_key_3, tmp_dict_value_3 );
@@ -5031,7 +5089,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 211;
+        exception_lineno = 217;
         goto frame_exception_exit_1;
     }
 
@@ -5044,7 +5102,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 211;
+        exception_lineno = 217;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_dircall_arg2_1, tmp_dict_key_4, tmp_dict_value_4 );
@@ -5062,7 +5120,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 211;
+        exception_lineno = 217;
         goto frame_exception_exit_1;
     }
 
@@ -5075,7 +5133,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 211;
+        exception_lineno = 217;
         goto frame_exception_exit_1;
     }
 
@@ -5090,7 +5148,7 @@ static PyObject *impl_function_2__new_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 211;
+        exception_lineno = 217;
         goto frame_exception_exit_1;
     }
     assert( var_conn == NULL );
@@ -5330,7 +5388,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
     var_conn = tmp_assign_source_1;
 
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_26fab5acbc3977ffef3fd960fc369026, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_8de25d65f7e665126997fdc1a9d289b6, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -5356,7 +5414,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 228;
+        exception_lineno = 234;
         goto try_except_handler_2;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain_get );
@@ -5368,7 +5426,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 228;
+        exception_lineno = 234;
         goto try_except_handler_2;
     }
     tmp_kw_name_1 = _PyDict_NewPresized( 2 );
@@ -5386,7 +5444,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 228;
+        exception_lineno = 234;
         goto try_except_handler_2;
     }
 
@@ -5399,7 +5457,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 228;
+        exception_lineno = 234;
         goto try_except_handler_2;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_1, tmp_dict_value_1 );
@@ -5408,7 +5466,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
     tmp_dict_value_2 = par_timeout;
 
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_2, tmp_dict_value_2 );
-    frame_function->f_lineno = 228;
+    frame_function->f_lineno = 234;
     tmp_assign_source_2 = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_1 );
     Py_DECREF( tmp_kw_name_1 );
@@ -5419,7 +5477,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 228;
+        exception_lineno = 234;
         goto try_except_handler_2;
     }
     {
@@ -5471,7 +5529,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 230;
+        exception_lineno = 236;
         goto try_except_handler_3;
     }
     if ( tmp_exc_match_exception_match_1 == 1 )
@@ -5500,7 +5558,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 231;
+        exception_lineno = 237;
         goto try_except_handler_3;
     }
 
@@ -5516,12 +5574,12 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 231;
+        exception_lineno = 237;
         goto try_except_handler_3;
     }
 
     tmp_args_element_name_2 = const_str_digest_1a5a126298fb29147b8bd2e44b30484d;
-    frame_function->f_lineno = 231;
+    frame_function->f_lineno = 237;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, call_args );
@@ -5534,11 +5592,11 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 231;
+        exception_lineno = 237;
         goto try_except_handler_3;
     }
     exception_type = tmp_raise_type_1;
-    exception_lineno = 231;
+    exception_lineno = 237;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto try_except_handler_3;
     goto branch_end_1;
@@ -5561,7 +5619,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 233;
+        exception_lineno = 239;
         goto try_except_handler_3;
     }
 
@@ -5573,7 +5631,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 233;
+        exception_lineno = 239;
         goto try_except_handler_3;
     }
     if ( tmp_exc_match_exception_match_2 == 1 )
@@ -5597,7 +5655,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 234;
+        exception_lineno = 240;
         goto try_except_handler_3;
     }
 
@@ -5609,7 +5667,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 234;
+        exception_lineno = 240;
         goto try_except_handler_3;
     }
     tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
@@ -5620,7 +5678,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 234;
+        exception_lineno = 240;
         goto try_except_handler_3;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -5650,7 +5708,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 235;
+        exception_lineno = 241;
         goto try_except_handler_3;
     }
 
@@ -5666,12 +5724,12 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 235;
+        exception_lineno = 241;
         goto try_except_handler_3;
     }
 
     tmp_args_element_name_4 = const_str_digest_0b3188c8adfc30f09ee3b74b5f540ad8;
-    frame_function->f_lineno = 236;
+    frame_function->f_lineno = 242;
     {
         PyObject *call_args[] = { tmp_args_element_name_3, tmp_args_element_name_4 };
         tmp_raise_type_2 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_3, call_args );
@@ -5684,11 +5742,11 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 236;
+        exception_lineno = 242;
         goto try_except_handler_3;
     }
     exception_type = tmp_raise_type_2;
-    exception_lineno = 236;
+    exception_lineno = 242;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto try_except_handler_3;
     branch_no_3:;
@@ -5742,7 +5800,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 241;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
 
@@ -5754,7 +5812,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 241;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -5783,7 +5841,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 241;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
 
@@ -5799,11 +5857,11 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 241;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 241;
+    frame_function->f_lineno = 247;
     {
         PyObject *call_args[] = { tmp_args_element_name_5 };
         tmp_and_right_value_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
@@ -5816,7 +5874,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 241;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_2 = tmp_and_right_value_1;
@@ -5833,7 +5891,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_2 );
 
-        exception_lineno = 241;
+        exception_lineno = 247;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_2 );
@@ -5863,7 +5921,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 242;
+        exception_lineno = 248;
         goto frame_exception_exit_1;
     }
 
@@ -5875,7 +5933,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 242;
+        exception_lineno = 248;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_6 = const_str_digest_2f0bd415726e69260e970d6fed37021c;
@@ -5891,7 +5949,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 242;
+        exception_lineno = 248;
         goto frame_exception_exit_1;
     }
 
@@ -5903,10 +5961,10 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_5 );
 
-        exception_lineno = 242;
+        exception_lineno = 248;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 242;
+    frame_function->f_lineno = 248;
     {
         PyObject *call_args[] = { tmp_args_element_name_6, tmp_args_element_name_7 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_5, call_args );
@@ -5921,7 +5979,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 242;
+        exception_lineno = 248;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -5937,7 +5995,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 243;
+        exception_lineno = 249;
         goto frame_exception_exit_1;
     }
 
@@ -5949,10 +6007,10 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 243;
+        exception_lineno = 249;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 243;
+    frame_function->f_lineno = 249;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_6 );
     Py_DECREF( tmp_called_name_6 );
     if ( tmp_unused == NULL )
@@ -5962,7 +6020,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 243;
+        exception_lineno = 249;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -5978,7 +6036,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 244;
+        exception_lineno = 250;
         goto frame_exception_exit_1;
     }
 
@@ -5992,7 +6050,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 244;
+        exception_lineno = 250;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_3 = const_int_0;
@@ -6004,7 +6062,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_left_3 );
 
-        exception_lineno = 244;
+        exception_lineno = 250;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_compare_left_3 );
@@ -6039,7 +6097,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 250;
+        exception_lineno = 256;
         goto frame_exception_exit_1;
     }
 
@@ -6051,7 +6109,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 250;
+        exception_lineno = 256;
         goto frame_exception_exit_1;
     }
     if ( tmp_or_left_truth_1 == 1 )
@@ -6075,7 +6133,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 250;
+        exception_lineno = 256;
         goto frame_exception_exit_1;
     }
 
@@ -6087,10 +6145,10 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 250;
+        exception_lineno = 256;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 250;
+    frame_function->f_lineno = 256;
     tmp_or_right_value_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_7 );
     Py_DECREF( tmp_called_name_7 );
     if ( tmp_or_right_value_1 == NULL )
@@ -6100,7 +6158,7 @@ static PyObject *impl_function_3__get_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 250;
+        exception_lineno = 256;
         goto frame_exception_exit_1;
     }
     tmp_return_value = tmp_or_right_value_1;
@@ -6332,7 +6390,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_181dce0e2c13b4f6bd264f92af463984, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_e377d05614d0422221a7f008324175bf, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -6358,7 +6416,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 267;
+        exception_lineno = 273;
         goto try_except_handler_2;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain_put );
@@ -6370,7 +6428,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 267;
+        exception_lineno = 273;
         goto try_except_handler_2;
     }
     tmp_args_name_1 = PyTuple_New( 1 );
@@ -6379,7 +6437,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
     Py_INCREF( tmp_tuple_element_1 );
     PyTuple_SET_ITEM( tmp_args_name_1, 0, tmp_tuple_element_1 );
     tmp_kw_name_1 = PyDict_Copy( const_dict_ef0c581b63de11312ed0743d04af22b7 );
-    frame_function->f_lineno = 267;
+    frame_function->f_lineno = 273;
     tmp_unused = CALL_FUNCTION( tmp_called_name_1, tmp_args_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_1 );
     Py_DECREF( tmp_args_name_1 );
@@ -6391,7 +6449,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 267;
+        exception_lineno = 273;
         goto try_except_handler_2;
     }
     Py_DECREF( tmp_unused );
@@ -6443,7 +6501,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 269;
+        exception_lineno = 275;
         goto try_except_handler_3;
     }
     if ( tmp_exc_match_exception_match_1 == 1 )
@@ -6473,7 +6531,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 272;
+        exception_lineno = 278;
         goto try_except_handler_3;
     }
 
@@ -6485,7 +6543,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 272;
+        exception_lineno = 278;
         goto try_except_handler_3;
     }
     if ( tmp_exc_match_exception_match_2 == 1 )
@@ -6514,7 +6572,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 274;
+        exception_lineno = 280;
         goto try_except_handler_3;
     }
 
@@ -6526,7 +6584,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 274;
+        exception_lineno = 280;
         goto try_except_handler_3;
     }
     tmp_args_element_name_1 = const_str_digest_c5564c805ffb5de6012fccf9ea4780d0;
@@ -6542,7 +6600,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 276;
+        exception_lineno = 282;
         goto try_except_handler_3;
     }
 
@@ -6554,10 +6612,10 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_2 );
 
-        exception_lineno = 276;
+        exception_lineno = 282;
         goto try_except_handler_3;
     }
-    frame_function->f_lineno = 276;
+    frame_function->f_lineno = 282;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, call_args );
@@ -6572,7 +6630,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 276;
+        exception_lineno = 282;
         goto try_except_handler_3;
     }
     Py_DECREF( tmp_unused );
@@ -6626,7 +6684,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 279;
+        exception_lineno = 285;
         goto frame_exception_exit_1;
     }
 
@@ -6638,7 +6696,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 279;
+        exception_lineno = 285;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -6662,7 +6720,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 280;
+        exception_lineno = 286;
         goto frame_exception_exit_1;
     }
 
@@ -6674,10 +6732,10 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 280;
+        exception_lineno = 286;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 280;
+    frame_function->f_lineno = 286;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_3 );
     Py_DECREF( tmp_called_name_3 );
     if ( tmp_unused == NULL )
@@ -6687,7 +6745,7 @@ static PyObject *impl_function_4__put_conn_of_class_2_HTTPConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 280;
+        exception_lineno = 286;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -6991,7 +7049,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_7fc276dcedbdacf4c735ffabc596d2f1, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_01397a963b182639018ec3fb50f35821, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -7025,7 +7083,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 294;
+        exception_lineno = 300;
         goto frame_exception_exit_1;
     }
 
@@ -7049,7 +7107,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 295;
+        exception_lineno = 301;
         goto frame_exception_exit_1;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain_clone );
@@ -7061,10 +7119,10 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 295;
+        exception_lineno = 301;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 295;
+    frame_function->f_lineno = 301;
     tmp_return_value = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_return_value == NULL )
@@ -7074,7 +7132,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 295;
+        exception_lineno = 301;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -7091,7 +7149,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 297;
+        exception_lineno = 303;
         goto frame_exception_exit_1;
     }
 
@@ -7112,7 +7170,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 297;
+        exception_lineno = 303;
         goto frame_exception_exit_1;
     }
 
@@ -7124,7 +7182,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 297;
+        exception_lineno = 303;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -7148,7 +7206,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 298;
+        exception_lineno = 304;
         goto frame_exception_exit_1;
     }
 
@@ -7160,10 +7218,10 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 298;
+        exception_lineno = 304;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 298;
+    frame_function->f_lineno = 304;
     tmp_return_value = CALL_FUNCTION_NO_ARGS( tmp_called_name_2 );
     Py_DECREF( tmp_called_name_2 );
     if ( tmp_return_value == NULL )
@@ -7173,7 +7231,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 298;
+        exception_lineno = 304;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -7196,7 +7254,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 302;
+        exception_lineno = 308;
         goto frame_exception_exit_1;
     }
 
@@ -7208,7 +7266,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 302;
+        exception_lineno = 308;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = par_timeout;
@@ -7223,11 +7281,11 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 302;
+        exception_lineno = 308;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 302;
+    frame_function->f_lineno = 308;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_return_value = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -7241,7 +7299,7 @@ static PyObject *impl_function_7__get_timeout_of_class_2_HTTPConnectionPool_of_u
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 302;
+        exception_lineno = 308;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -7465,7 +7523,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_e2c9c7fadef0d693d5260ec639289f70, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_186c5bca50faa0ea5836c2c200c14464, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -7499,7 +7557,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 307;
+        exception_lineno = 313;
         goto frame_exception_exit_1;
     }
 
@@ -7511,7 +7569,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 307;
+        exception_lineno = 313;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -7540,7 +7598,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 308;
+        exception_lineno = 314;
         goto frame_exception_exit_1;
     }
 
@@ -7559,10 +7617,10 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 308;
+        exception_lineno = 314;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 308;
+    frame_function->f_lineno = 314;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_1, call_args );
@@ -7576,11 +7634,11 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 308;
+        exception_lineno = 314;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_1;
-    exception_lineno = 308;
+    exception_lineno = 314;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_1:;
@@ -7595,7 +7653,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 312;
+        exception_lineno = 318;
         goto frame_exception_exit_1;
     }
     tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
@@ -7606,7 +7664,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 312;
+        exception_lineno = 318;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -7628,7 +7686,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 312;
+        exception_lineno = 318;
         goto frame_exception_exit_1;
     }
     tmp_compexpr_right_1 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain__blocking_errnos );
@@ -7648,7 +7706,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 312;
+        exception_lineno = 318;
         goto frame_exception_exit_1;
     }
 
@@ -7661,7 +7719,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 312;
+        exception_lineno = 318;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_1 = tmp_and_right_value_1;
@@ -7677,7 +7735,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 312;
+        exception_lineno = 318;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -7706,7 +7764,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 313;
+        exception_lineno = 319;
         goto frame_exception_exit_1;
     }
 
@@ -7725,10 +7783,10 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 313;
+        exception_lineno = 319;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 313;
+    frame_function->f_lineno = 319;
     {
         PyObject *call_args[] = { tmp_args_element_name_4, tmp_args_element_name_5, tmp_args_element_name_6 };
         tmp_raise_type_2 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_2, call_args );
@@ -7742,11 +7800,11 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 313;
+        exception_lineno = 319;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_2;
-    exception_lineno = 313;
+    exception_lineno = 319;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_2:;
@@ -7763,7 +7821,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 318;
+        exception_lineno = 324;
         goto frame_exception_exit_1;
     }
 
@@ -7775,7 +7833,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 318;
+        exception_lineno = 324;
         goto frame_exception_exit_1;
     }
     tmp_or_left_value_1 = SEQUENCE_CONTAINS( tmp_compexpr_left_2, tmp_compexpr_right_2 );
@@ -7787,7 +7845,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 318;
+        exception_lineno = 324;
         goto frame_exception_exit_1;
     }
     tmp_or_left_truth_1 = CHECK_IF_TRUE( tmp_or_left_value_1 );
@@ -7814,7 +7872,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 318;
+        exception_lineno = 324;
         goto frame_exception_exit_1;
     }
 
@@ -7826,7 +7884,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 318;
+        exception_lineno = 324;
         goto frame_exception_exit_1;
     }
     tmp_or_right_value_1 = SEQUENCE_CONTAINS( tmp_compexpr_left_3, tmp_compexpr_right_3 );
@@ -7838,7 +7896,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 318;
+        exception_lineno = 324;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_2 = tmp_or_right_value_1;
@@ -7874,7 +7932,7 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 319;
+        exception_lineno = 325;
         goto frame_exception_exit_1;
     }
 
@@ -7893,10 +7951,10 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 319;
+        exception_lineno = 325;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 319;
+    frame_function->f_lineno = 325;
     {
         PyObject *call_args[] = { tmp_args_element_name_7, tmp_args_element_name_8, tmp_args_element_name_9 };
         tmp_raise_type_3 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_3, call_args );
@@ -7910,11 +7968,11 @@ static PyObject *impl_function_8__raise_timeout_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 319;
+        exception_lineno = 325;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_3;
-    exception_lineno = 319;
+    exception_lineno = 325;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_3:;
@@ -8105,7 +8163,8 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
     PyObject *par_method = python_pars[ 2 ];
     PyObject *par_url = python_pars[ 3 ];
     PyObject *par_timeout = python_pars[ 4 ];
-    PyObject *par_httplib_request_kw = python_pars[ 5 ];
+    PyObject *par_chunked = python_pars[ 5 ];
+    PyObject *par_httplib_request_kw = python_pars[ 6 ];
     PyObject *var_timeout_obj = NULL;
     PyObject *var_e = NULL;
     PyObject *var_read_timeout = NULL;
@@ -8246,7 +8305,9 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
     PyObject *tmp_compare_right_6;
     PyObject *tmp_compare_right_7;
     int tmp_cond_truth_1;
+    int tmp_cond_truth_2;
     PyObject *tmp_cond_value_1;
+    PyObject *tmp_cond_value_2;
     PyObject *tmp_dict_key_1;
     PyObject *tmp_dict_key_2;
     PyObject *tmp_dict_key_3;
@@ -8260,8 +8321,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
     PyObject *tmp_dict_value_5;
     PyObject *tmp_dict_value_6;
     PyObject *tmp_dircall_arg1_1;
+    PyObject *tmp_dircall_arg1_2;
     PyObject *tmp_dircall_arg2_1;
+    PyObject *tmp_dircall_arg2_2;
     PyObject *tmp_dircall_arg3_1;
+    PyObject *tmp_dircall_arg3_2;
     int tmp_exc_match_exception_match_1;
     int tmp_exc_match_exception_match_2;
     int tmp_exc_match_exception_match_3;
@@ -8310,10 +8374,12 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
     PyObject *tmp_source_name_22;
     PyObject *tmp_source_name_23;
     PyObject *tmp_source_name_24;
+    PyObject *tmp_source_name_25;
     PyObject *tmp_tuple_element_1;
     PyObject *tmp_tuple_element_2;
     PyObject *tmp_tuple_element_3;
     PyObject *tmp_tuple_element_4;
+    PyObject *tmp_tuple_element_5;
     NUITKA_MAY_BE_UNUSED PyObject *tmp_unused;
     static PyFrameObject *cache_frame_function = NULL;
 
@@ -8323,7 +8389,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_ac1e681ed2b3e2af078f06c941954a9e, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_09b455938efc00ac1ecc9b62d5c93c87, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -8348,7 +8414,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 337;
+        exception_lineno = 343;
         goto frame_exception_exit_1;
     }
     assert( tmp_inplace_assign_attr_1__start == NULL );
@@ -8366,7 +8432,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 337;
+        exception_lineno = 343;
         goto try_except_handler_2;
     }
     assert( tmp_inplace_assign_attr_1__end == NULL );
@@ -8401,7 +8467,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 337;
+        exception_lineno = 343;
         goto try_except_handler_3;
     }
 
@@ -8413,7 +8479,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 337;
+        exception_lineno = 343;
         goto try_except_handler_3;
     }
     branch_no_1:;
@@ -8483,7 +8549,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 339;
+        exception_lineno = 345;
         goto frame_exception_exit_1;
     }
 
@@ -8495,12 +8561,12 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 339;
+        exception_lineno = 345;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = par_timeout;
 
-    frame_function->f_lineno = 339;
+    frame_function->f_lineno = 345;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_assign_source_3 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -8514,7 +8580,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 339;
+        exception_lineno = 345;
         goto frame_exception_exit_1;
     }
     assert( var_timeout_obj == NULL );
@@ -8530,10 +8596,10 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 340;
+        exception_lineno = 346;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 340;
+    frame_function->f_lineno = 346;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_2 );
     Py_DECREF( tmp_called_name_2 );
     if ( tmp_unused == NULL )
@@ -8543,7 +8609,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 340;
+        exception_lineno = 346;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -8559,7 +8625,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 341;
+        exception_lineno = 347;
         goto frame_exception_exit_1;
     }
 
@@ -8571,7 +8637,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 341;
+        exception_lineno = 347;
         goto frame_exception_exit_1;
     }
     tmp_assattr_target_2 = par_conn;
@@ -8584,7 +8650,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assattr_name_2 );
 
-        exception_lineno = 341;
+        exception_lineno = 347;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_assattr_name_2 );
@@ -8601,7 +8667,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 345;
+        exception_lineno = 351;
         goto try_except_handler_4;
     }
 
@@ -8613,7 +8679,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 345;
+        exception_lineno = 351;
         goto try_except_handler_4;
     }
     tmp_args_element_name_2 = par_conn;
@@ -8628,11 +8694,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 345;
+        exception_lineno = 351;
         goto try_except_handler_4;
     }
 
-    frame_function->f_lineno = 345;
+    frame_function->f_lineno = 351;
     {
         PyObject *call_args[] = { tmp_args_element_name_2 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -8646,7 +8712,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 345;
+        exception_lineno = 351;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_unused );
@@ -8702,7 +8768,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 346;
+        exception_lineno = 352;
         goto try_except_handler_5;
     }
 
@@ -8725,7 +8791,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 346;
+        exception_lineno = 352;
         goto try_except_handler_5;
     }
 
@@ -8739,7 +8805,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_right_2 );
 
-        exception_lineno = 346;
+        exception_lineno = 352;
         goto try_except_handler_5;
     }
     Py_DECREF( tmp_compare_right_2 );
@@ -8770,7 +8836,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 348;
+        exception_lineno = 354;
         goto try_except_handler_6;
     }
 
@@ -8782,7 +8848,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 348;
+        exception_lineno = 354;
         goto try_except_handler_6;
     }
     tmp_kw_name_1 = _PyDict_NewPresized( 3 );
@@ -8800,7 +8866,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 348;
+        exception_lineno = 354;
         goto try_except_handler_6;
     }
 
@@ -8823,7 +8889,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 348;
+        exception_lineno = 354;
         goto try_except_handler_6;
     }
 
@@ -8836,12 +8902,12 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         Py_DECREF( tmp_called_name_4 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 348;
+        exception_lineno = 354;
         goto try_except_handler_6;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_3, tmp_dict_value_3 );
     Py_DECREF( tmp_dict_value_3 );
-    frame_function->f_lineno = 348;
+    frame_function->f_lineno = 354;
     tmp_unused = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_4, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_4 );
     Py_DECREF( tmp_kw_name_1 );
@@ -8852,7 +8918,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 348;
+        exception_lineno = 354;
         goto try_except_handler_6;
     }
     Py_DECREF( tmp_unused );
@@ -8916,6 +8982,28 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
     // End of try:
     // End of try:
     try_end_3:;
+    tmp_cond_value_1 = par_chunked;
+
+    tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
+    if ( tmp_cond_truth_1 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 359;
+        goto frame_exception_exit_1;
+    }
+    if ( tmp_cond_truth_1 == 1 )
+    {
+        goto branch_yes_3;
+    }
+    else
+    {
+        goto branch_no_3;
+    }
+    branch_yes_3:;
     tmp_source_name_8 = par_conn;
 
     if ( tmp_source_name_8 == NULL )
@@ -8928,11 +9016,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 353;
+        exception_lineno = 360;
         goto frame_exception_exit_1;
     }
 
-    tmp_dircall_arg1_1 = LOOKUP_ATTRIBUTE( tmp_source_name_8, const_str_plain_request );
+    tmp_dircall_arg1_1 = LOOKUP_ATTRIBUTE( tmp_source_name_8, const_str_plain_request_chunked );
     if ( tmp_dircall_arg1_1 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -8940,7 +9028,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 353;
+        exception_lineno = 360;
         goto frame_exception_exit_1;
     }
     tmp_dircall_arg2_1 = PyTuple_New( 2 );
@@ -8967,13 +9055,71 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 353;
+        exception_lineno = 360;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
-    tmp_source_name_9 = var_timeout_obj;
+    goto branch_end_3;
+    branch_no_3:;
+    tmp_source_name_9 = par_conn;
 
     if ( tmp_source_name_9 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 362;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_dircall_arg1_2 = LOOKUP_ATTRIBUTE( tmp_source_name_9, const_str_plain_request );
+    if ( tmp_dircall_arg1_2 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 362;
+        goto frame_exception_exit_1;
+    }
+    tmp_dircall_arg2_2 = PyTuple_New( 2 );
+    tmp_tuple_element_3 = par_method;
+
+    Py_INCREF( tmp_tuple_element_3 );
+    PyTuple_SET_ITEM( tmp_dircall_arg2_2, 0, tmp_tuple_element_3 );
+    tmp_tuple_element_3 = par_url;
+
+    Py_INCREF( tmp_tuple_element_3 );
+    PyTuple_SET_ITEM( tmp_dircall_arg2_2, 1, tmp_tuple_element_3 );
+    tmp_dircall_arg3_2 = par_httplib_request_kw;
+
+    Py_INCREF( tmp_dircall_arg3_2 );
+
+    {
+        PyObject *dir_call_args[] = {tmp_dircall_arg1_2, tmp_dircall_arg2_2, tmp_dircall_arg3_2};
+        tmp_unused = impl_function_4_complex_call_helper_pos_star_dict_of___internal__( dir_call_args );
+    }
+    if ( tmp_unused == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 362;
+        goto frame_exception_exit_1;
+    }
+    Py_DECREF( tmp_unused );
+    branch_end_3:;
+    tmp_source_name_10 = var_timeout_obj;
+
+    if ( tmp_source_name_10 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -8983,11 +9129,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 356;
+        exception_lineno = 365;
         goto frame_exception_exit_1;
     }
 
-    tmp_assign_source_5 = LOOKUP_ATTRIBUTE( tmp_source_name_9, const_str_plain_read_timeout );
+    tmp_assign_source_5 = LOOKUP_ATTRIBUTE( tmp_source_name_10, const_str_plain_read_timeout );
     if ( tmp_assign_source_5 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -8995,7 +9141,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 356;
+        exception_lineno = 365;
         goto frame_exception_exit_1;
     }
     assert( var_read_timeout == NULL );
@@ -9013,44 +9159,44 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 359;
+        exception_lineno = 368;
         goto frame_exception_exit_1;
     }
 
     tmp_getattr_attr_1 = const_str_plain_sock;
     tmp_getattr_default_1 = Py_None;
-    tmp_cond_value_1 = BUILTIN_GETATTR( tmp_getattr_target_1, tmp_getattr_attr_1, tmp_getattr_default_1 );
-    if ( tmp_cond_value_1 == NULL )
+    tmp_cond_value_2 = BUILTIN_GETATTR( tmp_getattr_target_1, tmp_getattr_attr_1, tmp_getattr_default_1 );
+    if ( tmp_cond_value_2 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 359;
+        exception_lineno = 368;
         goto frame_exception_exit_1;
     }
-    tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
-    if ( tmp_cond_truth_1 == -1 )
+    tmp_cond_truth_2 = CHECK_IF_TRUE( tmp_cond_value_2 );
+    if ( tmp_cond_truth_2 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_cond_value_1 );
+        Py_DECREF( tmp_cond_value_2 );
 
-        exception_lineno = 359;
+        exception_lineno = 368;
         goto frame_exception_exit_1;
     }
-    Py_DECREF( tmp_cond_value_1 );
-    if ( tmp_cond_truth_1 == 1 )
+    Py_DECREF( tmp_cond_value_2 );
+    if ( tmp_cond_truth_2 == 1 )
     {
-        goto branch_yes_3;
+        goto branch_yes_4;
     }
     else
     {
-        goto branch_no_3;
+        goto branch_no_4;
     }
-    branch_yes_3:;
+    branch_yes_4:;
     tmp_compare_left_3 = var_read_timeout;
 
     tmp_compare_right_3 = const_int_0;
@@ -9062,18 +9208,18 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 365;
+        exception_lineno = 374;
         goto frame_exception_exit_1;
     }
     if ( tmp_cmp_Eq_1 == 1 )
     {
-        goto branch_yes_4;
+        goto branch_yes_5;
     }
     else
     {
-        goto branch_no_4;
+        goto branch_no_5;
     }
-    branch_yes_4:;
+    branch_yes_5:;
     tmp_called_name_5 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_ReadTimeoutError );
 
     if (unlikely( tmp_called_name_5 == NULL ))
@@ -9091,7 +9237,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 366;
+        exception_lineno = 375;
         goto frame_exception_exit_1;
     }
 
@@ -9107,7 +9253,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 367;
+        exception_lineno = 376;
         goto frame_exception_exit_1;
     }
 
@@ -9123,7 +9269,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 367;
+        exception_lineno = 376;
         goto frame_exception_exit_1;
     }
 
@@ -9140,7 +9286,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 367;
+        exception_lineno = 376;
         goto frame_exception_exit_1;
     }
 
@@ -9152,10 +9298,10 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 367;
+        exception_lineno = 376;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 367;
+    frame_function->f_lineno = 376;
     {
         PyObject *call_args[] = { tmp_args_element_name_3, tmp_args_element_name_4, tmp_args_element_name_5 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_5, call_args );
@@ -9169,14 +9315,14 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 367;
+        exception_lineno = 376;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_1;
-    exception_lineno = 367;
+    exception_lineno = 376;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
-    branch_no_4:;
+    branch_no_5:;
     tmp_compare_left_4 = var_read_timeout;
 
     if ( tmp_compare_left_4 == NULL )
@@ -9189,18 +9335,18 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 368;
+        exception_lineno = 377;
         goto frame_exception_exit_1;
     }
 
-    tmp_source_name_10 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_Timeout );
+    tmp_source_name_11 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_Timeout );
 
-    if (unlikely( tmp_source_name_10 == NULL ))
+    if (unlikely( tmp_source_name_11 == NULL ))
     {
-        tmp_source_name_10 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_Timeout );
+        tmp_source_name_11 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_Timeout );
     }
 
-    if ( tmp_source_name_10 == NULL )
+    if ( tmp_source_name_11 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -9210,11 +9356,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 368;
+        exception_lineno = 377;
         goto frame_exception_exit_1;
     }
 
-    tmp_compare_right_4 = LOOKUP_ATTRIBUTE( tmp_source_name_10, const_str_plain_DEFAULT_TIMEOUT );
+    tmp_compare_right_4 = LOOKUP_ATTRIBUTE( tmp_source_name_11, const_str_plain_DEFAULT_TIMEOUT );
     if ( tmp_compare_right_4 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9222,23 +9368,23 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 368;
+        exception_lineno = 377;
         goto frame_exception_exit_1;
     }
     tmp_is_1 = ( tmp_compare_left_4 == tmp_compare_right_4 );
     Py_DECREF( tmp_compare_right_4 );
     if ( tmp_is_1 )
     {
-        goto branch_yes_5;
+        goto branch_yes_6;
     }
     else
     {
-        goto branch_no_5;
+        goto branch_no_6;
     }
-    branch_yes_5:;
-    tmp_source_name_12 = par_conn;
+    branch_yes_6:;
+    tmp_source_name_13 = par_conn;
 
-    if ( tmp_source_name_12 == NULL )
+    if ( tmp_source_name_13 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -9248,23 +9394,23 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 369;
+        exception_lineno = 378;
         goto frame_exception_exit_1;
     }
 
-    tmp_source_name_11 = LOOKUP_ATTRIBUTE( tmp_source_name_12, const_str_plain_sock );
-    if ( tmp_source_name_11 == NULL )
+    tmp_source_name_12 = LOOKUP_ATTRIBUTE( tmp_source_name_13, const_str_plain_sock );
+    if ( tmp_source_name_12 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 369;
+        exception_lineno = 378;
         goto frame_exception_exit_1;
     }
-    tmp_called_name_6 = LOOKUP_ATTRIBUTE( tmp_source_name_11, const_str_plain_settimeout );
-    Py_DECREF( tmp_source_name_11 );
+    tmp_called_name_6 = LOOKUP_ATTRIBUTE( tmp_source_name_12, const_str_plain_settimeout );
+    Py_DECREF( tmp_source_name_12 );
     if ( tmp_called_name_6 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9272,17 +9418,17 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 369;
+        exception_lineno = 378;
         goto frame_exception_exit_1;
     }
-    tmp_source_name_13 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_socket );
+    tmp_source_name_14 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_socket );
 
-    if (unlikely( tmp_source_name_13 == NULL ))
+    if (unlikely( tmp_source_name_14 == NULL ))
     {
-        tmp_source_name_13 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_socket );
+        tmp_source_name_14 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_socket );
     }
 
-    if ( tmp_source_name_13 == NULL )
+    if ( tmp_source_name_14 == NULL )
     {
         Py_DECREF( tmp_called_name_6 );
         exception_type = PyExc_NameError;
@@ -9292,11 +9438,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 369;
+        exception_lineno = 378;
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_7 = LOOKUP_ATTRIBUTE( tmp_source_name_13, const_str_plain_getdefaulttimeout );
+    tmp_called_name_7 = LOOKUP_ATTRIBUTE( tmp_source_name_14, const_str_plain_getdefaulttimeout );
     if ( tmp_called_name_7 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9304,10 +9450,10 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_6 );
 
-        exception_lineno = 369;
+        exception_lineno = 378;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 369;
+    frame_function->f_lineno = 378;
     tmp_args_element_name_6 = CALL_FUNCTION_NO_ARGS( tmp_called_name_7 );
     Py_DECREF( tmp_called_name_7 );
     if ( tmp_args_element_name_6 == NULL )
@@ -9317,10 +9463,10 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_6 );
 
-        exception_lineno = 369;
+        exception_lineno = 378;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 369;
+    frame_function->f_lineno = 378;
     {
         PyObject *call_args[] = { tmp_args_element_name_6 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_6, call_args );
@@ -9335,15 +9481,15 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 369;
+        exception_lineno = 378;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
-    goto branch_end_5;
-    branch_no_5:;
-    tmp_source_name_15 = par_conn;
+    goto branch_end_6;
+    branch_no_6:;
+    tmp_source_name_16 = par_conn;
 
-    if ( tmp_source_name_15 == NULL )
+    if ( tmp_source_name_16 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -9353,23 +9499,23 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 371;
+        exception_lineno = 380;
         goto frame_exception_exit_1;
     }
 
-    tmp_source_name_14 = LOOKUP_ATTRIBUTE( tmp_source_name_15, const_str_plain_sock );
-    if ( tmp_source_name_14 == NULL )
+    tmp_source_name_15 = LOOKUP_ATTRIBUTE( tmp_source_name_16, const_str_plain_sock );
+    if ( tmp_source_name_15 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 371;
+        exception_lineno = 380;
         goto frame_exception_exit_1;
     }
-    tmp_called_name_8 = LOOKUP_ATTRIBUTE( tmp_source_name_14, const_str_plain_settimeout );
-    Py_DECREF( tmp_source_name_14 );
+    tmp_called_name_8 = LOOKUP_ATTRIBUTE( tmp_source_name_15, const_str_plain_settimeout );
+    Py_DECREF( tmp_source_name_15 );
     if ( tmp_called_name_8 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9377,7 +9523,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 371;
+        exception_lineno = 380;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_7 = var_read_timeout;
@@ -9392,11 +9538,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 371;
+        exception_lineno = 380;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 371;
+    frame_function->f_lineno = 380;
     {
         PyObject *call_args[] = { tmp_args_element_name_7 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_8, call_args );
@@ -9410,17 +9556,17 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 371;
+        exception_lineno = 380;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
-    branch_end_5:;
-    branch_no_3:;
+    branch_end_6:;
+    branch_no_4:;
     // Tried code:
     // Tried code:
-    tmp_source_name_16 = par_conn;
+    tmp_source_name_17 = par_conn;
 
-    if ( tmp_source_name_16 == NULL )
+    if ( tmp_source_name_17 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -9430,11 +9576,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 376;
+        exception_lineno = 385;
         goto try_except_handler_8;
     }
 
-    tmp_called_name_9 = LOOKUP_ATTRIBUTE( tmp_source_name_16, const_str_plain_getresponse );
+    tmp_called_name_9 = LOOKUP_ATTRIBUTE( tmp_source_name_17, const_str_plain_getresponse );
     if ( tmp_called_name_9 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9442,11 +9588,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 376;
+        exception_lineno = 385;
         goto try_except_handler_8;
     }
     tmp_kw_name_2 = PyDict_Copy( const_dict_f965c4886458f8f721a7913cea1cd007 );
-    frame_function->f_lineno = 376;
+    frame_function->f_lineno = 385;
     tmp_assign_source_6 = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_9, tmp_kw_name_2 );
     Py_DECREF( tmp_called_name_9 );
     Py_DECREF( tmp_kw_name_2 );
@@ -9457,7 +9603,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 376;
+        exception_lineno = 385;
         goto try_except_handler_8;
     }
     assert( var_httplib_response == NULL );
@@ -9506,21 +9652,21 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 377;
+        exception_lineno = 386;
         goto try_except_handler_9;
     }
     if ( tmp_exc_match_exception_match_2 == 1 )
     {
-        goto branch_yes_6;
+        goto branch_yes_7;
     }
     else
     {
-        goto branch_no_6;
+        goto branch_no_7;
     }
-    branch_yes_6:;
-    tmp_source_name_17 = par_conn;
+    branch_yes_7:;
+    tmp_source_name_18 = par_conn;
 
-    if ( tmp_source_name_17 == NULL )
+    if ( tmp_source_name_18 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -9530,11 +9676,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 378;
+        exception_lineno = 387;
         goto try_except_handler_9;
     }
 
-    tmp_called_name_10 = LOOKUP_ATTRIBUTE( tmp_source_name_17, const_str_plain_getresponse );
+    tmp_called_name_10 = LOOKUP_ATTRIBUTE( tmp_source_name_18, const_str_plain_getresponse );
     if ( tmp_called_name_10 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9542,10 +9688,10 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 378;
+        exception_lineno = 387;
         goto try_except_handler_9;
     }
-    frame_function->f_lineno = 378;
+    frame_function->f_lineno = 387;
     tmp_assign_source_7 = CALL_FUNCTION_NO_ARGS( tmp_called_name_10 );
     Py_DECREF( tmp_called_name_10 );
     if ( tmp_assign_source_7 == NULL )
@@ -9555,18 +9701,18 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 378;
+        exception_lineno = 387;
         goto try_except_handler_9;
     }
     assert( var_httplib_response == NULL );
     var_httplib_response = tmp_assign_source_7;
 
-    goto branch_end_6;
-    branch_no_6:;
+    goto branch_end_7;
+    branch_no_7:;
     RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
     if (exception_tb && exception_tb->tb_frame == frame_function) frame_function->f_lineno = exception_tb->tb_lineno;
     goto try_except_handler_9;
-    branch_end_6:;
+    branch_end_7:;
     goto try_end_5;
     // Exception handler code:
     try_except_handler_9:;
@@ -9633,14 +9779,14 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
     // Tried code:
     tmp_compare_left_6 = PyThreadState_GET()->exc_type;
     tmp_compare_right_6 = PyTuple_New( 3 );
-    tmp_tuple_element_3 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_SocketTimeout );
+    tmp_tuple_element_4 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_SocketTimeout );
 
-    if (unlikely( tmp_tuple_element_3 == NULL ))
+    if (unlikely( tmp_tuple_element_4 == NULL ))
     {
-        tmp_tuple_element_3 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_SocketTimeout );
+        tmp_tuple_element_4 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_SocketTimeout );
     }
 
-    if ( tmp_tuple_element_3 == NULL )
+    if ( tmp_tuple_element_4 == NULL )
     {
         Py_DECREF( tmp_compare_right_6 );
         exception_type = PyExc_NameError;
@@ -9650,20 +9796,20 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 379;
+        exception_lineno = 388;
         goto try_except_handler_10;
     }
 
-    Py_INCREF( tmp_tuple_element_3 );
-    PyTuple_SET_ITEM( tmp_compare_right_6, 0, tmp_tuple_element_3 );
-    tmp_tuple_element_3 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_BaseSSLError );
+    Py_INCREF( tmp_tuple_element_4 );
+    PyTuple_SET_ITEM( tmp_compare_right_6, 0, tmp_tuple_element_4 );
+    tmp_tuple_element_4 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_BaseSSLError );
 
-    if (unlikely( tmp_tuple_element_3 == NULL ))
+    if (unlikely( tmp_tuple_element_4 == NULL ))
     {
-        tmp_tuple_element_3 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_BaseSSLError );
+        tmp_tuple_element_4 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_BaseSSLError );
     }
 
-    if ( tmp_tuple_element_3 == NULL )
+    if ( tmp_tuple_element_4 == NULL )
     {
         Py_DECREF( tmp_compare_right_6 );
         exception_type = PyExc_NameError;
@@ -9673,20 +9819,20 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 379;
+        exception_lineno = 388;
         goto try_except_handler_10;
     }
 
-    Py_INCREF( tmp_tuple_element_3 );
-    PyTuple_SET_ITEM( tmp_compare_right_6, 1, tmp_tuple_element_3 );
-    tmp_tuple_element_3 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_SocketError );
+    Py_INCREF( tmp_tuple_element_4 );
+    PyTuple_SET_ITEM( tmp_compare_right_6, 1, tmp_tuple_element_4 );
+    tmp_tuple_element_4 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_SocketError );
 
-    if (unlikely( tmp_tuple_element_3 == NULL ))
+    if (unlikely( tmp_tuple_element_4 == NULL ))
     {
-        tmp_tuple_element_3 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_SocketError );
+        tmp_tuple_element_4 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_SocketError );
     }
 
-    if ( tmp_tuple_element_3 == NULL )
+    if ( tmp_tuple_element_4 == NULL )
     {
         Py_DECREF( tmp_compare_right_6 );
         exception_type = PyExc_NameError;
@@ -9696,12 +9842,12 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 379;
+        exception_lineno = 388;
         goto try_except_handler_10;
     }
 
-    Py_INCREF( tmp_tuple_element_3 );
-    PyTuple_SET_ITEM( tmp_compare_right_6, 2, tmp_tuple_element_3 );
+    Py_INCREF( tmp_tuple_element_4 );
+    PyTuple_SET_ITEM( tmp_compare_right_6, 2, tmp_tuple_element_4 );
     tmp_exc_match_exception_match_3 = EXCEPTION_MATCH_BOOL( tmp_compare_left_6, tmp_compare_right_6 );
     if ( tmp_exc_match_exception_match_3 == -1 )
     {
@@ -9710,28 +9856,28 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_right_6 );
 
-        exception_lineno = 379;
+        exception_lineno = 388;
         goto try_except_handler_10;
     }
     Py_DECREF( tmp_compare_right_6 );
     if ( tmp_exc_match_exception_match_3 == 1 )
     {
-        goto branch_yes_7;
+        goto branch_yes_8;
     }
     else
     {
-        goto branch_no_7;
+        goto branch_no_8;
     }
-    branch_yes_7:;
+    branch_yes_8:;
     tmp_assign_source_8 = PyThreadState_GET()->exc_value;
     assert( var_e == NULL );
     Py_INCREF( tmp_assign_source_8 );
     var_e = tmp_assign_source_8;
 
     // Tried code:
-    tmp_source_name_18 = par_self;
+    tmp_source_name_19 = par_self;
 
-    if ( tmp_source_name_18 == NULL )
+    if ( tmp_source_name_19 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -9741,11 +9887,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 380;
+        exception_lineno = 389;
         goto try_except_handler_11;
     }
 
-    tmp_called_name_11 = LOOKUP_ATTRIBUTE( tmp_source_name_18, const_str_plain__raise_timeout );
+    tmp_called_name_11 = LOOKUP_ATTRIBUTE( tmp_source_name_19, const_str_plain__raise_timeout );
     if ( tmp_called_name_11 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9753,7 +9899,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 380;
+        exception_lineno = 389;
         goto try_except_handler_11;
     }
     tmp_kw_name_3 = _PyDict_NewPresized( 3 );
@@ -9771,7 +9917,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 380;
+        exception_lineno = 389;
         goto try_except_handler_11;
     }
 
@@ -9790,7 +9936,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 380;
+        exception_lineno = 389;
         goto try_except_handler_11;
     }
 
@@ -9809,12 +9955,12 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 380;
+        exception_lineno = 389;
         goto try_except_handler_11;
     }
 
     PyDict_SetItem( tmp_kw_name_3, tmp_dict_key_6, tmp_dict_value_6 );
-    frame_function->f_lineno = 380;
+    frame_function->f_lineno = 389;
     tmp_unused = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_11, tmp_kw_name_3 );
     Py_DECREF( tmp_called_name_11 );
     Py_DECREF( tmp_kw_name_3 );
@@ -9825,7 +9971,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 380;
+        exception_lineno = 389;
         goto try_except_handler_11;
     }
     Py_DECREF( tmp_unused );
@@ -9857,12 +10003,12 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
 
     goto try_except_handler_10;
     // End of try:
-    goto branch_end_7;
-    branch_no_7:;
+    goto branch_end_8;
+    branch_no_8:;
     RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
     if (exception_tb && exception_tb->tb_frame == frame_function) frame_function->f_lineno = exception_tb->tb_lineno;
     goto try_except_handler_10;
-    branch_end_7:;
+    branch_end_8:;
     // tried codes exits in all cases
     NUITKA_CANNOT_GET_HERE( function_9__make_request_of_class_2_HTTPConnectionPool_of_urllib3$connectionpool );
     return NULL;
@@ -9901,7 +10047,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 384;
+        exception_lineno = 393;
         goto frame_exception_exit_1;
     }
 
@@ -9915,20 +10061,20 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 384;
+        exception_lineno = 393;
         goto frame_exception_exit_1;
     }
     assert( var_http_version == NULL );
     var_http_version = tmp_assign_source_9;
 
-    tmp_source_name_19 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
+    tmp_source_name_20 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
 
-    if (unlikely( tmp_source_name_19 == NULL ))
+    if (unlikely( tmp_source_name_20 == NULL ))
     {
-        tmp_source_name_19 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
+        tmp_source_name_20 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
     }
 
-    if ( tmp_source_name_19 == NULL )
+    if ( tmp_source_name_20 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -9938,11 +10084,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 385;
+        exception_lineno = 394;
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_12 = LOOKUP_ATTRIBUTE( tmp_source_name_19, const_str_plain_debug );
+    tmp_called_name_12 = LOOKUP_ATTRIBUTE( tmp_source_name_20, const_str_plain_debug );
     if ( tmp_called_name_12 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9950,7 +10096,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 385;
+        exception_lineno = 394;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_8 = const_str_digest_b0b288ae5f049c5f67d250eac01cb0de;
@@ -9966,7 +10112,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 385;
+        exception_lineno = 394;
         goto frame_exception_exit_1;
     }
 
@@ -9982,7 +10128,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 385;
+        exception_lineno = 394;
         goto frame_exception_exit_1;
     }
 
@@ -9998,13 +10144,13 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 385;
+        exception_lineno = 394;
         goto frame_exception_exit_1;
     }
 
-    tmp_source_name_20 = var_httplib_response;
+    tmp_source_name_21 = var_httplib_response;
 
-    if ( tmp_source_name_20 == NULL )
+    if ( tmp_source_name_21 == NULL )
     {
         Py_DECREF( tmp_called_name_12 );
         exception_type = PyExc_UnboundLocalError;
@@ -10014,11 +10160,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 386;
+        exception_lineno = 395;
         goto frame_exception_exit_1;
     }
 
-    tmp_args_element_name_12 = LOOKUP_ATTRIBUTE( tmp_source_name_20, const_str_plain_status );
+    tmp_args_element_name_12 = LOOKUP_ATTRIBUTE( tmp_source_name_21, const_str_plain_status );
     if ( tmp_args_element_name_12 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -10026,12 +10172,12 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_12 );
 
-        exception_lineno = 386;
+        exception_lineno = 395;
         goto frame_exception_exit_1;
     }
-    tmp_source_name_21 = var_httplib_response;
+    tmp_source_name_22 = var_httplib_response;
 
-    if ( tmp_source_name_21 == NULL )
+    if ( tmp_source_name_22 == NULL )
     {
         Py_DECREF( tmp_called_name_12 );
         Py_DECREF( tmp_args_element_name_12 );
@@ -10042,11 +10188,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 386;
+        exception_lineno = 395;
         goto frame_exception_exit_1;
     }
 
-    tmp_args_element_name_13 = LOOKUP_ATTRIBUTE( tmp_source_name_21, const_str_plain_length );
+    tmp_args_element_name_13 = LOOKUP_ATTRIBUTE( tmp_source_name_22, const_str_plain_length );
     if ( tmp_args_element_name_13 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -10055,10 +10201,10 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         Py_DECREF( tmp_called_name_12 );
         Py_DECREF( tmp_args_element_name_12 );
 
-        exception_lineno = 386;
+        exception_lineno = 395;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 386;
+    frame_function->f_lineno = 395;
     {
         PyObject *call_args[] = { tmp_args_element_name_8, tmp_args_element_name_9, tmp_args_element_name_10, tmp_args_element_name_11, tmp_args_element_name_12, tmp_args_element_name_13 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS6( tmp_called_name_12, call_args );
@@ -10074,7 +10220,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 386;
+        exception_lineno = 395;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -10096,13 +10242,13 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 389;
+        exception_lineno = 398;
         goto try_except_handler_12;
     }
 
-    tmp_source_name_22 = var_httplib_response;
+    tmp_source_name_23 = var_httplib_response;
 
-    if ( tmp_source_name_22 == NULL )
+    if ( tmp_source_name_23 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -10112,11 +10258,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 389;
+        exception_lineno = 398;
         goto try_except_handler_12;
     }
 
-    tmp_args_element_name_14 = LOOKUP_ATTRIBUTE( tmp_source_name_22, const_str_plain_msg );
+    tmp_args_element_name_14 = LOOKUP_ATTRIBUTE( tmp_source_name_23, const_str_plain_msg );
     if ( tmp_args_element_name_14 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -10124,10 +10270,10 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 389;
+        exception_lineno = 398;
         goto try_except_handler_12;
     }
-    frame_function->f_lineno = 389;
+    frame_function->f_lineno = 398;
     {
         PyObject *call_args[] = { tmp_args_element_name_14 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_13, call_args );
@@ -10141,7 +10287,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 389;
+        exception_lineno = 398;
         goto try_except_handler_12;
     }
     Py_DECREF( tmp_unused );
@@ -10196,7 +10342,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 390;
+        exception_lineno = 399;
         goto try_except_handler_13;
     }
 
@@ -10208,32 +10354,32 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 390;
+        exception_lineno = 399;
         goto try_except_handler_13;
     }
     if ( tmp_exc_match_exception_match_4 == 1 )
     {
-        goto branch_yes_8;
+        goto branch_yes_9;
     }
     else
     {
-        goto branch_no_8;
+        goto branch_no_9;
     }
-    branch_yes_8:;
+    branch_yes_9:;
     tmp_assign_source_10 = PyThreadState_GET()->exc_value;
     assert( var_hpe == NULL );
     Py_INCREF( tmp_assign_source_10 );
     var_hpe = tmp_assign_source_10;
 
     // Tried code:
-    tmp_source_name_23 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
+    tmp_source_name_24 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
 
-    if (unlikely( tmp_source_name_23 == NULL ))
+    if (unlikely( tmp_source_name_24 == NULL ))
     {
-        tmp_source_name_23 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
+        tmp_source_name_24 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
     }
 
-    if ( tmp_source_name_23 == NULL )
+    if ( tmp_source_name_24 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -10243,11 +10389,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 391;
+        exception_lineno = 400;
         goto try_except_handler_14;
     }
 
-    tmp_called_name_14 = LOOKUP_ATTRIBUTE( tmp_source_name_23, const_str_plain_warning );
+    tmp_called_name_14 = LOOKUP_ATTRIBUTE( tmp_source_name_24, const_str_plain_warning );
     if ( tmp_called_name_14 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -10255,16 +10401,16 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 391;
+        exception_lineno = 400;
         goto try_except_handler_14;
     }
     tmp_args_name_1 = PyTuple_New( 3 );
-    tmp_tuple_element_4 = const_str_digest_c2ed87d2e89f14879b1a53e0d453d7d4;
-    Py_INCREF( tmp_tuple_element_4 );
-    PyTuple_SET_ITEM( tmp_args_name_1, 0, tmp_tuple_element_4 );
-    tmp_source_name_24 = par_self;
+    tmp_tuple_element_5 = const_str_digest_c2ed87d2e89f14879b1a53e0d453d7d4;
+    Py_INCREF( tmp_tuple_element_5 );
+    PyTuple_SET_ITEM( tmp_args_name_1, 0, tmp_tuple_element_5 );
+    tmp_source_name_25 = par_self;
 
-    if ( tmp_source_name_24 == NULL )
+    if ( tmp_source_name_25 == NULL )
     {
         Py_DECREF( tmp_called_name_14 );
         Py_DECREF( tmp_args_name_1 );
@@ -10275,11 +10421,11 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 393;
+        exception_lineno = 402;
         goto try_except_handler_14;
     }
 
-    tmp_called_name_15 = LOOKUP_ATTRIBUTE( tmp_source_name_24, const_str_plain__absolute_url );
+    tmp_called_name_15 = LOOKUP_ATTRIBUTE( tmp_source_name_25, const_str_plain__absolute_url );
     if ( tmp_called_name_15 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -10288,7 +10434,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         Py_DECREF( tmp_called_name_14 );
         Py_DECREF( tmp_args_name_1 );
 
-        exception_lineno = 393;
+        exception_lineno = 402;
         goto try_except_handler_14;
     }
     tmp_args_element_name_15 = par_url;
@@ -10305,18 +10451,18 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 393;
+        exception_lineno = 402;
         goto try_except_handler_14;
     }
 
-    frame_function->f_lineno = 393;
+    frame_function->f_lineno = 402;
     {
         PyObject *call_args[] = { tmp_args_element_name_15 };
-        tmp_tuple_element_4 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_15, call_args );
+        tmp_tuple_element_5 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_15, call_args );
     }
 
     Py_DECREF( tmp_called_name_15 );
-    if ( tmp_tuple_element_4 == NULL )
+    if ( tmp_tuple_element_5 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
@@ -10324,13 +10470,13 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         Py_DECREF( tmp_called_name_14 );
         Py_DECREF( tmp_args_name_1 );
 
-        exception_lineno = 393;
+        exception_lineno = 402;
         goto try_except_handler_14;
     }
-    PyTuple_SET_ITEM( tmp_args_name_1, 1, tmp_tuple_element_4 );
-    tmp_tuple_element_4 = var_hpe;
+    PyTuple_SET_ITEM( tmp_args_name_1, 1, tmp_tuple_element_5 );
+    tmp_tuple_element_5 = var_hpe;
 
-    if ( tmp_tuple_element_4 == NULL )
+    if ( tmp_tuple_element_5 == NULL )
     {
         Py_DECREF( tmp_called_name_14 );
         Py_DECREF( tmp_args_name_1 );
@@ -10341,14 +10487,14 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 393;
+        exception_lineno = 402;
         goto try_except_handler_14;
     }
 
-    Py_INCREF( tmp_tuple_element_4 );
-    PyTuple_SET_ITEM( tmp_args_name_1, 2, tmp_tuple_element_4 );
+    Py_INCREF( tmp_tuple_element_5 );
+    PyTuple_SET_ITEM( tmp_args_name_1, 2, tmp_tuple_element_5 );
     tmp_kw_name_4 = PyDict_Copy( const_dict_179288bcb12bd7be5a04d2f1b72dc461 );
-    frame_function->f_lineno = 393;
+    frame_function->f_lineno = 402;
     tmp_unused = CALL_FUNCTION( tmp_called_name_14, tmp_args_name_1, tmp_kw_name_4 );
     Py_DECREF( tmp_called_name_14 );
     Py_DECREF( tmp_args_name_1 );
@@ -10360,7 +10506,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 393;
+        exception_lineno = 402;
         goto try_except_handler_14;
     }
     Py_DECREF( tmp_unused );
@@ -10391,12 +10537,12 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
     Py_XDECREF( var_hpe );
     var_hpe = NULL;
 
-    goto branch_end_8;
-    branch_no_8:;
+    goto branch_end_9;
+    branch_no_9:;
     RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
     if (exception_tb && exception_tb->tb_frame == frame_function) frame_function->f_lineno = exception_tb->tb_lineno;
     goto try_except_handler_13;
-    branch_end_8:;
+    branch_end_9:;
     goto try_end_9;
     // Exception handler code:
     try_except_handler_13:;
@@ -10440,7 +10586,7 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 395;
+        exception_lineno = 404;
         goto frame_exception_exit_1;
     }
 
@@ -10545,6 +10691,17 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
                     tmp_frame_locals,
                     const_str_plain_timeout,
                     par_timeout
+                );
+
+                assert( res == 0 );
+            }
+
+            if ( par_chunked )
+            {
+                int res = PyDict_SetItem(
+                    tmp_frame_locals,
+                    const_str_plain_chunked,
+                    par_chunked
                 );
 
                 assert( res == 0 );
@@ -10665,6 +10822,9 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
     Py_XDECREF( par_timeout );
     par_timeout = NULL;
 
+    Py_XDECREF( par_chunked );
+    par_chunked = NULL;
+
     Py_XDECREF( par_httplib_request_kw );
     par_httplib_request_kw = NULL;
 
@@ -10709,6 +10869,9 @@ static PyObject *impl_function_9__make_request_of_class_2_HTTPConnectionPool_of_
 
     Py_XDECREF( par_timeout );
     par_timeout = NULL;
+
+    Py_XDECREF( par_chunked );
+    par_chunked = NULL;
 
     Py_XDECREF( par_httplib_request_kw );
     par_httplib_request_kw = NULL;
@@ -10799,7 +10962,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_806d21b2cd5f2745fd1eb26679b291a3, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_26b05fab306e9996a8f4da06de74971d, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -10831,7 +10994,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 398;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
 
@@ -10847,7 +11010,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 398;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_1, tmp_dict_value_1 );
@@ -10865,7 +11028,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 398;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
 
@@ -10877,7 +11040,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 398;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_2, tmp_dict_value_2 );
@@ -10895,7 +11058,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 398;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
 
@@ -10907,7 +11070,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 398;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_3, tmp_dict_value_3 );
@@ -10916,7 +11079,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
     tmp_dict_value_4 = par_path;
 
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_4, tmp_dict_value_4 );
-    frame_function->f_lineno = 398;
+    frame_function->f_lineno = 407;
     tmp_source_name_1 = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_kw_name_1 );
     if ( tmp_source_name_1 == NULL )
@@ -10926,7 +11089,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 398;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
     tmp_return_value = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain_url );
@@ -10938,7 +11101,7 @@ static PyObject *impl_function_10__absolute_url_of_class_2_HTTPConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 398;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -11159,7 +11322,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_fa88edcd74ea853b92a03fc74d882e4f, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_857956eea47b7619917c4ac9182c255b, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -11186,7 +11349,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_iter_arg_1 );
 
-        exception_lineno = 405;
+        exception_lineno = 414;
         goto try_except_handler_2;
     }
     PyTuple_SET_ITEM( tmp_iter_arg_1, 0, tmp_tuple_element_1 );
@@ -11202,7 +11365,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 405;
+        exception_lineno = 414;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__source_iter == NULL );
@@ -11226,7 +11389,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         }
 
 
-        exception_lineno = 405;
+        exception_lineno = 414;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__element_1 == NULL );
@@ -11250,7 +11413,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         }
 
 
-        exception_lineno = 405;
+        exception_lineno = 414;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__element_2 == NULL );
@@ -11315,7 +11478,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 405;
+        exception_lineno = 414;
         goto try_except_handler_2;
     }
 
@@ -11327,7 +11490,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 405;
+        exception_lineno = 414;
         goto try_except_handler_2;
     }
     goto try_end_1;
@@ -11383,7 +11546,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 409;
+        exception_lineno = 418;
         goto try_except_handler_3;
     }
 
@@ -11395,11 +11558,11 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 409;
+        exception_lineno = 418;
         goto try_except_handler_3;
     }
     tmp_kw_name_1 = PyDict_Copy( const_dict_ef0c581b63de11312ed0743d04af22b7 );
-    frame_function->f_lineno = 409;
+    frame_function->f_lineno = 418;
     tmp_assign_source_5 = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_1 );
     Py_DECREF( tmp_kw_name_1 );
@@ -11410,7 +11573,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 409;
+        exception_lineno = 418;
         goto try_except_handler_3;
     }
     {
@@ -11429,7 +11592,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 410;
+        exception_lineno = 419;
         goto try_except_handler_3;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -11451,10 +11614,10 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 411;
+        exception_lineno = 420;
         goto try_except_handler_3;
     }
-    frame_function->f_lineno = 411;
+    frame_function->f_lineno = 420;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_2 );
     Py_DECREF( tmp_called_name_2 );
     if ( tmp_unused == NULL )
@@ -11464,7 +11627,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 411;
+        exception_lineno = 420;
         goto try_except_handler_3;
     }
     Py_DECREF( tmp_unused );
@@ -11476,7 +11639,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 408;
+        exception_lineno = 417;
         goto try_except_handler_3;
     }
     goto loop_start_1;
@@ -11533,7 +11696,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 413;
+        exception_lineno = 422;
         goto try_except_handler_4;
     }
 
@@ -11545,7 +11708,7 @@ static PyObject *impl_function_11_close_of_class_2_HTTPConnectionPool_of_urllib3
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 413;
+        exception_lineno = 422;
         goto try_except_handler_4;
     }
     if ( tmp_exc_match_exception_match_1 == 1 )
@@ -11834,7 +11997,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_8ab326c36e5027ed4ee72f028c16c0e9, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_40627451f4b8cb7e3ce21d36c0b0410b, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -11859,10 +12022,10 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 421;
+        exception_lineno = 430;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 421;
+    frame_function->f_lineno = 430;
     tmp_cond_value_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, &PyTuple_GET_ITEM( const_tuple_str_chr_47_tuple, 0 ) );
 
     Py_DECREF( tmp_called_name_1 );
@@ -11873,7 +12036,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 421;
+        exception_lineno = 430;
         goto frame_exception_exit_1;
     }
     tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
@@ -11884,7 +12047,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 421;
+        exception_lineno = 430;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -11919,7 +12082,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 425;
+        exception_lineno = 434;
         goto try_except_handler_2;
     }
 
@@ -11935,11 +12098,11 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 425;
+        exception_lineno = 434;
         goto try_except_handler_2;
     }
 
-    frame_function->f_lineno = 425;
+    frame_function->f_lineno = 434;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_iter_arg_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, call_args );
@@ -11952,7 +12115,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 425;
+        exception_lineno = 434;
         goto try_except_handler_2;
     }
     tmp_assign_source_1 = MAKE_ITERATOR( tmp_iter_arg_1 );
@@ -11964,7 +12127,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 425;
+        exception_lineno = 434;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__source_iter == NULL );
@@ -11988,7 +12151,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         }
 
 
-        exception_lineno = 425;
+        exception_lineno = 434;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__element_1 == NULL );
@@ -12012,7 +12175,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         }
 
 
-        exception_lineno = 425;
+        exception_lineno = 434;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__element_2 == NULL );
@@ -12036,7 +12199,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         }
 
 
-        exception_lineno = 425;
+        exception_lineno = 434;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__element_3 == NULL );
@@ -12155,7 +12318,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 428;
+        exception_lineno = 437;
         goto frame_exception_exit_1;
     }
     tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
@@ -12166,7 +12329,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_and_left_value_1 );
 
-        exception_lineno = 428;
+        exception_lineno = 437;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -12191,7 +12354,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 428;
+        exception_lineno = 437;
         goto frame_exception_exit_1;
     }
 
@@ -12203,7 +12366,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 428;
+        exception_lineno = 437;
         goto frame_exception_exit_1;
     }
     Py_INCREF( tmp_and_right_value_1 );
@@ -12220,7 +12383,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_2 );
 
-        exception_lineno = 428;
+        exception_lineno = 437;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_2 );
@@ -12250,7 +12413,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 429;
+        exception_lineno = 438;
         goto frame_exception_exit_1;
     }
 
@@ -12262,7 +12425,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 429;
+        exception_lineno = 438;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_2 = var_scheme;
@@ -12277,11 +12440,11 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 429;
+        exception_lineno = 438;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 429;
+    frame_function->f_lineno = 438;
     {
         PyObject *call_args[] = { tmp_args_element_name_2 };
         tmp_assign_source_8 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -12295,7 +12458,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 429;
+        exception_lineno = 438;
         goto frame_exception_exit_1;
     }
     {
@@ -12318,7 +12481,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
 
@@ -12330,7 +12493,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
     tmp_and_left_value_2 = UNARY_OPERATION( UNARY_NOT, tmp_operand_name_2 );
@@ -12342,7 +12505,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
     tmp_and_left_truth_2 = CHECK_IF_TRUE( tmp_and_left_value_2 );
@@ -12353,7 +12516,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_2 == 1 )
@@ -12377,7 +12540,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
 
@@ -12398,7 +12561,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
 
@@ -12410,7 +12573,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_3 = var_scheme;
@@ -12425,11 +12588,11 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 430;
+    frame_function->f_lineno = 439;
     {
         PyObject *call_args[] = { tmp_args_element_name_3 };
         tmp_compexpr_right_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
@@ -12443,7 +12606,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
     tmp_and_right_value_2 = RICH_COMPARE_EQ( tmp_compexpr_left_1, tmp_compexpr_right_1 );
@@ -12455,7 +12618,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_3 = tmp_and_right_value_2;
@@ -12472,7 +12635,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_3 );
 
-        exception_lineno = 430;
+        exception_lineno = 439;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_3 );
@@ -12508,7 +12671,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
 
@@ -12526,7 +12689,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
 
@@ -12544,7 +12707,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
 
@@ -12564,7 +12727,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
 
@@ -12577,7 +12740,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         Py_DECREF( tmp_compexpr_left_2 );
         Py_DECREF( tmp_compexpr_right_2 );
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_compexpr_right_2, 0, tmp_tuple_element_2 );
@@ -12594,7 +12757,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
 
@@ -12607,7 +12770,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         Py_DECREF( tmp_compexpr_left_2 );
         Py_DECREF( tmp_compexpr_right_2 );
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_compexpr_right_2, 1, tmp_tuple_element_2 );
@@ -12624,7 +12787,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
 
@@ -12637,7 +12800,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         Py_DECREF( tmp_compexpr_left_2 );
         Py_DECREF( tmp_compexpr_right_2 );
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_compexpr_right_2, 2, tmp_tuple_element_2 );
@@ -12651,7 +12814,7 @@ static PyObject *impl_function_12_is_same_host_of_class_2_HTTPConnectionPool_of_
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 433;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -12870,9 +13033,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *par_timeout = python_pars[ 8 ];
     PyObject *par_pool_timeout = python_pars[ 9 ];
     PyObject *par_release_conn = python_pars[ 10 ];
-    PyObject *par_response_kw = python_pars[ 11 ];
+    PyObject *par_chunked = python_pars[ 11 ];
+    PyObject *par_response_kw = python_pars[ 12 ];
     PyObject *var_conn = NULL;
     PyObject *var_err = NULL;
+    PyObject *var_clean_exit = NULL;
     PyObject *var_timeout_obj = NULL;
     PyObject *var_is_new_proxy_conn = NULL;
     PyObject *var_httplib_response = NULL;
@@ -12919,6 +13084,14 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *exception_keeper_value_9;
     PyTracebackObject *exception_keeper_tb_9;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_9;
+    PyObject *exception_keeper_type_10;
+    PyObject *exception_keeper_value_10;
+    PyTracebackObject *exception_keeper_tb_10;
+    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_10;
+    PyObject *exception_keeper_type_11;
+    PyObject *exception_keeper_value_11;
+    PyTracebackObject *exception_keeper_tb_11;
+    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_11;
     PyObject *exception_preserved_type_1;
     PyObject *exception_preserved_value_1;
     PyTracebackObject *exception_preserved_tb_1;
@@ -12928,30 +13101,27 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *exception_preserved_type_3;
     PyObject *exception_preserved_value_3;
     PyTracebackObject *exception_preserved_tb_3;
+    PyObject *exception_preserved_type_4;
+    PyObject *exception_preserved_value_4;
+    PyTracebackObject *exception_preserved_tb_4;
     int tmp_and_left_truth_1;
     int tmp_and_left_truth_2;
     int tmp_and_left_truth_3;
     int tmp_and_left_truth_4;
     int tmp_and_left_truth_5;
     int tmp_and_left_truth_6;
-    int tmp_and_left_truth_7;
-    int tmp_and_left_truth_8;
     PyObject *tmp_and_left_value_1;
     PyObject *tmp_and_left_value_2;
     PyObject *tmp_and_left_value_3;
     PyObject *tmp_and_left_value_4;
     PyObject *tmp_and_left_value_5;
     PyObject *tmp_and_left_value_6;
-    PyObject *tmp_and_left_value_7;
-    PyObject *tmp_and_left_value_8;
     PyObject *tmp_and_right_value_1;
     PyObject *tmp_and_right_value_2;
     PyObject *tmp_and_right_value_3;
     PyObject *tmp_and_right_value_4;
     PyObject *tmp_and_right_value_5;
     PyObject *tmp_and_right_value_6;
-    PyObject *tmp_and_right_value_7;
-    PyObject *tmp_and_right_value_8;
     PyObject *tmp_args_element_name_1;
     PyObject *tmp_args_element_name_2;
     PyObject *tmp_args_element_name_3;
@@ -13013,6 +13183,9 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *tmp_assign_source_26;
     PyObject *tmp_assign_source_27;
     PyObject *tmp_assign_source_28;
+    PyObject *tmp_assign_source_29;
+    PyObject *tmp_assign_source_30;
+    PyObject *tmp_assign_source_31;
     PyObject *tmp_called_name_1;
     PyObject *tmp_called_name_2;
     PyObject *tmp_called_name_3;
@@ -13055,6 +13228,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *tmp_compare_left_7;
     PyObject *tmp_compare_left_8;
     PyObject *tmp_compare_left_9;
+    PyObject *tmp_compare_left_10;
     PyObject *tmp_compare_right_1;
     PyObject *tmp_compare_right_2;
     PyObject *tmp_compare_right_3;
@@ -13064,6 +13238,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *tmp_compare_right_7;
     PyObject *tmp_compare_right_8;
     PyObject *tmp_compare_right_9;
+    PyObject *tmp_compare_right_10;
     PyObject *tmp_compexpr_left_1;
     PyObject *tmp_compexpr_right_1;
     int tmp_cond_truth_1;
@@ -13075,6 +13250,10 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     int tmp_cond_truth_7;
     int tmp_cond_truth_8;
     int tmp_cond_truth_9;
+    int tmp_cond_truth_10;
+    int tmp_cond_truth_11;
+    int tmp_cond_truth_12;
+    int tmp_cond_truth_13;
     PyObject *tmp_cond_value_1;
     PyObject *tmp_cond_value_2;
     PyObject *tmp_cond_value_3;
@@ -13084,6 +13263,10 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *tmp_cond_value_7;
     PyObject *tmp_cond_value_8;
     PyObject *tmp_cond_value_9;
+    PyObject *tmp_cond_value_10;
+    PyObject *tmp_cond_value_11;
+    PyObject *tmp_cond_value_12;
+    PyObject *tmp_cond_value_13;
     PyObject *tmp_dict_key_1;
     PyObject *tmp_dict_key_2;
     PyObject *tmp_dict_key_3;
@@ -13115,6 +13298,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *tmp_dict_key_29;
     PyObject *tmp_dict_key_30;
     PyObject *tmp_dict_key_31;
+    PyObject *tmp_dict_key_32;
     PyObject *tmp_dict_value_1;
     PyObject *tmp_dict_value_2;
     PyObject *tmp_dict_value_3;
@@ -13146,6 +13330,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *tmp_dict_value_29;
     PyObject *tmp_dict_value_30;
     PyObject *tmp_dict_value_31;
+    PyObject *tmp_dict_value_32;
     PyObject *tmp_dircall_arg1_1;
     PyObject *tmp_dircall_arg1_2;
     PyObject *tmp_dircall_arg1_3;
@@ -13167,6 +13352,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     int tmp_exc_match_exception_match_3;
     int tmp_exc_match_exception_match_4;
     int tmp_exc_match_exception_match_5;
+    int tmp_exc_match_exception_match_6;
     PyObject *tmp_frame_locals;
     PyObject *tmp_getattr_attr_1;
     PyObject *tmp_getattr_default_1;
@@ -13188,7 +13374,6 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *tmp_kw_name_7;
     PyObject *tmp_operand_name_1;
     PyObject *tmp_operand_name_2;
-    PyObject *tmp_operand_name_3;
     PyObject *tmp_raise_type_1;
     PyObject *tmp_raise_type_2;
     PyObject *tmp_raise_type_3;
@@ -13235,6 +13420,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyObject *tmp_source_name_38;
     PyObject *tmp_source_name_39;
     PyObject *tmp_source_name_40;
+    PyObject *tmp_source_name_41;
     PyObject *tmp_subscribed_name_1;
     PyObject *tmp_subscript_name_1;
     PyObject *tmp_tuple_element_1;
@@ -13260,7 +13446,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_ef1316f278f6ad55eb5be8c303e88ed6, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_e0108ffd924d0be3e00bdc9ac5bd6544, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -13298,7 +13484,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 519;
+        exception_lineno = 534;
         goto frame_exception_exit_1;
     }
     {
@@ -13327,7 +13513,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 521;
+        exception_lineno = 536;
         goto frame_exception_exit_1;
     }
 
@@ -13339,7 +13525,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 521;
+        exception_lineno = 536;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -13368,7 +13554,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 522;
+        exception_lineno = 537;
         goto frame_exception_exit_1;
     }
 
@@ -13380,7 +13566,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 522;
+        exception_lineno = 537;
         goto frame_exception_exit_1;
     }
     tmp_args_name_1 = PyTuple_New( 1 );
@@ -13397,7 +13583,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 522;
+        exception_lineno = 537;
         goto frame_exception_exit_1;
     }
 
@@ -13423,7 +13609,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 522;
+        exception_lineno = 537;
         goto frame_exception_exit_1;
     }
 
@@ -13437,12 +13623,12 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         Py_DECREF( tmp_args_name_1 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 522;
+        exception_lineno = 537;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_2, tmp_dict_value_2 );
     Py_DECREF( tmp_dict_value_2 );
-    frame_function->f_lineno = 522;
+    frame_function->f_lineno = 537;
     tmp_assign_source_2 = CALL_FUNCTION( tmp_called_name_1, tmp_args_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_1 );
     Py_DECREF( tmp_args_name_1 );
@@ -13454,7 +13640,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 522;
+        exception_lineno = 537;
         goto frame_exception_exit_1;
     }
     {
@@ -13487,10 +13673,10 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 525;
+        exception_lineno = 540;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 525;
+    frame_function->f_lineno = 540;
     tmp_assign_source_3 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, &PyTuple_GET_ITEM( const_tuple_str_plain_preload_content_true_tuple, 0 ) );
 
     Py_DECREF( tmp_called_name_2 );
@@ -13501,7 +13687,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 525;
+        exception_lineno = 540;
         goto frame_exception_exit_1;
     }
     {
@@ -13521,7 +13707,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 528;
+        exception_lineno = 543;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -13545,7 +13731,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 528;
+        exception_lineno = 543;
         goto frame_exception_exit_1;
     }
 
@@ -13557,12 +13743,12 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 528;
+        exception_lineno = 543;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = par_url;
 
-    frame_function->f_lineno = 528;
+    frame_function->f_lineno = 543;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_operand_name_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -13576,7 +13762,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 528;
+        exception_lineno = 543;
         goto frame_exception_exit_1;
     }
     tmp_and_right_value_1 = UNARY_OPERATION( UNARY_NOT, tmp_operand_name_1 );
@@ -13588,7 +13774,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 528;
+        exception_lineno = 543;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_1 = tmp_and_right_value_1;
@@ -13604,7 +13790,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 528;
+        exception_lineno = 543;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -13633,7 +13819,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 529;
+        exception_lineno = 544;
         goto frame_exception_exit_1;
     }
 
@@ -13649,7 +13835,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 529;
+        exception_lineno = 544;
         goto frame_exception_exit_1;
     }
 
@@ -13665,7 +13851,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 529;
+        exception_lineno = 544;
         goto frame_exception_exit_1;
     }
 
@@ -13681,11 +13867,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 529;
+        exception_lineno = 544;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 529;
+    frame_function->f_lineno = 544;
     {
         PyObject *call_args[] = { tmp_args_element_name_2, tmp_args_element_name_3, tmp_args_element_name_4 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_4, call_args );
@@ -13698,11 +13884,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 529;
+        exception_lineno = 544;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_1;
-    exception_lineno = 529;
+    exception_lineno = 544;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_4:;
@@ -13723,7 +13909,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 536;
+        exception_lineno = 551;
         goto frame_exception_exit_1;
     }
 
@@ -13735,7 +13921,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 536;
+        exception_lineno = 551;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_3 = const_str_plain_http;
@@ -13747,7 +13933,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_left_3 );
 
-        exception_lineno = 536;
+        exception_lineno = 551;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_compare_left_3 );
@@ -13772,7 +13958,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 537;
+        exception_lineno = 552;
         goto frame_exception_exit_1;
     }
 
@@ -13784,10 +13970,10 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 537;
+        exception_lineno = 552;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 537;
+    frame_function->f_lineno = 552;
     tmp_assign_source_5 = CALL_FUNCTION_NO_ARGS( tmp_called_name_5 );
     Py_DECREF( tmp_called_name_5 );
     if ( tmp_assign_source_5 == NULL )
@@ -13797,7 +13983,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 537;
+        exception_lineno = 552;
         goto frame_exception_exit_1;
     }
     {
@@ -13816,7 +14002,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 538;
+        exception_lineno = 553;
         goto frame_exception_exit_1;
     }
     tmp_source_name_9 = par_self;
@@ -13831,7 +14017,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 538;
+        exception_lineno = 553;
         goto frame_exception_exit_1;
     }
 
@@ -13843,10 +14029,10 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_6 );
 
-        exception_lineno = 538;
+        exception_lineno = 553;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 538;
+    frame_function->f_lineno = 553;
     {
         PyObject *call_args[] = { tmp_args_element_name_5 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_6, call_args );
@@ -13861,7 +14047,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 538;
+        exception_lineno = 553;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -13870,6 +14056,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     assert( var_err == NULL );
     Py_INCREF( tmp_assign_source_6 );
     var_err = tmp_assign_source_6;
+
+    tmp_assign_source_7 = Py_False;
+    assert( var_clean_exit == NULL );
+    Py_INCREF( tmp_assign_source_7 );
+    var_clean_exit = tmp_assign_source_7;
 
     // Tried code:
     // Tried code:
@@ -13885,7 +14076,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 546;
+        exception_lineno = 565;
         goto try_except_handler_3;
     }
 
@@ -13897,30 +14088,30 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 546;
+        exception_lineno = 565;
         goto try_except_handler_3;
     }
     tmp_args_element_name_6 = par_timeout;
 
-    frame_function->f_lineno = 546;
+    frame_function->f_lineno = 565;
     {
         PyObject *call_args[] = { tmp_args_element_name_6 };
-        tmp_assign_source_7 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_7, call_args );
+        tmp_assign_source_8 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_7, call_args );
     }
 
     Py_DECREF( tmp_called_name_7 );
-    if ( tmp_assign_source_7 == NULL )
+    if ( tmp_assign_source_8 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 546;
+        exception_lineno = 565;
         goto try_except_handler_3;
     }
     assert( var_timeout_obj == NULL );
-    var_timeout_obj = tmp_assign_source_7;
+    var_timeout_obj = tmp_assign_source_8;
 
     tmp_source_name_11 = par_self;
 
@@ -13934,7 +14125,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 547;
+        exception_lineno = 566;
         goto try_except_handler_3;
     }
 
@@ -13946,7 +14137,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 547;
+        exception_lineno = 566;
         goto try_except_handler_3;
     }
     tmp_kw_name_2 = _PyDict_NewPresized( 1 );
@@ -13954,23 +14145,23 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     tmp_dict_value_3 = par_pool_timeout;
 
     PyDict_SetItem( tmp_kw_name_2, tmp_dict_key_3, tmp_dict_value_3 );
-    frame_function->f_lineno = 547;
-    tmp_assign_source_8 = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_8, tmp_kw_name_2 );
+    frame_function->f_lineno = 566;
+    tmp_assign_source_9 = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_8, tmp_kw_name_2 );
     Py_DECREF( tmp_called_name_8 );
     Py_DECREF( tmp_kw_name_2 );
-    if ( tmp_assign_source_8 == NULL )
+    if ( tmp_assign_source_9 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 547;
+        exception_lineno = 566;
         goto try_except_handler_3;
     }
     {
         PyObject *old = var_conn;
-        var_conn = tmp_assign_source_8;
+        var_conn = tmp_assign_source_9;
         Py_XDECREF( old );
     }
 
@@ -13986,7 +14177,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 549;
+        exception_lineno = 568;
         goto try_except_handler_3;
     }
 
@@ -13998,7 +14189,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 549;
+        exception_lineno = 568;
         goto try_except_handler_3;
     }
     tmp_assattr_target_1 = var_conn;
@@ -14013,7 +14204,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 549;
+        exception_lineno = 568;
         goto try_except_handler_3;
     }
 
@@ -14025,7 +14216,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assattr_name_1 );
 
-        exception_lineno = 549;
+        exception_lineno = 568;
         goto try_except_handler_3;
     }
     Py_DECREF( tmp_assattr_name_1 );
@@ -14041,7 +14232,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 551;
+        exception_lineno = 570;
         goto try_except_handler_3;
     }
 
@@ -14053,7 +14244,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 551;
+        exception_lineno = 570;
         goto try_except_handler_3;
     }
     tmp_compexpr_right_1 = Py_None;
@@ -14082,7 +14273,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 551;
+        exception_lineno = 570;
         goto try_except_handler_3;
     }
 
@@ -14096,7 +14287,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 551;
+        exception_lineno = 570;
         goto try_except_handler_3;
     }
     tmp_and_right_value_2 = UNARY_OPERATION( UNARY_NOT, tmp_operand_name_2 );
@@ -14108,17 +14299,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 551;
+        exception_lineno = 570;
         goto try_except_handler_3;
     }
-    tmp_assign_source_9 = tmp_and_right_value_2;
+    tmp_assign_source_10 = tmp_and_right_value_2;
     goto and_end_2;
     and_left_2:;
-    tmp_assign_source_9 = tmp_and_left_value_2;
+    tmp_assign_source_10 = tmp_and_left_value_2;
     and_end_2:;
     assert( var_is_new_proxy_conn == NULL );
-    Py_INCREF( tmp_assign_source_9 );
-    var_is_new_proxy_conn = tmp_assign_source_9;
+    Py_INCREF( tmp_assign_source_10 );
+    var_is_new_proxy_conn = tmp_assign_source_10;
 
     tmp_cond_value_2 = var_is_new_proxy_conn;
 
@@ -14130,7 +14321,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 552;
+        exception_lineno = 571;
         goto try_except_handler_3;
     }
     if ( tmp_cond_truth_2 == 1 )
@@ -14154,7 +14345,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 553;
+        exception_lineno = 572;
         goto try_except_handler_3;
     }
 
@@ -14166,7 +14357,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 553;
+        exception_lineno = 572;
         goto try_except_handler_3;
     }
     tmp_args_element_name_7 = var_conn;
@@ -14181,11 +14372,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 553;
+        exception_lineno = 572;
         goto try_except_handler_3;
     }
 
-    frame_function->f_lineno = 553;
+    frame_function->f_lineno = 572;
     {
         PyObject *call_args[] = { tmp_args_element_name_7 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_9, call_args );
@@ -14199,7 +14390,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 553;
+        exception_lineno = 572;
         goto try_except_handler_3;
     }
     Py_DECREF( tmp_unused );
@@ -14216,7 +14407,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 556;
+        exception_lineno = 575;
         goto try_except_handler_3;
     }
 
@@ -14228,7 +14419,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 556;
+        exception_lineno = 575;
         goto try_except_handler_3;
     }
     tmp_args_name_2 = PyTuple_New( 3 );
@@ -14245,7 +14436,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 556;
+        exception_lineno = 575;
         goto try_except_handler_3;
     }
 
@@ -14268,13 +14459,13 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 556;
+        exception_lineno = 575;
         goto try_except_handler_3;
     }
 
     Py_INCREF( tmp_tuple_element_2 );
     PyTuple_SET_ITEM( tmp_args_name_2, 2, tmp_tuple_element_2 );
-    tmp_kw_name_3 = _PyDict_NewPresized( 3 );
+    tmp_kw_name_3 = _PyDict_NewPresized( 4 );
     tmp_dict_key_4 = const_str_plain_timeout;
     tmp_dict_value_4 = var_timeout_obj;
 
@@ -14290,7 +14481,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 557;
+        exception_lineno = 576;
         goto try_except_handler_3;
     }
 
@@ -14314,32 +14505,36 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 558;
+        exception_lineno = 577;
         goto try_except_handler_3;
     }
 
     PyDict_SetItem( tmp_kw_name_3, tmp_dict_key_6, tmp_dict_value_6 );
-    frame_function->f_lineno = 558;
-    tmp_assign_source_10 = CALL_FUNCTION( tmp_called_name_10, tmp_args_name_2, tmp_kw_name_3 );
+    tmp_dict_key_7 = const_str_plain_chunked;
+    tmp_dict_value_7 = par_chunked;
+
+    PyDict_SetItem( tmp_kw_name_3, tmp_dict_key_7, tmp_dict_value_7 );
+    frame_function->f_lineno = 578;
+    tmp_assign_source_11 = CALL_FUNCTION( tmp_called_name_10, tmp_args_name_2, tmp_kw_name_3 );
     Py_DECREF( tmp_called_name_10 );
     Py_DECREF( tmp_args_name_2 );
     Py_DECREF( tmp_kw_name_3 );
-    if ( tmp_assign_source_10 == NULL )
+    if ( tmp_assign_source_11 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 558;
+        exception_lineno = 578;
         goto try_except_handler_3;
     }
     assert( var_httplib_response == NULL );
-    var_httplib_response = tmp_assign_source_10;
+    var_httplib_response = tmp_assign_source_11;
 
-    tmp_operand_name_3 = par_release_conn;
+    tmp_cond_value_3 = par_release_conn;
 
-    if ( tmp_operand_name_3 == NULL )
+    if ( tmp_cond_value_3 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -14349,44 +14544,33 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 564;
+        exception_lineno = 584;
         goto try_except_handler_3;
     }
 
-    tmp_and_left_value_3 = UNARY_OPERATION( UNARY_NOT, tmp_operand_name_3 );
-    if ( tmp_and_left_value_3 == NULL )
+    tmp_cond_truth_3 = CHECK_IF_TRUE( tmp_cond_value_3 );
+    if ( tmp_cond_truth_3 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 564;
+        exception_lineno = 584;
         goto try_except_handler_3;
     }
-    tmp_and_left_truth_3 = CHECK_IF_TRUE( tmp_and_left_value_3 );
-    if ( tmp_and_left_truth_3 == -1 )
+    if ( tmp_cond_truth_3 == 1 )
     {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 564;
-        goto try_except_handler_3;
-    }
-    if ( tmp_and_left_truth_3 == 1 )
-    {
-        goto and_right_3;
+        goto condexpr_false_1;
     }
     else
     {
-        goto and_left_3;
+        goto condexpr_true_1;
     }
-    and_right_3:;
-    tmp_and_right_value_3 = var_conn;
+    condexpr_true_1:;
+    tmp_assign_source_12 = var_conn;
 
-    if ( tmp_and_right_value_3 == NULL )
+    if ( tmp_assign_source_12 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -14396,18 +14580,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 564;
+        exception_lineno = 584;
         goto try_except_handler_3;
     }
 
-    tmp_assign_source_11 = tmp_and_right_value_3;
-    goto and_end_3;
-    and_left_3:;
-    tmp_assign_source_11 = tmp_and_left_value_3;
-    and_end_3:;
+    goto condexpr_end_1;
+    condexpr_false_1:;
+    tmp_assign_source_12 = Py_None;
+    condexpr_end_1:;
     assert( var_response_conn == NULL );
-    Py_INCREF( tmp_assign_source_11 );
-    var_response_conn = tmp_assign_source_11;
+    Py_INCREF( tmp_assign_source_12 );
+    var_response_conn = tmp_assign_source_12;
 
     tmp_source_name_16 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_HTTPResponse );
 
@@ -14426,7 +14609,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 567;
+        exception_lineno = 587;
         goto try_except_handler_3;
     }
 
@@ -14438,7 +14621,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 567;
+        exception_lineno = 587;
         goto try_except_handler_3;
     }
     tmp_dircall_arg2_1 = PyTuple_New( 1 );
@@ -14455,17 +14638,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 567;
+        exception_lineno = 587;
         goto try_except_handler_3;
     }
 
     Py_INCREF( tmp_tuple_element_3 );
     PyTuple_SET_ITEM( tmp_dircall_arg2_1, 0, tmp_tuple_element_3 );
     tmp_dircall_arg3_1 = _PyDict_NewPresized( 2 );
-    tmp_dict_key_7 = const_str_plain_pool;
-    tmp_dict_value_7 = par_self;
+    tmp_dict_key_8 = const_str_plain_pool;
+    tmp_dict_value_8 = par_self;
 
-    if ( tmp_dict_value_7 == NULL )
+    if ( tmp_dict_value_8 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
@@ -14477,15 +14660,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 568;
+        exception_lineno = 588;
         goto try_except_handler_3;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_1, tmp_dict_key_7, tmp_dict_value_7 );
-    tmp_dict_key_8 = const_str_plain_connection;
-    tmp_dict_value_8 = var_response_conn;
+    PyDict_SetItem( tmp_dircall_arg3_1, tmp_dict_key_8, tmp_dict_value_8 );
+    tmp_dict_key_9 = const_str_plain_connection;
+    tmp_dict_value_9 = var_response_conn;
 
-    if ( tmp_dict_value_8 == NULL )
+    if ( tmp_dict_value_9 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
@@ -14497,11 +14680,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 569;
+        exception_lineno = 589;
         goto try_except_handler_3;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_1, tmp_dict_key_8, tmp_dict_value_8 );
+    PyDict_SetItem( tmp_dircall_arg3_1, tmp_dict_key_9, tmp_dict_value_9 );
     tmp_dircall_arg4_1 = par_response_kw;
 
     if ( tmp_dircall_arg4_1 == NULL )
@@ -14516,7 +14699,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 570;
+        exception_lineno = 590;
         goto try_except_handler_3;
     }
 
@@ -14524,20 +14707,28 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     {
         PyObject *dir_call_args[] = {tmp_dircall_arg1_1, tmp_dircall_arg2_1, tmp_dircall_arg3_1, tmp_dircall_arg4_1};
-        tmp_assign_source_12 = impl_function_7_complex_call_helper_pos_keywords_star_dict_of___internal__( dir_call_args );
+        tmp_assign_source_13 = impl_function_7_complex_call_helper_pos_keywords_star_dict_of___internal__( dir_call_args );
     }
-    if ( tmp_assign_source_12 == NULL )
+    if ( tmp_assign_source_13 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 570;
+        exception_lineno = 590;
         goto try_except_handler_3;
     }
     assert( var_response == NULL );
-    var_response = tmp_assign_source_12;
+    var_response = tmp_assign_source_13;
+
+    tmp_assign_source_14 = Py_True;
+    {
+        PyObject *old = var_clean_exit;
+        var_clean_exit = tmp_assign_source_14;
+        Py_INCREF( var_clean_exit );
+        Py_XDECREF( old );
+    }
 
     goto try_end_1;
     // Exception handler code:
@@ -14590,7 +14781,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 577;
+        exception_lineno = 595;
         goto try_except_handler_4;
     }
 
@@ -14602,7 +14793,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 577;
+        exception_lineno = 595;
         goto try_except_handler_4;
     }
     if ( tmp_exc_match_exception_match_1 == 1 )
@@ -14631,7 +14822,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 579;
+        exception_lineno = 597;
         goto try_except_handler_4;
     }
 
@@ -14647,12 +14838,12 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 579;
+        exception_lineno = 597;
         goto try_except_handler_4;
     }
 
     tmp_args_element_name_9 = const_str_digest_b0e38659a554c584c0942e070d234e9c;
-    frame_function->f_lineno = 579;
+    frame_function->f_lineno = 597;
     {
         PyObject *call_args[] = { tmp_args_element_name_8, tmp_args_element_name_9 };
         tmp_raise_type_2 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_11, call_args );
@@ -14665,11 +14856,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 579;
+        exception_lineno = 597;
         goto try_except_handler_4;
     }
     exception_type = tmp_raise_type_2;
-    exception_lineno = 579;
+    exception_lineno = 597;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto try_except_handler_4;
     goto branch_end_7;
@@ -14693,7 +14884,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 581;
+        exception_lineno = 599;
         goto try_except_handler_4;
     }
 
@@ -14716,7 +14907,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 581;
+        exception_lineno = 599;
         goto try_except_handler_4;
     }
 
@@ -14730,7 +14921,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_right_5 );
 
-        exception_lineno = 581;
+        exception_lineno = 599;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_compare_right_5 );
@@ -14743,116 +14934,28 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         goto branch_no_8;
     }
     branch_yes_8:;
-    tmp_assign_source_13 = PyThreadState_GET()->exc_value;
+    tmp_assign_source_15 = PyThreadState_GET()->exc_value;
     assert( var_e == NULL );
-    Py_INCREF( tmp_assign_source_13 );
-    var_e = tmp_assign_source_13;
+    Py_INCREF( tmp_assign_source_15 );
+    var_e = tmp_assign_source_15;
+
+    tmp_assign_source_16 = Py_False;
+    {
+        PyObject *old = var_clean_exit;
+        var_clean_exit = tmp_assign_source_16;
+        Py_INCREF( var_clean_exit );
+        Py_XDECREF( old );
+    }
 
     // Tried code:
-    tmp_and_left_value_4 = var_conn;
+    tmp_called_name_12 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_SSLError );
 
-    if ( tmp_and_left_value_4 == NULL )
+    if (unlikely( tmp_called_name_12 == NULL ))
     {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 585;
-        goto try_except_handler_5;
+        tmp_called_name_12 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_SSLError );
     }
 
-    tmp_and_left_truth_4 = CHECK_IF_TRUE( tmp_and_left_value_4 );
-    if ( tmp_and_left_truth_4 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 585;
-        goto try_except_handler_5;
-    }
-    if ( tmp_and_left_truth_4 == 1 )
-    {
-        goto and_right_4;
-    }
-    else
-    {
-        goto and_left_4;
-    }
-    and_right_4:;
-    tmp_source_name_17 = var_conn;
-
-    if ( tmp_source_name_17 == NULL )
-    {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 585;
-        goto try_except_handler_5;
-    }
-
-    tmp_called_name_12 = LOOKUP_ATTRIBUTE( tmp_source_name_17, const_str_plain_close );
     if ( tmp_called_name_12 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 585;
-        goto try_except_handler_5;
-    }
-    frame_function->f_lineno = 585;
-    tmp_and_right_value_4 = CALL_FUNCTION_NO_ARGS( tmp_called_name_12 );
-    Py_DECREF( tmp_called_name_12 );
-    if ( tmp_and_right_value_4 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 585;
-        goto try_except_handler_5;
-    }
-    tmp_assign_source_14 = tmp_and_right_value_4;
-    goto and_end_4;
-    and_left_4:;
-    Py_INCREF( tmp_and_left_value_4 );
-    tmp_assign_source_14 = tmp_and_left_value_4;
-    and_end_4:;
-    {
-        PyObject *old = var_conn;
-        var_conn = tmp_assign_source_14;
-        Py_XDECREF( old );
-    }
-
-    tmp_assign_source_15 = Py_True;
-    {
-        PyObject *old = par_release_conn;
-        par_release_conn = tmp_assign_source_15;
-        Py_INCREF( par_release_conn );
-        Py_XDECREF( old );
-    }
-
-    tmp_called_name_13 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_SSLError );
-
-    if (unlikely( tmp_called_name_13 == NULL ))
-    {
-        tmp_called_name_13 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_SSLError );
-    }
-
-    if ( tmp_called_name_13 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -14862,30 +14965,16 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 587;
+        exception_lineno = 604;
         goto try_except_handler_5;
     }
 
     tmp_args_element_name_10 = var_e;
 
-    if ( tmp_args_element_name_10 == NULL )
-    {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "e" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 587;
-        goto try_except_handler_5;
-    }
-
-    frame_function->f_lineno = 587;
+    frame_function->f_lineno = 604;
     {
         PyObject *call_args[] = { tmp_args_element_name_10 };
-        tmp_raise_type_3 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_13, call_args );
+        tmp_raise_type_3 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_12, call_args );
     }
 
     if ( tmp_raise_type_3 == NULL )
@@ -14895,11 +14984,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 587;
+        exception_lineno = 604;
         goto try_except_handler_5;
     }
     exception_type = tmp_raise_type_3;
-    exception_lineno = 587;
+    exception_lineno = 604;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto try_except_handler_5;
     // tried codes exits in all cases
@@ -14947,7 +15036,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 589;
+        exception_lineno = 606;
         goto try_except_handler_4;
     }
 
@@ -14959,7 +15048,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 589;
+        exception_lineno = 606;
         goto try_except_handler_4;
     }
     if ( tmp_exc_match_exception_match_3 == 1 )
@@ -14971,99 +15060,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         goto branch_no_9;
     }
     branch_yes_9:;
-    tmp_and_left_value_5 = var_conn;
-
-    if ( tmp_and_left_value_5 == NULL )
+    tmp_assign_source_17 = Py_False;
     {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 592;
-        goto try_except_handler_4;
-    }
-
-    tmp_and_left_truth_5 = CHECK_IF_TRUE( tmp_and_left_value_5 );
-    if ( tmp_and_left_truth_5 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 592;
-        goto try_except_handler_4;
-    }
-    if ( tmp_and_left_truth_5 == 1 )
-    {
-        goto and_right_5;
-    }
-    else
-    {
-        goto and_left_5;
-    }
-    and_right_5:;
-    tmp_source_name_18 = var_conn;
-
-    if ( tmp_source_name_18 == NULL )
-    {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 592;
-        goto try_except_handler_4;
-    }
-
-    tmp_called_name_14 = LOOKUP_ATTRIBUTE( tmp_source_name_18, const_str_plain_close );
-    if ( tmp_called_name_14 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 592;
-        goto try_except_handler_4;
-    }
-    frame_function->f_lineno = 592;
-    tmp_and_right_value_5 = CALL_FUNCTION_NO_ARGS( tmp_called_name_14 );
-    Py_DECREF( tmp_called_name_14 );
-    if ( tmp_and_right_value_5 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 592;
-        goto try_except_handler_4;
-    }
-    tmp_assign_source_16 = tmp_and_right_value_5;
-    goto and_end_5;
-    and_left_5:;
-    Py_INCREF( tmp_and_left_value_5 );
-    tmp_assign_source_16 = tmp_and_left_value_5;
-    and_end_5:;
-    {
-        PyObject *old = var_conn;
-        var_conn = tmp_assign_source_16;
-        Py_XDECREF( old );
-    }
-
-    tmp_assign_source_17 = Py_True;
-    {
-        PyObject *old = par_release_conn;
-        par_release_conn = tmp_assign_source_17;
-        Py_INCREF( par_release_conn );
+        PyObject *old = var_clean_exit;
+        var_clean_exit = tmp_assign_source_17;
+        Py_INCREF( var_clean_exit );
         Py_XDECREF( old );
     }
 
@@ -15091,7 +15092,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 596;
+        exception_lineno = 612;
         goto try_except_handler_4;
     }
 
@@ -15114,7 +15115,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 596;
+        exception_lineno = 612;
         goto try_except_handler_4;
     }
 
@@ -15137,7 +15138,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 596;
+        exception_lineno = 612;
         goto try_except_handler_4;
     }
 
@@ -15160,7 +15161,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 596;
+        exception_lineno = 612;
         goto try_except_handler_4;
     }
 
@@ -15174,7 +15175,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_right_7 );
 
-        exception_lineno = 596;
+        exception_lineno = 612;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_compare_right_7 );
@@ -15195,118 +15196,16 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         Py_XDECREF( old );
     }
 
+    tmp_assign_source_19 = Py_False;
+    {
+        PyObject *old = var_clean_exit;
+        var_clean_exit = tmp_assign_source_19;
+        Py_INCREF( var_clean_exit );
+        Py_XDECREF( old );
+    }
+
     // Tried code:
-    tmp_and_left_value_6 = var_conn;
-
-    if ( tmp_and_left_value_6 == NULL )
-    {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 599;
-        goto try_except_handler_6;
-    }
-
-    tmp_and_left_truth_6 = CHECK_IF_TRUE( tmp_and_left_value_6 );
-    if ( tmp_and_left_truth_6 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 599;
-        goto try_except_handler_6;
-    }
-    if ( tmp_and_left_truth_6 == 1 )
-    {
-        goto and_right_6;
-    }
-    else
-    {
-        goto and_left_6;
-    }
-    and_right_6:;
-    tmp_source_name_19 = var_conn;
-
-    if ( tmp_source_name_19 == NULL )
-    {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 599;
-        goto try_except_handler_6;
-    }
-
-    tmp_called_name_15 = LOOKUP_ATTRIBUTE( tmp_source_name_19, const_str_plain_close );
-    if ( tmp_called_name_15 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 599;
-        goto try_except_handler_6;
-    }
-    frame_function->f_lineno = 599;
-    tmp_and_right_value_6 = CALL_FUNCTION_NO_ARGS( tmp_called_name_15 );
-    Py_DECREF( tmp_called_name_15 );
-    if ( tmp_and_right_value_6 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 599;
-        goto try_except_handler_6;
-    }
-    tmp_assign_source_19 = tmp_and_right_value_6;
-    goto and_end_6;
-    and_left_6:;
-    Py_INCREF( tmp_and_left_value_6 );
-    tmp_assign_source_19 = tmp_and_left_value_6;
-    and_end_6:;
-    {
-        PyObject *old = var_conn;
-        var_conn = tmp_assign_source_19;
-        Py_XDECREF( old );
-    }
-
-    tmp_assign_source_20 = Py_True;
-    {
-        PyObject *old = par_release_conn;
-        par_release_conn = tmp_assign_source_20;
-        Py_INCREF( par_release_conn );
-        Py_XDECREF( old );
-    }
-
     tmp_isinstance_inst_2 = var_e;
-
-    if ( tmp_isinstance_inst_2 == NULL )
-    {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "e" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 602;
-        goto try_except_handler_6;
-    }
 
     tmp_isinstance_cls_2 = PyTuple_New( 2 );
     tmp_tuple_element_6 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_SocketError );
@@ -15326,7 +15225,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 602;
+        exception_lineno = 617;
         goto try_except_handler_6;
     }
 
@@ -15349,47 +15248,47 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 602;
+        exception_lineno = 617;
         goto try_except_handler_6;
     }
 
     Py_INCREF( tmp_tuple_element_6 );
     PyTuple_SET_ITEM( tmp_isinstance_cls_2, 1, tmp_tuple_element_6 );
-    tmp_and_left_value_7 = BUILTIN_ISINSTANCE( tmp_isinstance_inst_2, tmp_isinstance_cls_2 );
+    tmp_and_left_value_3 = BUILTIN_ISINSTANCE( tmp_isinstance_inst_2, tmp_isinstance_cls_2 );
     Py_DECREF( tmp_isinstance_cls_2 );
-    if ( tmp_and_left_value_7 == NULL )
+    if ( tmp_and_left_value_3 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 602;
+        exception_lineno = 617;
         goto try_except_handler_6;
     }
-    tmp_and_left_truth_7 = CHECK_IF_TRUE( tmp_and_left_value_7 );
-    if ( tmp_and_left_truth_7 == -1 )
+    tmp_and_left_truth_3 = CHECK_IF_TRUE( tmp_and_left_value_3 );
+    if ( tmp_and_left_truth_3 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 602;
+        exception_lineno = 617;
         goto try_except_handler_6;
     }
-    if ( tmp_and_left_truth_7 == 1 )
+    if ( tmp_and_left_truth_3 == 1 )
     {
-        goto and_right_7;
+        goto and_right_3;
     }
     else
     {
-        goto and_left_7;
+        goto and_left_3;
     }
-    and_right_7:;
-    tmp_source_name_20 = par_self;
+    and_right_3:;
+    tmp_source_name_17 = par_self;
 
-    if ( tmp_source_name_20 == NULL )
+    if ( tmp_source_name_17 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -15399,40 +15298,40 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 602;
+        exception_lineno = 617;
         goto try_except_handler_6;
     }
 
-    tmp_and_right_value_7 = LOOKUP_ATTRIBUTE( tmp_source_name_20, const_str_plain_proxy );
-    if ( tmp_and_right_value_7 == NULL )
+    tmp_and_right_value_3 = LOOKUP_ATTRIBUTE( tmp_source_name_17, const_str_plain_proxy );
+    if ( tmp_and_right_value_3 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 602;
+        exception_lineno = 617;
         goto try_except_handler_6;
     }
-    tmp_cond_value_3 = tmp_and_right_value_7;
-    goto and_end_7;
-    and_left_7:;
-    Py_INCREF( tmp_and_left_value_7 );
-    tmp_cond_value_3 = tmp_and_left_value_7;
-    and_end_7:;
-    tmp_cond_truth_3 = CHECK_IF_TRUE( tmp_cond_value_3 );
-    if ( tmp_cond_truth_3 == -1 )
+    tmp_cond_value_4 = tmp_and_right_value_3;
+    goto and_end_3;
+    and_left_3:;
+    Py_INCREF( tmp_and_left_value_3 );
+    tmp_cond_value_4 = tmp_and_left_value_3;
+    and_end_3:;
+    tmp_cond_truth_4 = CHECK_IF_TRUE( tmp_cond_value_4 );
+    if ( tmp_cond_truth_4 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_cond_value_3 );
+        Py_DECREF( tmp_cond_value_4 );
 
-        exception_lineno = 602;
+        exception_lineno = 617;
         goto try_except_handler_6;
     }
-    Py_DECREF( tmp_cond_value_3 );
-    if ( tmp_cond_truth_3 == 1 )
+    Py_DECREF( tmp_cond_value_4 );
+    if ( tmp_cond_truth_4 == 1 )
     {
         goto branch_yes_11;
     }
@@ -15441,14 +15340,14 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         goto branch_no_11;
     }
     branch_yes_11:;
-    tmp_called_name_16 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_ProxyError );
+    tmp_called_name_13 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_ProxyError );
 
-    if (unlikely( tmp_called_name_16 == NULL ))
+    if (unlikely( tmp_called_name_13 == NULL ))
     {
-        tmp_called_name_16 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_ProxyError );
+        tmp_called_name_13 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_ProxyError );
     }
 
-    if ( tmp_called_name_16 == NULL )
+    if ( tmp_called_name_13 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -15458,7 +15357,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 603;
+        exception_lineno = 618;
         goto try_except_handler_6;
     }
 
@@ -15475,29 +15374,29 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 603;
+        exception_lineno = 618;
         goto try_except_handler_6;
     }
 
-    frame_function->f_lineno = 603;
+    frame_function->f_lineno = 618;
     {
         PyObject *call_args[] = { tmp_args_element_name_11, tmp_args_element_name_12 };
-        tmp_assign_source_21 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_16, call_args );
+        tmp_assign_source_20 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_13, call_args );
     }
 
-    if ( tmp_assign_source_21 == NULL )
+    if ( tmp_assign_source_20 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 603;
+        exception_lineno = 618;
         goto try_except_handler_6;
     }
     {
         PyObject *old = var_e;
-        var_e = tmp_assign_source_21;
+        var_e = tmp_assign_source_20;
         Py_XDECREF( old );
     }
 
@@ -15515,7 +15414,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 604;
+        exception_lineno = 619;
         goto try_except_handler_6;
     }
 
@@ -15537,7 +15436,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 604;
+        exception_lineno = 619;
         goto try_except_handler_6;
     }
 
@@ -15560,7 +15459,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 604;
+        exception_lineno = 619;
         goto try_except_handler_6;
     }
 
@@ -15575,7 +15474,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 604;
+        exception_lineno = 619;
         goto try_except_handler_6;
     }
     if ( tmp_res == 1 )
@@ -15587,14 +15486,14 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         goto branch_no_12;
     }
     branch_yes_12:;
-    tmp_called_name_17 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_ProtocolError );
+    tmp_called_name_14 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_ProtocolError );
 
-    if (unlikely( tmp_called_name_17 == NULL ))
+    if (unlikely( tmp_called_name_14 == NULL ))
     {
-        tmp_called_name_17 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_ProtocolError );
+        tmp_called_name_14 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_ProtocolError );
     }
 
-    if ( tmp_called_name_17 == NULL )
+    if ( tmp_called_name_14 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -15604,7 +15503,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 605;
+        exception_lineno = 620;
         goto try_except_handler_6;
     }
 
@@ -15621,37 +15520,37 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 605;
+        exception_lineno = 620;
         goto try_except_handler_6;
     }
 
-    frame_function->f_lineno = 605;
+    frame_function->f_lineno = 620;
     {
         PyObject *call_args[] = { tmp_args_element_name_13, tmp_args_element_name_14 };
-        tmp_assign_source_22 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_17, call_args );
+        tmp_assign_source_21 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_14, call_args );
     }
 
-    if ( tmp_assign_source_22 == NULL )
+    if ( tmp_assign_source_21 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 605;
+        exception_lineno = 620;
         goto try_except_handler_6;
     }
     {
         PyObject *old = var_e;
-        var_e = tmp_assign_source_22;
+        var_e = tmp_assign_source_21;
         Py_XDECREF( old );
     }
 
     branch_no_12:;
     branch_end_11:;
-    tmp_source_name_21 = par_retries;
+    tmp_source_name_18 = par_retries;
 
-    if ( tmp_source_name_21 == NULL )
+    if ( tmp_source_name_18 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -15661,19 +15560,19 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 607;
+        exception_lineno = 622;
         goto try_except_handler_6;
     }
 
-    tmp_called_name_18 = LOOKUP_ATTRIBUTE( tmp_source_name_21, const_str_plain_increment );
-    if ( tmp_called_name_18 == NULL )
+    tmp_called_name_15 = LOOKUP_ATTRIBUTE( tmp_source_name_18, const_str_plain_increment );
+    if ( tmp_called_name_15 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 607;
+        exception_lineno = 622;
         goto try_except_handler_6;
     }
     tmp_args_name_3 = PyTuple_New( 2 );
@@ -15681,7 +15580,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     if ( tmp_tuple_element_8 == NULL )
     {
-        Py_DECREF( tmp_called_name_18 );
+        Py_DECREF( tmp_called_name_15 );
         Py_DECREF( tmp_args_name_3 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
@@ -15690,7 +15589,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 607;
+        exception_lineno = 622;
         goto try_except_handler_6;
     }
 
@@ -15700,7 +15599,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     if ( tmp_tuple_element_8 == NULL )
     {
-        Py_DECREF( tmp_called_name_18 );
+        Py_DECREF( tmp_called_name_15 );
         Py_DECREF( tmp_args_name_3 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
@@ -15709,19 +15608,19 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 607;
+        exception_lineno = 622;
         goto try_except_handler_6;
     }
 
     Py_INCREF( tmp_tuple_element_8 );
     PyTuple_SET_ITEM( tmp_args_name_3, 1, tmp_tuple_element_8 );
     tmp_kw_name_4 = _PyDict_NewPresized( 3 );
-    tmp_dict_key_9 = const_str_plain_error;
-    tmp_dict_value_9 = var_e;
+    tmp_dict_key_10 = const_str_plain_error;
+    tmp_dict_value_10 = var_e;
 
-    if ( tmp_dict_value_9 == NULL )
+    if ( tmp_dict_value_10 == NULL )
     {
-        Py_DECREF( tmp_called_name_18 );
+        Py_DECREF( tmp_called_name_15 );
         Py_DECREF( tmp_args_name_3 );
         Py_DECREF( tmp_kw_name_4 );
         exception_type = PyExc_UnboundLocalError;
@@ -15731,17 +15630,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 607;
+        exception_lineno = 622;
         goto try_except_handler_6;
     }
 
-    PyDict_SetItem( tmp_kw_name_4, tmp_dict_key_9, tmp_dict_value_9 );
-    tmp_dict_key_10 = const_str_plain__pool;
-    tmp_dict_value_10 = par_self;
+    PyDict_SetItem( tmp_kw_name_4, tmp_dict_key_10, tmp_dict_value_10 );
+    tmp_dict_key_11 = const_str_plain__pool;
+    tmp_dict_value_11 = par_self;
 
-    if ( tmp_dict_value_10 == NULL )
+    if ( tmp_dict_value_11 == NULL )
     {
-        Py_DECREF( tmp_called_name_18 );
+        Py_DECREF( tmp_called_name_15 );
         Py_DECREF( tmp_args_name_3 );
         Py_DECREF( tmp_kw_name_4 );
         exception_type = PyExc_UnboundLocalError;
@@ -15751,22 +15650,22 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 607;
+        exception_lineno = 622;
         goto try_except_handler_6;
     }
 
-    PyDict_SetItem( tmp_kw_name_4, tmp_dict_key_10, tmp_dict_value_10 );
-    tmp_dict_key_11 = const_str_plain__stacktrace;
-    tmp_source_name_22 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_sys );
+    PyDict_SetItem( tmp_kw_name_4, tmp_dict_key_11, tmp_dict_value_11 );
+    tmp_dict_key_12 = const_str_plain__stacktrace;
+    tmp_source_name_19 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_sys );
 
-    if (unlikely( tmp_source_name_22 == NULL ))
+    if (unlikely( tmp_source_name_19 == NULL ))
     {
-        tmp_source_name_22 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_sys );
+        tmp_source_name_19 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_sys );
     }
 
-    if ( tmp_source_name_22 == NULL )
+    if ( tmp_source_name_19 == NULL )
     {
-        Py_DECREF( tmp_called_name_18 );
+        Py_DECREF( tmp_called_name_15 );
         Py_DECREF( tmp_args_name_3 );
         Py_DECREF( tmp_kw_name_4 );
         exception_type = PyExc_NameError;
@@ -15776,92 +15675,92 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 608;
+        exception_lineno = 623;
         goto try_except_handler_6;
     }
 
-    tmp_called_name_19 = LOOKUP_ATTRIBUTE( tmp_source_name_22, const_str_plain_exc_info );
-    if ( tmp_called_name_19 == NULL )
+    tmp_called_name_16 = LOOKUP_ATTRIBUTE( tmp_source_name_19, const_str_plain_exc_info );
+    if ( tmp_called_name_16 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_called_name_18 );
+        Py_DECREF( tmp_called_name_15 );
         Py_DECREF( tmp_args_name_3 );
         Py_DECREF( tmp_kw_name_4 );
 
-        exception_lineno = 608;
+        exception_lineno = 623;
         goto try_except_handler_6;
     }
-    frame_function->f_lineno = 608;
-    tmp_subscribed_name_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_19 );
-    Py_DECREF( tmp_called_name_19 );
+    frame_function->f_lineno = 623;
+    tmp_subscribed_name_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_16 );
+    Py_DECREF( tmp_called_name_16 );
     if ( tmp_subscribed_name_1 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_called_name_18 );
+        Py_DECREF( tmp_called_name_15 );
         Py_DECREF( tmp_args_name_3 );
         Py_DECREF( tmp_kw_name_4 );
 
-        exception_lineno = 608;
+        exception_lineno = 623;
         goto try_except_handler_6;
     }
     tmp_subscript_name_1 = const_int_pos_2;
-    tmp_dict_value_11 = LOOKUP_SUBSCRIPT( tmp_subscribed_name_1, tmp_subscript_name_1 );
+    tmp_dict_value_12 = LOOKUP_SUBSCRIPT( tmp_subscribed_name_1, tmp_subscript_name_1 );
     Py_DECREF( tmp_subscribed_name_1 );
-    if ( tmp_dict_value_11 == NULL )
+    if ( tmp_dict_value_12 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_called_name_18 );
+        Py_DECREF( tmp_called_name_15 );
         Py_DECREF( tmp_args_name_3 );
         Py_DECREF( tmp_kw_name_4 );
 
-        exception_lineno = 608;
+        exception_lineno = 623;
         goto try_except_handler_6;
     }
-    PyDict_SetItem( tmp_kw_name_4, tmp_dict_key_11, tmp_dict_value_11 );
-    Py_DECREF( tmp_dict_value_11 );
-    frame_function->f_lineno = 608;
-    tmp_assign_source_23 = CALL_FUNCTION( tmp_called_name_18, tmp_args_name_3, tmp_kw_name_4 );
-    Py_DECREF( tmp_called_name_18 );
+    PyDict_SetItem( tmp_kw_name_4, tmp_dict_key_12, tmp_dict_value_12 );
+    Py_DECREF( tmp_dict_value_12 );
+    frame_function->f_lineno = 623;
+    tmp_assign_source_22 = CALL_FUNCTION( tmp_called_name_15, tmp_args_name_3, tmp_kw_name_4 );
+    Py_DECREF( tmp_called_name_15 );
     Py_DECREF( tmp_args_name_3 );
     Py_DECREF( tmp_kw_name_4 );
-    if ( tmp_assign_source_23 == NULL )
+    if ( tmp_assign_source_22 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 608;
+        exception_lineno = 623;
         goto try_except_handler_6;
     }
     {
         PyObject *old = par_retries;
-        par_retries = tmp_assign_source_23;
+        par_retries = tmp_assign_source_22;
         Py_XDECREF( old );
     }
 
-    tmp_source_name_23 = par_retries;
+    tmp_source_name_20 = par_retries;
 
-    tmp_called_name_20 = LOOKUP_ATTRIBUTE( tmp_source_name_23, const_str_plain_sleep );
-    if ( tmp_called_name_20 == NULL )
+    tmp_called_name_17 = LOOKUP_ATTRIBUTE( tmp_source_name_20, const_str_plain_sleep );
+    if ( tmp_called_name_17 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 609;
+        exception_lineno = 624;
         goto try_except_handler_6;
     }
-    frame_function->f_lineno = 609;
-    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_20 );
-    Py_DECREF( tmp_called_name_20 );
+    frame_function->f_lineno = 624;
+    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_17 );
+    Py_DECREF( tmp_called_name_17 );
     if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -15869,13 +15768,13 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 609;
+        exception_lineno = 624;
         goto try_except_handler_6;
     }
     Py_DECREF( tmp_unused );
-    tmp_assign_source_24 = var_e;
+    tmp_assign_source_23 = var_e;
 
-    if ( tmp_assign_source_24 == NULL )
+    if ( tmp_assign_source_23 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -15885,13 +15784,13 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 612;
+        exception_lineno = 627;
         goto try_except_handler_6;
     }
 
     {
         PyObject *old = var_err;
-        var_err = tmp_assign_source_24;
+        var_err = tmp_assign_source_23;
         Py_INCREF( var_err );
         Py_XDECREF( old );
     }
@@ -15996,9 +15895,142 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     PyException_SetTraceback( exception_keeper_value_5, (PyObject *)exception_keeper_tb_5 );
     PUBLISH_EXCEPTION( &exception_keeper_type_5, &exception_keeper_value_5, &exception_keeper_tb_5 );
     // Tried code:
-    tmp_cond_value_4 = par_release_conn;
+    tmp_cond_value_5 = var_clean_exit;
 
-    if ( tmp_cond_value_4 == NULL )
+    if ( tmp_cond_value_5 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "clean_exit" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 630;
+        goto try_except_handler_7;
+    }
+
+    tmp_cond_truth_5 = CHECK_IF_TRUE( tmp_cond_value_5 );
+    if ( tmp_cond_truth_5 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 630;
+        goto try_except_handler_7;
+    }
+    if ( tmp_cond_truth_5 == 1 )
+    {
+        goto branch_no_13;
+    }
+    else
+    {
+        goto branch_yes_13;
+    }
+    branch_yes_13:;
+    tmp_and_left_value_4 = var_conn;
+
+    if ( tmp_and_left_value_4 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 635;
+        goto try_except_handler_7;
+    }
+
+    tmp_and_left_truth_4 = CHECK_IF_TRUE( tmp_and_left_value_4 );
+    if ( tmp_and_left_truth_4 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 635;
+        goto try_except_handler_7;
+    }
+    if ( tmp_and_left_truth_4 == 1 )
+    {
+        goto and_right_4;
+    }
+    else
+    {
+        goto and_left_4;
+    }
+    and_right_4:;
+    tmp_source_name_21 = var_conn;
+
+    if ( tmp_source_name_21 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 635;
+        goto try_except_handler_7;
+    }
+
+    tmp_called_name_18 = LOOKUP_ATTRIBUTE( tmp_source_name_21, const_str_plain_close );
+    if ( tmp_called_name_18 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 635;
+        goto try_except_handler_7;
+    }
+    frame_function->f_lineno = 635;
+    tmp_and_right_value_4 = CALL_FUNCTION_NO_ARGS( tmp_called_name_18 );
+    Py_DECREF( tmp_called_name_18 );
+    if ( tmp_and_right_value_4 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 635;
+        goto try_except_handler_7;
+    }
+    tmp_assign_source_24 = tmp_and_right_value_4;
+    goto and_end_4;
+    and_left_4:;
+    Py_INCREF( tmp_and_left_value_4 );
+    tmp_assign_source_24 = tmp_and_left_value_4;
+    and_end_4:;
+    {
+        PyObject *old = var_conn;
+        var_conn = tmp_assign_source_24;
+        Py_XDECREF( old );
+    }
+
+    tmp_assign_source_25 = Py_True;
+    {
+        PyObject *old = par_release_conn;
+        par_release_conn = tmp_assign_source_25;
+        Py_INCREF( par_release_conn );
+        Py_XDECREF( old );
+    }
+
+    branch_no_13:;
+    tmp_cond_value_6 = par_release_conn;
+
+    if ( tmp_cond_value_6 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -16008,33 +16040,33 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 615;
+        exception_lineno = 638;
         goto try_except_handler_7;
     }
 
-    tmp_cond_truth_4 = CHECK_IF_TRUE( tmp_cond_value_4 );
-    if ( tmp_cond_truth_4 == -1 )
+    tmp_cond_truth_6 = CHECK_IF_TRUE( tmp_cond_value_6 );
+    if ( tmp_cond_truth_6 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 615;
+        exception_lineno = 638;
         goto try_except_handler_7;
     }
-    if ( tmp_cond_truth_4 == 1 )
+    if ( tmp_cond_truth_6 == 1 )
     {
-        goto branch_yes_13;
+        goto branch_yes_14;
     }
     else
     {
-        goto branch_no_13;
+        goto branch_no_14;
     }
-    branch_yes_13:;
-    tmp_source_name_24 = par_self;
+    branch_yes_14:;
+    tmp_source_name_22 = par_self;
 
-    if ( tmp_source_name_24 == NULL )
+    if ( tmp_source_name_22 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -16044,26 +16076,26 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 619;
+        exception_lineno = 642;
         goto try_except_handler_7;
     }
 
-    tmp_called_name_21 = LOOKUP_ATTRIBUTE( tmp_source_name_24, const_str_plain__put_conn );
-    if ( tmp_called_name_21 == NULL )
+    tmp_called_name_19 = LOOKUP_ATTRIBUTE( tmp_source_name_22, const_str_plain__put_conn );
+    if ( tmp_called_name_19 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 619;
+        exception_lineno = 642;
         goto try_except_handler_7;
     }
     tmp_args_element_name_15 = var_conn;
 
     if ( tmp_args_element_name_15 == NULL )
     {
-        Py_DECREF( tmp_called_name_21 );
+        Py_DECREF( tmp_called_name_19 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
         exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
@@ -16071,17 +16103,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 619;
+        exception_lineno = 642;
         goto try_except_handler_7;
     }
 
-    frame_function->f_lineno = 619;
+    frame_function->f_lineno = 642;
     {
         PyObject *call_args[] = { tmp_args_element_name_15 };
-        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_21, call_args );
+        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_19, call_args );
     }
 
-    Py_DECREF( tmp_called_name_21 );
+    Py_DECREF( tmp_called_name_19 );
     if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -16089,11 +16121,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 619;
+        exception_lineno = 642;
         goto try_except_handler_7;
     }
     Py_DECREF( tmp_unused );
-    branch_no_13:;
+    branch_no_14:;
     RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
     if (exception_tb && exception_tb->tb_frame == frame_function) frame_function->f_lineno = exception_tb->tb_lineno;
     goto try_except_handler_7;
@@ -16123,9 +16155,142 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     // End of try:
     // End of try:
     try_end_4:;
-    tmp_cond_value_5 = par_release_conn;
+    tmp_cond_value_7 = var_clean_exit;
 
-    if ( tmp_cond_value_5 == NULL )
+    if ( tmp_cond_value_7 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "clean_exit" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 630;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_cond_truth_7 = CHECK_IF_TRUE( tmp_cond_value_7 );
+    if ( tmp_cond_truth_7 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 630;
+        goto frame_exception_exit_1;
+    }
+    if ( tmp_cond_truth_7 == 1 )
+    {
+        goto branch_no_15;
+    }
+    else
+    {
+        goto branch_yes_15;
+    }
+    branch_yes_15:;
+    tmp_and_left_value_5 = var_conn;
+
+    if ( tmp_and_left_value_5 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 635;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_and_left_truth_5 = CHECK_IF_TRUE( tmp_and_left_value_5 );
+    if ( tmp_and_left_truth_5 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 635;
+        goto frame_exception_exit_1;
+    }
+    if ( tmp_and_left_truth_5 == 1 )
+    {
+        goto and_right_5;
+    }
+    else
+    {
+        goto and_left_5;
+    }
+    and_right_5:;
+    tmp_source_name_23 = var_conn;
+
+    if ( tmp_source_name_23 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 635;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_called_name_20 = LOOKUP_ATTRIBUTE( tmp_source_name_23, const_str_plain_close );
+    if ( tmp_called_name_20 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 635;
+        goto frame_exception_exit_1;
+    }
+    frame_function->f_lineno = 635;
+    tmp_and_right_value_5 = CALL_FUNCTION_NO_ARGS( tmp_called_name_20 );
+    Py_DECREF( tmp_called_name_20 );
+    if ( tmp_and_right_value_5 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 635;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_26 = tmp_and_right_value_5;
+    goto and_end_5;
+    and_left_5:;
+    Py_INCREF( tmp_and_left_value_5 );
+    tmp_assign_source_26 = tmp_and_left_value_5;
+    and_end_5:;
+    {
+        PyObject *old = var_conn;
+        var_conn = tmp_assign_source_26;
+        Py_XDECREF( old );
+    }
+
+    tmp_assign_source_27 = Py_True;
+    {
+        PyObject *old = par_release_conn;
+        par_release_conn = tmp_assign_source_27;
+        Py_INCREF( par_release_conn );
+        Py_XDECREF( old );
+    }
+
+    branch_no_15:;
+    tmp_cond_value_8 = par_release_conn;
+
+    if ( tmp_cond_value_8 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -16135,33 +16300,33 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 615;
+        exception_lineno = 638;
         goto frame_exception_exit_1;
     }
 
-    tmp_cond_truth_5 = CHECK_IF_TRUE( tmp_cond_value_5 );
-    if ( tmp_cond_truth_5 == -1 )
+    tmp_cond_truth_8 = CHECK_IF_TRUE( tmp_cond_value_8 );
+    if ( tmp_cond_truth_8 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 615;
+        exception_lineno = 638;
         goto frame_exception_exit_1;
     }
-    if ( tmp_cond_truth_5 == 1 )
+    if ( tmp_cond_truth_8 == 1 )
     {
-        goto branch_yes_14;
+        goto branch_yes_16;
     }
     else
     {
-        goto branch_no_14;
+        goto branch_no_16;
     }
-    branch_yes_14:;
-    tmp_source_name_25 = par_self;
+    branch_yes_16:;
+    tmp_source_name_24 = par_self;
 
-    if ( tmp_source_name_25 == NULL )
+    if ( tmp_source_name_24 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -16171,26 +16336,26 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 619;
+        exception_lineno = 642;
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_22 = LOOKUP_ATTRIBUTE( tmp_source_name_25, const_str_plain__put_conn );
-    if ( tmp_called_name_22 == NULL )
+    tmp_called_name_21 = LOOKUP_ATTRIBUTE( tmp_source_name_24, const_str_plain__put_conn );
+    if ( tmp_called_name_21 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 619;
+        exception_lineno = 642;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_16 = var_conn;
 
     if ( tmp_args_element_name_16 == NULL )
     {
-        Py_DECREF( tmp_called_name_22 );
+        Py_DECREF( tmp_called_name_21 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
         exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
@@ -16198,14 +16363,150 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 619;
+        exception_lineno = 642;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 619;
+    frame_function->f_lineno = 642;
     {
         PyObject *call_args[] = { tmp_args_element_name_16 };
-        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_22, call_args );
+        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_21, call_args );
+    }
+
+    Py_DECREF( tmp_called_name_21 );
+    if ( tmp_unused == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 642;
+        goto frame_exception_exit_1;
+    }
+    Py_DECREF( tmp_unused );
+    branch_no_16:;
+    tmp_cond_value_9 = var_conn;
+
+    if ( tmp_cond_value_9 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 644;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_cond_truth_9 = CHECK_IF_TRUE( tmp_cond_value_9 );
+    if ( tmp_cond_truth_9 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 644;
+        goto frame_exception_exit_1;
+    }
+    if ( tmp_cond_truth_9 == 1 )
+    {
+        goto branch_no_17;
+    }
+    else
+    {
+        goto branch_yes_17;
+    }
+    branch_yes_17:;
+    tmp_source_name_25 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
+
+    if (unlikely( tmp_source_name_25 == NULL ))
+    {
+        tmp_source_name_25 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
+    }
+
+    if ( tmp_source_name_25 == NULL )
+    {
+
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "log" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 646;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_called_name_22 = LOOKUP_ATTRIBUTE( tmp_source_name_25, const_str_plain_warning );
+    if ( tmp_called_name_22 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 646;
+        goto frame_exception_exit_1;
+    }
+    tmp_args_element_name_17 = const_str_digest_cc37027aa1a44907139060af7011fd20;
+    tmp_args_element_name_18 = par_retries;
+
+    if ( tmp_args_element_name_18 == NULL )
+    {
+        Py_DECREF( tmp_called_name_22 );
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "retries" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 647;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_args_element_name_19 = var_err;
+
+    if ( tmp_args_element_name_19 == NULL )
+    {
+        Py_DECREF( tmp_called_name_22 );
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "err" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 647;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_args_element_name_20 = par_url;
+
+    if ( tmp_args_element_name_20 == NULL )
+    {
+        Py_DECREF( tmp_called_name_22 );
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "url" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 647;
+        goto frame_exception_exit_1;
+    }
+
+    frame_function->f_lineno = 647;
+    {
+        PyObject *call_args[] = { tmp_args_element_name_17, tmp_args_element_name_18, tmp_args_element_name_19, tmp_args_element_name_20 };
+        tmp_unused = CALL_FUNCTION_WITH_ARGS4( tmp_called_name_22, call_args );
     }
 
     Py_DECREF( tmp_called_name_22 );
@@ -16216,149 +16517,13 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 619;
+        exception_lineno = 647;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
-    branch_no_14:;
-    tmp_cond_value_6 = var_conn;
-
-    if ( tmp_cond_value_6 == NULL )
-    {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "conn" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 621;
-        goto frame_exception_exit_1;
-    }
-
-    tmp_cond_truth_6 = CHECK_IF_TRUE( tmp_cond_value_6 );
-    if ( tmp_cond_truth_6 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 621;
-        goto frame_exception_exit_1;
-    }
-    if ( tmp_cond_truth_6 == 1 )
-    {
-        goto branch_no_15;
-    }
-    else
-    {
-        goto branch_yes_15;
-    }
-    branch_yes_15:;
-    tmp_source_name_26 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
-
-    if (unlikely( tmp_source_name_26 == NULL ))
-    {
-        tmp_source_name_26 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
-    }
+    tmp_source_name_26 = par_self;
 
     if ( tmp_source_name_26 == NULL )
-    {
-
-        exception_type = PyExc_NameError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "log" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 623;
-        goto frame_exception_exit_1;
-    }
-
-    tmp_called_name_23 = LOOKUP_ATTRIBUTE( tmp_source_name_26, const_str_plain_warning );
-    if ( tmp_called_name_23 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 623;
-        goto frame_exception_exit_1;
-    }
-    tmp_args_element_name_17 = const_str_digest_cc37027aa1a44907139060af7011fd20;
-    tmp_args_element_name_18 = par_retries;
-
-    if ( tmp_args_element_name_18 == NULL )
-    {
-        Py_DECREF( tmp_called_name_23 );
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "retries" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 624;
-        goto frame_exception_exit_1;
-    }
-
-    tmp_args_element_name_19 = var_err;
-
-    if ( tmp_args_element_name_19 == NULL )
-    {
-        Py_DECREF( tmp_called_name_23 );
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "err" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 624;
-        goto frame_exception_exit_1;
-    }
-
-    tmp_args_element_name_20 = par_url;
-
-    if ( tmp_args_element_name_20 == NULL )
-    {
-        Py_DECREF( tmp_called_name_23 );
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "url" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 624;
-        goto frame_exception_exit_1;
-    }
-
-    frame_function->f_lineno = 624;
-    {
-        PyObject *call_args[] = { tmp_args_element_name_17, tmp_args_element_name_18, tmp_args_element_name_19, tmp_args_element_name_20 };
-        tmp_unused = CALL_FUNCTION_WITH_ARGS4( tmp_called_name_23, call_args );
-    }
-
-    Py_DECREF( tmp_called_name_23 );
-    if ( tmp_unused == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 624;
-        goto frame_exception_exit_1;
-    }
-    Py_DECREF( tmp_unused );
-    tmp_source_name_27 = par_self;
-
-    if ( tmp_source_name_27 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -16368,11 +16533,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 625;
+        exception_lineno = 648;
         goto frame_exception_exit_1;
     }
 
-    tmp_dircall_arg1_2 = LOOKUP_ATTRIBUTE( tmp_source_name_27, const_str_plain_urlopen );
+    tmp_dircall_arg1_2 = LOOKUP_ATTRIBUTE( tmp_source_name_26, const_str_plain_urlopen );
     if ( tmp_dircall_arg1_2 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -16380,7 +16545,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 625;
+        exception_lineno = 648;
         goto frame_exception_exit_1;
     }
     tmp_dircall_arg2_2 = PyTuple_New( 7 );
@@ -16397,7 +16562,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 625;
+        exception_lineno = 648;
         goto frame_exception_exit_1;
     }
 
@@ -16416,7 +16581,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 625;
+        exception_lineno = 648;
         goto frame_exception_exit_1;
     }
 
@@ -16435,7 +16600,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 625;
+        exception_lineno = 648;
         goto frame_exception_exit_1;
     }
 
@@ -16454,7 +16619,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 625;
+        exception_lineno = 648;
         goto frame_exception_exit_1;
     }
 
@@ -16473,7 +16638,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 625;
+        exception_lineno = 648;
         goto frame_exception_exit_1;
     }
 
@@ -16492,7 +16657,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 626;
+        exception_lineno = 649;
         goto frame_exception_exit_1;
     }
 
@@ -16511,17 +16676,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 626;
+        exception_lineno = 649;
         goto frame_exception_exit_1;
     }
 
     Py_INCREF( tmp_tuple_element_9 );
     PyTuple_SET_ITEM( tmp_dircall_arg2_2, 6, tmp_tuple_element_9 );
     tmp_dircall_arg3_2 = _PyDict_NewPresized( 3 );
-    tmp_dict_key_12 = const_str_plain_timeout;
-    tmp_dict_value_12 = par_timeout;
+    tmp_dict_key_13 = const_str_plain_timeout;
+    tmp_dict_value_13 = par_timeout;
 
-    if ( tmp_dict_value_12 == NULL )
+    if ( tmp_dict_value_13 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_2 );
         Py_DECREF( tmp_dircall_arg2_2 );
@@ -16533,15 +16698,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 627;
+        exception_lineno = 650;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_2, tmp_dict_key_12, tmp_dict_value_12 );
-    tmp_dict_key_13 = const_str_plain_pool_timeout;
-    tmp_dict_value_13 = par_pool_timeout;
+    PyDict_SetItem( tmp_dircall_arg3_2, tmp_dict_key_13, tmp_dict_value_13 );
+    tmp_dict_key_14 = const_str_plain_pool_timeout;
+    tmp_dict_value_14 = par_pool_timeout;
 
-    if ( tmp_dict_value_13 == NULL )
+    if ( tmp_dict_value_14 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_2 );
         Py_DECREF( tmp_dircall_arg2_2 );
@@ -16553,15 +16718,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 627;
+        exception_lineno = 650;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_2, tmp_dict_key_13, tmp_dict_value_13 );
-    tmp_dict_key_14 = const_str_plain_release_conn;
-    tmp_dict_value_14 = par_release_conn;
+    PyDict_SetItem( tmp_dircall_arg3_2, tmp_dict_key_14, tmp_dict_value_14 );
+    tmp_dict_key_15 = const_str_plain_release_conn;
+    tmp_dict_value_15 = par_release_conn;
 
-    if ( tmp_dict_value_14 == NULL )
+    if ( tmp_dict_value_15 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_2 );
         Py_DECREF( tmp_dircall_arg2_2 );
@@ -16573,11 +16738,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 628;
+        exception_lineno = 651;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_2, tmp_dict_key_14, tmp_dict_value_14 );
+    PyDict_SetItem( tmp_dircall_arg3_2, tmp_dict_key_15, tmp_dict_value_15 );
     tmp_dircall_arg4_2 = par_response_kw;
 
     if ( tmp_dircall_arg4_2 == NULL )
@@ -16592,7 +16757,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 628;
+        exception_lineno = 651;
         goto frame_exception_exit_1;
     }
 
@@ -16609,14 +16774,14 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 628;
+        exception_lineno = 651;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
-    branch_no_15:;
-    tmp_and_left_value_8 = par_redirect;
+    branch_no_17:;
+    tmp_and_left_value_6 = par_redirect;
 
-    if ( tmp_and_left_value_8 == NULL )
+    if ( tmp_and_left_value_6 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -16626,30 +16791,101 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 631;
+        exception_lineno = 654;
         goto frame_exception_exit_1;
     }
 
-    tmp_and_left_truth_8 = CHECK_IF_TRUE( tmp_and_left_value_8 );
-    if ( tmp_and_left_truth_8 == -1 )
+    tmp_and_left_truth_6 = CHECK_IF_TRUE( tmp_and_left_value_6 );
+    if ( tmp_and_left_truth_6 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 631;
+        exception_lineno = 654;
         goto frame_exception_exit_1;
     }
-    if ( tmp_and_left_truth_8 == 1 )
+    if ( tmp_and_left_truth_6 == 1 )
     {
-        goto and_right_8;
+        goto and_right_6;
     }
     else
     {
-        goto and_left_8;
+        goto and_left_6;
     }
-    and_right_8:;
+    and_right_6:;
+    tmp_source_name_27 = var_response;
+
+    if ( tmp_source_name_27 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "response" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 654;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_called_name_23 = LOOKUP_ATTRIBUTE( tmp_source_name_27, const_str_plain_get_redirect_location );
+    if ( tmp_called_name_23 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 654;
+        goto frame_exception_exit_1;
+    }
+    frame_function->f_lineno = 654;
+    tmp_and_right_value_6 = CALL_FUNCTION_NO_ARGS( tmp_called_name_23 );
+    Py_DECREF( tmp_called_name_23 );
+    if ( tmp_and_right_value_6 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 654;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_28 = tmp_and_right_value_6;
+    goto and_end_6;
+    and_left_6:;
+    Py_INCREF( tmp_and_left_value_6 );
+    tmp_assign_source_28 = tmp_and_left_value_6;
+    and_end_6:;
+    assert( var_redirect_location == NULL );
+    var_redirect_location = tmp_assign_source_28;
+
+    tmp_cond_value_10 = var_redirect_location;
+
+    tmp_cond_truth_10 = CHECK_IF_TRUE( tmp_cond_value_10 );
+    if ( tmp_cond_truth_10 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 655;
+        goto frame_exception_exit_1;
+    }
+    if ( tmp_cond_truth_10 == 1 )
+    {
+        goto branch_yes_18;
+    }
+    else
+    {
+        goto branch_no_18;
+    }
+    branch_yes_18:;
     tmp_source_name_28 = var_response;
 
     if ( tmp_source_name_28 == NULL )
@@ -16662,82 +16898,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 631;
+        exception_lineno = 656;
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_24 = LOOKUP_ATTRIBUTE( tmp_source_name_28, const_str_plain_get_redirect_location );
-    if ( tmp_called_name_24 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 631;
-        goto frame_exception_exit_1;
-    }
-    frame_function->f_lineno = 631;
-    tmp_and_right_value_8 = CALL_FUNCTION_NO_ARGS( tmp_called_name_24 );
-    Py_DECREF( tmp_called_name_24 );
-    if ( tmp_and_right_value_8 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 631;
-        goto frame_exception_exit_1;
-    }
-    tmp_assign_source_25 = tmp_and_right_value_8;
-    goto and_end_8;
-    and_left_8:;
-    Py_INCREF( tmp_and_left_value_8 );
-    tmp_assign_source_25 = tmp_and_left_value_8;
-    and_end_8:;
-    assert( var_redirect_location == NULL );
-    var_redirect_location = tmp_assign_source_25;
-
-    tmp_cond_value_7 = var_redirect_location;
-
-    tmp_cond_truth_7 = CHECK_IF_TRUE( tmp_cond_value_7 );
-    if ( tmp_cond_truth_7 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 632;
-        goto frame_exception_exit_1;
-    }
-    if ( tmp_cond_truth_7 == 1 )
-    {
-        goto branch_yes_16;
-    }
-    else
-    {
-        goto branch_no_16;
-    }
-    branch_yes_16:;
-    tmp_source_name_29 = var_response;
-
-    if ( tmp_source_name_29 == NULL )
-    {
-
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "response" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 633;
-        goto frame_exception_exit_1;
-    }
-
-    tmp_compare_left_8 = LOOKUP_ATTRIBUTE( tmp_source_name_29, const_str_plain_status );
+    tmp_compare_left_8 = LOOKUP_ATTRIBUTE( tmp_source_name_28, const_str_plain_status );
     if ( tmp_compare_left_8 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -16745,7 +16910,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 633;
+        exception_lineno = 656;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_8 = const_int_pos_303;
@@ -16757,32 +16922,32 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_left_8 );
 
-        exception_lineno = 633;
+        exception_lineno = 656;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_compare_left_8 );
     if ( tmp_cmp_Eq_2 == 1 )
     {
-        goto branch_yes_17;
+        goto branch_yes_19;
     }
     else
     {
-        goto branch_no_17;
+        goto branch_no_19;
     }
-    branch_yes_17:;
-    tmp_assign_source_26 = const_str_plain_GET;
+    branch_yes_19:;
+    tmp_assign_source_29 = const_str_plain_GET;
     {
         PyObject *old = par_method;
-        par_method = tmp_assign_source_26;
+        par_method = tmp_assign_source_29;
         Py_INCREF( par_method );
         Py_XDECREF( old );
     }
 
-    branch_no_17:;
+    branch_no_19:;
     // Tried code:
-    tmp_source_name_30 = par_retries;
+    tmp_source_name_29 = par_retries;
 
-    if ( tmp_source_name_30 == NULL )
+    if ( tmp_source_name_29 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -16792,19 +16957,19 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 637;
+        exception_lineno = 660;
         goto try_except_handler_8;
     }
 
-    tmp_called_name_25 = LOOKUP_ATTRIBUTE( tmp_source_name_30, const_str_plain_increment );
-    if ( tmp_called_name_25 == NULL )
+    tmp_called_name_24 = LOOKUP_ATTRIBUTE( tmp_source_name_29, const_str_plain_increment );
+    if ( tmp_called_name_24 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 637;
+        exception_lineno = 660;
         goto try_except_handler_8;
     }
     tmp_args_name_4 = PyTuple_New( 2 );
@@ -16812,7 +16977,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     if ( tmp_tuple_element_10 == NULL )
     {
-        Py_DECREF( tmp_called_name_25 );
+        Py_DECREF( tmp_called_name_24 );
         Py_DECREF( tmp_args_name_4 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
@@ -16821,7 +16986,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 637;
+        exception_lineno = 660;
         goto try_except_handler_8;
     }
 
@@ -16831,7 +16996,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     if ( tmp_tuple_element_10 == NULL )
     {
-        Py_DECREF( tmp_called_name_25 );
+        Py_DECREF( tmp_called_name_24 );
         Py_DECREF( tmp_args_name_4 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
@@ -16840,19 +17005,19 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 637;
+        exception_lineno = 660;
         goto try_except_handler_8;
     }
 
     Py_INCREF( tmp_tuple_element_10 );
     PyTuple_SET_ITEM( tmp_args_name_4, 1, tmp_tuple_element_10 );
     tmp_kw_name_5 = _PyDict_NewPresized( 2 );
-    tmp_dict_key_15 = const_str_plain_response;
-    tmp_dict_value_15 = var_response;
+    tmp_dict_key_16 = const_str_plain_response;
+    tmp_dict_value_16 = var_response;
 
-    if ( tmp_dict_value_15 == NULL )
+    if ( tmp_dict_value_16 == NULL )
     {
-        Py_DECREF( tmp_called_name_25 );
+        Py_DECREF( tmp_called_name_24 );
         Py_DECREF( tmp_args_name_4 );
         Py_DECREF( tmp_kw_name_5 );
         exception_type = PyExc_UnboundLocalError;
@@ -16862,17 +17027,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 637;
+        exception_lineno = 660;
         goto try_except_handler_8;
     }
 
-    PyDict_SetItem( tmp_kw_name_5, tmp_dict_key_15, tmp_dict_value_15 );
-    tmp_dict_key_16 = const_str_plain__pool;
-    tmp_dict_value_16 = par_self;
+    PyDict_SetItem( tmp_kw_name_5, tmp_dict_key_16, tmp_dict_value_16 );
+    tmp_dict_key_17 = const_str_plain__pool;
+    tmp_dict_value_17 = par_self;
 
-    if ( tmp_dict_value_16 == NULL )
+    if ( tmp_dict_value_17 == NULL )
     {
-        Py_DECREF( tmp_called_name_25 );
+        Py_DECREF( tmp_called_name_24 );
         Py_DECREF( tmp_args_name_4 );
         Py_DECREF( tmp_kw_name_5 );
         exception_type = PyExc_UnboundLocalError;
@@ -16882,29 +17047,29 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 637;
+        exception_lineno = 660;
         goto try_except_handler_8;
     }
 
-    PyDict_SetItem( tmp_kw_name_5, tmp_dict_key_16, tmp_dict_value_16 );
-    frame_function->f_lineno = 637;
-    tmp_assign_source_27 = CALL_FUNCTION( tmp_called_name_25, tmp_args_name_4, tmp_kw_name_5 );
-    Py_DECREF( tmp_called_name_25 );
+    PyDict_SetItem( tmp_kw_name_5, tmp_dict_key_17, tmp_dict_value_17 );
+    frame_function->f_lineno = 660;
+    tmp_assign_source_30 = CALL_FUNCTION( tmp_called_name_24, tmp_args_name_4, tmp_kw_name_5 );
+    Py_DECREF( tmp_called_name_24 );
     Py_DECREF( tmp_args_name_4 );
     Py_DECREF( tmp_kw_name_5 );
-    if ( tmp_assign_source_27 == NULL )
+    if ( tmp_assign_source_30 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 637;
+        exception_lineno = 660;
         goto try_except_handler_8;
     }
     {
         PyObject *old = par_retries;
-        par_retries = tmp_assign_source_27;
+        par_retries = tmp_assign_source_30;
         Py_XDECREF( old );
     }
 
@@ -16959,7 +17124,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 638;
+        exception_lineno = 661;
         goto try_except_handler_9;
     }
 
@@ -16971,21 +17136,21 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 638;
+        exception_lineno = 661;
         goto try_except_handler_9;
     }
     if ( tmp_exc_match_exception_match_5 == 1 )
     {
-        goto branch_yes_18;
+        goto branch_yes_20;
     }
     else
     {
-        goto branch_no_18;
+        goto branch_no_20;
     }
-    branch_yes_18:;
-    tmp_source_name_31 = par_retries;
+    branch_yes_20:;
+    tmp_source_name_30 = par_retries;
 
-    if ( tmp_source_name_31 == NULL )
+    if ( tmp_source_name_30 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -16995,45 +17160,45 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 639;
+        exception_lineno = 662;
         goto try_except_handler_9;
     }
 
-    tmp_cond_value_8 = LOOKUP_ATTRIBUTE( tmp_source_name_31, const_str_plain_raise_on_redirect );
-    if ( tmp_cond_value_8 == NULL )
+    tmp_cond_value_11 = LOOKUP_ATTRIBUTE( tmp_source_name_30, const_str_plain_raise_on_redirect );
+    if ( tmp_cond_value_11 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 639;
+        exception_lineno = 662;
         goto try_except_handler_9;
     }
-    tmp_cond_truth_8 = CHECK_IF_TRUE( tmp_cond_value_8 );
-    if ( tmp_cond_truth_8 == -1 )
+    tmp_cond_truth_11 = CHECK_IF_TRUE( tmp_cond_value_11 );
+    if ( tmp_cond_truth_11 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_cond_value_8 );
+        Py_DECREF( tmp_cond_value_11 );
 
-        exception_lineno = 639;
+        exception_lineno = 662;
         goto try_except_handler_9;
     }
-    Py_DECREF( tmp_cond_value_8 );
-    if ( tmp_cond_truth_8 == 1 )
+    Py_DECREF( tmp_cond_value_11 );
+    if ( tmp_cond_truth_11 == 1 )
     {
-        goto branch_yes_19;
+        goto branch_yes_21;
     }
     else
     {
-        goto branch_no_19;
+        goto branch_no_21;
     }
-    branch_yes_19:;
-    tmp_source_name_32 = var_response;
+    branch_yes_21:;
+    tmp_source_name_31 = var_response;
 
-    if ( tmp_source_name_32 == NULL )
+    if ( tmp_source_name_31 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -17043,24 +17208,24 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 642;
+        exception_lineno = 665;
         goto try_except_handler_9;
     }
 
-    tmp_called_name_26 = LOOKUP_ATTRIBUTE( tmp_source_name_32, const_str_plain_release_conn );
-    if ( tmp_called_name_26 == NULL )
+    tmp_called_name_25 = LOOKUP_ATTRIBUTE( tmp_source_name_31, const_str_plain_release_conn );
+    if ( tmp_called_name_25 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 642;
+        exception_lineno = 665;
         goto try_except_handler_9;
     }
-    frame_function->f_lineno = 642;
-    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_26 );
-    Py_DECREF( tmp_called_name_26 );
+    frame_function->f_lineno = 665;
+    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_25 );
+    Py_DECREF( tmp_called_name_25 );
     if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -17068,14 +17233,14 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 642;
+        exception_lineno = 665;
         goto try_except_handler_9;
     }
     Py_DECREF( tmp_unused );
     RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
     if (exception_tb && exception_tb->tb_frame == frame_function) frame_function->f_lineno = exception_tb->tb_lineno;
     goto try_except_handler_9;
-    branch_no_19:;
+    branch_no_21:;
     tmp_return_value = var_response;
 
     if ( tmp_return_value == NULL )
@@ -17088,18 +17253,18 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 644;
+        exception_lineno = 667;
         goto try_except_handler_9;
     }
 
     Py_INCREF( tmp_return_value );
     goto try_return_handler_9;
-    goto branch_end_18;
-    branch_no_18:;
+    goto branch_end_20;
+    branch_no_20:;
     RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
     if (exception_tb && exception_tb->tb_frame == frame_function) frame_function->f_lineno = exception_tb->tb_lineno;
     goto try_except_handler_9;
-    branch_end_18:;
+    branch_end_20:;
     // tried codes exits in all cases
     NUITKA_CANNOT_GET_HERE( function_13_urlopen_of_class_2_HTTPConnectionPool_of_urllib3$connectionpool );
     return NULL;
@@ -17131,14 +17296,14 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     // End of try:
     // End of try:
     try_end_5:;
-    tmp_source_name_33 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
+    tmp_source_name_32 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
 
-    if (unlikely( tmp_source_name_33 == NULL ))
+    if (unlikely( tmp_source_name_32 == NULL ))
     {
-        tmp_source_name_33 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
+        tmp_source_name_32 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
     }
 
-    if ( tmp_source_name_33 == NULL )
+    if ( tmp_source_name_32 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -17148,19 +17313,19 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 646;
+        exception_lineno = 669;
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_27 = LOOKUP_ATTRIBUTE( tmp_source_name_33, const_str_plain_info );
-    if ( tmp_called_name_27 == NULL )
+    tmp_called_name_26 = LOOKUP_ATTRIBUTE( tmp_source_name_32, const_str_plain_info );
+    if ( tmp_called_name_26 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 646;
+        exception_lineno = 669;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_21 = const_str_digest_5f62b442fbc7547d9ec4b7f4ffa4f085;
@@ -17168,7 +17333,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     if ( tmp_args_element_name_22 == NULL )
     {
-        Py_DECREF( tmp_called_name_27 );
+        Py_DECREF( tmp_called_name_26 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
         exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "url" );
@@ -17176,7 +17341,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 646;
+        exception_lineno = 669;
         goto frame_exception_exit_1;
     }
 
@@ -17184,7 +17349,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     if ( tmp_args_element_name_23 == NULL )
     {
-        Py_DECREF( tmp_called_name_27 );
+        Py_DECREF( tmp_called_name_26 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
         exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "redirect_location" );
@@ -17192,17 +17357,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 646;
+        exception_lineno = 669;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 646;
+    frame_function->f_lineno = 669;
     {
         PyObject *call_args[] = { tmp_args_element_name_21, tmp_args_element_name_22, tmp_args_element_name_23 };
-        tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_27, call_args );
+        tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_26, call_args );
     }
 
-    Py_DECREF( tmp_called_name_27 );
+    Py_DECREF( tmp_called_name_26 );
     if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -17210,13 +17375,13 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 646;
+        exception_lineno = 669;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
-    tmp_source_name_34 = par_self;
+    tmp_source_name_33 = par_self;
 
-    if ( tmp_source_name_34 == NULL )
+    if ( tmp_source_name_33 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -17226,11 +17391,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 647;
+        exception_lineno = 670;
         goto frame_exception_exit_1;
     }
 
-    tmp_dircall_arg1_3 = LOOKUP_ATTRIBUTE( tmp_source_name_34, const_str_plain_urlopen );
+    tmp_dircall_arg1_3 = LOOKUP_ATTRIBUTE( tmp_source_name_33, const_str_plain_urlopen );
     if ( tmp_dircall_arg1_3 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -17238,7 +17403,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 647;
+        exception_lineno = 670;
         goto frame_exception_exit_1;
     }
     tmp_dircall_arg2_3 = PyTuple_New( 4 );
@@ -17255,7 +17420,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 648;
+        exception_lineno = 671;
         goto frame_exception_exit_1;
     }
 
@@ -17274,7 +17439,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 648;
+        exception_lineno = 671;
         goto frame_exception_exit_1;
     }
 
@@ -17293,7 +17458,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 648;
+        exception_lineno = 671;
         goto frame_exception_exit_1;
     }
 
@@ -17312,17 +17477,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 648;
+        exception_lineno = 671;
         goto frame_exception_exit_1;
     }
 
     Py_INCREF( tmp_tuple_element_11 );
     PyTuple_SET_ITEM( tmp_dircall_arg2_3, 3, tmp_tuple_element_11 );
     tmp_dircall_arg3_3 = _PyDict_NewPresized( 6 );
-    tmp_dict_key_17 = const_str_plain_retries;
-    tmp_dict_value_17 = par_retries;
+    tmp_dict_key_18 = const_str_plain_retries;
+    tmp_dict_value_18 = par_retries;
 
-    if ( tmp_dict_value_17 == NULL )
+    if ( tmp_dict_value_18 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_3 );
         Py_DECREF( tmp_dircall_arg2_3 );
@@ -17334,15 +17499,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 649;
+        exception_lineno = 672;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_17, tmp_dict_value_17 );
-    tmp_dict_key_18 = const_str_plain_redirect;
-    tmp_dict_value_18 = par_redirect;
+    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_18, tmp_dict_value_18 );
+    tmp_dict_key_19 = const_str_plain_redirect;
+    tmp_dict_value_19 = par_redirect;
 
-    if ( tmp_dict_value_18 == NULL )
+    if ( tmp_dict_value_19 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_3 );
         Py_DECREF( tmp_dircall_arg2_3 );
@@ -17354,15 +17519,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 649;
+        exception_lineno = 672;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_18, tmp_dict_value_18 );
-    tmp_dict_key_19 = const_str_plain_assert_same_host;
-    tmp_dict_value_19 = par_assert_same_host;
+    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_19, tmp_dict_value_19 );
+    tmp_dict_key_20 = const_str_plain_assert_same_host;
+    tmp_dict_value_20 = par_assert_same_host;
 
-    if ( tmp_dict_value_19 == NULL )
+    if ( tmp_dict_value_20 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_3 );
         Py_DECREF( tmp_dircall_arg2_3 );
@@ -17374,15 +17539,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 650;
+        exception_lineno = 673;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_19, tmp_dict_value_19 );
-    tmp_dict_key_20 = const_str_plain_timeout;
-    tmp_dict_value_20 = par_timeout;
+    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_20, tmp_dict_value_20 );
+    tmp_dict_key_21 = const_str_plain_timeout;
+    tmp_dict_value_21 = par_timeout;
 
-    if ( tmp_dict_value_20 == NULL )
+    if ( tmp_dict_value_21 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_3 );
         Py_DECREF( tmp_dircall_arg2_3 );
@@ -17394,15 +17559,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 651;
+        exception_lineno = 674;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_20, tmp_dict_value_20 );
-    tmp_dict_key_21 = const_str_plain_pool_timeout;
-    tmp_dict_value_21 = par_pool_timeout;
+    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_21, tmp_dict_value_21 );
+    tmp_dict_key_22 = const_str_plain_pool_timeout;
+    tmp_dict_value_22 = par_pool_timeout;
 
-    if ( tmp_dict_value_21 == NULL )
+    if ( tmp_dict_value_22 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_3 );
         Py_DECREF( tmp_dircall_arg2_3 );
@@ -17414,15 +17579,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 651;
+        exception_lineno = 674;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_21, tmp_dict_value_21 );
-    tmp_dict_key_22 = const_str_plain_release_conn;
-    tmp_dict_value_22 = par_release_conn;
+    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_22, tmp_dict_value_22 );
+    tmp_dict_key_23 = const_str_plain_release_conn;
+    tmp_dict_value_23 = par_release_conn;
 
-    if ( tmp_dict_value_22 == NULL )
+    if ( tmp_dict_value_23 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_3 );
         Py_DECREF( tmp_dircall_arg2_3 );
@@ -17434,11 +17599,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 652;
+        exception_lineno = 675;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_22, tmp_dict_value_22 );
+    PyDict_SetItem( tmp_dircall_arg3_3, tmp_dict_key_23, tmp_dict_value_23 );
     tmp_dircall_arg4_3 = par_response_kw;
 
     if ( tmp_dircall_arg4_3 == NULL )
@@ -17453,7 +17618,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 652;
+        exception_lineno = 675;
         goto frame_exception_exit_1;
     }
 
@@ -17470,14 +17635,14 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 652;
+        exception_lineno = 675;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
-    branch_no_16:;
-    tmp_source_name_35 = par_retries;
+    branch_no_18:;
+    tmp_source_name_34 = par_retries;
 
-    if ( tmp_source_name_35 == NULL )
+    if ( tmp_source_name_34 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -17487,19 +17652,19 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 655;
+        exception_lineno = 678;
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_28 = LOOKUP_ATTRIBUTE( tmp_source_name_35, const_str_plain_is_forced_retry );
-    if ( tmp_called_name_28 == NULL )
+    tmp_called_name_27 = LOOKUP_ATTRIBUTE( tmp_source_name_34, const_str_plain_is_forced_retry );
+    if ( tmp_called_name_27 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 655;
+        exception_lineno = 678;
         goto frame_exception_exit_1;
     }
     tmp_args_name_5 = PyTuple_New( 1 );
@@ -17507,7 +17672,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     if ( tmp_tuple_element_12 == NULL )
     {
-        Py_DECREF( tmp_called_name_28 );
+        Py_DECREF( tmp_called_name_27 );
         Py_DECREF( tmp_args_name_5 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
@@ -17516,19 +17681,19 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 655;
+        exception_lineno = 678;
         goto frame_exception_exit_1;
     }
 
     Py_INCREF( tmp_tuple_element_12 );
     PyTuple_SET_ITEM( tmp_args_name_5, 0, tmp_tuple_element_12 );
     tmp_kw_name_6 = _PyDict_NewPresized( 1 );
-    tmp_dict_key_23 = const_str_plain_status_code;
-    tmp_source_name_36 = var_response;
+    tmp_dict_key_24 = const_str_plain_status_code;
+    tmp_source_name_35 = var_response;
 
-    if ( tmp_source_name_36 == NULL )
+    if ( tmp_source_name_35 == NULL )
     {
-        Py_DECREF( tmp_called_name_28 );
+        Py_DECREF( tmp_called_name_27 );
         Py_DECREF( tmp_args_name_5 );
         Py_DECREF( tmp_kw_name_6 );
         exception_type = PyExc_UnboundLocalError;
@@ -17538,61 +17703,265 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 655;
+        exception_lineno = 678;
         goto frame_exception_exit_1;
     }
 
-    tmp_dict_value_23 = LOOKUP_ATTRIBUTE( tmp_source_name_36, const_str_plain_status );
-    if ( tmp_dict_value_23 == NULL )
+    tmp_dict_value_24 = LOOKUP_ATTRIBUTE( tmp_source_name_35, const_str_plain_status );
+    if ( tmp_dict_value_24 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_called_name_28 );
+        Py_DECREF( tmp_called_name_27 );
         Py_DECREF( tmp_args_name_5 );
         Py_DECREF( tmp_kw_name_6 );
 
-        exception_lineno = 655;
+        exception_lineno = 678;
         goto frame_exception_exit_1;
     }
-    PyDict_SetItem( tmp_kw_name_6, tmp_dict_key_23, tmp_dict_value_23 );
-    Py_DECREF( tmp_dict_value_23 );
-    frame_function->f_lineno = 655;
-    tmp_cond_value_9 = CALL_FUNCTION( tmp_called_name_28, tmp_args_name_5, tmp_kw_name_6 );
-    Py_DECREF( tmp_called_name_28 );
+    PyDict_SetItem( tmp_kw_name_6, tmp_dict_key_24, tmp_dict_value_24 );
+    Py_DECREF( tmp_dict_value_24 );
+    frame_function->f_lineno = 678;
+    tmp_cond_value_12 = CALL_FUNCTION( tmp_called_name_27, tmp_args_name_5, tmp_kw_name_6 );
+    Py_DECREF( tmp_called_name_27 );
     Py_DECREF( tmp_args_name_5 );
     Py_DECREF( tmp_kw_name_6 );
-    if ( tmp_cond_value_9 == NULL )
+    if ( tmp_cond_value_12 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 655;
+        exception_lineno = 678;
         goto frame_exception_exit_1;
     }
-    tmp_cond_truth_9 = CHECK_IF_TRUE( tmp_cond_value_9 );
-    if ( tmp_cond_truth_9 == -1 )
+    tmp_cond_truth_12 = CHECK_IF_TRUE( tmp_cond_value_12 );
+    if ( tmp_cond_truth_12 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_cond_value_9 );
+        Py_DECREF( tmp_cond_value_12 );
 
-        exception_lineno = 655;
+        exception_lineno = 678;
         goto frame_exception_exit_1;
     }
-    Py_DECREF( tmp_cond_value_9 );
-    if ( tmp_cond_truth_9 == 1 )
+    Py_DECREF( tmp_cond_value_12 );
+    if ( tmp_cond_truth_12 == 1 )
     {
-        goto branch_yes_20;
+        goto branch_yes_22;
     }
     else
     {
-        goto branch_no_20;
+        goto branch_no_22;
     }
-    branch_yes_20:;
+    branch_yes_22:;
+    // Tried code:
+    tmp_source_name_36 = par_retries;
+
+    if ( tmp_source_name_36 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "retries" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 680;
+        goto try_except_handler_10;
+    }
+
+    tmp_called_name_28 = LOOKUP_ATTRIBUTE( tmp_source_name_36, const_str_plain_increment );
+    if ( tmp_called_name_28 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 680;
+        goto try_except_handler_10;
+    }
+    tmp_args_name_6 = PyTuple_New( 2 );
+    tmp_tuple_element_13 = par_method;
+
+    if ( tmp_tuple_element_13 == NULL )
+    {
+        Py_DECREF( tmp_called_name_28 );
+        Py_DECREF( tmp_args_name_6 );
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "method" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 680;
+        goto try_except_handler_10;
+    }
+
+    Py_INCREF( tmp_tuple_element_13 );
+    PyTuple_SET_ITEM( tmp_args_name_6, 0, tmp_tuple_element_13 );
+    tmp_tuple_element_13 = par_url;
+
+    if ( tmp_tuple_element_13 == NULL )
+    {
+        Py_DECREF( tmp_called_name_28 );
+        Py_DECREF( tmp_args_name_6 );
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "url" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 680;
+        goto try_except_handler_10;
+    }
+
+    Py_INCREF( tmp_tuple_element_13 );
+    PyTuple_SET_ITEM( tmp_args_name_6, 1, tmp_tuple_element_13 );
+    tmp_kw_name_7 = _PyDict_NewPresized( 2 );
+    tmp_dict_key_25 = const_str_plain_response;
+    tmp_dict_value_25 = var_response;
+
+    if ( tmp_dict_value_25 == NULL )
+    {
+        Py_DECREF( tmp_called_name_28 );
+        Py_DECREF( tmp_args_name_6 );
+        Py_DECREF( tmp_kw_name_7 );
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "response" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 680;
+        goto try_except_handler_10;
+    }
+
+    PyDict_SetItem( tmp_kw_name_7, tmp_dict_key_25, tmp_dict_value_25 );
+    tmp_dict_key_26 = const_str_plain__pool;
+    tmp_dict_value_26 = par_self;
+
+    if ( tmp_dict_value_26 == NULL )
+    {
+        Py_DECREF( tmp_called_name_28 );
+        Py_DECREF( tmp_args_name_6 );
+        Py_DECREF( tmp_kw_name_7 );
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "self" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 680;
+        goto try_except_handler_10;
+    }
+
+    PyDict_SetItem( tmp_kw_name_7, tmp_dict_key_26, tmp_dict_value_26 );
+    frame_function->f_lineno = 680;
+    tmp_assign_source_31 = CALL_FUNCTION( tmp_called_name_28, tmp_args_name_6, tmp_kw_name_7 );
+    Py_DECREF( tmp_called_name_28 );
+    Py_DECREF( tmp_args_name_6 );
+    Py_DECREF( tmp_kw_name_7 );
+    if ( tmp_assign_source_31 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 680;
+        goto try_except_handler_10;
+    }
+    {
+        PyObject *old = par_retries;
+        par_retries = tmp_assign_source_31;
+        Py_XDECREF( old );
+    }
+
+    goto try_end_6;
+    // Exception handler code:
+    try_except_handler_10:;
+    exception_keeper_type_9 = exception_type;
+    exception_keeper_value_9 = exception_value;
+    exception_keeper_tb_9 = exception_tb;
+    exception_keeper_lineno_9 = exception_lineno;
+    exception_type = NULL;
+    exception_value = NULL;
+    exception_tb = NULL;
+    exception_lineno = -1;
+
+    // Preserve existing published exception.
+    exception_preserved_type_4 = PyThreadState_GET()->exc_type;
+    Py_XINCREF( exception_preserved_type_4 );
+    exception_preserved_value_4 = PyThreadState_GET()->exc_value;
+    Py_XINCREF( exception_preserved_value_4 );
+    exception_preserved_tb_4 = (PyTracebackObject *)PyThreadState_GET()->exc_traceback;
+    Py_XINCREF( exception_preserved_tb_4 );
+
+    if ( exception_keeper_tb_9 == NULL )
+    {
+        exception_keeper_tb_9 = MAKE_TRACEBACK( frame_function, exception_keeper_lineno_9 );
+    }
+    else if ( exception_keeper_lineno_9 != -1 )
+    {
+        exception_keeper_tb_9 = ADD_TRACEBACK( exception_keeper_tb_9, frame_function, exception_keeper_lineno_9 );
+    }
+
+    NORMALIZE_EXCEPTION( &exception_keeper_type_9, &exception_keeper_value_9, &exception_keeper_tb_9 );
+    PyException_SetTraceback( exception_keeper_value_9, (PyObject *)exception_keeper_tb_9 );
+    PUBLISH_EXCEPTION( &exception_keeper_type_9, &exception_keeper_value_9, &exception_keeper_tb_9 );
+    // Tried code:
+    tmp_compare_left_10 = PyThreadState_GET()->exc_type;
+    tmp_compare_right_10 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_MaxRetryError );
+
+    if (unlikely( tmp_compare_right_10 == NULL ))
+    {
+        tmp_compare_right_10 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_MaxRetryError );
+    }
+
+    if ( tmp_compare_right_10 == NULL )
+    {
+
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "MaxRetryError" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 681;
+        goto try_except_handler_11;
+    }
+
+    tmp_exc_match_exception_match_6 = EXCEPTION_MATCH_BOOL( tmp_compare_left_10, tmp_compare_right_10 );
+    if ( tmp_exc_match_exception_match_6 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 681;
+        goto try_except_handler_11;
+    }
+    if ( tmp_exc_match_exception_match_6 == 1 )
+    {
+        goto branch_yes_23;
+    }
+    else
+    {
+        goto branch_no_23;
+    }
+    branch_yes_23:;
     tmp_source_name_37 = par_retries;
 
     if ( tmp_source_name_37 == NULL )
@@ -17605,69 +17974,47 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 656;
-        goto frame_exception_exit_1;
+        exception_lineno = 682;
+        goto try_except_handler_11;
     }
 
-    tmp_called_name_29 = LOOKUP_ATTRIBUTE( tmp_source_name_37, const_str_plain_increment );
-    if ( tmp_called_name_29 == NULL )
+    tmp_cond_value_13 = LOOKUP_ATTRIBUTE( tmp_source_name_37, const_str_plain_raise_on_status );
+    if ( tmp_cond_value_13 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 656;
-        goto frame_exception_exit_1;
+        exception_lineno = 682;
+        goto try_except_handler_11;
     }
-    tmp_args_name_6 = PyTuple_New( 2 );
-    tmp_tuple_element_13 = par_method;
-
-    if ( tmp_tuple_element_13 == NULL )
+    tmp_cond_truth_13 = CHECK_IF_TRUE( tmp_cond_value_13 );
+    if ( tmp_cond_truth_13 == -1 )
     {
-        Py_DECREF( tmp_called_name_29 );
-        Py_DECREF( tmp_args_name_6 );
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "method" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
+        assert( ERROR_OCCURRED() );
 
-        exception_lineno = 656;
-        goto frame_exception_exit_1;
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_cond_value_13 );
+
+        exception_lineno = 682;
+        goto try_except_handler_11;
     }
-
-    Py_INCREF( tmp_tuple_element_13 );
-    PyTuple_SET_ITEM( tmp_args_name_6, 0, tmp_tuple_element_13 );
-    tmp_tuple_element_13 = par_url;
-
-    if ( tmp_tuple_element_13 == NULL )
+    Py_DECREF( tmp_cond_value_13 );
+    if ( tmp_cond_truth_13 == 1 )
     {
-        Py_DECREF( tmp_called_name_29 );
-        Py_DECREF( tmp_args_name_6 );
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "url" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 656;
-        goto frame_exception_exit_1;
+        goto branch_yes_24;
     }
-
-    Py_INCREF( tmp_tuple_element_13 );
-    PyTuple_SET_ITEM( tmp_args_name_6, 1, tmp_tuple_element_13 );
-    tmp_kw_name_7 = _PyDict_NewPresized( 2 );
-    tmp_dict_key_24 = const_str_plain_response;
-    tmp_dict_value_24 = var_response;
-
-    if ( tmp_dict_value_24 == NULL )
+    else
     {
-        Py_DECREF( tmp_called_name_29 );
-        Py_DECREF( tmp_args_name_6 );
-        Py_DECREF( tmp_kw_name_7 );
+        goto branch_no_24;
+    }
+    branch_yes_24:;
+    tmp_source_name_38 = var_response;
+
+    if ( tmp_source_name_38 == NULL )
+    {
+
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
         exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "response" );
@@ -17675,55 +18022,97 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 656;
-        goto frame_exception_exit_1;
+        exception_lineno = 685;
+        goto try_except_handler_11;
     }
 
-    PyDict_SetItem( tmp_kw_name_7, tmp_dict_key_24, tmp_dict_value_24 );
-    tmp_dict_key_25 = const_str_plain__pool;
-    tmp_dict_value_25 = par_self;
-
-    if ( tmp_dict_value_25 == NULL )
-    {
-        Py_DECREF( tmp_called_name_29 );
-        Py_DECREF( tmp_args_name_6 );
-        Py_DECREF( tmp_kw_name_7 );
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "self" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 656;
-        goto frame_exception_exit_1;
-    }
-
-    PyDict_SetItem( tmp_kw_name_7, tmp_dict_key_25, tmp_dict_value_25 );
-    frame_function->f_lineno = 656;
-    tmp_assign_source_28 = CALL_FUNCTION( tmp_called_name_29, tmp_args_name_6, tmp_kw_name_7 );
-    Py_DECREF( tmp_called_name_29 );
-    Py_DECREF( tmp_args_name_6 );
-    Py_DECREF( tmp_kw_name_7 );
-    if ( tmp_assign_source_28 == NULL )
+    tmp_called_name_29 = LOOKUP_ATTRIBUTE( tmp_source_name_38, const_str_plain_release_conn );
+    if ( tmp_called_name_29 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 656;
-        goto frame_exception_exit_1;
+        exception_lineno = 685;
+        goto try_except_handler_11;
     }
+    frame_function->f_lineno = 685;
+    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_29 );
+    Py_DECREF( tmp_called_name_29 );
+    if ( tmp_unused == NULL )
     {
-        PyObject *old = par_retries;
-        par_retries = tmp_assign_source_28;
-        Py_XDECREF( old );
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 685;
+        goto try_except_handler_11;
+    }
+    Py_DECREF( tmp_unused );
+    RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+    if (exception_tb && exception_tb->tb_frame == frame_function) frame_function->f_lineno = exception_tb->tb_lineno;
+    goto try_except_handler_11;
+    branch_no_24:;
+    tmp_return_value = var_response;
+
+    if ( tmp_return_value == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "response" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 687;
+        goto try_except_handler_11;
     }
 
-    tmp_source_name_38 = par_retries;
+    Py_INCREF( tmp_return_value );
+    goto try_return_handler_11;
+    goto branch_end_23;
+    branch_no_23:;
+    RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+    if (exception_tb && exception_tb->tb_frame == frame_function) frame_function->f_lineno = exception_tb->tb_lineno;
+    goto try_except_handler_11;
+    branch_end_23:;
+    // tried codes exits in all cases
+    NUITKA_CANNOT_GET_HERE( function_13_urlopen_of_class_2_HTTPConnectionPool_of_urllib3$connectionpool );
+    return NULL;
+    // Return handler code:
+    try_return_handler_11:;
+    // Restore previous exception.
+    SET_CURRENT_EXCEPTION( exception_preserved_type_4, exception_preserved_value_4, exception_preserved_tb_4 );
+    goto frame_return_exit_1;
+    // Exception handler code:
+    try_except_handler_11:;
+    exception_keeper_type_10 = exception_type;
+    exception_keeper_value_10 = exception_value;
+    exception_keeper_tb_10 = exception_tb;
+    exception_keeper_lineno_10 = exception_lineno;
+    exception_type = NULL;
+    exception_value = NULL;
+    exception_tb = NULL;
+    exception_lineno = -1;
 
-    tmp_called_name_30 = LOOKUP_ATTRIBUTE( tmp_source_name_38, const_str_plain_sleep );
+    // Restore previous exception.
+    SET_CURRENT_EXCEPTION( exception_preserved_type_4, exception_preserved_value_4, exception_preserved_tb_4 );
+    // Re-raise.
+    exception_type = exception_keeper_type_10;
+    exception_value = exception_keeper_value_10;
+    exception_tb = exception_keeper_tb_10;
+    exception_lineno = exception_keeper_lineno_10;
+
+    goto frame_exception_exit_1;
+    // End of try:
+    // End of try:
+    try_end_6:;
+    tmp_source_name_39 = par_retries;
+
+    tmp_called_name_30 = LOOKUP_ATTRIBUTE( tmp_source_name_39, const_str_plain_sleep );
     if ( tmp_called_name_30 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -17731,10 +18120,10 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 657;
+        exception_lineno = 688;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 657;
+    frame_function->f_lineno = 688;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_30 );
     Py_DECREF( tmp_called_name_30 );
     if ( tmp_unused == NULL )
@@ -17744,18 +18133,18 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 657;
+        exception_lineno = 688;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
-    tmp_source_name_39 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
+    tmp_source_name_40 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_log );
 
-    if (unlikely( tmp_source_name_39 == NULL ))
+    if (unlikely( tmp_source_name_40 == NULL ))
     {
-        tmp_source_name_39 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
+        tmp_source_name_40 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_log );
     }
 
-    if ( tmp_source_name_39 == NULL )
+    if ( tmp_source_name_40 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -17765,11 +18154,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 658;
+        exception_lineno = 689;
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_31 = LOOKUP_ATTRIBUTE( tmp_source_name_39, const_str_plain_info );
+    tmp_called_name_31 = LOOKUP_ATTRIBUTE( tmp_source_name_40, const_str_plain_info );
     if ( tmp_called_name_31 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -17777,7 +18166,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 658;
+        exception_lineno = 689;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_24 = const_str_digest_221813d9dea208dabe47488d35e93241;
@@ -17793,11 +18182,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 658;
+        exception_lineno = 689;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 658;
+    frame_function->f_lineno = 689;
     {
         PyObject *call_args[] = { tmp_args_element_name_24, tmp_args_element_name_25 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_31, call_args );
@@ -17811,13 +18200,13 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 658;
+        exception_lineno = 689;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
-    tmp_source_name_40 = par_self;
+    tmp_source_name_41 = par_self;
 
-    if ( tmp_source_name_40 == NULL )
+    if ( tmp_source_name_41 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -17827,11 +18216,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 659;
+        exception_lineno = 690;
         goto frame_exception_exit_1;
     }
 
-    tmp_dircall_arg1_4 = LOOKUP_ATTRIBUTE( tmp_source_name_40, const_str_plain_urlopen );
+    tmp_dircall_arg1_4 = LOOKUP_ATTRIBUTE( tmp_source_name_41, const_str_plain_urlopen );
     if ( tmp_dircall_arg1_4 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -17839,7 +18228,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 659;
+        exception_lineno = 690;
         goto frame_exception_exit_1;
     }
     tmp_dircall_arg2_4 = PyTuple_New( 4 );
@@ -17856,7 +18245,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 660;
+        exception_lineno = 691;
         goto frame_exception_exit_1;
     }
 
@@ -17875,7 +18264,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 660;
+        exception_lineno = 691;
         goto frame_exception_exit_1;
     }
 
@@ -17894,7 +18283,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 660;
+        exception_lineno = 691;
         goto frame_exception_exit_1;
     }
 
@@ -17913,17 +18302,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 660;
+        exception_lineno = 691;
         goto frame_exception_exit_1;
     }
 
     Py_INCREF( tmp_tuple_element_14 );
     PyTuple_SET_ITEM( tmp_dircall_arg2_4, 3, tmp_tuple_element_14 );
     tmp_dircall_arg3_4 = _PyDict_NewPresized( 6 );
-    tmp_dict_key_26 = const_str_plain_retries;
-    tmp_dict_value_26 = par_retries;
+    tmp_dict_key_27 = const_str_plain_retries;
+    tmp_dict_value_27 = par_retries;
 
-    if ( tmp_dict_value_26 == NULL )
+    if ( tmp_dict_value_27 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_4 );
         Py_DECREF( tmp_dircall_arg2_4 );
@@ -17935,15 +18324,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 661;
+        exception_lineno = 692;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_26, tmp_dict_value_26 );
-    tmp_dict_key_27 = const_str_plain_redirect;
-    tmp_dict_value_27 = par_redirect;
+    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_27, tmp_dict_value_27 );
+    tmp_dict_key_28 = const_str_plain_redirect;
+    tmp_dict_value_28 = par_redirect;
 
-    if ( tmp_dict_value_27 == NULL )
+    if ( tmp_dict_value_28 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_4 );
         Py_DECREF( tmp_dircall_arg2_4 );
@@ -17955,15 +18344,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 661;
+        exception_lineno = 692;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_27, tmp_dict_value_27 );
-    tmp_dict_key_28 = const_str_plain_assert_same_host;
-    tmp_dict_value_28 = par_assert_same_host;
+    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_28, tmp_dict_value_28 );
+    tmp_dict_key_29 = const_str_plain_assert_same_host;
+    tmp_dict_value_29 = par_assert_same_host;
 
-    if ( tmp_dict_value_28 == NULL )
+    if ( tmp_dict_value_29 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_4 );
         Py_DECREF( tmp_dircall_arg2_4 );
@@ -17975,15 +18364,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 662;
+        exception_lineno = 693;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_28, tmp_dict_value_28 );
-    tmp_dict_key_29 = const_str_plain_timeout;
-    tmp_dict_value_29 = par_timeout;
+    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_29, tmp_dict_value_29 );
+    tmp_dict_key_30 = const_str_plain_timeout;
+    tmp_dict_value_30 = par_timeout;
 
-    if ( tmp_dict_value_29 == NULL )
+    if ( tmp_dict_value_30 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_4 );
         Py_DECREF( tmp_dircall_arg2_4 );
@@ -17995,15 +18384,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 663;
+        exception_lineno = 694;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_29, tmp_dict_value_29 );
-    tmp_dict_key_30 = const_str_plain_pool_timeout;
-    tmp_dict_value_30 = par_pool_timeout;
+    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_30, tmp_dict_value_30 );
+    tmp_dict_key_31 = const_str_plain_pool_timeout;
+    tmp_dict_value_31 = par_pool_timeout;
 
-    if ( tmp_dict_value_30 == NULL )
+    if ( tmp_dict_value_31 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_4 );
         Py_DECREF( tmp_dircall_arg2_4 );
@@ -18015,15 +18404,15 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 663;
+        exception_lineno = 694;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_30, tmp_dict_value_30 );
-    tmp_dict_key_31 = const_str_plain_release_conn;
-    tmp_dict_value_31 = par_release_conn;
+    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_31, tmp_dict_value_31 );
+    tmp_dict_key_32 = const_str_plain_release_conn;
+    tmp_dict_value_32 = par_release_conn;
 
-    if ( tmp_dict_value_31 == NULL )
+    if ( tmp_dict_value_32 == NULL )
     {
         Py_DECREF( tmp_dircall_arg1_4 );
         Py_DECREF( tmp_dircall_arg2_4 );
@@ -18035,11 +18424,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 664;
+        exception_lineno = 695;
         goto frame_exception_exit_1;
     }
 
-    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_31, tmp_dict_value_31 );
+    PyDict_SetItem( tmp_dircall_arg3_4, tmp_dict_key_32, tmp_dict_value_32 );
     tmp_dircall_arg4_4 = par_response_kw;
 
     if ( tmp_dircall_arg4_4 == NULL )
@@ -18054,7 +18443,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 664;
+        exception_lineno = 695;
         goto frame_exception_exit_1;
     }
 
@@ -18071,11 +18460,11 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 664;
+        exception_lineno = 695;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
-    branch_no_20:;
+    branch_no_22:;
     tmp_return_value = var_response;
 
     if ( tmp_return_value == NULL )
@@ -18088,7 +18477,7 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 666;
+        exception_lineno = 697;
         goto frame_exception_exit_1;
     }
 
@@ -18264,6 +18653,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
                 assert( res == 0 );
             }
 
+            if ( par_chunked )
+            {
+                int res = PyDict_SetItem(
+                    tmp_frame_locals,
+                    const_str_plain_chunked,
+                    par_chunked
+                );
+
+                assert( res == 0 );
+            }
+
             if ( par_response_kw )
             {
                 int res = PyDict_SetItem(
@@ -18292,6 +18692,17 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
                     tmp_frame_locals,
                     const_str_plain_err,
                     var_err
+                );
+
+                assert( res == 0 );
+            }
+
+            if ( var_clean_exit )
+            {
+                int res = PyDict_SetItem(
+                    tmp_frame_locals,
+                    const_str_plain_clean_exit,
+                    var_clean_exit
                 );
 
                 assert( res == 0 );
@@ -18430,6 +18841,9 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     Py_XDECREF( par_release_conn );
     par_release_conn = NULL;
 
+    Py_XDECREF( par_chunked );
+    par_chunked = NULL;
+
     Py_XDECREF( par_response_kw );
     par_response_kw = NULL;
 
@@ -18438,6 +18852,9 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     Py_XDECREF( var_err );
     var_err = NULL;
+
+    Py_XDECREF( var_clean_exit );
+    var_clean_exit = NULL;
 
     Py_XDECREF( var_timeout_obj );
     var_timeout_obj = NULL;
@@ -18463,10 +18880,10 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     goto function_return_exit;
     // Exception handler code:
     try_except_handler_1:;
-    exception_keeper_type_9 = exception_type;
-    exception_keeper_value_9 = exception_value;
-    exception_keeper_tb_9 = exception_tb;
-    exception_keeper_lineno_9 = exception_lineno;
+    exception_keeper_type_11 = exception_type;
+    exception_keeper_value_11 = exception_value;
+    exception_keeper_tb_11 = exception_tb;
+    exception_keeper_lineno_11 = exception_lineno;
     exception_type = NULL;
     exception_value = NULL;
     exception_tb = NULL;
@@ -18505,6 +18922,9 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     Py_XDECREF( par_release_conn );
     par_release_conn = NULL;
 
+    Py_XDECREF( par_chunked );
+    par_chunked = NULL;
+
     Py_XDECREF( par_response_kw );
     par_response_kw = NULL;
 
@@ -18513,6 +18933,9 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
 
     Py_XDECREF( var_err );
     var_err = NULL;
+
+    Py_XDECREF( var_clean_exit );
+    var_clean_exit = NULL;
 
     Py_XDECREF( var_timeout_obj );
     var_timeout_obj = NULL;
@@ -18536,10 +18959,10 @@ static PyObject *impl_function_13_urlopen_of_class_2_HTTPConnectionPool_of_urlli
     var_redirect_location = NULL;
 
     // Re-raise.
-    exception_type = exception_keeper_type_9;
-    exception_value = exception_keeper_value_9;
-    exception_tb = exception_keeper_tb_9;
-    exception_lineno = exception_keeper_lineno_9;
+    exception_type = exception_keeper_type_11;
+    exception_value = exception_keeper_value_11;
+    exception_tb = exception_keeper_tb_11;
+    exception_lineno = exception_keeper_lineno_11;
 
     goto function_exception_exit;
     // End of try:
@@ -18646,7 +19069,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
     var_scheme = tmp_assign_source_4;
 
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_db98a1bc6c2a4ec52552e79f52e5e851, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_37643975f9b8f154e72d59f33a2c0b8b, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -18682,7 +19105,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
             NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
             CHAIN_EXCEPTION( exception_value );
 
-            exception_lineno = 688;
+            exception_lineno = 719;
             goto frame_exception_exit_1;
         }
 
@@ -18720,7 +19143,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
             NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
             CHAIN_EXCEPTION( exception_value );
 
-            exception_lineno = 691;
+            exception_lineno = 722;
             goto frame_exception_exit_1;
         }
 
@@ -18734,7 +19157,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_defaults_1 );
 
-        exception_lineno = 691;
+        exception_lineno = 722;
         goto frame_exception_exit_1;
     }
     PyTuple_SET_ITEM( tmp_defaults_1, 2, tmp_tuple_element_1 );
@@ -18832,7 +19255,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain___module__, var___module__ );
@@ -18844,7 +19267,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain___doc__, var___doc__ );
@@ -18856,7 +19279,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain___qualname__, var___qualname__ );
@@ -18868,7 +19291,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain_scheme, var_scheme );
@@ -18880,7 +19303,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain_ConnectionCls, var_ConnectionCls );
@@ -18892,7 +19315,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain___init__, var___init__ );
@@ -18904,7 +19327,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__prepare_conn, var__prepare_conn );
@@ -18916,7 +19339,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__prepare_proxy, var__prepare_proxy );
@@ -18928,7 +19351,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__new_conn, var__new_conn );
@@ -18940,7 +19363,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
             tmp_result = MAPPING_SYNC_FROM_VARIABLE( tmp_frame_locals, const_str_plain__validate_conn, var__validate_conn );
@@ -18952,7 +19375,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPSConnectionPool_of_urllib3$connec
                 FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-                exception_lineno = 669;
+                exception_lineno = 700;
                 goto frame_exception_exit_1;
             }
 
@@ -19341,7 +19764,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_7992c10076cfd02a660e7a4faa532db1, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_77919ab6ae80a92b65a2ba93fbf534e1, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -19373,7 +19796,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 699;
+        exception_lineno = 730;
         goto frame_exception_exit_1;
     }
 
@@ -19385,7 +19808,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 699;
+        exception_lineno = 730;
         goto frame_exception_exit_1;
     }
     tmp_dircall_arg2_1 = PyTuple_New( 11 );
@@ -19448,7 +19871,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 701;
+        exception_lineno = 732;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -19462,7 +19885,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 703;
+        exception_lineno = 734;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -19491,7 +19914,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 703;
+        exception_lineno = 734;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -19526,7 +19949,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 706;
+        exception_lineno = 737;
         goto frame_exception_exit_1;
     }
 
@@ -19538,7 +19961,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 706;
+        exception_lineno = 737;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_2 = par_cert_file;
@@ -19555,7 +19978,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 707;
+        exception_lineno = 738;
         goto frame_exception_exit_1;
     }
 
@@ -19567,7 +19990,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 707;
+        exception_lineno = 738;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_3 = par_cert_reqs;
@@ -19582,7 +20005,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 708;
+        exception_lineno = 739;
         goto frame_exception_exit_1;
     }
 
@@ -19598,7 +20021,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 708;
+        exception_lineno = 739;
         goto frame_exception_exit_1;
     }
 
@@ -19610,7 +20033,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 708;
+        exception_lineno = 739;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_4 = par_ca_certs;
@@ -19625,7 +20048,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 709;
+        exception_lineno = 740;
         goto frame_exception_exit_1;
     }
 
@@ -19641,7 +20064,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 709;
+        exception_lineno = 740;
         goto frame_exception_exit_1;
     }
 
@@ -19653,7 +20076,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 709;
+        exception_lineno = 740;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_5 = par_ca_cert_dir;
@@ -19670,7 +20093,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 710;
+        exception_lineno = 741;
         goto frame_exception_exit_1;
     }
 
@@ -19682,7 +20105,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 710;
+        exception_lineno = 741;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_6 = par_ssl_version;
@@ -19699,7 +20122,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 711;
+        exception_lineno = 742;
         goto frame_exception_exit_1;
     }
 
@@ -19711,7 +20134,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 711;
+        exception_lineno = 742;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_7 = par_assert_hostname;
@@ -19728,7 +20151,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 712;
+        exception_lineno = 743;
         goto frame_exception_exit_1;
     }
 
@@ -19740,7 +20163,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 712;
+        exception_lineno = 743;
         goto frame_exception_exit_1;
     }
     tmp_assattr_name_8 = par_assert_fingerprint;
@@ -19757,7 +20180,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 713;
+        exception_lineno = 744;
         goto frame_exception_exit_1;
     }
 
@@ -19769,7 +20192,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPSConnectionPool_of_urll
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 713;
+        exception_lineno = 744;
         goto frame_exception_exit_1;
     }
 
@@ -20274,7 +20697,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_e4a0e2a868f103a858341d6c8a2e6201, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_ecce51ed886e8cdd5fe6da9c7a0931e4, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -20308,7 +20731,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 721;
+        exception_lineno = 752;
         goto frame_exception_exit_1;
     }
 
@@ -20320,7 +20743,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 721;
+        exception_lineno = 752;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -20342,7 +20765,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 722;
+        exception_lineno = 753;
         goto frame_exception_exit_1;
     }
     tmp_kw_name_1 = _PyDict_NewPresized( 7 );
@@ -20358,7 +20781,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 722;
+        exception_lineno = 753;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_1, tmp_dict_value_1 );
@@ -20377,7 +20800,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 723;
+        exception_lineno = 754;
         goto frame_exception_exit_1;
     }
 
@@ -20390,7 +20813,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 723;
+        exception_lineno = 754;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_2, tmp_dict_value_2 );
@@ -20409,7 +20832,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 724;
+        exception_lineno = 755;
         goto frame_exception_exit_1;
     }
 
@@ -20422,7 +20845,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 724;
+        exception_lineno = 755;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_3, tmp_dict_value_3 );
@@ -20441,7 +20864,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 725;
+        exception_lineno = 756;
         goto frame_exception_exit_1;
     }
 
@@ -20454,7 +20877,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 725;
+        exception_lineno = 756;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_4, tmp_dict_value_4 );
@@ -20473,7 +20896,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 726;
+        exception_lineno = 757;
         goto frame_exception_exit_1;
     }
 
@@ -20486,7 +20909,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 726;
+        exception_lineno = 757;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_5, tmp_dict_value_5 );
@@ -20505,7 +20928,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 727;
+        exception_lineno = 758;
         goto frame_exception_exit_1;
     }
 
@@ -20518,7 +20941,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 727;
+        exception_lineno = 758;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_6, tmp_dict_value_6 );
@@ -20537,7 +20960,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 728;
+        exception_lineno = 759;
         goto frame_exception_exit_1;
     }
 
@@ -20550,12 +20973,12 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_kw_name_1 );
 
-        exception_lineno = 728;
+        exception_lineno = 759;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_7, tmp_dict_value_7 );
     Py_DECREF( tmp_dict_value_7 );
-    frame_function->f_lineno = 728;
+    frame_function->f_lineno = 759;
     tmp_unused = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_1 );
     Py_DECREF( tmp_kw_name_1 );
@@ -20566,7 +20989,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 728;
+        exception_lineno = 759;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -20582,7 +21005,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 729;
+        exception_lineno = 760;
         goto frame_exception_exit_1;
     }
 
@@ -20594,7 +21017,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 729;
+        exception_lineno = 760;
         goto frame_exception_exit_1;
     }
     tmp_assattr_target_1 = par_conn;
@@ -20609,7 +21032,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 729;
+        exception_lineno = 760;
         goto frame_exception_exit_1;
     }
 
@@ -20621,7 +21044,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assattr_name_1 );
 
-        exception_lineno = 729;
+        exception_lineno = 760;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_assattr_name_1 );
@@ -20638,7 +21061,7 @@ static PyObject *impl_function_2__prepare_conn_of_class_3_HTTPSConnectionPool_of
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 731;
+        exception_lineno = 762;
         goto frame_exception_exit_1;
     }
 
@@ -20860,7 +21283,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_fcf6dac4ac5b56696de0d563ae80d6fb, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_17665e5dd8294e665dd283468730876a, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -20886,7 +21309,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 740;
+        exception_lineno = 771;
         goto try_except_handler_2;
     }
     assert( var_set_tunnel == NULL );
@@ -20935,7 +21358,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 741;
+        exception_lineno = 772;
         goto try_except_handler_3;
     }
     if ( tmp_exc_match_exception_match_1 == 1 )
@@ -20959,7 +21382,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 742;
+        exception_lineno = 773;
         goto try_except_handler_3;
     }
 
@@ -20971,7 +21394,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 742;
+        exception_lineno = 773;
         goto try_except_handler_3;
     }
     assert( var_set_tunnel == NULL );
@@ -21031,7 +21454,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 744;
+        exception_lineno = 775;
         goto frame_exception_exit_1;
     }
 
@@ -21043,7 +21466,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 744;
+        exception_lineno = 775;
         goto frame_exception_exit_1;
     }
     tmp_compexpr_right_1 = const_tuple_int_pos_2_int_pos_6_int_pos_4_tuple;
@@ -21056,7 +21479,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 744;
+        exception_lineno = 775;
         goto frame_exception_exit_1;
     }
     tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
@@ -21067,7 +21490,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_and_left_value_1 );
 
-        exception_lineno = 744;
+        exception_lineno = 775;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -21090,7 +21513,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 744;
+        exception_lineno = 775;
         goto frame_exception_exit_1;
     }
     tmp_and_right_value_1 = UNARY_OPERATION( UNARY_NOT, tmp_operand_name_1 );
@@ -21102,7 +21525,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 744;
+        exception_lineno = 775;
         goto frame_exception_exit_1;
     }
     Py_INCREF( tmp_and_right_value_1 );
@@ -21119,7 +21542,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 744;
+        exception_lineno = 775;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -21144,7 +21567,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 745;
+        exception_lineno = 776;
         goto frame_exception_exit_1;
     }
 
@@ -21160,7 +21583,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 745;
+        exception_lineno = 776;
         goto frame_exception_exit_1;
     }
 
@@ -21172,7 +21595,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 745;
+        exception_lineno = 776;
         goto frame_exception_exit_1;
     }
     tmp_source_name_6 = par_self;
@@ -21187,7 +21610,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 745;
+        exception_lineno = 776;
         goto frame_exception_exit_1;
     }
 
@@ -21199,10 +21622,10 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_args_element_name_1 );
 
-        exception_lineno = 745;
+        exception_lineno = 776;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 745;
+    frame_function->f_lineno = 776;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_1, call_args );
@@ -21217,7 +21640,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 745;
+        exception_lineno = 776;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -21235,7 +21658,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 747;
+        exception_lineno = 778;
         goto frame_exception_exit_1;
     }
 
@@ -21251,7 +21674,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 747;
+        exception_lineno = 778;
         goto frame_exception_exit_1;
     }
 
@@ -21263,7 +21686,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 747;
+        exception_lineno = 778;
         goto frame_exception_exit_1;
     }
     tmp_source_name_8 = par_self;
@@ -21278,7 +21701,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 747;
+        exception_lineno = 778;
         goto frame_exception_exit_1;
     }
 
@@ -21290,7 +21713,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_args_element_name_3 );
 
-        exception_lineno = 747;
+        exception_lineno = 778;
         goto frame_exception_exit_1;
     }
     tmp_source_name_9 = par_self;
@@ -21306,7 +21729,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 747;
+        exception_lineno = 778;
         goto frame_exception_exit_1;
     }
 
@@ -21319,10 +21742,10 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         Py_DECREF( tmp_args_element_name_3 );
         Py_DECREF( tmp_args_element_name_4 );
 
-        exception_lineno = 747;
+        exception_lineno = 778;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 747;
+    frame_function->f_lineno = 778;
     {
         PyObject *call_args[] = { tmp_args_element_name_3, tmp_args_element_name_4, tmp_args_element_name_5 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_2, call_args );
@@ -21338,7 +21761,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 747;
+        exception_lineno = 778;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -21355,7 +21778,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 749;
+        exception_lineno = 780;
         goto frame_exception_exit_1;
     }
 
@@ -21367,10 +21790,10 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 749;
+        exception_lineno = 780;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 749;
+    frame_function->f_lineno = 780;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_3 );
     Py_DECREF( tmp_called_name_3 );
     if ( tmp_unused == NULL )
@@ -21380,7 +21803,7 @@ static PyObject *impl_function_3__prepare_proxy_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 749;
+        exception_lineno = 780;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -21642,7 +22065,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_1d5ca060e34a4ec2a0d0f066be828c5e, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_2f807aca3e2d2006757a71f74ecc4511, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -21667,7 +22090,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 755;
+        exception_lineno = 786;
         goto frame_exception_exit_1;
     }
     assert( tmp_inplace_assign_attr_1__start == NULL );
@@ -21685,7 +22108,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 755;
+        exception_lineno = 786;
         goto try_except_handler_2;
     }
     assert( tmp_inplace_assign_attr_1__end == NULL );
@@ -21720,7 +22143,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 755;
+        exception_lineno = 786;
         goto try_except_handler_3;
     }
 
@@ -21732,7 +22155,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 755;
+        exception_lineno = 786;
         goto try_except_handler_3;
     }
     branch_no_1:;
@@ -21807,7 +22230,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 756;
+        exception_lineno = 787;
         goto frame_exception_exit_1;
     }
 
@@ -21819,7 +22242,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 756;
+        exception_lineno = 787;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = const_str_digest_adf6607ba8d2630a57150bc4cff307c6;
@@ -21835,7 +22258,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 757;
+        exception_lineno = 788;
         goto frame_exception_exit_1;
     }
 
@@ -21847,7 +22270,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_1 );
 
-        exception_lineno = 757;
+        exception_lineno = 788;
         goto frame_exception_exit_1;
     }
     tmp_source_name_4 = par_self;
@@ -21863,7 +22286,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 757;
+        exception_lineno = 788;
         goto frame_exception_exit_1;
     }
 
@@ -21876,10 +22299,10 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         Py_DECREF( tmp_called_name_1 );
         Py_DECREF( tmp_args_element_name_2 );
 
-        exception_lineno = 757;
+        exception_lineno = 788;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 757;
+    frame_function->f_lineno = 788;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_1, call_args );
@@ -21895,7 +22318,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 757;
+        exception_lineno = 788;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -21911,7 +22334,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 759;
+        exception_lineno = 790;
         goto frame_exception_exit_1;
     }
 
@@ -21923,7 +22346,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 759;
+        exception_lineno = 790;
         goto frame_exception_exit_1;
     }
     tmp_or_left_value_1 = UNARY_OPERATION( UNARY_NOT, tmp_operand_name_1 );
@@ -21935,7 +22358,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 759;
+        exception_lineno = 790;
         goto frame_exception_exit_1;
     }
     tmp_or_left_truth_1 = CHECK_IF_TRUE( tmp_or_left_value_1 );
@@ -21946,7 +22369,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 759;
+        exception_lineno = 790;
         goto frame_exception_exit_1;
     }
     if ( tmp_or_left_truth_1 == 1 )
@@ -21970,7 +22393,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 759;
+        exception_lineno = 790;
         goto frame_exception_exit_1;
     }
 
@@ -21982,7 +22405,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 759;
+        exception_lineno = 790;
         goto frame_exception_exit_1;
     }
     tmp_compexpr_right_1 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_DummyConnection );
@@ -22002,7 +22425,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 759;
+        exception_lineno = 790;
         goto frame_exception_exit_1;
     }
 
@@ -22021,7 +22444,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 759;
+        exception_lineno = 790;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -22050,11 +22473,11 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 760;
+        exception_lineno = 791;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 760;
+    frame_function->f_lineno = 791;
     tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, &PyTuple_GET_ITEM( const_tuple_str_digest_61ac0b1508921914df7f7224a3eccfd6_tuple, 0 ) );
 
     if ( tmp_raise_type_1 == NULL )
@@ -22064,11 +22487,11 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 760;
+        exception_lineno = 791;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_1;
-    exception_lineno = 760;
+    exception_lineno = 791;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_2:;
@@ -22084,7 +22507,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 763;
+        exception_lineno = 794;
         goto frame_exception_exit_1;
     }
 
@@ -22096,7 +22519,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 763;
+        exception_lineno = 794;
         goto frame_exception_exit_1;
     }
     assert( var_actual_host == NULL );
@@ -22114,7 +22537,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 764;
+        exception_lineno = 795;
         goto frame_exception_exit_1;
     }
 
@@ -22126,7 +22549,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 764;
+        exception_lineno = 795;
         goto frame_exception_exit_1;
     }
     assert( var_actual_port == NULL );
@@ -22144,7 +22567,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 765;
+        exception_lineno = 796;
         goto frame_exception_exit_1;
     }
 
@@ -22156,7 +22579,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 765;
+        exception_lineno = 796;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_2 = Py_None;
@@ -22183,7 +22606,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 766;
+        exception_lineno = 797;
         goto frame_exception_exit_1;
     }
 
@@ -22195,7 +22618,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 766;
+        exception_lineno = 797;
         goto frame_exception_exit_1;
     }
     tmp_assign_source_5 = LOOKUP_ATTRIBUTE( tmp_source_name_10, const_str_plain_host );
@@ -22207,7 +22630,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 766;
+        exception_lineno = 797;
         goto frame_exception_exit_1;
     }
     {
@@ -22228,7 +22651,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 767;
+        exception_lineno = 798;
         goto frame_exception_exit_1;
     }
 
@@ -22240,7 +22663,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 767;
+        exception_lineno = 798;
         goto frame_exception_exit_1;
     }
     tmp_assign_source_6 = LOOKUP_ATTRIBUTE( tmp_source_name_12, const_str_plain_port );
@@ -22252,7 +22675,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 767;
+        exception_lineno = 798;
         goto frame_exception_exit_1;
     }
     {
@@ -22274,7 +22697,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 769;
+        exception_lineno = 800;
         goto frame_exception_exit_1;
     }
 
@@ -22286,7 +22709,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 769;
+        exception_lineno = 800;
         goto frame_exception_exit_1;
     }
     tmp_dircall_arg2_1 = _PyDict_NewPresized( 4 );
@@ -22304,7 +22727,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 769;
+        exception_lineno = 800;
         goto frame_exception_exit_1;
     }
 
@@ -22323,7 +22746,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 769;
+        exception_lineno = 800;
         goto frame_exception_exit_1;
     }
 
@@ -22342,7 +22765,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 770;
+        exception_lineno = 801;
         goto frame_exception_exit_1;
     }
 
@@ -22355,7 +22778,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 770;
+        exception_lineno = 801;
         goto frame_exception_exit_1;
     }
     tmp_dict_value_3 = LOOKUP_ATTRIBUTE( tmp_source_name_15, const_str_plain_connect_timeout );
@@ -22368,7 +22791,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 770;
+        exception_lineno = 801;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_dircall_arg2_1, tmp_dict_key_3, tmp_dict_value_3 );
@@ -22387,7 +22810,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 771;
+        exception_lineno = 802;
         goto frame_exception_exit_1;
     }
 
@@ -22400,7 +22823,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 771;
+        exception_lineno = 802;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_dircall_arg2_1, tmp_dict_key_4, tmp_dict_value_4 );
@@ -22418,7 +22841,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 771;
+        exception_lineno = 802;
         goto frame_exception_exit_1;
     }
 
@@ -22431,7 +22854,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         Py_DECREF( tmp_dircall_arg1_1 );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 771;
+        exception_lineno = 802;
         goto frame_exception_exit_1;
     }
 
@@ -22446,7 +22869,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 771;
+        exception_lineno = 802;
         goto frame_exception_exit_1;
     }
     assert( var_conn == NULL );
@@ -22464,7 +22887,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 773;
+        exception_lineno = 804;
         goto frame_exception_exit_1;
     }
 
@@ -22476,7 +22899,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 773;
+        exception_lineno = 804;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_4 = var_conn;
@@ -22491,11 +22914,11 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 773;
+        exception_lineno = 804;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 773;
+    frame_function->f_lineno = 804;
     {
         PyObject *call_args[] = { tmp_args_element_name_4 };
         tmp_return_value = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -22509,7 +22932,7 @@ static PyObject *impl_function_4__new_conn_of_class_3_HTTPSConnectionPool_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 773;
+        exception_lineno = 804;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -22739,7 +23162,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_205408e50ed19353a2758c8a8af10df6, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_2b068536a390598d359321ca64b51f87, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -22771,7 +23194,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 779;
+        exception_lineno = 810;
         goto frame_exception_exit_1;
     }
 
@@ -22785,7 +23208,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 779;
+        exception_lineno = 810;
         goto frame_exception_exit_1;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain__validate_conn );
@@ -22797,12 +23220,12 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 779;
+        exception_lineno = 810;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = par_conn;
 
-    frame_function->f_lineno = 779;
+    frame_function->f_lineno = 810;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -22816,7 +23239,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 779;
+        exception_lineno = 810;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -22832,7 +23255,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 782;
+        exception_lineno = 813;
         goto frame_exception_exit_1;
     }
 
@@ -22846,7 +23269,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 782;
+        exception_lineno = 813;
         goto frame_exception_exit_1;
     }
     tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
@@ -22857,7 +23280,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 782;
+        exception_lineno = 813;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -22882,7 +23305,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 783;
+        exception_lineno = 814;
         goto frame_exception_exit_1;
     }
 
@@ -22894,10 +23317,10 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 783;
+        exception_lineno = 814;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 783;
+    frame_function->f_lineno = 814;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_2 );
     Py_DECREF( tmp_called_name_2 );
     if ( tmp_unused == NULL )
@@ -22907,7 +23330,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 783;
+        exception_lineno = 814;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -22924,7 +23347,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 785;
+        exception_lineno = 816;
         goto frame_exception_exit_1;
     }
 
@@ -22936,7 +23359,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 785;
+        exception_lineno = 816;
         goto frame_exception_exit_1;
     }
     tmp_cond_truth_2 = CHECK_IF_TRUE( tmp_cond_value_2 );
@@ -22947,7 +23370,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_2 );
 
-        exception_lineno = 785;
+        exception_lineno = 816;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_2 );
@@ -22977,7 +23400,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 786;
+        exception_lineno = 817;
         goto frame_exception_exit_1;
     }
 
@@ -22989,7 +23412,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 786;
+        exception_lineno = 817;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_2 = const_str_digest_2e1e12eb3d607f103d10ec482e2093fe;
@@ -23010,11 +23433,11 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 790;
+        exception_lineno = 821;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 790;
+    frame_function->f_lineno = 821;
     {
         PyObject *call_args[] = { tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_3, call_args );
@@ -23028,7 +23451,7 @@ static PyObject *impl_function_5__validate_conn_of_class_3_HTTPSConnectionPool_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 790;
+        exception_lineno = 821;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -23199,6 +23622,8 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
     PyTracebackObject *exception_keeper_tb_2;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_2;
     PyObject *tmp_args_element_name_1;
+    PyObject *tmp_args_element_name_2;
+    PyObject *tmp_args_element_name_3;
     PyObject *tmp_assign_source_1;
     PyObject *tmp_assign_source_2;
     PyObject *tmp_assign_source_3;
@@ -23206,7 +23631,9 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
     PyObject *tmp_assign_source_5;
     PyObject *tmp_assign_source_6;
     PyObject *tmp_assign_source_7;
+    PyObject *tmp_assign_source_8;
     PyObject *tmp_called_name_1;
+    PyObject *tmp_called_name_2;
     int tmp_cmp_Eq_1;
     PyObject *tmp_compare_left_1;
     PyObject *tmp_compare_right_1;
@@ -23226,7 +23653,11 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
     PyObject *tmp_iter_arg_1;
     PyObject *tmp_iterator_attempt;
     PyObject *tmp_iterator_name_1;
+    int tmp_or_left_truth_1;
+    PyObject *tmp_or_left_value_1;
+    PyObject *tmp_or_right_value_1;
     PyObject *tmp_return_value;
+    PyObject *tmp_source_name_1;
     PyObject *tmp_tuple_element_1;
     PyObject *tmp_tuple_element_2;
     PyObject *tmp_unpack_1;
@@ -23240,7 +23671,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_77e7089b33530b130946e2a2bda80e0f, module_urllib3$connectionpool );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_90e72205a2f2499f1dda274d9827faf4, module_urllib3$connectionpool );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -23273,13 +23704,13 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 813;
+        exception_lineno = 844;
         goto try_except_handler_2;
     }
 
     tmp_args_element_name_1 = par_url;
 
-    frame_function->f_lineno = 813;
+    frame_function->f_lineno = 844;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_iter_arg_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -23292,7 +23723,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 813;
+        exception_lineno = 844;
         goto try_except_handler_2;
     }
     tmp_assign_source_1 = MAKE_ITERATOR( tmp_iter_arg_1 );
@@ -23304,7 +23735,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 813;
+        exception_lineno = 844;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__source_iter == NULL );
@@ -23328,7 +23759,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         }
 
 
-        exception_lineno = 813;
+        exception_lineno = 844;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__element_1 == NULL );
@@ -23352,7 +23783,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         }
 
 
-        exception_lineno = 813;
+        exception_lineno = 844;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__element_2 == NULL );
@@ -23376,7 +23807,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         }
 
 
-        exception_lineno = 813;
+        exception_lineno = 844;
         goto try_except_handler_2;
     }
     assert( tmp_tuple_unpack_1__element_3 == NULL );
@@ -23485,6 +23916,120 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
     Py_XDECREF( tmp_tuple_unpack_1__element_3 );
     tmp_tuple_unpack_1__element_3 = NULL;
 
+    tmp_or_left_value_1 = var_port;
+
+    if ( tmp_or_left_value_1 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "port" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 845;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_or_left_truth_1 = CHECK_IF_TRUE( tmp_or_left_value_1 );
+    if ( tmp_or_left_truth_1 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 845;
+        goto frame_exception_exit_1;
+    }
+    if ( tmp_or_left_truth_1 == 1 )
+    {
+        goto or_left_1;
+    }
+    else
+    {
+        goto or_right_1;
+    }
+    or_right_1:;
+    tmp_source_name_1 = GET_STRING_DICT_VALUE( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_port_by_scheme );
+
+    if (unlikely( tmp_source_name_1 == NULL ))
+    {
+        tmp_source_name_1 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_port_by_scheme );
+    }
+
+    if ( tmp_source_name_1 == NULL )
+    {
+
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "port_by_scheme" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 845;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_called_name_2 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain_get );
+    if ( tmp_called_name_2 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 845;
+        goto frame_exception_exit_1;
+    }
+    tmp_args_element_name_2 = var_scheme;
+
+    if ( tmp_args_element_name_2 == NULL )
+    {
+        Py_DECREF( tmp_called_name_2 );
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "scheme" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 845;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_args_element_name_3 = const_int_pos_80;
+    frame_function->f_lineno = 845;
+    {
+        PyObject *call_args[] = { tmp_args_element_name_2, tmp_args_element_name_3 };
+        tmp_or_right_value_1 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, call_args );
+    }
+
+    Py_DECREF( tmp_called_name_2 );
+    if ( tmp_or_right_value_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 845;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_8 = tmp_or_right_value_1;
+    goto or_end_1;
+    or_left_1:;
+    Py_INCREF( tmp_or_left_value_1 );
+    tmp_assign_source_8 = tmp_or_left_value_1;
+    or_end_1:;
+    {
+        PyObject *old = var_port;
+        var_port = tmp_assign_source_8;
+        Py_XDECREF( old );
+    }
+
     tmp_compare_left_1 = var_scheme;
 
     if ( tmp_compare_left_1 == NULL )
@@ -23497,7 +24042,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 814;
+        exception_lineno = 846;
         goto frame_exception_exit_1;
     }
 
@@ -23510,7 +24055,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 814;
+        exception_lineno = 846;
         goto frame_exception_exit_1;
     }
     if ( tmp_cmp_Eq_1 == 1 )
@@ -23539,7 +24084,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 815;
+        exception_lineno = 847;
         goto frame_exception_exit_1;
     }
 
@@ -23556,7 +24101,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 815;
+        exception_lineno = 847;
         goto frame_exception_exit_1;
     }
 
@@ -23577,7 +24122,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 815;
+        exception_lineno = 847;
         goto frame_exception_exit_1;
     }
 
@@ -23598,7 +24143,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 815;
+        exception_lineno = 847;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -23621,7 +24166,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 817;
+        exception_lineno = 849;
         goto frame_exception_exit_1;
     }
 
@@ -23638,7 +24183,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 817;
+        exception_lineno = 849;
         goto frame_exception_exit_1;
     }
 
@@ -23659,7 +24204,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 817;
+        exception_lineno = 849;
         goto frame_exception_exit_1;
     }
 
@@ -23680,7 +24225,7 @@ static PyObject *impl_function_1_connection_from_url_of_urllib3$connectionpool( 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 817;
+        exception_lineno = 849;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -23890,7 +24435,7 @@ static PyObject *MAKE_FUNCTION_function_10__absolute_url_of_class_2_HTTPConnecti
 #if PYTHON_VERSION >= 330
         const_str_digest_cb4a33648e9b9699965ebd0c6659f9ef,
 #endif
-        codeobj_806d21b2cd5f2745fd1eb26679b291a3,
+        codeobj_26b05fab306e9996a8f4da06de74971d,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -23913,7 +24458,7 @@ static PyObject *MAKE_FUNCTION_function_11_close_of_class_2_HTTPConnectionPool_o
 #if PYTHON_VERSION >= 330
         const_str_digest_c06078c287e9f57036e253b5390de7f4,
 #endif
-        codeobj_fa88edcd74ea853b92a03fc74d882e4f,
+        codeobj_857956eea47b7619917c4ac9182c255b,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -23936,7 +24481,7 @@ static PyObject *MAKE_FUNCTION_function_12_is_same_host_of_class_2_HTTPConnectio
 #if PYTHON_VERSION >= 330
         const_str_digest_01ebf06a56f8ad41a060540a1af4821d,
 #endif
-        codeobj_8ab326c36e5027ed4ee72f028c16c0e9,
+        codeobj_40627451f4b8cb7e3ce21d36c0b0410b,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -23959,14 +24504,14 @@ static PyObject *MAKE_FUNCTION_function_13_urlopen_of_class_2_HTTPConnectionPool
 #if PYTHON_VERSION >= 330
         const_str_digest_d2df5c2d53cc11e04bba15a836d74a20,
 #endif
-        codeobj_ef1316f278f6ad55eb5be8c303e88ed6,
+        codeobj_e0108ffd924d0be3e00bdc9ac5bd6544,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_urllib3$connectionpool,
-        const_str_digest_10f40d05348656b19de609b046927c1a
+        const_str_digest_7a5fef0708d7a7bfaef81b4b11707a20
     );
 
     return result;
@@ -24005,7 +24550,7 @@ static PyObject *MAKE_FUNCTION_function_1___init___of_class_2_HTTPConnectionPool
 #if PYTHON_VERSION >= 330
         const_str_digest_e49c4abd8cd8a855d785aa9a5398f4cd,
 #endif
-        codeobj_7ddb14266c5c2f3af9a644b73ce96e79,
+        codeobj_92b823aa21da1d76b95cebdad9a708e8,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24028,7 +24573,7 @@ static PyObject *MAKE_FUNCTION_function_1___init___of_class_3_HTTPSConnectionPoo
 #if PYTHON_VERSION >= 330
         const_str_digest_37d86a20c01ce962675a6d1428924a32,
 #endif
-        codeobj_7992c10076cfd02a660e7a4faa532db1,
+        codeobj_77919ab6ae80a92b65a2ba93fbf534e1,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24051,7 +24596,7 @@ static PyObject *MAKE_FUNCTION_function_1_connection_from_url_of_urllib3$connect
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_77e7089b33530b130946e2a2bda80e0f,
+        codeobj_90e72205a2f2499f1dda274d9827faf4,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24074,7 +24619,7 @@ static PyObject *MAKE_FUNCTION_function_2___str___of_class_1_ConnectionPool_of_u
 #if PYTHON_VERSION >= 330
         const_str_digest_60d6d474f3a386c88a168e05ca62b43f,
 #endif
-        codeobj_7ccedae2f665703fc5dd4de0ca0c9c8f,
+        codeobj_416a906a44b0a6e19a8cfb5af5ef7665,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24097,7 +24642,7 @@ static PyObject *MAKE_FUNCTION_function_2__new_conn_of_class_2_HTTPConnectionPoo
 #if PYTHON_VERSION >= 330
         const_str_digest_52af1425a80510e5c4b27876b0697f6f,
 #endif
-        codeobj_770de26338e36f54a02d3ac550be2986,
+        codeobj_4160be3ca5c939035b1a932ee07df764,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24120,7 +24665,7 @@ static PyObject *MAKE_FUNCTION_function_2__prepare_conn_of_class_3_HTTPSConnecti
 #if PYTHON_VERSION >= 330
         const_str_digest_72e4bc148f34ee877d0ccb44b1fa2560,
 #endif
-        codeobj_e4a0e2a868f103a858341d6c8a2e6201,
+        codeobj_ecce51ed886e8cdd5fe6da9c7a0931e4,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24143,7 +24688,7 @@ static PyObject *MAKE_FUNCTION_function_3___enter___of_class_1_ConnectionPool_of
 #if PYTHON_VERSION >= 330
         const_str_digest_d5ce309bb23bad4cf56bebbcfee2e1d4,
 #endif
-        codeobj_0bbe0bb329a7c3a2e0958dd1ade8496a,
+        codeobj_718aa523b496568b537d1d0a3e39d0a1,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24166,7 +24711,7 @@ static PyObject *MAKE_FUNCTION_function_3__get_conn_of_class_2_HTTPConnectionPoo
 #if PYTHON_VERSION >= 330
         const_str_digest_51da3aef5130704df904a62040b64827,
 #endif
-        codeobj_26fab5acbc3977ffef3fd960fc369026,
+        codeobj_8de25d65f7e665126997fdc1a9d289b6,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24189,7 +24734,7 @@ static PyObject *MAKE_FUNCTION_function_3__prepare_proxy_of_class_3_HTTPSConnect
 #if PYTHON_VERSION >= 330
         const_str_digest_9e60e8a4a3f600866c5b2083f278d57a,
 #endif
-        codeobj_fcf6dac4ac5b56696de0d563ae80d6fb,
+        codeobj_17665e5dd8294e665dd283468730876a,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24212,7 +24757,7 @@ static PyObject *MAKE_FUNCTION_function_4___exit___of_class_1_ConnectionPool_of_
 #if PYTHON_VERSION >= 330
         const_str_digest_0c2cfd5e87a8ed7cf1566521e8239646,
 #endif
-        codeobj_75e0579352e3bc0a6855978a4259c9e9,
+        codeobj_56dbe861817b9c2cd6616984b1c86939,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24235,7 +24780,7 @@ static PyObject *MAKE_FUNCTION_function_4__new_conn_of_class_3_HTTPSConnectionPo
 #if PYTHON_VERSION >= 330
         const_str_digest_4eea8c9082b203b118b31282bad1c4ee,
 #endif
-        codeobj_1d5ca060e34a4ec2a0d0f066be828c5e,
+        codeobj_2f807aca3e2d2006757a71f74ecc4511,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24258,7 +24803,7 @@ static PyObject *MAKE_FUNCTION_function_4__put_conn_of_class_2_HTTPConnectionPoo
 #if PYTHON_VERSION >= 330
         const_str_digest_479a50a963c2a68d883c15108e7f5663,
 #endif
-        codeobj_181dce0e2c13b4f6bd264f92af463984,
+        codeobj_e377d05614d0422221a7f008324175bf,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24281,7 +24826,7 @@ static PyObject *MAKE_FUNCTION_function_5__validate_conn_of_class_2_HTTPConnecti
 #if PYTHON_VERSION >= 330
         const_str_digest_9a7a0e57661a036d7bdd6ad9ff0a3de3,
 #endif
-        codeobj_340c221618a7e371f03884180d7ac0f9,
+        codeobj_07150fc06f58ee47d6b8622f93d4f38c,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24304,7 +24849,7 @@ static PyObject *MAKE_FUNCTION_function_5__validate_conn_of_class_3_HTTPSConnect
 #if PYTHON_VERSION >= 330
         const_str_digest_9d3a414c0482c5f41418a69a56de9fd7,
 #endif
-        codeobj_205408e50ed19353a2758c8a8af10df6,
+        codeobj_2b068536a390598d359321ca64b51f87,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24327,7 +24872,7 @@ static PyObject *MAKE_FUNCTION_function_5_close_of_class_1_ConnectionPool_of_url
 #if PYTHON_VERSION >= 330
         const_str_digest_f4bfc452424dc866a47e0b4ba5b97c1a,
 #endif
-        codeobj_62b5057748b5ff2aec604f9440931c08,
+        codeobj_ffc6229123e1edbf5192cac6755c07d8,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24350,7 +24895,7 @@ static PyObject *MAKE_FUNCTION_function_6__prepare_proxy_of_class_2_HTTPConnecti
 #if PYTHON_VERSION >= 330
         const_str_digest_55306dc6d4b249602e9cb0e226abc21d,
 #endif
-        codeobj_b74c8a17633d58d7d49602d34176039e,
+        codeobj_b3ec545446bc14e435d908078dfce743,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24373,7 +24918,7 @@ static PyObject *MAKE_FUNCTION_function_7__get_timeout_of_class_2_HTTPConnection
 #if PYTHON_VERSION >= 330
         const_str_digest_fc56b82c6ed9045af311170020fca29b,
 #endif
-        codeobj_7fc276dcedbdacf4c735ffabc596d2f1,
+        codeobj_01397a963b182639018ec3fb50f35821,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24396,7 +24941,7 @@ static PyObject *MAKE_FUNCTION_function_8__raise_timeout_of_class_2_HTTPConnecti
 #if PYTHON_VERSION >= 330
         const_str_digest_a5652cafe0645a55fe665c3a3e38d0e8,
 #endif
-        codeobj_e2c9c7fadef0d693d5260ec639289f70,
+        codeobj_186c5bca50faa0ea5836c2c200c14464,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -24419,7 +24964,7 @@ static PyObject *MAKE_FUNCTION_function_9__make_request_of_class_2_HTTPConnectio
 #if PYTHON_VERSION >= 330
         const_str_digest_b596bee7f4c8cc1960a8eba47c61ba85,
 #endif
-        codeobj_ac1e681ed2b3e2af078f06c941954a9e,
+        codeobj_09b455938efc00ac1ecc9b62d5c93c87,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -26437,7 +26982,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 95;
+        exception_lineno = 101;
         goto frame_exception_exit_1;
     }
 
@@ -26449,7 +26994,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_set_arg_1 );
 
-        exception_lineno = 95;
+        exception_lineno = 101;
         goto frame_exception_exit_1;
     }
     PyList_SET_ITEM( tmp_set_arg_1, 0, tmp_list_element_1 );
@@ -26470,7 +27015,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 95;
+        exception_lineno = 101;
         goto frame_exception_exit_1;
     }
 
@@ -26482,7 +27027,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_set_arg_1 );
 
-        exception_lineno = 95;
+        exception_lineno = 101;
         goto frame_exception_exit_1;
     }
     PyList_SET_ITEM( tmp_set_arg_1, 1, tmp_list_element_1 );
@@ -26495,7 +27040,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 95;
+        exception_lineno = 101;
         goto frame_exception_exit_1;
     }
     UPDATE_STRING_DICT1( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain__blocking_errnos, tmp_assign_source_58 );
@@ -26518,7 +27063,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
 
@@ -26541,7 +27086,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
 
@@ -26579,7 +27124,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     goto condexpr_end_4;
@@ -26594,7 +27139,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     if ( tmp_cond_truth_2 == 1 )
@@ -26617,7 +27162,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     tmp_metaclass_name_2 = BUILTIN_TYPE1( tmp_type_arg_2 );
@@ -26629,7 +27174,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     goto condexpr_end_5;
@@ -26649,7 +27194,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_metaclass_name_2 );
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_metaclass_name_2 );
@@ -26681,7 +27226,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     branch_no_3:;
@@ -26696,7 +27241,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     if ( tmp_res == 1 )
@@ -26718,7 +27263,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     tmp_args_name_2 = PyTuple_New( 2 );
@@ -26731,7 +27276,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
     PyTuple_SET_ITEM( tmp_args_name_2, 1, tmp_tuple_element_4 );
     tmp_kw_name_2 = tmp_urllib3$connectionpool_class_creation_2__class_decl_dict;
 
-    frame_module->f_lineno = 98;
+    frame_module->f_lineno = 104;
     tmp_assign_source_62 = CALL_FUNCTION( tmp_called_name_4, tmp_args_name_2, tmp_kw_name_2 );
     Py_DECREF( tmp_called_name_4 );
     Py_DECREF( tmp_args_name_2 );
@@ -26742,7 +27287,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     goto condexpr_end_6;
@@ -26760,7 +27305,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 98;
+        exception_lineno = 104;
         goto try_except_handler_4;
     }
     UPDATE_STRING_DICT1( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_HTTPConnectionPool, tmp_assign_source_63 );
@@ -26828,7 +27373,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
 
@@ -26866,7 +27411,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     goto condexpr_end_7;
@@ -26881,7 +27426,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     if ( tmp_cond_truth_3 == 1 )
@@ -26904,7 +27449,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     tmp_metaclass_name_3 = BUILTIN_TYPE1( tmp_type_arg_3 );
@@ -26916,7 +27461,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     goto condexpr_end_8;
@@ -26936,7 +27481,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_metaclass_name_3 );
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     Py_DECREF( tmp_metaclass_name_3 );
@@ -26968,7 +27513,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     branch_no_4:;
@@ -26983,7 +27528,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     if ( tmp_res == 1 )
@@ -27005,7 +27550,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     tmp_args_name_3 = PyTuple_New( 2 );
@@ -27018,7 +27563,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
     PyTuple_SET_ITEM( tmp_args_name_3, 1, tmp_tuple_element_6 );
     tmp_kw_name_3 = tmp_urllib3$connectionpool_class_creation_3__class_decl_dict;
 
-    frame_module->f_lineno = 669;
+    frame_module->f_lineno = 700;
     tmp_assign_source_67 = CALL_FUNCTION( tmp_called_name_5, tmp_args_name_3, tmp_kw_name_3 );
     Py_DECREF( tmp_called_name_5 );
     Py_DECREF( tmp_args_name_3 );
@@ -27029,7 +27574,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     goto condexpr_end_9;
@@ -27047,7 +27592,7 @@ MOD_INIT_DECL( urllib3$connectionpool )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 669;
+        exception_lineno = 700;
         goto try_except_handler_5;
     }
     UPDATE_STRING_DICT1( moduledict_urllib3$connectionpool, (Nuitka_StringObject *)const_str_plain_HTTPSConnectionPool, tmp_assign_source_68 );

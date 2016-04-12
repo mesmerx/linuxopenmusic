@@ -61,9 +61,9 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_b16fba1d88790d44a86e4ca9c9067c72 = UNSTREAM_STRING( &constant_bin[ 724258 ], 79, 0 );
-    const_str_digest_c297f6ff961e2e9bb2385f281ba9ee0e = UNSTREAM_STRING( &constant_bin[ 724337 ], 55, 0 );
-    const_str_plain_py3k_support = UNSTREAM_STRING( &constant_bin[ 724315 ], 12, 1 );
+    const_str_digest_b16fba1d88790d44a86e4ca9c9067c72 = UNSTREAM_STRING( &constant_bin[ 751971 ], 79, 0 );
+    const_str_digest_c297f6ff961e2e9bb2385f281ba9ee0e = UNSTREAM_STRING( &constant_bin[ 752050 ], 55, 0 );
+    const_str_plain_py3k_support = UNSTREAM_STRING( &constant_bin[ 752028 ], 12, 1 );
 
     constants_created = true;
 }

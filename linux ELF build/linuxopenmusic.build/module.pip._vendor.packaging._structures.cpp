@@ -91,27 +91,27 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_b589d10d446119dc9731d869a863678d = UNSTREAM_STRING( &constant_bin[ 412971 ], 15, 0 );
-    const_str_digest_6e3886df2a3d68370cb544d2bf5a45fc = UNSTREAM_STRING( &constant_bin[ 412986 ], 15, 0 );
-    const_str_digest_3b8d5bbefc986965f423080b2450320c = UNSTREAM_STRING( &constant_bin[ 413001 ], 15, 0 );
-    const_str_plain_NegativeInfinity = UNSTREAM_STRING( &constant_bin[ 413016 ], 16, 1 );
-    const_str_digest_4c1ca3e2aa7b393b7895d3efec8cbe55 = UNSTREAM_STRING( &constant_bin[ 413032 ], 23, 0 );
-    const_str_digest_b25d22d400d466d02ff1a40cc73c415c = UNSTREAM_STRING( &constant_bin[ 413040 ], 15, 0 );
-    const_str_digest_6cba1dbe76e8388c23d4a88f811ca617 = UNSTREAM_STRING( &constant_bin[ 413055 ], 23, 0 );
-    const_str_digest_3a030fc95135aa6b04801ed4783f2d1f = UNSTREAM_STRING( &constant_bin[ 413078 ], 15, 0 );
-    const_str_digest_795a48e22d808d19272e80b80b2bc08f = UNSTREAM_STRING( &constant_bin[ 413093 ], 25, 0 );
-    const_str_digest_d73eca0af1af21c6261e9dd77eb02c04 = UNSTREAM_STRING( &constant_bin[ 413118 ], 33, 0 );
-    const_str_digest_d19850d884c22a2f613cc0a20ef6ac79 = UNSTREAM_STRING( &constant_bin[ 413151 ], 23, 0 );
-    const_str_digest_1a4bf829e872705f52f5e1bf52493468 = UNSTREAM_STRING( &constant_bin[ 413174 ], 24, 0 );
-    const_str_digest_fb345bb4091d5bc055324e49aaf9d89d = UNSTREAM_STRING( &constant_bin[ 413198 ], 17, 0 );
-    const_str_digest_53836ba1d384b7cf070186073d4c7c31 = UNSTREAM_STRING( &constant_bin[ 413101 ], 17, 0 );
-    const_str_digest_0f711b96a8f1cb941ce267c3a28264e1 = UNSTREAM_STRING( &constant_bin[ 413215 ], 23, 0 );
-    const_str_digest_cc83a9e3c858529667f7d118d5a5e105 = UNSTREAM_STRING( &constant_bin[ 413238 ], 25, 0 );
-    const_str_digest_1215921afc3a1f61b7b8e13ba93113a0 = UNSTREAM_STRING( &constant_bin[ 413182 ], 16, 0 );
-    const_str_digest_ac7495a06e85c6366bae7bc53f445e9e = UNSTREAM_STRING( &constant_bin[ 413263 ], 23, 0 );
-    const_str_digest_b6e30dd8937e41f95a533a2caa6c68d4 = UNSTREAM_STRING( &constant_bin[ 413286 ], 69, 0 );
-    const_str_digest_9f50ae10b2a82f7f7c109bf9c0106755 = UNSTREAM_STRING( &constant_bin[ 413355 ], 23, 0 );
-    const_str_digest_c0b0e380b55339e1113ad1b2151cf2f5 = UNSTREAM_STRING( &constant_bin[ 413223 ], 15, 0 );
+    const_str_digest_b589d10d446119dc9731d869a863678d = UNSTREAM_STRING( &constant_bin[ 424280 ], 15, 0 );
+    const_str_digest_6e3886df2a3d68370cb544d2bf5a45fc = UNSTREAM_STRING( &constant_bin[ 424295 ], 15, 0 );
+    const_str_digest_3b8d5bbefc986965f423080b2450320c = UNSTREAM_STRING( &constant_bin[ 424310 ], 15, 0 );
+    const_str_plain_NegativeInfinity = UNSTREAM_STRING( &constant_bin[ 424325 ], 16, 1 );
+    const_str_digest_4c1ca3e2aa7b393b7895d3efec8cbe55 = UNSTREAM_STRING( &constant_bin[ 424341 ], 23, 0 );
+    const_str_digest_b25d22d400d466d02ff1a40cc73c415c = UNSTREAM_STRING( &constant_bin[ 424349 ], 15, 0 );
+    const_str_digest_6cba1dbe76e8388c23d4a88f811ca617 = UNSTREAM_STRING( &constant_bin[ 424364 ], 23, 0 );
+    const_str_digest_3a030fc95135aa6b04801ed4783f2d1f = UNSTREAM_STRING( &constant_bin[ 424387 ], 15, 0 );
+    const_str_digest_795a48e22d808d19272e80b80b2bc08f = UNSTREAM_STRING( &constant_bin[ 424402 ], 25, 0 );
+    const_str_digest_d73eca0af1af21c6261e9dd77eb02c04 = UNSTREAM_STRING( &constant_bin[ 424427 ], 33, 0 );
+    const_str_digest_d19850d884c22a2f613cc0a20ef6ac79 = UNSTREAM_STRING( &constant_bin[ 424460 ], 23, 0 );
+    const_str_digest_1a4bf829e872705f52f5e1bf52493468 = UNSTREAM_STRING( &constant_bin[ 424483 ], 24, 0 );
+    const_str_digest_fb345bb4091d5bc055324e49aaf9d89d = UNSTREAM_STRING( &constant_bin[ 424507 ], 17, 0 );
+    const_str_digest_53836ba1d384b7cf070186073d4c7c31 = UNSTREAM_STRING( &constant_bin[ 424410 ], 17, 0 );
+    const_str_digest_0f711b96a8f1cb941ce267c3a28264e1 = UNSTREAM_STRING( &constant_bin[ 424524 ], 23, 0 );
+    const_str_digest_cc83a9e3c858529667f7d118d5a5e105 = UNSTREAM_STRING( &constant_bin[ 424547 ], 25, 0 );
+    const_str_digest_1215921afc3a1f61b7b8e13ba93113a0 = UNSTREAM_STRING( &constant_bin[ 424491 ], 16, 0 );
+    const_str_digest_ac7495a06e85c6366bae7bc53f445e9e = UNSTREAM_STRING( &constant_bin[ 424572 ], 23, 0 );
+    const_str_digest_b6e30dd8937e41f95a533a2caa6c68d4 = UNSTREAM_STRING( &constant_bin[ 424595 ], 69, 0 );
+    const_str_digest_9f50ae10b2a82f7f7c109bf9c0106755 = UNSTREAM_STRING( &constant_bin[ 424664 ], 23, 0 );
+    const_str_digest_c0b0e380b55339e1113ad1b2151cf2f5 = UNSTREAM_STRING( &constant_bin[ 424532 ], 15, 0 );
 
     constants_created = true;
 }

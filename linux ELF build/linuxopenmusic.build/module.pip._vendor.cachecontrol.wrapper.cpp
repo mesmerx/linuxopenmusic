@@ -64,15 +64,15 @@ static bool constants_created = false;
 static void createModuleConstants( void )
 {
     const_tuple_78c3ceb4466483c9178fdf6b2734f542_tuple = PyTuple_New( 6 );
-    const_str_plain_sess = UNSTREAM_STRING( &constant_bin[ 778 ], 4, 1 );
+    const_str_plain_sess = UNSTREAM_STRING( &constant_bin[ 716 ], 4, 1 );
     PyTuple_SET_ITEM( const_tuple_78c3ceb4466483c9178fdf6b2734f542_tuple, 0, const_str_plain_sess ); Py_INCREF( const_str_plain_sess );
     PyTuple_SET_ITEM( const_tuple_78c3ceb4466483c9178fdf6b2734f542_tuple, 1, const_str_plain_cache ); Py_INCREF( const_str_plain_cache );
     PyTuple_SET_ITEM( const_tuple_78c3ceb4466483c9178fdf6b2734f542_tuple, 2, const_str_plain_cache_etags ); Py_INCREF( const_str_plain_cache_etags );
     PyTuple_SET_ITEM( const_tuple_78c3ceb4466483c9178fdf6b2734f542_tuple, 3, const_str_plain_serializer ); Py_INCREF( const_str_plain_serializer );
     PyTuple_SET_ITEM( const_tuple_78c3ceb4466483c9178fdf6b2734f542_tuple, 4, const_str_plain_heuristic ); Py_INCREF( const_str_plain_heuristic );
     PyTuple_SET_ITEM( const_tuple_78c3ceb4466483c9178fdf6b2734f542_tuple, 5, const_str_plain_adapter ); Py_INCREF( const_str_plain_adapter );
-    const_str_digest_752ad0551f1bf40ca5b6a8cda161ccf4 = UNSTREAM_STRING( &constant_bin[ 191880 ], 32, 0 );
-    const_str_digest_b31e0a7d9885533032515f63a652cb9c = UNSTREAM_STRING( &constant_bin[ 191912 ], 68, 0 );
+    const_str_digest_752ad0551f1bf40ca5b6a8cda161ccf4 = UNSTREAM_STRING( &constant_bin[ 203182 ], 32, 0 );
+    const_str_digest_b31e0a7d9885533032515f63a652cb9c = UNSTREAM_STRING( &constant_bin[ 203214 ], 68, 0 );
 
     constants_created = true;
 }

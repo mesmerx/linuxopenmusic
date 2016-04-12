@@ -64,14 +64,14 @@ static void createModuleConstants( void )
 {
     const_tuple_str_plain_LookupDict_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_LookupDict_tuple, 0, const_str_plain_LookupDict ); Py_INCREF( const_str_plain_LookupDict );
-    const_str_plain__codes = UNSTREAM_STRING( &constant_bin[ 190230 ], 6, 1 );
-    const_dict_19730b058f28080932defca1165e072e = PyMarshal_ReadObjectFromString( (char *)&constant_bin[ 476405 ], 2320 );
-    const_str_digest_edc503ce8640402b515eac9b4be2e49c = UNSTREAM_STRING( &constant_bin[ 478725 ], 69, 0 );
-    const_str_digest_7407a472cb7f92da9dfbd02c8e685bfe = UNSTREAM_STRING( &constant_bin[ 478794 ], 33, 0 );
+    const_str_plain__codes = UNSTREAM_STRING( &constant_bin[ 201532 ], 6, 1 );
+    const_dict_19730b058f28080932defca1165e072e = PyMarshal_ReadObjectFromString( (char *)&constant_bin[ 495296 ], 2320 );
+    const_str_digest_edc503ce8640402b515eac9b4be2e49c = UNSTREAM_STRING( &constant_bin[ 497616 ], 69, 0 );
+    const_str_digest_7407a472cb7f92da9dfbd02c8e685bfe = UNSTREAM_STRING( &constant_bin[ 497685 ], 33, 0 );
     const_dict_38252060f20256dc080a28c7e1fb8512 = _PyDict_NewPresized( 1 );
     PyDict_SetItem( const_dict_38252060f20256dc080a28c7e1fb8512, const_str_plain_name, const_str_plain_status_codes );
     assert( PyDict_Size( const_dict_38252060f20256dc080a28c7e1fb8512 ) == 1 );
-    const_str_plain_titles = UNSTREAM_STRING( &constant_bin[ 478827 ], 6, 1 );
+    const_str_plain_titles = UNSTREAM_STRING( &constant_bin[ 497718 ], 6, 1 );
 
     constants_created = true;
 }

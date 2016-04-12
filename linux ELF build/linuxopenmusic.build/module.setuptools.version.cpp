@@ -51,7 +51,7 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_d4d2c07752a5bdc91d944236b080c244 = UNSTREAM_STRING( &constant_bin[ 672142 ], 54, 0 );
+    const_str_digest_d4d2c07752a5bdc91d944236b080c244 = UNSTREAM_STRING( &constant_bin[ 691343 ], 54, 0 );
 
     constants_created = true;
 }

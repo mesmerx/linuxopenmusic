@@ -78,25 +78,25 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_6a289c2f78f9f5e891c0d64cc1b69926 = UNSTREAM_STRING( &constant_bin[ 672196 ], 62, 0 );
-    const_str_plain_FILE_ATTRIBUTE_HIDDEN = UNSTREAM_STRING( &constant_bin[ 672258 ], 21, 1 );
-    const_str_digest_161eeeb05048af134ef1afc3024a9e6f = UNSTREAM_STRING( &constant_bin[ 672279 ], 26, 0 );
+    const_str_digest_6a289c2f78f9f5e891c0d64cc1b69926 = UNSTREAM_STRING( &constant_bin[ 691397 ], 62, 0 );
+    const_str_plain_FILE_ATTRIBUTE_HIDDEN = UNSTREAM_STRING( &constant_bin[ 691459 ], 21, 1 );
+    const_str_digest_161eeeb05048af134ef1afc3024a9e6f = UNSTREAM_STRING( &constant_bin[ 691480 ], 26, 0 );
     const_tuple_c5a09dd81ffd0cf88be9f594a6cb67f7_tuple = PyTuple_New( 4 );
     PyTuple_SET_ITEM( const_tuple_c5a09dd81ffd0cf88be9f594a6cb67f7_tuple, 0, const_str_plain_path ); Py_INCREF( const_str_plain_path );
-    const_str_plain_SetFileAttributes = UNSTREAM_STRING( &constant_bin[ 672305 ], 17, 1 );
+    const_str_plain_SetFileAttributes = UNSTREAM_STRING( &constant_bin[ 691506 ], 17, 1 );
     PyTuple_SET_ITEM( const_tuple_c5a09dd81ffd0cf88be9f594a6cb67f7_tuple, 1, const_str_plain_SetFileAttributes ); Py_INCREF( const_str_plain_SetFileAttributes );
     PyTuple_SET_ITEM( const_tuple_c5a09dd81ffd0cf88be9f594a6cb67f7_tuple, 2, const_str_plain_FILE_ATTRIBUTE_HIDDEN ); Py_INCREF( const_str_plain_FILE_ATTRIBUTE_HIDDEN );
     PyTuple_SET_ITEM( const_tuple_c5a09dd81ffd0cf88be9f594a6cb67f7_tuple, 3, const_str_plain_ret ); Py_INCREF( const_str_plain_ret );
-    const_str_digest_5cf36b708703fd37649115cac3d2ec3c = UNSTREAM_STRING( &constant_bin[ 672322 ], 15, 0 );
-    const_str_digest_5bdcea7b90a143441237fbde3b06767a = UNSTREAM_STRING( &constant_bin[ 672337 ], 139, 0 );
-    const_str_plain_Windows = UNSTREAM_STRING( &constant_bin[ 63657 ], 7, 1 );
-    const_str_plain_WinError = UNSTREAM_STRING( &constant_bin[ 672476 ], 8, 1 );
+    const_str_digest_5cf36b708703fd37649115cac3d2ec3c = UNSTREAM_STRING( &constant_bin[ 691523 ], 15, 0 );
+    const_str_digest_5bdcea7b90a143441237fbde3b06767a = UNSTREAM_STRING( &constant_bin[ 691538 ], 139, 0 );
+    const_str_plain_Windows = UNSTREAM_STRING( &constant_bin[ 74146 ], 7, 1 );
+    const_str_plain_WinError = UNSTREAM_STRING( &constant_bin[ 691677 ], 8, 1 );
     const_tuple_str_plain_func_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_func_tuple, 0, const_str_plain_func ); Py_INCREF( const_str_plain_func );
-    const_str_plain_windows_only = UNSTREAM_STRING( &constant_bin[ 672484 ], 12, 1 );
-    const_str_digest_2721ac551ffd78384861a040ae983a17 = UNSTREAM_STRING( &constant_bin[ 672496 ], 30, 0 );
-    const_str_plain_LPWSTR = UNSTREAM_STRING( &constant_bin[ 672526 ], 6, 1 );
-    const_str_plain_SetFileAttributesW = UNSTREAM_STRING( &constant_bin[ 672532 ], 18, 1 );
+    const_str_plain_windows_only = UNSTREAM_STRING( &constant_bin[ 691685 ], 12, 1 );
+    const_str_digest_2721ac551ffd78384861a040ae983a17 = UNSTREAM_STRING( &constant_bin[ 691697 ], 30, 0 );
+    const_str_plain_LPWSTR = UNSTREAM_STRING( &constant_bin[ 691727 ], 6, 1 );
+    const_str_plain_SetFileAttributesW = UNSTREAM_STRING( &constant_bin[ 691733 ], 18, 1 );
 
     constants_created = true;
 }

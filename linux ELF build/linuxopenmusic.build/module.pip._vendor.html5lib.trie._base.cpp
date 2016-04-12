@@ -84,14 +84,14 @@ static void createModuleConstants( void )
     const_tuple_str_plain_self_str_plain_prefix_str_plain_lprefix_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_lprefix_tuple, 0, const_str_plain_self ); Py_INCREF( const_str_plain_self );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_lprefix_tuple, 1, const_str_plain_prefix ); Py_INCREF( const_str_plain_prefix );
-    const_str_plain_lprefix = UNSTREAM_STRING( &constant_bin[ 374794 ], 7, 1 );
+    const_str_plain_lprefix = UNSTREAM_STRING( &constant_bin[ 386099 ], 7, 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_lprefix_tuple, 2, const_str_plain_lprefix ); Py_INCREF( const_str_plain_lprefix );
     const_tuple_str_plain_self_str_plain_prefix_str_plain_i_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_i_tuple, 0, const_str_plain_self ); Py_INCREF( const_str_plain_self );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_i_tuple, 1, const_str_plain_prefix ); Py_INCREF( const_str_plain_prefix );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_i_tuple, 2, const_str_plain_i ); Py_INCREF( const_str_plain_i );
-    const_str_digest_c822e7f07b67a4d0c0b00eb911b93f9c = UNSTREAM_STRING( &constant_bin[ 374801 ], 31, 0 );
-    const_str_digest_86bc653776848d435522df251a1f0871 = UNSTREAM_STRING( &constant_bin[ 374832 ], 67, 0 );
+    const_str_digest_c822e7f07b67a4d0c0b00eb911b93f9c = UNSTREAM_STRING( &constant_bin[ 386106 ], 31, 0 );
+    const_str_digest_86bc653776848d435522df251a1f0871 = UNSTREAM_STRING( &constant_bin[ 386137 ], 67, 0 );
     const_tuple_str_plain_self_str_plain_prefix_str_plain_key_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_key_tuple, 0, const_str_plain_self ); Py_INCREF( const_str_plain_self );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_key_tuple, 1, const_str_plain_prefix ); Py_INCREF( const_str_plain_prefix );
@@ -100,7 +100,7 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_keys_tuple, 0, const_str_plain_self ); Py_INCREF( const_str_plain_self );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_keys_tuple, 1, const_str_plain_prefix ); Py_INCREF( const_str_plain_prefix );
     PyTuple_SET_ITEM( const_tuple_str_plain_self_str_plain_prefix_str_plain_keys_tuple, 2, const_str_plain_keys ); Py_INCREF( const_str_plain_keys );
-    const_str_digest_794d94ee925289a29ad595e8755de193 = UNSTREAM_STRING( &constant_bin[ 374899 ], 29, 0 );
+    const_str_digest_794d94ee925289a29ad595e8755de193 = UNSTREAM_STRING( &constant_bin[ 386204 ], 29, 0 );
 
     constants_created = true;
 }

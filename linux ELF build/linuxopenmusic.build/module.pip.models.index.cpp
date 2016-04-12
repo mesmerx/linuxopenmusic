@@ -86,15 +86,15 @@ static void createModuleConstants( void )
     const_tuple_str_plain_pypi_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_pypi_tuple, 0, const_str_plain_pypi ); Py_INCREF( const_str_plain_pypi );
     const_tuple_str_digest_3951c99cdc8eaf391fccc5ee2e9d0459_tuple = PyTuple_New( 1 );
-    const_str_digest_3951c99cdc8eaf391fccc5ee2e9d0459 = UNSTREAM_STRING( &constant_bin[ 528634 ], 24, 0 );
+    const_str_digest_3951c99cdc8eaf391fccc5ee2e9d0459 = UNSTREAM_STRING( &constant_bin[ 547525 ], 24, 0 );
     PyTuple_SET_ITEM( const_tuple_str_digest_3951c99cdc8eaf391fccc5ee2e9d0459_tuple, 0, const_str_digest_3951c99cdc8eaf391fccc5ee2e9d0459 ); Py_INCREF( const_str_digest_3951c99cdc8eaf391fccc5ee2e9d0459 );
-    const_str_digest_692b1623ff602c275b87f9d8ec928ce0 = UNSTREAM_STRING( &constant_bin[ 528658 ], 17, 0 );
-    const_str_plain_simple = UNSTREAM_STRING( &constant_bin[ 73374 ], 6, 1 );
+    const_str_digest_692b1623ff602c275b87f9d8ec928ce0 = UNSTREAM_STRING( &constant_bin[ 547549 ], 17, 0 );
+    const_str_plain_simple = UNSTREAM_STRING( &constant_bin[ 84794 ], 6, 1 );
     const_tuple_str_digest_124205d42614192196c3f24b9071daf1_tuple = PyTuple_New( 1 );
-    const_str_digest_124205d42614192196c3f24b9071daf1 = UNSTREAM_STRING( &constant_bin[ 528675 ], 13, 0 );
+    const_str_digest_124205d42614192196c3f24b9071daf1 = UNSTREAM_STRING( &constant_bin[ 547566 ], 13, 0 );
     PyTuple_SET_ITEM( const_tuple_str_digest_124205d42614192196c3f24b9071daf1_tuple, 0, const_str_digest_124205d42614192196c3f24b9071daf1 ); Py_INCREF( const_str_digest_124205d42614192196c3f24b9071daf1 );
-    const_str_digest_6c98a358f65f21d33c98c45f46e12f39 = UNSTREAM_STRING( &constant_bin[ 528688 ], 14, 0 );
-    const_str_digest_6a4e76f005416a1978ab878cd2813f99 = UNSTREAM_STRING( &constant_bin[ 528702 ], 52, 0 );
+    const_str_digest_6c98a358f65f21d33c98c45f46e12f39 = UNSTREAM_STRING( &constant_bin[ 547579 ], 14, 0 );
+    const_str_digest_6a4e76f005416a1978ab878cd2813f99 = UNSTREAM_STRING( &constant_bin[ 547593 ], 52, 0 );
     const_tuple_str_plain_simple_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_simple_tuple, 0, const_str_plain_simple ); Py_INCREF( const_str_plain_simple );
 

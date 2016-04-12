@@ -232,8 +232,8 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_62a41e22e97443e344b17a5f00dcc7f0 = UNSTREAM_STRING( &constant_bin[ 716500 ], 56, 0 );
-    const_str_digest_5ae0198d53a9fd8c6bd84c1b655e7c03 = UNSTREAM_STRING( &constant_bin[ 183506 ], 20, 0 );
+    const_str_digest_62a41e22e97443e344b17a5f00dcc7f0 = UNSTREAM_STRING( &constant_bin[ 735703 ], 56, 0 );
+    const_str_digest_5ae0198d53a9fd8c6bd84c1b655e7c03 = UNSTREAM_STRING( &constant_bin[ 194808 ], 20, 0 );
 
     constants_created = true;
 }
@@ -8775,6 +8775,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
     PyObject *tmp_called_name_2;
     PyObject *tmp_called_name_3;
     PyObject *tmp_called_name_4;
+    PyObject *tmp_called_name_5;
     PyObject *tmp_compare_left_1;
     PyObject *tmp_compare_right_1;
     int tmp_cond_truth_1;
@@ -8876,7 +8877,39 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
-    tmp_assattr_name_1 = PyDict_New();
+    tmp_called_name_2 = GET_STRING_DICT_VALUE( moduledict_urllib3$_collections, (Nuitka_StringObject *)const_str_plain_OrderedDict );
+
+    if (unlikely( tmp_called_name_2 == NULL ))
+    {
+        tmp_called_name_2 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_OrderedDict );
+    }
+
+    if ( tmp_called_name_2 == NULL )
+    {
+
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "OrderedDict" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 137;
+        goto frame_exception_exit_1;
+    }
+
+    frame_function->f_lineno = 137;
+    tmp_assattr_name_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_2 );
+    if ( tmp_assattr_name_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 137;
+        goto frame_exception_exit_1;
+    }
     tmp_assattr_target_1 = par_self;
 
     if ( tmp_assattr_target_1 == NULL )
@@ -8991,8 +9024,8 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_2 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain__copy_from );
-    if ( tmp_called_name_2 == NULL )
+    tmp_called_name_3 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain__copy_from );
+    if ( tmp_called_name_3 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
@@ -9006,7 +9039,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
 
     if ( tmp_args_element_name_1 == NULL )
     {
-        Py_DECREF( tmp_called_name_2 );
+        Py_DECREF( tmp_called_name_3 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
         exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "headers" );
@@ -9021,10 +9054,10 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
     frame_function->f_lineno = 140;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
-        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, call_args );
+        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
     }
 
-    Py_DECREF( tmp_called_name_2 );
+    Py_DECREF( tmp_called_name_3 );
     if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9054,8 +9087,8 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_3 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain_extend );
-    if ( tmp_called_name_3 == NULL )
+    tmp_called_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain_extend );
+    if ( tmp_called_name_4 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
@@ -9069,7 +9102,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
 
     if ( tmp_args_element_name_2 == NULL )
     {
-        Py_DECREF( tmp_called_name_3 );
+        Py_DECREF( tmp_called_name_4 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
         exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "headers" );
@@ -9084,10 +9117,10 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
     frame_function->f_lineno = 142;
     {
         PyObject *call_args[] = { tmp_args_element_name_2 };
-        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
+        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
     }
 
-    Py_DECREF( tmp_called_name_3 );
+    Py_DECREF( tmp_called_name_4 );
     if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -9139,8 +9172,8 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_4, const_str_plain_extend );
-    if ( tmp_called_name_4 == NULL )
+    tmp_called_name_5 = LOOKUP_ATTRIBUTE( tmp_source_name_4, const_str_plain_extend );
+    if ( tmp_called_name_5 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
@@ -9154,7 +9187,7 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
 
     if ( tmp_args_element_name_3 == NULL )
     {
-        Py_DECREF( tmp_called_name_4 );
+        Py_DECREF( tmp_called_name_5 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
         exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "kwargs" );
@@ -9169,10 +9202,10 @@ static PyObject *impl_function_1___init___of_class_3_HTTPHeaderDict_of_urllib3$_
     frame_function->f_lineno = 144;
     {
         PyObject *call_args[] = { tmp_args_element_name_3 };
-        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
+        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_5, call_args );
     }
 
-    Py_DECREF( tmp_called_name_4 );
+    Py_DECREF( tmp_called_name_5 );
     if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );

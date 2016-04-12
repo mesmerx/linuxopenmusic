@@ -58,7 +58,7 @@ extern PyObject *const_str_plain_HASHFUNC_MAP;
 extern PyObject *const_str_digest_69e25692dfd1b01029aea21de378705a;
 extern PyObject *const_tuple_136f505c2e273f9e0f0a8233495342e2_tuple;
 extern PyObject *const_str_plain_hexlify;
-extern PyObject *const_str_digest_b9aa27e08efbddfbd5516474a24d9946;
+static PyObject *const_str_digest_b9aa27e08efbddfbd5516474a24d9946;
 extern PyObject *const_str_plain_ssl_;
 extern PyObject *const_tuple_f6a01fdcad2a4358443ea98eee1471b3_tuple;
 extern PyObject *const_str_plain_ciphers;
@@ -137,7 +137,7 @@ extern PyObject *const_str_plain_supports_set_ciphers;
 extern PyObject *const_int_pos_64;
 extern PyObject *const_int_pos_33554432;
 extern PyObject *const_str_digest_e3db3ee12166b00e30746ab96478c070;
-extern PyObject *const_str_digest_6c2591835ae2a3a9fec6e814315a45cd;
+static PyObject *const_str_digest_6c2591835ae2a3a9fec6e814315a45cd;
 extern PyObject *const_str_plain_digest_length;
 extern PyObject *const_str_plain_type;
 extern PyObject *const_str_plain_CERT_NONE;
@@ -203,8 +203,10 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_7d4b5d9478809c4450db10c05e15dd7d = UNSTREAM_STRING( &constant_bin[ 468707 ], 83, 0 );
-    const_str_digest_44c9f0f2375bcb1011a390c0987fc5fd = UNSTREAM_STRING( &constant_bin[ 468790 ], 47, 0 );
+    const_str_digest_b9aa27e08efbddfbd5516474a24d9946 = UNSTREAM_STRING( &constant_bin[ 487019 ], 326, 0 );
+    const_str_digest_7d4b5d9478809c4450db10c05e15dd7d = UNSTREAM_STRING( &constant_bin[ 487345 ], 83, 0 );
+    const_str_digest_44c9f0f2375bcb1011a390c0987fc5fd = UNSTREAM_STRING( &constant_bin[ 487428 ], 47, 0 );
+    const_str_digest_6c2591835ae2a3a9fec6e814315a45cd = UNSTREAM_STRING( &constant_bin[ 487475 ], 253, 0 );
     const_tuple_d789c4ab56634b41dee4edcac2ae240d_tuple = PyTuple_New( 4 );
     PyTuple_SET_ITEM( const_tuple_d789c4ab56634b41dee4edcac2ae240d_tuple, 0, const_str_plain_self ); Py_INCREF( const_str_plain_self );
     PyTuple_SET_ITEM( const_tuple_d789c4ab56634b41dee4edcac2ae240d_tuple, 1, const_str_plain_socket ); Py_INCREF( const_str_plain_socket );

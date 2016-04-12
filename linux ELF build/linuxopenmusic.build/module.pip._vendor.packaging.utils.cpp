@@ -62,10 +62,10 @@ static bool constants_created = false;
 static void createModuleConstants( void )
 {
     const_tuple_str_digest_d79fc2f0d988fc41ec9532ea1c50fe36_tuple = PyTuple_New( 1 );
-    const_str_digest_d79fc2f0d988fc41ec9532ea1c50fe36 = UNSTREAM_STRING( &constant_bin[ 420452 ], 6, 0 );
+    const_str_digest_d79fc2f0d988fc41ec9532ea1c50fe36 = UNSTREAM_STRING( &constant_bin[ 431761 ], 6, 0 );
     PyTuple_SET_ITEM( const_tuple_str_digest_d79fc2f0d988fc41ec9532ea1c50fe36_tuple, 0, const_str_digest_d79fc2f0d988fc41ec9532ea1c50fe36 ); Py_INCREF( const_str_digest_d79fc2f0d988fc41ec9532ea1c50fe36 );
-    const_str_plain__canonicalize_regex = UNSTREAM_STRING( &constant_bin[ 420458 ], 19, 1 );
-    const_str_digest_dba6b9cc5f9d3943c3ad05dc9ee908e1 = UNSTREAM_STRING( &constant_bin[ 420477 ], 63, 0 );
+    const_str_plain__canonicalize_regex = UNSTREAM_STRING( &constant_bin[ 431767 ], 19, 1 );
+    const_str_digest_dba6b9cc5f9d3943c3ad05dc9ee908e1 = UNSTREAM_STRING( &constant_bin[ 431786 ], 63, 0 );
 
     constants_created = true;
 }

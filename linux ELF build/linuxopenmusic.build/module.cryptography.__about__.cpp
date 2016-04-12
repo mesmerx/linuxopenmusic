@@ -50,7 +50,7 @@ extern PyObject *const_str_plain___uri__;
 extern PyObject *const_str_plain___author__;
 static PyObject *const_str_digest_089b773d9a424be5582b2349179d0802;
 extern PyObject *const_str_plain___license__;
-static PyObject *const_str_digest_1f67343b5259d1f6dbf7947bec2fa63d;
+extern PyObject *const_str_digest_1f67343b5259d1f6dbf7947bec2fa63d;
 extern PyObject *const_tuple_empty;
 extern PyObject *const_str_plain___title__;
 extern PyObject *const_str_digest_d4542d2880d54a4b54551867fac03d07;
@@ -66,13 +66,12 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_9f4ba0877555183e3df3b8acb5fa2c27 = UNSTREAM_STRING( &constant_bin[ 107820 ], 99, 0 );
-    const_str_digest_acbdf5b55efa6df934bd1c77bb0f2c10 = UNSTREAM_STRING( &constant_bin[ 107919 ], 23, 0 );
-    const_str_digest_5f5c12e6a73064d475f5e7dddf038bcf = UNSTREAM_STRING( &constant_bin[ 107942 ], 36, 0 );
-    const_str_digest_320b6a072792e2771920abbecc4869ac = UNSTREAM_STRING( &constant_bin[ 107978 ], 5, 0 );
-    const_str_digest_089b773d9a424be5582b2349179d0802 = UNSTREAM_STRING( &constant_bin[ 107983 ], 58, 0 );
-    const_str_digest_1f67343b5259d1f6dbf7947bec2fa63d = UNSTREAM_STRING( &constant_bin[ 108041 ], 27, 0 );
-    const_str_digest_4f6f83866fd78a7d3c2c2f174517bed1 = UNSTREAM_STRING( &constant_bin[ 108068 ], 27, 0 );
+    const_str_digest_9f4ba0877555183e3df3b8acb5fa2c27 = UNSTREAM_STRING( &constant_bin[ 119207 ], 99, 0 );
+    const_str_digest_acbdf5b55efa6df934bd1c77bb0f2c10 = UNSTREAM_STRING( &constant_bin[ 119306 ], 23, 0 );
+    const_str_digest_5f5c12e6a73064d475f5e7dddf038bcf = UNSTREAM_STRING( &constant_bin[ 72787 ], 36, 0 );
+    const_str_digest_320b6a072792e2771920abbecc4869ac = UNSTREAM_STRING( &constant_bin[ 119329 ], 5, 0 );
+    const_str_digest_089b773d9a424be5582b2349179d0802 = UNSTREAM_STRING( &constant_bin[ 119334 ], 58, 0 );
+    const_str_digest_4f6f83866fd78a7d3c2c2f174517bed1 = UNSTREAM_STRING( &constant_bin[ 119392 ], 27, 0 );
 
     constants_created = true;
 }

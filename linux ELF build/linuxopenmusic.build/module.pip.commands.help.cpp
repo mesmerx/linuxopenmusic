@@ -88,9 +88,9 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_d884fdbdec659bbba0d705a18decfc41 = UNSTREAM_STRING( &constant_bin[ 501706 ], 15, 0 );
-    const_str_digest_daedb894fec3305f7921957829224781 = UNSTREAM_STRING( &constant_bin[ 501721 ], 22, 0 );
-    const_str_digest_7f0b3150751eb89c865c7327dccc80df = UNSTREAM_STRING( &constant_bin[ 501743 ], 22, 0 );
+    const_str_digest_d884fdbdec659bbba0d705a18decfc41 = UNSTREAM_STRING( &constant_bin[ 520597 ], 15, 0 );
+    const_str_digest_daedb894fec3305f7921957829224781 = UNSTREAM_STRING( &constant_bin[ 520612 ], 22, 0 );
+    const_str_digest_7f0b3150751eb89c865c7327dccc80df = UNSTREAM_STRING( &constant_bin[ 520634 ], 22, 0 );
     const_tuple_d683393f4bca259b93cf4b099b1321b5_tuple = PyTuple_New( 9 );
     PyTuple_SET_ITEM( const_tuple_d683393f4bca259b93cf4b099b1321b5_tuple, 0, const_str_plain_self ); Py_INCREF( const_str_plain_self );
     PyTuple_SET_ITEM( const_tuple_d683393f4bca259b93cf4b099b1321b5_tuple, 1, const_str_plain_options ); Py_INCREF( const_str_plain_options );
@@ -104,8 +104,8 @@ static void createModuleConstants( void )
     const_tuple_str_plain_commands_dict_str_plain_get_similar_commands_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_commands_dict_str_plain_get_similar_commands_tuple, 0, const_str_plain_commands_dict ); Py_INCREF( const_str_plain_commands_dict );
     PyTuple_SET_ITEM( const_tuple_str_plain_commands_dict_str_plain_get_similar_commands_tuple, 1, const_str_plain_get_similar_commands ); Py_INCREF( const_str_plain_get_similar_commands );
-    const_str_digest_2fc27a7cd6c0601f0255e2df111ccb7c = UNSTREAM_STRING( &constant_bin[ 501765 ], 53, 0 );
-    const_str_digest_4f24ed5b2f3aaf949f60b31e06764b5e = UNSTREAM_STRING( &constant_bin[ 501818 ], 23, 0 );
+    const_str_digest_2fc27a7cd6c0601f0255e2df111ccb7c = UNSTREAM_STRING( &constant_bin[ 520656 ], 53, 0 );
+    const_str_digest_4f24ed5b2f3aaf949f60b31e06764b5e = UNSTREAM_STRING( &constant_bin[ 520709 ], 23, 0 );
 
     constants_created = true;
 }

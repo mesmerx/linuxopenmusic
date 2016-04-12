@@ -75,21 +75,21 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_d7c3e0511c3ac051ff27140c1a53db15 = UNSTREAM_STRING( &constant_bin[ 141554 ], 42, 0 );
-    const_str_digest_f9841b27bc05800e2c789251c6c5a81f = UNSTREAM_STRING( &constant_bin[ 141596 ], 106, 0 );
-    const_str_plain_GrabConnectionError = UNSTREAM_STRING( &constant_bin[ 141702 ], 19, 1 );
-    const_str_plain_GrabInternalError = UNSTREAM_STRING( &constant_bin[ 141721 ], 17, 1 );
-    const_str_plain_GrabCouldNotResolveHostError = UNSTREAM_STRING( &constant_bin[ 141738 ], 28, 1 );
-    const_str_digest_3effbf319edc0c03096916b3ba7b1a5e = UNSTREAM_STRING( &constant_bin[ 141766 ], 87, 0 );
-    const_str_plain_GrabInvalidUrl = UNSTREAM_STRING( &constant_bin[ 141853 ], 14, 1 );
-    const_str_digest_eec835c91da787513d2f4f32338015ad = UNSTREAM_STRING( &constant_bin[ 141867 ], 122, 0 );
-    const_str_digest_a83dfe11d9b2f73e95623dc5947bfb8d = UNSTREAM_STRING( &constant_bin[ 141989 ], 128, 0 );
-    const_str_digest_75574b4e678bbf8ee9eacb0fb0333ab9 = UNSTREAM_STRING( &constant_bin[ 142117 ], 126, 0 );
-    const_str_plain_GrabAuthError = UNSTREAM_STRING( &constant_bin[ 142243 ], 13, 1 );
-    const_str_digest_35970381362c6f8fb28d16cfcc272609 = UNSTREAM_STRING( &constant_bin[ 142256 ], 69, 0 );
-    const_str_digest_549678d8005ceadd97154b89aab55c7f = UNSTREAM_STRING( &constant_bin[ 142325 ], 136, 0 );
-    const_str_digest_f58c6f25748592a4c05a87b4942037b2 = UNSTREAM_STRING( &constant_bin[ 142461 ], 46, 0 );
-    const_str_digest_779ec7b433dad429f4f30d55ae7580b4 = UNSTREAM_STRING( &constant_bin[ 142507 ], 48, 0 );
+    const_str_digest_d7c3e0511c3ac051ff27140c1a53db15 = UNSTREAM_STRING( &constant_bin[ 152856 ], 42, 0 );
+    const_str_digest_f9841b27bc05800e2c789251c6c5a81f = UNSTREAM_STRING( &constant_bin[ 152898 ], 106, 0 );
+    const_str_plain_GrabConnectionError = UNSTREAM_STRING( &constant_bin[ 153004 ], 19, 1 );
+    const_str_plain_GrabInternalError = UNSTREAM_STRING( &constant_bin[ 153023 ], 17, 1 );
+    const_str_plain_GrabCouldNotResolveHostError = UNSTREAM_STRING( &constant_bin[ 153040 ], 28, 1 );
+    const_str_digest_3effbf319edc0c03096916b3ba7b1a5e = UNSTREAM_STRING( &constant_bin[ 153068 ], 87, 0 );
+    const_str_plain_GrabInvalidUrl = UNSTREAM_STRING( &constant_bin[ 153155 ], 14, 1 );
+    const_str_digest_eec835c91da787513d2f4f32338015ad = UNSTREAM_STRING( &constant_bin[ 153169 ], 122, 0 );
+    const_str_digest_a83dfe11d9b2f73e95623dc5947bfb8d = UNSTREAM_STRING( &constant_bin[ 153291 ], 128, 0 );
+    const_str_digest_75574b4e678bbf8ee9eacb0fb0333ab9 = UNSTREAM_STRING( &constant_bin[ 153419 ], 126, 0 );
+    const_str_plain_GrabAuthError = UNSTREAM_STRING( &constant_bin[ 153545 ], 13, 1 );
+    const_str_digest_35970381362c6f8fb28d16cfcc272609 = UNSTREAM_STRING( &constant_bin[ 153558 ], 69, 0 );
+    const_str_digest_549678d8005ceadd97154b89aab55c7f = UNSTREAM_STRING( &constant_bin[ 153627 ], 136, 0 );
+    const_str_digest_f58c6f25748592a4c05a87b4942037b2 = UNSTREAM_STRING( &constant_bin[ 153763 ], 46, 0 );
+    const_str_digest_779ec7b433dad429f4f30d55ae7580b4 = UNSTREAM_STRING( &constant_bin[ 153809 ], 48, 0 );
 
     constants_created = true;
 }

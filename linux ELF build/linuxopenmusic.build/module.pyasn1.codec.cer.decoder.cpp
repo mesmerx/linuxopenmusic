@@ -116,11 +116,11 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_str_plain_oct2int_tuple, 0, const_str_plain_oct2int ); Py_INCREF( const_str_plain_oct2int );
     const_tuple_str_plain_univ_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_univ_tuple, 0, const_str_plain_univ ); Py_INCREF( const_str_plain_univ );
-    const_str_digest_fe1f0d80ff95465e1481dc7deeb463f2 = UNSTREAM_STRING( &constant_bin[ 588167 ], 32, 0 );
-    const_str_digest_6e21cf3f1db056d9c43afdb25a5b89a8 = UNSTREAM_STRING( &constant_bin[ 588199 ], 30, 0 );
-    const_str_digest_523a57d840d8682ab744bff0b62d8036 = UNSTREAM_STRING( &constant_bin[ 588229 ], 60, 0 );
-    const_str_digest_b1b8ebbb11211fb5cf17db6ec2cff07a = UNSTREAM_STRING( &constant_bin[ 588289 ], 24, 0 );
-    const_str_digest_b5b3688a7f48242ab9c7b5da59131694 = UNSTREAM_STRING( &constant_bin[ 588313 ], 27, 0 );
+    const_str_digest_fe1f0d80ff95465e1481dc7deeb463f2 = UNSTREAM_STRING( &constant_bin[ 607368 ], 32, 0 );
+    const_str_digest_6e21cf3f1db056d9c43afdb25a5b89a8 = UNSTREAM_STRING( &constant_bin[ 607400 ], 30, 0 );
+    const_str_digest_523a57d840d8682ab744bff0b62d8036 = UNSTREAM_STRING( &constant_bin[ 607430 ], 60, 0 );
+    const_str_digest_b1b8ebbb11211fb5cf17db6ec2cff07a = UNSTREAM_STRING( &constant_bin[ 607490 ], 24, 0 );
+    const_str_digest_b5b3688a7f48242ab9c7b5da59131694 = UNSTREAM_STRING( &constant_bin[ 607514 ], 27, 0 );
     const_tuple_str_digest_fe1f0d80ff95465e1481dc7deeb463f2_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_digest_fe1f0d80ff95465e1481dc7deeb463f2_tuple, 0, const_str_digest_fe1f0d80ff95465e1481dc7deeb463f2 ); Py_INCREF( const_str_digest_fe1f0d80ff95465e1481dc7deeb463f2 );
 

@@ -83,9 +83,9 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_071c1bdf9e053a336cf3ee529e0cd78c = UNSTREAM_STRING( &constant_bin[ 359877 ], 78, 0 );
-    const_str_digest_d4f55a3640e1d507be759171ef3df922 = UNSTREAM_STRING( &constant_bin[ 359877 ], 66, 0 );
-    const_str_digest_c93e590685d3595df733535bcf77e09d = UNSTREAM_STRING( &constant_bin[ 359955 ], 1226, 0 );
+    const_str_digest_071c1bdf9e053a336cf3ee529e0cd78c = UNSTREAM_STRING( &constant_bin[ 371182 ], 78, 0 );
+    const_str_digest_d4f55a3640e1d507be759171ef3df922 = UNSTREAM_STRING( &constant_bin[ 371182 ], 66, 0 );
+    const_str_digest_c93e590685d3595df733535bcf77e09d = UNSTREAM_STRING( &constant_bin[ 371260 ], 1226, 0 );
     const_tuple_71e079c707cf8157794a464706859a24_tuple = PyTuple_New( 7 );
     PyTuple_SET_ITEM( const_tuple_71e079c707cf8157794a464706859a24_tuple, 0, const_str_plain_treeType ); Py_INCREF( const_str_plain_treeType );
     PyTuple_SET_ITEM( const_tuple_71e079c707cf8157794a464706859a24_tuple, 1, const_str_plain_implementation ); Py_INCREF( const_str_plain_implementation );
@@ -102,9 +102,9 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_str_plain_etree_lxml_tuple, 0, const_str_plain_etree_lxml ); Py_INCREF( const_str_plain_etree_lxml );
     const_tuple_str_plain_dom_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_dom_tuple, 0, const_str_plain_dom ); Py_INCREF( const_str_plain_dom );
-    const_str_digest_302663e87a897ac76bd78a556a515aef = UNSTREAM_STRING( &constant_bin[ 361181 ], 936, 0 );
-    const_str_digest_8dd0c0992f8da622dfce2e2fc5195478 = UNSTREAM_STRING( &constant_bin[ 362117 ], 30, 0 );
-    const_str_plain_treeBuilderCache = UNSTREAM_STRING( &constant_bin[ 362147 ], 16, 1 );
+    const_str_digest_302663e87a897ac76bd78a556a515aef = UNSTREAM_STRING( &constant_bin[ 372486 ], 936, 0 );
+    const_str_digest_8dd0c0992f8da622dfce2e2fc5195478 = UNSTREAM_STRING( &constant_bin[ 373422 ], 30, 0 );
+    const_str_plain_treeBuilderCache = UNSTREAM_STRING( &constant_bin[ 373452 ], 16, 1 );
 
     constants_created = true;
 }

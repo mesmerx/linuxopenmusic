@@ -141,14 +141,14 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_21f0d299fa4e8b944a53fcfd9f7c7ddd = UNSTREAM_STRING( &constant_bin[ 462700 ], 6, 0 );
+    const_str_digest_21f0d299fa4e8b944a53fcfd9f7c7ddd = UNSTREAM_STRING( &constant_bin[ 473935 ], 6, 0 );
     const_tuple_str_digest_4dc1c5ec953af1baf335ac7cfa09bfc2_tuple = PyTuple_New( 1 );
-    const_str_digest_4dc1c5ec953af1baf335ac7cfa09bfc2 = UNSTREAM_STRING( &constant_bin[ 462706 ], 79, 0 );
+    const_str_digest_4dc1c5ec953af1baf335ac7cfa09bfc2 = UNSTREAM_STRING( &constant_bin[ 473941 ], 79, 0 );
     PyTuple_SET_ITEM( const_tuple_str_digest_4dc1c5ec953af1baf335ac7cfa09bfc2_tuple, 0, const_str_digest_4dc1c5ec953af1baf335ac7cfa09bfc2 ); Py_INCREF( const_str_digest_4dc1c5ec953af1baf335ac7cfa09bfc2 );
-    const_str_digest_bf6a9e5c353281c1c92af88008b97db3 = UNSTREAM_STRING( &constant_bin[ 462785 ], 82, 0 );
+    const_str_digest_bf6a9e5c353281c1c92af88008b97db3 = UNSTREAM_STRING( &constant_bin[ 474020 ], 82, 0 );
     const_tuple_str_digest_1a7fd8275b453924195d0ed072159326_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_digest_1a7fd8275b453924195d0ed072159326_tuple, 0, const_str_digest_1a7fd8275b453924195d0ed072159326 ); Py_INCREF( const_str_digest_1a7fd8275b453924195d0ed072159326 );
-    const_str_digest_d5690dd4b50230a5fa1c07b2c1b9847e = UNSTREAM_STRING( &constant_bin[ 462785 ], 70, 0 );
+    const_str_digest_d5690dd4b50230a5fa1c07b2c1b9847e = UNSTREAM_STRING( &constant_bin[ 474020 ], 70, 0 );
     const_list_str_digest_d5690dd4b50230a5fa1c07b2c1b9847e_list = PyList_New( 1 );
     PyList_SET_ITEM( const_list_str_digest_d5690dd4b50230a5fa1c07b2c1b9847e_list, 0, const_str_digest_d5690dd4b50230a5fa1c07b2c1b9847e ); Py_INCREF( const_str_digest_d5690dd4b50230a5fa1c07b2c1b9847e );
 
@@ -2580,7 +2580,7 @@ MOD_INIT_DECL( pip$_vendor$requests$packages$urllib3 )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 324 ], 33, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 267 ], 33, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );

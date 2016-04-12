@@ -146,7 +146,7 @@ extern PyObject *const_str_digest_b2bd82dd2dbc4f15314a5d4f089060d2;
 extern PyObject *const_str_plain___cached__;
 extern PyObject *const_str_plain__tunnel;
 extern PyObject *const_str_plain___class__;
-extern PyObject *const_tuple_668b2822495559438e76eec0125122f4_tuple;
+static PyObject *const_tuple_668b2822495559438e76eec0125122f4_tuple;
 extern PyObject *const_str_plain_is_time_off;
 extern PyObject *const_str_plain_socket_options;
 extern PyObject *const_tuple_e4d50c48f2ee1b6eb3ae021a15141bf1_tuple;
@@ -202,8 +202,17 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_37e2b194777fe754574f7e01a4336938 = UNSTREAM_STRING( &constant_bin[ 463003 ], 84, 0 );
-    const_str_digest_cc759109aee8aef22cfec00a55f74307 = UNSTREAM_STRING( &constant_bin[ 463087 ], 48, 0 );
+    const_str_digest_37e2b194777fe754574f7e01a4336938 = UNSTREAM_STRING( &constant_bin[ 474238 ], 84, 0 );
+    const_str_digest_cc759109aee8aef22cfec00a55f74307 = UNSTREAM_STRING( &constant_bin[ 474322 ], 48, 0 );
+    const_tuple_668b2822495559438e76eec0125122f4_tuple = PyTuple_New( 8 );
+    PyTuple_SET_ITEM( const_tuple_668b2822495559438e76eec0125122f4_tuple, 0, const_str_plain_self ); Py_INCREF( const_str_plain_self );
+    PyTuple_SET_ITEM( const_tuple_668b2822495559438e76eec0125122f4_tuple, 1, const_str_plain_conn ); Py_INCREF( const_str_plain_conn );
+    PyTuple_SET_ITEM( const_tuple_668b2822495559438e76eec0125122f4_tuple, 2, const_str_plain_resolved_cert_reqs ); Py_INCREF( const_str_plain_resolved_cert_reqs );
+    PyTuple_SET_ITEM( const_tuple_668b2822495559438e76eec0125122f4_tuple, 3, const_str_plain_resolved_ssl_version ); Py_INCREF( const_str_plain_resolved_ssl_version );
+    PyTuple_SET_ITEM( const_tuple_668b2822495559438e76eec0125122f4_tuple, 4, const_str_plain_hostname ); Py_INCREF( const_str_plain_hostname );
+    PyTuple_SET_ITEM( const_tuple_668b2822495559438e76eec0125122f4_tuple, 5, const_str_plain_is_time_off ); Py_INCREF( const_str_plain_is_time_off );
+    PyTuple_SET_ITEM( const_tuple_668b2822495559438e76eec0125122f4_tuple, 6, const_str_plain_cert ); Py_INCREF( const_str_plain_cert );
+    PyTuple_SET_ITEM( const_tuple_668b2822495559438e76eec0125122f4_tuple, 7, const_str_plain_asserted_hostname ); Py_INCREF( const_str_plain_asserted_hostname );
 
     constants_created = true;
 }

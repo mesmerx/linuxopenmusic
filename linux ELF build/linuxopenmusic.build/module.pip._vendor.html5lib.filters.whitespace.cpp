@@ -93,19 +93,19 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain_spacePreserveElements = UNSTREAM_STRING( &constant_bin[ 306043 ], 21, 1 );
-    const_str_plain_collapse_spaces = UNSTREAM_STRING( &constant_bin[ 306064 ], 15, 1 );
+    const_str_plain_spacePreserveElements = UNSTREAM_STRING( &constant_bin[ 317348 ], 21, 1 );
+    const_str_plain_collapse_spaces = UNSTREAM_STRING( &constant_bin[ 317369 ], 15, 1 );
     const_tuple_str_plain_rcdataElements_str_plain_spaceCharacters_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_rcdataElements_str_plain_spaceCharacters_tuple, 0, const_str_plain_rcdataElements ); Py_INCREF( const_str_plain_rcdataElements );
     PyTuple_SET_ITEM( const_tuple_str_plain_rcdataElements_str_plain_spaceCharacters_tuple, 1, const_str_plain_spaceCharacters ); Py_INCREF( const_str_plain_spaceCharacters );
-    const_str_digest_1521b4fae229dc52bb3524b3493e9772 = UNSTREAM_STRING( &constant_bin[ 306079 ], 39, 0 );
-    const_str_plain_whitespace = UNSTREAM_STRING( &constant_bin[ 69472 ], 10, 1 );
-    const_str_plain_SPACES_REGEX = UNSTREAM_STRING( &constant_bin[ 306118 ], 12, 1 );
-    const_str_plain_preserve = UNSTREAM_STRING( &constant_bin[ 69463 ], 8, 1 );
+    const_str_digest_1521b4fae229dc52bb3524b3493e9772 = UNSTREAM_STRING( &constant_bin[ 317384 ], 39, 0 );
+    const_str_plain_whitespace = UNSTREAM_STRING( &constant_bin[ 80892 ], 10, 1 );
+    const_str_plain_SPACES_REGEX = UNSTREAM_STRING( &constant_bin[ 317423 ], 12, 1 );
+    const_str_plain_preserve = UNSTREAM_STRING( &constant_bin[ 80883 ], 8, 1 );
     const_list_str_plain_pre_str_plain_textarea_list = PyList_New( 2 );
     PyList_SET_ITEM( const_list_str_plain_pre_str_plain_textarea_list, 0, const_str_plain_pre ); Py_INCREF( const_str_plain_pre );
     PyList_SET_ITEM( const_list_str_plain_pre_str_plain_textarea_list, 1, const_str_plain_textarea ); Py_INCREF( const_str_plain_textarea );
-    const_str_digest_c74c99c57c0043b7ba1b733e93a54881 = UNSTREAM_STRING( &constant_bin[ 306130 ], 75, 0 );
+    const_str_digest_c74c99c57c0043b7ba1b733e93a54881 = UNSTREAM_STRING( &constant_bin[ 317435 ], 75, 0 );
 
     constants_created = true;
 }

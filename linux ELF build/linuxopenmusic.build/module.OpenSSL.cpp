@@ -29,25 +29,31 @@ PyObject *module_OpenSSL;
 PyDictObject *moduledict_OpenSSL;
 
 // The module constants used
+extern PyObject *const_str_plain___copyright__;
+static PyObject *const_list_ddd46b41bc5605353abefb03c6916501_list;
 static PyObject *const_str_digest_23a38e41f1f242ef40ffc587144266aa;
 static PyObject *const_tuple_str_plain_rand_str_plain_crypto_str_plain_SSL_tuple;
 extern PyObject *const_str_plain___package__;
+extern PyObject *const_str_plain___summary__;
 extern PyObject *const_str_plain___all__;
 extern PyObject *const_str_plain_rand;
 extern PyObject *const_str_plain___file__;
 extern PyObject *const_str_plain_SSL;
-static PyObject *const_str_plain_tsafe;
 extern PyObject *const_str_digest_69e665cd1c1ee14f52dfb85d4f885c38;
 extern PyObject *const_str_plain___version__;
 extern PyObject *const_int_0;
 extern PyObject *const_str_digest_598c5128122328c3e816ece52ab2e1f6;
 static PyObject *const_list_str_digest_23a38e41f1f242ef40ffc587144266aa_list;
-static PyObject *const_list_ae3c1402306effbf77270acb7dcf037d_list;
+extern PyObject *const_str_plain___email__;
+extern PyObject *const_tuple_6186bcef3692b8e536e9a30837a9390d_tuple;
+extern PyObject *const_str_plain___uri__;
+extern PyObject *const_str_plain___author__;
+extern PyObject *const_str_plain___license__;
 extern PyObject *const_str_plain___path__;
 extern PyObject *const_tuple_empty;
 extern PyObject *const_str_plain_crypto;
+extern PyObject *const_str_plain___title__;
 extern PyObject *const_str_plain_OpenSSL;
-extern PyObject *const_tuple_str_plain___version___tuple;
 extern PyObject *const_str_plain___loader__;
 static PyObject *const_str_digest_b74a174cd77170e9522878ee7417cc84;
 extern PyObject *const_str_plain___doc__;
@@ -58,21 +64,26 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_23a38e41f1f242ef40ffc587144266aa = UNSTREAM_STRING( &constant_bin[ 657 ], 40, 0 );
+    const_list_ddd46b41bc5605353abefb03c6916501_list = PyList_New( 11 );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 0, const_str_plain_SSL ); Py_INCREF( const_str_plain_SSL );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 1, const_str_plain_crypto ); Py_INCREF( const_str_plain_crypto );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 2, const_str_plain_rand ); Py_INCREF( const_str_plain_rand );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 3, const_str_plain___author__ ); Py_INCREF( const_str_plain___author__ );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 4, const_str_plain___copyright__ ); Py_INCREF( const_str_plain___copyright__ );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 5, const_str_plain___email__ ); Py_INCREF( const_str_plain___email__ );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 6, const_str_plain___license__ ); Py_INCREF( const_str_plain___license__ );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 7, const_str_plain___summary__ ); Py_INCREF( const_str_plain___summary__ );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 8, const_str_plain___title__ ); Py_INCREF( const_str_plain___title__ );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 9, const_str_plain___uri__ ); Py_INCREF( const_str_plain___uri__ );
+    PyList_SET_ITEM( const_list_ddd46b41bc5605353abefb03c6916501_list, 10, const_str_plain___version__ ); Py_INCREF( const_str_plain___version__ );
+    const_str_digest_23a38e41f1f242ef40ffc587144266aa = UNSTREAM_STRING( &constant_bin[ 600 ], 40, 0 );
     const_tuple_str_plain_rand_str_plain_crypto_str_plain_SSL_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_str_plain_rand_str_plain_crypto_str_plain_SSL_tuple, 0, const_str_plain_rand ); Py_INCREF( const_str_plain_rand );
     PyTuple_SET_ITEM( const_tuple_str_plain_rand_str_plain_crypto_str_plain_SSL_tuple, 1, const_str_plain_crypto ); Py_INCREF( const_str_plain_crypto );
     PyTuple_SET_ITEM( const_tuple_str_plain_rand_str_plain_crypto_str_plain_SSL_tuple, 2, const_str_plain_SSL ); Py_INCREF( const_str_plain_SSL );
-    const_str_plain_tsafe = UNSTREAM_STRING( &constant_bin[ 697 ], 5, 1 );
     const_list_str_digest_23a38e41f1f242ef40ffc587144266aa_list = PyList_New( 1 );
     PyList_SET_ITEM( const_list_str_digest_23a38e41f1f242ef40ffc587144266aa_list, 0, const_str_digest_23a38e41f1f242ef40ffc587144266aa ); Py_INCREF( const_str_digest_23a38e41f1f242ef40ffc587144266aa );
-    const_list_ae3c1402306effbf77270acb7dcf037d_list = PyList_New( 5 );
-    PyList_SET_ITEM( const_list_ae3c1402306effbf77270acb7dcf037d_list, 0, const_str_plain_rand ); Py_INCREF( const_str_plain_rand );
-    PyList_SET_ITEM( const_list_ae3c1402306effbf77270acb7dcf037d_list, 1, const_str_plain_crypto ); Py_INCREF( const_str_plain_crypto );
-    PyList_SET_ITEM( const_list_ae3c1402306effbf77270acb7dcf037d_list, 2, const_str_plain_SSL ); Py_INCREF( const_str_plain_SSL );
-    PyList_SET_ITEM( const_list_ae3c1402306effbf77270acb7dcf037d_list, 3, const_str_plain_tsafe ); Py_INCREF( const_str_plain_tsafe );
-    PyList_SET_ITEM( const_list_ae3c1402306effbf77270acb7dcf037d_list, 4, const_str_plain___version__ ); Py_INCREF( const_str_plain___version__ );
-    const_str_digest_b74a174cd77170e9522878ee7417cc84 = UNSTREAM_STRING( &constant_bin[ 702 ], 52, 0 );
+    const_str_digest_b74a174cd77170e9522878ee7417cc84 = UNSTREAM_STRING( &constant_bin[ 640 ], 52, 0 );
 
     constants_created = true;
 }
@@ -260,14 +271,35 @@ MOD_INIT_DECL( OpenSSL )
     PyObject *tmp_assign_source_8;
     PyObject *tmp_assign_source_9;
     PyObject *tmp_assign_source_10;
+    PyObject *tmp_assign_source_11;
+    PyObject *tmp_assign_source_12;
+    PyObject *tmp_assign_source_13;
+    PyObject *tmp_assign_source_14;
+    PyObject *tmp_assign_source_15;
+    PyObject *tmp_assign_source_16;
+    PyObject *tmp_assign_source_17;
     PyObject *tmp_import_globals_1;
     PyObject *tmp_import_globals_2;
     PyObject *tmp_import_globals_3;
     PyObject *tmp_import_globals_4;
+    PyObject *tmp_import_globals_5;
+    PyObject *tmp_import_globals_6;
+    PyObject *tmp_import_globals_7;
+    PyObject *tmp_import_globals_8;
+    PyObject *tmp_import_globals_9;
+    PyObject *tmp_import_globals_10;
+    PyObject *tmp_import_globals_11;
     PyObject *tmp_import_name_from_1;
     PyObject *tmp_import_name_from_2;
     PyObject *tmp_import_name_from_3;
     PyObject *tmp_import_name_from_4;
+    PyObject *tmp_import_name_from_5;
+    PyObject *tmp_import_name_from_6;
+    PyObject *tmp_import_name_from_7;
+    PyObject *tmp_import_name_from_8;
+    PyObject *tmp_import_name_from_9;
+    PyObject *tmp_import_name_from_10;
+    PyObject *tmp_import_name_from_11;
     PyFrameObject *frame_module;
 
 
@@ -375,7 +407,7 @@ MOD_INIT_DECL( OpenSSL )
     UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain_SSL, tmp_assign_source_8 );
     tmp_import_globals_4 = ((PyModuleObject *)module_OpenSSL)->md_dict;
     frame_module->f_lineno = 9;
-    tmp_import_name_from_4 = IMPORT_MODULE( const_str_digest_598c5128122328c3e816ece52ab2e1f6, tmp_import_globals_4, tmp_import_globals_4, const_tuple_str_plain___version___tuple, const_int_0 );
+    tmp_import_name_from_4 = IMPORT_MODULE( const_str_digest_598c5128122328c3e816ece52ab2e1f6, tmp_import_globals_4, tmp_import_globals_4, const_tuple_6186bcef3692b8e536e9a30837a9390d_tuple, const_int_0 );
     if ( tmp_import_name_from_4 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -386,7 +418,7 @@ MOD_INIT_DECL( OpenSSL )
         exception_lineno = 9;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_9 = IMPORT_NAME( tmp_import_name_from_4, const_str_plain___version__ );
+    tmp_assign_source_9 = IMPORT_NAME( tmp_import_name_from_4, const_str_plain___author__ );
     Py_DECREF( tmp_import_name_from_4 );
     if ( tmp_assign_source_9 == NULL )
     {
@@ -398,7 +430,189 @@ MOD_INIT_DECL( OpenSSL )
         exception_lineno = 9;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___version__, tmp_assign_source_9 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___author__, tmp_assign_source_9 );
+    tmp_import_globals_5 = ((PyModuleObject *)module_OpenSSL)->md_dict;
+    frame_module->f_lineno = 9;
+    tmp_import_name_from_5 = IMPORT_MODULE( const_str_digest_598c5128122328c3e816ece52ab2e1f6, tmp_import_globals_5, tmp_import_globals_5, const_tuple_6186bcef3692b8e536e9a30837a9390d_tuple, const_int_0 );
+    if ( tmp_import_name_from_5 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_10 = IMPORT_NAME( tmp_import_name_from_5, const_str_plain___copyright__ );
+    Py_DECREF( tmp_import_name_from_5 );
+    if ( tmp_assign_source_10 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___copyright__, tmp_assign_source_10 );
+    tmp_import_globals_6 = ((PyModuleObject *)module_OpenSSL)->md_dict;
+    frame_module->f_lineno = 9;
+    tmp_import_name_from_6 = IMPORT_MODULE( const_str_digest_598c5128122328c3e816ece52ab2e1f6, tmp_import_globals_6, tmp_import_globals_6, const_tuple_6186bcef3692b8e536e9a30837a9390d_tuple, const_int_0 );
+    if ( tmp_import_name_from_6 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_11 = IMPORT_NAME( tmp_import_name_from_6, const_str_plain___email__ );
+    Py_DECREF( tmp_import_name_from_6 );
+    if ( tmp_assign_source_11 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___email__, tmp_assign_source_11 );
+    tmp_import_globals_7 = ((PyModuleObject *)module_OpenSSL)->md_dict;
+    frame_module->f_lineno = 9;
+    tmp_import_name_from_7 = IMPORT_MODULE( const_str_digest_598c5128122328c3e816ece52ab2e1f6, tmp_import_globals_7, tmp_import_globals_7, const_tuple_6186bcef3692b8e536e9a30837a9390d_tuple, const_int_0 );
+    if ( tmp_import_name_from_7 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_12 = IMPORT_NAME( tmp_import_name_from_7, const_str_plain___license__ );
+    Py_DECREF( tmp_import_name_from_7 );
+    if ( tmp_assign_source_12 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___license__, tmp_assign_source_12 );
+    tmp_import_globals_8 = ((PyModuleObject *)module_OpenSSL)->md_dict;
+    frame_module->f_lineno = 9;
+    tmp_import_name_from_8 = IMPORT_MODULE( const_str_digest_598c5128122328c3e816ece52ab2e1f6, tmp_import_globals_8, tmp_import_globals_8, const_tuple_6186bcef3692b8e536e9a30837a9390d_tuple, const_int_0 );
+    if ( tmp_import_name_from_8 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_13 = IMPORT_NAME( tmp_import_name_from_8, const_str_plain___summary__ );
+    Py_DECREF( tmp_import_name_from_8 );
+    if ( tmp_assign_source_13 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___summary__, tmp_assign_source_13 );
+    tmp_import_globals_9 = ((PyModuleObject *)module_OpenSSL)->md_dict;
+    frame_module->f_lineno = 9;
+    tmp_import_name_from_9 = IMPORT_MODULE( const_str_digest_598c5128122328c3e816ece52ab2e1f6, tmp_import_globals_9, tmp_import_globals_9, const_tuple_6186bcef3692b8e536e9a30837a9390d_tuple, const_int_0 );
+    if ( tmp_import_name_from_9 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_14 = IMPORT_NAME( tmp_import_name_from_9, const_str_plain___title__ );
+    Py_DECREF( tmp_import_name_from_9 );
+    if ( tmp_assign_source_14 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___title__, tmp_assign_source_14 );
+    tmp_import_globals_10 = ((PyModuleObject *)module_OpenSSL)->md_dict;
+    frame_module->f_lineno = 9;
+    tmp_import_name_from_10 = IMPORT_MODULE( const_str_digest_598c5128122328c3e816ece52ab2e1f6, tmp_import_globals_10, tmp_import_globals_10, const_tuple_6186bcef3692b8e536e9a30837a9390d_tuple, const_int_0 );
+    if ( tmp_import_name_from_10 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_15 = IMPORT_NAME( tmp_import_name_from_10, const_str_plain___uri__ );
+    Py_DECREF( tmp_import_name_from_10 );
+    if ( tmp_assign_source_15 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___uri__, tmp_assign_source_15 );
+    tmp_import_globals_11 = ((PyModuleObject *)module_OpenSSL)->md_dict;
+    frame_module->f_lineno = 9;
+    tmp_import_name_from_11 = IMPORT_MODULE( const_str_digest_598c5128122328c3e816ece52ab2e1f6, tmp_import_globals_11, tmp_import_globals_11, const_tuple_6186bcef3692b8e536e9a30837a9390d_tuple, const_int_0 );
+    if ( tmp_import_name_from_11 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_16 = IMPORT_NAME( tmp_import_name_from_11, const_str_plain___version__ );
+    Py_DECREF( tmp_import_name_from_11 );
+    if ( tmp_assign_source_16 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 9;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___version__, tmp_assign_source_16 );
 
     // Restore frame exception if necessary.
 #if 0
@@ -437,8 +651,8 @@ MOD_INIT_DECL( OpenSSL )
     // Return the error.
     goto module_exception_exit;
     frame_no_exception_1:;
-    tmp_assign_source_10 = LIST_COPY( const_list_ae3c1402306effbf77270acb7dcf037d_list );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___all__, tmp_assign_source_10 );
+    tmp_assign_source_17 = LIST_COPY( const_list_ddd46b41bc5605353abefb03c6916501_list );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL, (Nuitka_StringObject *)const_str_plain___all__, tmp_assign_source_17 );
 
     return MOD_RETURN_VALUE( module_OpenSSL );
     module_exception_exit:

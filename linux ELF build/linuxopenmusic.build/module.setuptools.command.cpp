@@ -64,20 +64,20 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_e401623cceec829f18d0acdefa8ae9ae = UNSTREAM_STRING( &constant_bin[ 607415 ], 16, 0 );
+    const_str_digest_e401623cceec829f18d0acdefa8ae9ae = UNSTREAM_STRING( &constant_bin[ 626616 ], 16, 0 );
     const_tuple_38736e2f6ccdcd4ad3f546342b70593b_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_38736e2f6ccdcd4ad3f546342b70593b_tuple, 0, const_str_plain_bdist_egg ); Py_INCREF( const_str_plain_bdist_egg );
     PyTuple_SET_ITEM( const_tuple_38736e2f6ccdcd4ad3f546342b70593b_tuple, 1, const_str_digest_e401623cceec829f18d0acdefa8ae9ae ); Py_INCREF( const_str_digest_e401623cceec829f18d0acdefa8ae9ae );
     const_tuple_str_plain_egg_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_egg_tuple, 0, const_str_plain_egg ); Py_INCREF( const_str_plain_egg );
-    const_str_plain_format_command = UNSTREAM_STRING( &constant_bin[ 607431 ], 14, 1 );
-    const_str_plain_format_commands = UNSTREAM_STRING( &constant_bin[ 607445 ], 15, 1 );
-    const_str_digest_b23a5049531b7b7f0f7fed2350c2b102 = UNSTREAM_STRING( &constant_bin[ 607460 ], 63, 0 );
-    const_str_digest_c526b986aa0f64cf0a744654a5bd9a75 = UNSTREAM_STRING( &constant_bin[ 607523 ], 23, 0 );
+    const_str_plain_format_command = UNSTREAM_STRING( &constant_bin[ 626632 ], 14, 1 );
+    const_str_plain_format_commands = UNSTREAM_STRING( &constant_bin[ 626646 ], 15, 1 );
+    const_str_digest_b23a5049531b7b7f0f7fed2350c2b102 = UNSTREAM_STRING( &constant_bin[ 626661 ], 63, 0 );
+    const_str_digest_c526b986aa0f64cf0a744654a5bd9a75 = UNSTREAM_STRING( &constant_bin[ 626724 ], 23, 0 );
     const_list_str_digest_0a17e05ad345f3906791c8b7751a1bcd_list = PyList_New( 1 );
-    const_str_digest_0a17e05ad345f3906791c8b7751a1bcd = UNSTREAM_STRING( &constant_bin[ 607460 ], 51, 0 );
+    const_str_digest_0a17e05ad345f3906791c8b7751a1bcd = UNSTREAM_STRING( &constant_bin[ 626661 ], 51, 0 );
     PyList_SET_ITEM( const_list_str_digest_0a17e05ad345f3906791c8b7751a1bcd_list, 0, const_str_digest_0a17e05ad345f3906791c8b7751a1bcd ); Py_INCREF( const_str_digest_0a17e05ad345f3906791c8b7751a1bcd );
-    const_list_859bf8c5d37c5ed59870d7518ab304f8_list = PyMarshal_ReadObjectFromString( (char *)&constant_bin[ 607546 ], 230 );
+    const_list_859bf8c5d37c5ed59870d7518ab304f8_list = PyMarshal_ReadObjectFromString( (char *)&constant_bin[ 626747 ], 230 );
 
     constants_created = true;
 }
@@ -537,7 +537,7 @@ MOD_INIT_DECL( setuptools$command )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 568 ], 27, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 511 ], 27, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -554,7 +554,7 @@ MOD_INIT_DECL( setuptools$command )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 595 ], 25, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 538 ], 25, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );

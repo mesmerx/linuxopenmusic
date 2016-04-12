@@ -48,8 +48,8 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_b9ee7f6cac47b97665dd1eabfc22081c = UNSTREAM_STRING( &constant_bin[ 460350 ], 45, 0 );
-    const_str_digest_6426140f84f9bc038477bfd4e0dc8823 = UNSTREAM_STRING( &constant_bin[ 460395 ], 81, 0 );
+    const_str_digest_b9ee7f6cac47b97665dd1eabfc22081c = UNSTREAM_STRING( &constant_bin[ 471585 ], 45, 0 );
+    const_str_digest_6426140f84f9bc038477bfd4e0dc8823 = UNSTREAM_STRING( &constant_bin[ 471630 ], 81, 0 );
 
     constants_created = true;
 }

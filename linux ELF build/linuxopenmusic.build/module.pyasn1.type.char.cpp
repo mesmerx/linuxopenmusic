@@ -89,14 +89,14 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain_ISO646String = UNSTREAM_STRING( &constant_bin[ 591431 ], 12, 1 );
-    const_str_digest_83ae06115b86af4ffcf2d075dbeabc4b = UNSTREAM_STRING( &constant_bin[ 591443 ], 52, 0 );
+    const_str_plain_ISO646String = UNSTREAM_STRING( &constant_bin[ 610632 ], 12, 1 );
+    const_str_digest_83ae06115b86af4ffcf2d075dbeabc4b = UNSTREAM_STRING( &constant_bin[ 610644 ], 52, 0 );
     const_tuple_str_plain_univ_str_plain_tag_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_univ_str_plain_tag_tuple, 0, const_str_plain_univ ); Py_INCREF( const_str_plain_univ );
     PyTuple_SET_ITEM( const_tuple_str_plain_univ_str_plain_tag_tuple, 1, const_str_plain_tag ); Py_INCREF( const_str_plain_tag );
-    const_str_plain_T61String = UNSTREAM_STRING( &constant_bin[ 591495 ], 9, 1 );
+    const_str_plain_T61String = UNSTREAM_STRING( &constant_bin[ 610696 ], 9, 1 );
     const_int_pos_19 = PyLong_FromUnsignedLong( 19ul );
-    const_str_digest_8c04c9d0c9b903616c9f3d42d26686a7 = UNSTREAM_STRING( &constant_bin[ 591504 ], 16, 0 );
+    const_str_digest_8c04c9d0c9b903616c9f3d42d26686a7 = UNSTREAM_STRING( &constant_bin[ 610705 ], 16, 0 );
 
     constants_created = true;
 }

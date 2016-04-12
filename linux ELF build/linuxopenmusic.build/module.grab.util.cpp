@@ -44,9 +44,9 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_95bd669245f71b9d72918b342319fa91 = UNSTREAM_STRING( &constant_bin[ 144107 ], 54, 0 );
+    const_str_digest_95bd669245f71b9d72918b342319fa91 = UNSTREAM_STRING( &constant_bin[ 155409 ], 54, 0 );
     const_list_str_digest_bffd538e8b871e27e80d6ee963f73a90_list = PyList_New( 1 );
-    const_str_digest_bffd538e8b871e27e80d6ee963f73a90 = UNSTREAM_STRING( &constant_bin[ 144107 ], 42, 0 );
+    const_str_digest_bffd538e8b871e27e80d6ee963f73a90 = UNSTREAM_STRING( &constant_bin[ 155409 ], 42, 0 );
     PyList_SET_ITEM( const_list_str_digest_bffd538e8b871e27e80d6ee963f73a90_list, 0, const_str_digest_bffd538e8b871e27e80d6ee963f73a90 ); Py_INCREF( const_str_digest_bffd538e8b871e27e80d6ee963f73a90 );
 
     constants_created = true;

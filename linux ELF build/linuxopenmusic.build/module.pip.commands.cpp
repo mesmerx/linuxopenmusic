@@ -119,32 +119,32 @@ static void createModuleConstants( void )
 {
     const_tuple_016558709ed413e1fd5f1d84fccac1bc_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_016558709ed413e1fd5f1d84fccac1bc_tuple, 0, const_str_plain_name ); Py_INCREF( const_str_plain_name );
-    const_str_plain_get_close_matches = UNSTREAM_STRING( &constant_bin[ 499034 ], 17, 1 );
+    const_str_plain_get_close_matches = UNSTREAM_STRING( &constant_bin[ 517925 ], 17, 1 );
     PyTuple_SET_ITEM( const_tuple_016558709ed413e1fd5f1d84fccac1bc_tuple, 1, const_str_plain_get_close_matches ); Py_INCREF( const_str_plain_get_close_matches );
-    const_str_plain_close_commands = UNSTREAM_STRING( &constant_bin[ 499051 ], 14, 1 );
+    const_str_plain_close_commands = UNSTREAM_STRING( &constant_bin[ 517942 ], 14, 1 );
     PyTuple_SET_ITEM( const_tuple_016558709ed413e1fd5f1d84fccac1bc_tuple, 2, const_str_plain_close_commands ); Py_INCREF( const_str_plain_close_commands );
     const_tuple_str_plain_HelpCommand_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_HelpCommand_tuple, 0, const_str_plain_HelpCommand ); Py_INCREF( const_str_plain_HelpCommand );
     const_tuple_str_plain_InstallCommand_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_InstallCommand_tuple, 0, const_str_plain_InstallCommand ); Py_INCREF( const_str_plain_InstallCommand );
-    const_str_plain_ordered = UNSTREAM_STRING( &constant_bin[ 184030 ], 7, 1 );
-    const_str_plain_commands_order = UNSTREAM_STRING( &constant_bin[ 499065 ], 14, 1 );
-    const_str_plain_difflib = UNSTREAM_STRING( &constant_bin[ 499079 ], 7, 1 );
+    const_str_plain_ordered = UNSTREAM_STRING( &constant_bin[ 195332 ], 7, 1 );
+    const_str_plain_commands_order = UNSTREAM_STRING( &constant_bin[ 517956 ], 14, 1 );
+    const_str_plain_difflib = UNSTREAM_STRING( &constant_bin[ 517970 ], 7, 1 );
     const_tuple_str_plain_cmddict_str_plain_order_str_plain_keyfn_tuple = PyTuple_New( 3 );
-    const_str_plain_cmddict = UNSTREAM_STRING( &constant_bin[ 499086 ], 7, 1 );
+    const_str_plain_cmddict = UNSTREAM_STRING( &constant_bin[ 517977 ], 7, 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_cmddict_str_plain_order_str_plain_keyfn_tuple, 0, const_str_plain_cmddict ); Py_INCREF( const_str_plain_cmddict );
     PyTuple_SET_ITEM( const_tuple_str_plain_cmddict_str_plain_order_str_plain_keyfn_tuple, 1, const_str_plain_order ); Py_INCREF( const_str_plain_order );
-    const_str_plain_keyfn = UNSTREAM_STRING( &constant_bin[ 499093 ], 5, 1 );
+    const_str_plain_keyfn = UNSTREAM_STRING( &constant_bin[ 517984 ], 5, 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_cmddict_str_plain_order_str_plain_keyfn_tuple, 2, const_str_plain_keyfn ); Py_INCREF( const_str_plain_keyfn );
-    const_str_plain_commands = UNSTREAM_STRING( &constant_bin[ 183010 ], 8, 1 );
-    const_str_digest_7cd5420825f16746eec003acb5b3e437 = UNSTREAM_STRING( &constant_bin[ 499098 ], 57, 0 );
+    const_str_plain_commands = UNSTREAM_STRING( &constant_bin[ 194312 ], 8, 1 );
+    const_str_digest_7cd5420825f16746eec003acb5b3e437 = UNSTREAM_STRING( &constant_bin[ 517989 ], 57, 0 );
     const_tuple_str_plain_HashCommand_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_HashCommand_tuple, 0, const_str_plain_HashCommand ); Py_INCREF( const_str_plain_HashCommand );
-    const_str_digest_7072a2438f03ee09a6535f00d29c1697 = UNSTREAM_STRING( &constant_bin[ 499155 ], 37, 0 );
-    const_str_plain_command_class = UNSTREAM_STRING( &constant_bin[ 499192 ], 13, 1 );
-    const_str_plain_cmditems = UNSTREAM_STRING( &constant_bin[ 499205 ], 8, 1 );
+    const_str_digest_7072a2438f03ee09a6535f00d29c1697 = UNSTREAM_STRING( &constant_bin[ 518046 ], 37, 0 );
+    const_str_plain_command_class = UNSTREAM_STRING( &constant_bin[ 518083 ], 13, 1 );
+    const_str_plain_cmditems = UNSTREAM_STRING( &constant_bin[ 518096 ], 8, 1 );
     const_list_str_digest_f5bd9263b048d8199f7b5de311b914db_list = PyList_New( 1 );
-    const_str_digest_f5bd9263b048d8199f7b5de311b914db = UNSTREAM_STRING( &constant_bin[ 499098 ], 45, 0 );
+    const_str_digest_f5bd9263b048d8199f7b5de311b914db = UNSTREAM_STRING( &constant_bin[ 517989 ], 45, 0 );
     PyList_SET_ITEM( const_list_str_digest_f5bd9263b048d8199f7b5de311b914db_list, 0, const_str_digest_f5bd9263b048d8199f7b5de311b914db ); Py_INCREF( const_str_digest_f5bd9263b048d8199f7b5de311b914db );
     const_tuple_str_plain_DownloadCommand_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_DownloadCommand_tuple, 0, const_str_plain_DownloadCommand ); Py_INCREF( const_str_plain_DownloadCommand );
@@ -152,7 +152,7 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_str_plain_ListCommand_tuple, 0, const_str_plain_ListCommand ); Py_INCREF( const_str_plain_ListCommand );
     const_tuple_str_plain_UninstallCommand_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_UninstallCommand_tuple, 0, const_str_plain_UninstallCommand ); Py_INCREF( const_str_plain_UninstallCommand );
-    const_str_digest_fde7d4b51520656e96abb8f3f8676aca = UNSTREAM_STRING( &constant_bin[ 499213 ], 53, 0 );
+    const_str_digest_fde7d4b51520656e96abb8f3f8676aca = UNSTREAM_STRING( &constant_bin[ 518104 ], 53, 0 );
     const_tuple_str_plain_ordered_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_ordered_tuple, 0, const_str_plain_ordered ); Py_INCREF( const_str_plain_ordered );
     const_tuple_str_plain_ShowCommand_tuple = PyTuple_New( 1 );
@@ -170,9 +170,9 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_str_plain_get_close_matches_tuple, 0, const_str_plain_get_close_matches ); Py_INCREF( const_str_plain_get_close_matches );
     const_tuple_str_plain_CompletionCommand_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_CompletionCommand_tuple, 0, const_str_plain_CompletionCommand ); Py_INCREF( const_str_plain_CompletionCommand );
-    const_str_plain__sort_commands = UNSTREAM_STRING( &constant_bin[ 499266 ], 14, 1 );
-    const_str_digest_9f19b98f4cfa7beaa710a0a0c11913ef = UNSTREAM_STRING( &constant_bin[ 499280 ], 29, 0 );
-    const_str_digest_56a88b40ca9074e19b2e973a9a1d3626 = UNSTREAM_STRING( &constant_bin[ 499309 ], 26, 0 );
+    const_str_plain__sort_commands = UNSTREAM_STRING( &constant_bin[ 518157 ], 14, 1 );
+    const_str_digest_9f19b98f4cfa7beaa710a0a0c11913ef = UNSTREAM_STRING( &constant_bin[ 518171 ], 29, 0 );
+    const_str_digest_56a88b40ca9074e19b2e973a9a1d3626 = UNSTREAM_STRING( &constant_bin[ 518200 ], 26, 0 );
 
     constants_created = true;
 }

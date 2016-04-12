@@ -77,12 +77,12 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_c21e099c5daaa10e7965c0a46d5353dd = UNSTREAM_STRING( &constant_bin[ 714057 ], 57, 0 );
+    const_str_digest_c21e099c5daaa10e7965c0a46d5353dd = UNSTREAM_STRING( &constant_bin[ 733258 ], 57, 0 );
     const_tuple_str_plain_base_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_base_tuple, 0, const_str_plain_base ); Py_INCREF( const_str_plain_base );
     const_tuple_str_plain_PROJECT_DIR_str_plain_PY32_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_PROJECT_DIR_str_plain_PY32_tuple, 0, const_str_plain_PROJECT_DIR ); Py_INCREF( const_str_plain_PROJECT_DIR );
-    const_str_plain_PY32 = UNSTREAM_STRING( &constant_bin[ 714114 ], 4, 1 );
+    const_str_plain_PY32 = UNSTREAM_STRING( &constant_bin[ 733315 ], 4, 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_PROJECT_DIR_str_plain_PY32_tuple, 1, const_str_plain_PY32 ); Py_INCREF( const_str_plain_PY32 );
 
     constants_created = true;

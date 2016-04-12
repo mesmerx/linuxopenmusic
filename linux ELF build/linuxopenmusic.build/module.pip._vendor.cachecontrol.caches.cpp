@@ -63,18 +63,18 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_06817967040db14f6ddd76a7f401b619 = UNSTREAM_STRING( &constant_bin[ 187010 ], 64, 0 );
-    const_str_plain_notice = UNSTREAM_STRING( &constant_bin[ 187074 ], 6, 1 );
+    const_str_digest_06817967040db14f6ddd76a7f401b619 = UNSTREAM_STRING( &constant_bin[ 198312 ], 64, 0 );
+    const_str_plain_notice = UNSTREAM_STRING( &constant_bin[ 198376 ], 6, 1 );
     const_tuple_str_plain_dedent_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_dedent_tuple, 0, const_str_plain_dedent ); Py_INCREF( const_str_plain_dedent );
-    const_str_digest_9a9751885c513c7995556cd7dc21be0e = UNSTREAM_STRING( &constant_bin[ 187080 ], 138, 0 );
+    const_str_digest_9a9751885c513c7995556cd7dc21be0e = UNSTREAM_STRING( &constant_bin[ 198382 ], 138, 0 );
     const_tuple_str_digest_9a9751885c513c7995556cd7dc21be0e_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_digest_9a9751885c513c7995556cd7dc21be0e_tuple, 0, const_str_digest_9a9751885c513c7995556cd7dc21be0e ); Py_INCREF( const_str_digest_9a9751885c513c7995556cd7dc21be0e );
-    const_str_digest_4a13d3f7004b7306dc8d7e5eb0ec15ff = UNSTREAM_STRING( &constant_bin[ 187218 ], 76, 0 );
+    const_str_digest_4a13d3f7004b7306dc8d7e5eb0ec15ff = UNSTREAM_STRING( &constant_bin[ 198520 ], 76, 0 );
     const_list_str_digest_06817967040db14f6ddd76a7f401b619_list = PyList_New( 1 );
     PyList_SET_ITEM( const_list_str_digest_06817967040db14f6ddd76a7f401b619_list, 0, const_str_digest_06817967040db14f6ddd76a7f401b619 ); Py_INCREF( const_str_digest_06817967040db14f6ddd76a7f401b619 );
-    const_str_plain_caches = UNSTREAM_STRING( &constant_bin[ 186925 ], 6, 1 );
-    const_str_plain_redis = UNSTREAM_STRING( &constant_bin[ 187294 ], 5, 1 );
+    const_str_plain_caches = UNSTREAM_STRING( &constant_bin[ 198227 ], 6, 1 );
+    const_str_plain_redis = UNSTREAM_STRING( &constant_bin[ 198596 ], 5, 1 );
     const_tuple_str_plain_RedisCache_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_RedisCache_tuple, 0, const_str_plain_RedisCache ); Py_INCREF( const_str_plain_RedisCache );
 

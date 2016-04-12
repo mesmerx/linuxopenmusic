@@ -56,13 +56,13 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_0650f1834d4f6592ba4ba9789ddaacce = UNSTREAM_STRING( &constant_bin[ 657128 ], 62, 0 );
+    const_str_digest_0650f1834d4f6592ba4ba9789ddaacce = UNSTREAM_STRING( &constant_bin[ 676329 ], 62, 0 );
     const_tuple_str_plain_VendorImporter_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_VendorImporter_tuple, 0, const_str_plain_VendorImporter ); Py_INCREF( const_str_plain_VendorImporter );
-    const_str_digest_44179890c50598abed64b57e88f1a7a7 = UNSTREAM_STRING( &constant_bin[ 657128 ], 50, 0 );
+    const_str_digest_44179890c50598abed64b57e88f1a7a7 = UNSTREAM_STRING( &constant_bin[ 676329 ], 50, 0 );
     const_list_str_digest_44179890c50598abed64b57e88f1a7a7_list = PyList_New( 1 );
     PyList_SET_ITEM( const_list_str_digest_44179890c50598abed64b57e88f1a7a7_list, 0, const_str_digest_44179890c50598abed64b57e88f1a7a7 ); Py_INCREF( const_str_digest_44179890c50598abed64b57e88f1a7a7 );
-    const_str_digest_0bbd8a05a7a5f4af8200083e30840d9e = UNSTREAM_STRING( &constant_bin[ 657190 ], 21, 0 );
+    const_str_digest_0bbd8a05a7a5f4af8200083e30840d9e = UNSTREAM_STRING( &constant_bin[ 676391 ], 21, 0 );
 
     constants_created = true;
 }

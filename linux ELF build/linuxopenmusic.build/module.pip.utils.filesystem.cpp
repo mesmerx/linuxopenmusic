@@ -65,13 +65,13 @@ static void createModuleConstants( void )
     const_tuple_str_plain_path_str_plain_previous_str_plain_path_uid_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_str_plain_path_str_plain_previous_str_plain_path_uid_tuple, 0, const_str_plain_path ); Py_INCREF( const_str_plain_path );
     PyTuple_SET_ITEM( const_tuple_str_plain_path_str_plain_previous_str_plain_path_uid_tuple, 1, const_str_plain_previous ); Py_INCREF( const_str_plain_previous );
-    const_str_plain_path_uid = UNSTREAM_STRING( &constant_bin[ 562679 ], 8, 1 );
+    const_str_plain_path_uid = UNSTREAM_STRING( &constant_bin[ 581570 ], 8, 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_path_str_plain_previous_str_plain_path_uid_tuple, 2, const_str_plain_path_uid ); Py_INCREF( const_str_plain_path_uid );
-    const_str_plain_lexists = UNSTREAM_STRING( &constant_bin[ 562687 ], 7, 1 );
-    const_str_digest_3bebc561938f6b8715b8e084310ca8a5 = UNSTREAM_STRING( &constant_bin[ 562694 ], 56, 0 );
+    const_str_plain_lexists = UNSTREAM_STRING( &constant_bin[ 581578 ], 7, 1 );
+    const_str_digest_3bebc561938f6b8715b8e084310ca8a5 = UNSTREAM_STRING( &constant_bin[ 581585 ], 56, 0 );
     const_tuple_str_plain_get_path_uid_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_get_path_uid_tuple, 0, const_str_plain_get_path_uid ); Py_INCREF( const_str_plain_get_path_uid );
-    const_str_plain_filesystem = UNSTREAM_STRING( &constant_bin[ 203842 ], 10, 1 );
+    const_str_plain_filesystem = UNSTREAM_STRING( &constant_bin[ 215147 ], 10, 1 );
 
     constants_created = true;
 }

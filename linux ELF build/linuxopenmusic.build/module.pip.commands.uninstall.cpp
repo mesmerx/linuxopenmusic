@@ -151,19 +151,19 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_729a0d9774c33cc802c05715202d8bee_tuple, 9, const_str_plain_req ); Py_INCREF( const_str_plain_req );
     const_dict_0f12eac6da9761c70704070c19a9873c = _PyDict_NewPresized( 3 );
     PyDict_SetItem( const_dict_0f12eac6da9761c70704070c19a9873c, const_str_plain_action, const_str_plain_store_true );
-    const_str_plain_yes = UNSTREAM_STRING( &constant_bin[ 148137 ], 3, 1 );
+    const_str_plain_yes = UNSTREAM_STRING( &constant_bin[ 159439 ], 3, 1 );
     PyDict_SetItem( const_dict_0f12eac6da9761c70704070c19a9873c, const_str_plain_dest, const_str_plain_yes );
-    const_str_digest_bd237a0803f29a8bc9598ef5a415321d = UNSTREAM_STRING( &constant_bin[ 506806 ], 50, 0 );
+    const_str_digest_bd237a0803f29a8bc9598ef5a415321d = UNSTREAM_STRING( &constant_bin[ 525697 ], 50, 0 );
     PyDict_SetItem( const_dict_0f12eac6da9761c70704070c19a9873c, const_str_plain_help, const_str_digest_bd237a0803f29a8bc9598ef5a415321d );
     assert( PyDict_Size( const_dict_0f12eac6da9761c70704070c19a9873c ) == 3 );
-    const_str_digest_eb622422e155e1cefb11b0b0cb390bdc = UNSTREAM_STRING( &constant_bin[ 506856 ], 106, 0 );
+    const_str_digest_eb622422e155e1cefb11b0b0cb390bdc = UNSTREAM_STRING( &constant_bin[ 525747 ], 106, 0 );
     const_tuple_5916416f972b23c212551bdecd9f0aab_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_5916416f972b23c212551bdecd9f0aab_tuple, 0, const_str_digest_a1a3903e16fcc1bb905aef72f74b05df ); Py_INCREF( const_str_digest_a1a3903e16fcc1bb905aef72f74b05df );
-    const_str_digest_a842a93ed4a1771a57fd4757f2605955 = UNSTREAM_STRING( &constant_bin[ 506962 ], 5, 0 );
+    const_str_digest_a842a93ed4a1771a57fd4757f2605955 = UNSTREAM_STRING( &constant_bin[ 525853 ], 5, 0 );
     PyTuple_SET_ITEM( const_tuple_5916416f972b23c212551bdecd9f0aab_tuple, 1, const_str_digest_a842a93ed4a1771a57fd4757f2605955 ); Py_INCREF( const_str_digest_a842a93ed4a1771a57fd4757f2605955 );
-    const_str_digest_f3a26fd259fe13513ea72288a9b16beb = UNSTREAM_STRING( &constant_bin[ 506967 ], 25, 0 );
-    const_str_digest_9bf5213a78c29c70848e27d927d86398 = UNSTREAM_STRING( &constant_bin[ 506992 ], 322, 0 );
-    const_str_digest_2297243842e8308a6c27f37d9d5b1019 = UNSTREAM_STRING( &constant_bin[ 507314 ], 85, 0 );
+    const_str_digest_f3a26fd259fe13513ea72288a9b16beb = UNSTREAM_STRING( &constant_bin[ 525858 ], 25, 0 );
+    const_str_digest_9bf5213a78c29c70848e27d927d86398 = UNSTREAM_STRING( &constant_bin[ 525883 ], 322, 0 );
+    const_str_digest_2297243842e8308a6c27f37d9d5b1019 = UNSTREAM_STRING( &constant_bin[ 526205 ], 85, 0 );
     const_dict_065c011fb5beeeda741366548bc47ded = _PyDict_NewPresized( 5 );
     PyDict_SetItem( const_dict_065c011fb5beeeda741366548bc47ded, const_str_plain_action, const_str_plain_append );
     PyDict_SetItem( const_dict_065c011fb5beeeda741366548bc47ded, const_str_plain_default, const_list_empty );
@@ -171,9 +171,9 @@ static void createModuleConstants( void )
     PyDict_SetItem( const_dict_065c011fb5beeeda741366548bc47ded, const_str_plain_dest, const_str_plain_requirements );
     PyDict_SetItem( const_dict_065c011fb5beeeda741366548bc47ded, const_str_plain_metavar, const_str_plain_file );
     assert( PyDict_Size( const_dict_065c011fb5beeeda741366548bc47ded ) == 5 );
-    const_str_digest_1168f322c93d42e959ed36c3468b01bc = UNSTREAM_STRING( &constant_bin[ 506997 ], 19, 0 );
-    const_str_digest_7afc4a59012e268c9bb34fe786658261 = UNSTREAM_STRING( &constant_bin[ 507399 ], 58, 0 );
-    const_str_digest_a12c810578cc5a2e0a788d2f3167ee8e = UNSTREAM_STRING( &constant_bin[ 507457 ], 20, 0 );
+    const_str_digest_1168f322c93d42e959ed36c3468b01bc = UNSTREAM_STRING( &constant_bin[ 525888 ], 19, 0 );
+    const_str_digest_7afc4a59012e268c9bb34fe786658261 = UNSTREAM_STRING( &constant_bin[ 526290 ], 58, 0 );
+    const_str_digest_a12c810578cc5a2e0a788d2f3167ee8e = UNSTREAM_STRING( &constant_bin[ 526348 ], 20, 0 );
 
     constants_created = true;
 }

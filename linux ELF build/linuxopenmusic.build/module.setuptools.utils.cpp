@@ -64,7 +64,7 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_1c4ecab498c27a853f21d97823f7791c_tuple, 1, const_str_plain_abspath ); Py_INCREF( const_str_plain_abspath );
     PyTuple_SET_ITEM( const_tuple_1c4ecab498c27a853f21d97823f7791c_tuple, 2, const_str_plain_directory ); Py_INCREF( const_str_plain_directory );
     PyTuple_SET_ITEM( const_tuple_1c4ecab498c27a853f21d97823f7791c_tuple, 3, const_str_plain_filename ); Py_INCREF( const_str_plain_filename );
-    const_str_digest_82f04546e040409648a27d1ac5c85f4b = UNSTREAM_STRING( &constant_bin[ 672090 ], 52, 0 );
+    const_str_digest_82f04546e040409648a27d1ac5c85f4b = UNSTREAM_STRING( &constant_bin[ 691291 ], 52, 0 );
 
     constants_created = true;
 }

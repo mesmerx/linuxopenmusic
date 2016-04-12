@@ -126,6 +126,7 @@ extern PyObject *const_str_plain_header_parts;
 extern PyObject *const_str_plain_sort_keys;
 extern PyObject *const_str_plain_filename;
 extern PyObject *const_str_digest_58ca34923ed485422ff08a2ab1684eae;
+extern PyObject *const_str_plain_text_type;
 extern PyObject *const_tuple_str_digest_b4089d226171d358ba3e7dcb897a45b4_tuple;
 extern PyObject *const_str_digest_6e650bb1504e233a2bcbbcf772e575f0;
 extern PyObject *const_int_pos_1;
@@ -157,8 +158,8 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_283a751f3fe940932c180d592182f9a4 = UNSTREAM_STRING( &constant_bin[ 716838 ], 50, 0 );
-    const_str_digest_638ce7524e9cef9b85ae1f45e921ad53 = UNSTREAM_STRING( &constant_bin[ 183981 ], 14, 0 );
+    const_str_digest_283a751f3fe940932c180d592182f9a4 = UNSTREAM_STRING( &constant_bin[ 740363 ], 50, 0 );
+    const_str_digest_638ce7524e9cef9b85ae1f45e921ad53 = UNSTREAM_STRING( &constant_bin[ 195283 ], 14, 0 );
 
     constants_created = true;
 }
@@ -605,6 +606,9 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
     PyObject *exception_preserved_type_1;
     PyObject *exception_preserved_value_1;
     PyTracebackObject *exception_preserved_tb_1;
+    int tmp_and_left_truth_1;
+    PyObject *tmp_and_left_value_1;
+    PyObject *tmp_and_right_value_1;
     PyObject *tmp_args_element_name_1;
     PyObject *tmp_args_element_name_2;
     PyObject *tmp_args_element_name_3;
@@ -630,9 +634,12 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
     int tmp_exc_match_exception_match_1;
     PyObject *tmp_frame_locals;
     bool tmp_is_1;
+    PyObject *tmp_isinstance_cls_1;
+    PyObject *tmp_isinstance_inst_1;
     PyObject *tmp_iter_arg_1;
     PyObject *tmp_left_name_1;
     PyObject *tmp_left_name_2;
+    PyObject *tmp_operand_name_1;
     PyObject *tmp_return_value;
     PyObject *tmp_right_name_1;
     PyObject *tmp_right_name_2;
@@ -641,8 +648,10 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
     PyObject *tmp_source_name_3;
     PyObject *tmp_source_name_4;
     PyObject *tmp_source_name_5;
+    PyObject *tmp_source_name_6;
     PyObject *tmp_tuple_element_1;
     PyObject *tmp_tuple_element_2;
+    PyObject *tmp_tuple_element_3;
     NUITKA_MAY_BE_UNUSED PyObject *tmp_unused;
     static PyFrameObject *cache_frame_function = NULL;
 
@@ -832,18 +841,25 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
     PUBLISH_EXCEPTION( &exception_keeper_type_1, &exception_keeper_value_1, &exception_keeper_tb_1 );
     // Tried code:
     tmp_compare_left_1 = PyThreadState_GET()->exc_type;
-    tmp_compare_right_1 = PyExc_UnicodeEncodeError;
+    tmp_compare_right_1 = PyTuple_New( 2 );
+    tmp_tuple_element_2 = PyExc_UnicodeEncodeError;
+    Py_INCREF( tmp_tuple_element_2 );
+    PyTuple_SET_ITEM( tmp_compare_right_1, 0, tmp_tuple_element_2 );
+    tmp_tuple_element_2 = PyExc_UnicodeDecodeError;
+    Py_INCREF( tmp_tuple_element_2 );
+    PyTuple_SET_ITEM( tmp_compare_right_1, 1, tmp_tuple_element_2 );
     tmp_exc_match_exception_match_1 = EXCEPTION_MATCH_BOOL( tmp_compare_left_1, tmp_compare_right_1 );
     if ( tmp_exc_match_exception_match_1 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
+        Py_DECREF( tmp_compare_right_1 );
 
         exception_lineno = 39;
         goto try_except_handler_4;
     }
+    Py_DECREF( tmp_compare_right_1 );
     if ( tmp_exc_match_exception_match_1 == 1 )
     {
         goto branch_no_2;
@@ -975,8 +991,8 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
         goto frame_exception_exit_1;
     }
 
-    tmp_cond_value_2 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain_PY3 );
-    if ( tmp_cond_value_2 == NULL )
+    tmp_operand_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain_PY3 );
+    if ( tmp_operand_name_1 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
@@ -986,30 +1002,126 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
         exception_lineno = 43;
         goto frame_exception_exit_1;
     }
+    tmp_and_left_value_1 = UNARY_OPERATION( UNARY_NOT, tmp_operand_name_1 );
+    Py_DECREF( tmp_operand_name_1 );
+    if ( tmp_and_left_value_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 43;
+        goto frame_exception_exit_1;
+    }
+    tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
+    if ( tmp_and_left_truth_1 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 43;
+        goto frame_exception_exit_1;
+    }
+    if ( tmp_and_left_truth_1 == 1 )
+    {
+        goto and_right_1;
+    }
+    else
+    {
+        goto and_left_1;
+    }
+    and_right_1:;
+    tmp_isinstance_inst_1 = PyCell_GET( par_value );
+
+    if ( tmp_isinstance_inst_1 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "value" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 43;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_source_name_3 = GET_STRING_DICT_VALUE( moduledict_urllib3$fields, (Nuitka_StringObject *)const_str_plain_six );
+
+    if (unlikely( tmp_source_name_3 == NULL ))
+    {
+        tmp_source_name_3 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_six );
+    }
+
+    if ( tmp_source_name_3 == NULL )
+    {
+
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "six" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 43;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_isinstance_cls_1 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain_text_type );
+    if ( tmp_isinstance_cls_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 43;
+        goto frame_exception_exit_1;
+    }
+    tmp_and_right_value_1 = BUILTIN_ISINSTANCE( tmp_isinstance_inst_1, tmp_isinstance_cls_1 );
+    Py_DECREF( tmp_isinstance_cls_1 );
+    if ( tmp_and_right_value_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 43;
+        goto frame_exception_exit_1;
+    }
+    tmp_cond_value_2 = tmp_and_right_value_1;
+    goto and_end_1;
+    and_left_1:;
+    tmp_cond_value_2 = tmp_and_left_value_1;
+    and_end_1:;
     tmp_cond_truth_2 = CHECK_IF_TRUE( tmp_cond_value_2 );
     if ( tmp_cond_truth_2 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_cond_value_2 );
+
 
         exception_lineno = 43;
         goto frame_exception_exit_1;
     }
-    Py_DECREF( tmp_cond_value_2 );
     if ( tmp_cond_truth_2 == 1 )
-    {
-        goto branch_no_4;
-    }
-    else
     {
         goto branch_yes_4;
     }
+    else
+    {
+        goto branch_no_4;
+    }
     branch_yes_4:;
-    tmp_source_name_3 = PyCell_GET( par_value );
+    tmp_source_name_4 = PyCell_GET( par_value );
 
-    if ( tmp_source_name_3 == NULL )
+    if ( tmp_source_name_4 == NULL )
     {
 
         exception_type = PyExc_UnboundLocalError;
@@ -1023,7 +1135,7 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_3 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain_encode );
+    tmp_called_name_3 = LOOKUP_ATTRIBUTE( tmp_source_name_4, const_str_plain_encode );
     if ( tmp_called_name_3 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -1055,14 +1167,14 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
     }
 
     branch_no_4:;
-    tmp_source_name_5 = GET_STRING_DICT_VALUE( moduledict_urllib3$fields, (Nuitka_StringObject *)const_str_plain_email );
+    tmp_source_name_6 = GET_STRING_DICT_VALUE( moduledict_urllib3$fields, (Nuitka_StringObject *)const_str_plain_email );
 
-    if (unlikely( tmp_source_name_5 == NULL ))
+    if (unlikely( tmp_source_name_6 == NULL ))
     {
-        tmp_source_name_5 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_email );
+        tmp_source_name_6 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_email );
     }
 
-    if ( tmp_source_name_5 == NULL )
+    if ( tmp_source_name_6 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -1076,8 +1188,8 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
         goto frame_exception_exit_1;
     }
 
-    tmp_source_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_5, const_str_plain_utils );
-    if ( tmp_source_name_4 == NULL )
+    tmp_source_name_5 = LOOKUP_ATTRIBUTE( tmp_source_name_6, const_str_plain_utils );
+    if ( tmp_source_name_5 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
@@ -1087,8 +1199,8 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
         exception_lineno = 45;
         goto frame_exception_exit_1;
     }
-    tmp_called_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_4, const_str_plain_encode_rfc2231 );
-    Py_DECREF( tmp_source_name_4 );
+    tmp_called_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_5, const_str_plain_encode_rfc2231 );
+    Py_DECREF( tmp_source_name_5 );
     if ( tmp_called_name_4 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -1141,9 +1253,9 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
 
     tmp_left_name_2 = const_str_digest_741686da45cc13fb83441e80aacd7173;
     tmp_right_name_2 = PyTuple_New( 2 );
-    tmp_tuple_element_2 = par_name;
+    tmp_tuple_element_3 = par_name;
 
-    if ( tmp_tuple_element_2 == NULL )
+    if ( tmp_tuple_element_3 == NULL )
     {
         Py_DECREF( tmp_right_name_2 );
         exception_type = PyExc_UnboundLocalError;
@@ -1157,11 +1269,11 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
         goto frame_exception_exit_1;
     }
 
-    Py_INCREF( tmp_tuple_element_2 );
-    PyTuple_SET_ITEM( tmp_right_name_2, 0, tmp_tuple_element_2 );
-    tmp_tuple_element_2 = PyCell_GET( par_value );
+    Py_INCREF( tmp_tuple_element_3 );
+    PyTuple_SET_ITEM( tmp_right_name_2, 0, tmp_tuple_element_3 );
+    tmp_tuple_element_3 = PyCell_GET( par_value );
 
-    if ( tmp_tuple_element_2 == NULL )
+    if ( tmp_tuple_element_3 == NULL )
     {
         Py_DECREF( tmp_right_name_2 );
         exception_type = PyExc_UnboundLocalError;
@@ -1175,8 +1287,8 @@ static PyObject *impl_function_2_format_header_param_of_urllib3$fields( Nuitka_F
         goto frame_exception_exit_1;
     }
 
-    Py_INCREF( tmp_tuple_element_2 );
-    PyTuple_SET_ITEM( tmp_right_name_2, 1, tmp_tuple_element_2 );
+    Py_INCREF( tmp_tuple_element_3 );
+    PyTuple_SET_ITEM( tmp_right_name_2, 1, tmp_tuple_element_3 );
     tmp_assign_source_6 = BINARY_OPERATION_REMAINDER( tmp_left_name_2, tmp_right_name_2 );
     Py_DECREF( tmp_right_name_2 );
     if ( tmp_assign_source_6 == NULL )

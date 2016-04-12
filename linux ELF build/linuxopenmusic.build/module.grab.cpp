@@ -68,7 +68,7 @@ static bool constants_created = false;
 static void createModuleConstants( void )
 {
     const_list_str_digest_b2a7760d99e3079a198e8ed0d3817ef7_list = PyList_New( 1 );
-    const_str_digest_b2a7760d99e3079a198e8ed0d3817ef7 = UNSTREAM_STRING( &constant_bin[ 120317 ], 37, 0 );
+    const_str_digest_b2a7760d99e3079a198e8ed0d3817ef7 = UNSTREAM_STRING( &constant_bin[ 131622 ], 37, 0 );
     PyList_SET_ITEM( const_list_str_digest_b2a7760d99e3079a198e8ed0d3817ef7_list, 0, const_str_digest_b2a7760d99e3079a198e8ed0d3817ef7 ); Py_INCREF( const_str_digest_b2a7760d99e3079a198e8ed0d3817ef7 );
     const_tuple_8bf26d45aedd82b9e10363e4effcac03_tuple = PyTuple_New( 5 );
     PyTuple_SET_ITEM( const_tuple_8bf26d45aedd82b9e10363e4effcac03_tuple, 0, const_str_plain_GrabError ); Py_INCREF( const_str_plain_GrabError );
@@ -79,10 +79,10 @@ static void createModuleConstants( void )
     const_tuple_str_plain_UploadContent_str_plain_UploadFile_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_UploadContent_str_plain_UploadFile_tuple, 0, const_str_plain_UploadContent ); Py_INCREF( const_str_plain_UploadContent );
     PyTuple_SET_ITEM( const_tuple_str_plain_UploadContent_str_plain_UploadFile_tuple, 1, const_str_plain_UploadFile ); Py_INCREF( const_str_plain_UploadFile );
-    const_str_digest_42084c0f286d9f8794b34776cb632f3f = UNSTREAM_STRING( &constant_bin[ 120354 ], 6, 0 );
+    const_str_digest_42084c0f286d9f8794b34776cb632f3f = UNSTREAM_STRING( &constant_bin[ 131659 ], 6, 0 );
     const_tuple_str_plain_default_logging_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_default_logging_tuple, 0, const_str_plain_default_logging ); Py_INCREF( const_str_plain_default_logging );
-    const_str_digest_11e5ec2deb58f5ae011354d7ff3487be = UNSTREAM_STRING( &constant_bin[ 120360 ], 49, 0 );
+    const_str_digest_11e5ec2deb58f5ae011354d7ff3487be = UNSTREAM_STRING( &constant_bin[ 131665 ], 49, 0 );
 
     constants_created = true;
 }

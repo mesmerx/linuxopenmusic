@@ -47,8 +47,8 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_71c98c5cf469f30f86af32b6d351d4d2 = UNSTREAM_STRING( &constant_bin[ 109149 ], 85, 0 );
-    const_dict_7b1c771763648e0ffad244ea7a0565e6 = PyMarshal_ReadObjectFromString( (char *)&constant_bin[ 109234 ], 8451 );
+    const_str_digest_71c98c5cf469f30f86af32b6d351d4d2 = UNSTREAM_STRING( &constant_bin[ 120469 ], 85, 0 );
+    const_dict_7b1c771763648e0ffad244ea7a0565e6 = PyMarshal_ReadObjectFromString( (char *)&constant_bin[ 120554 ], 8451 );
 
     constants_created = true;
 }

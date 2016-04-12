@@ -91,12 +91,12 @@ static void createModuleConstants( void )
 {
     const_tuple_str_plain_hex_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_hex_tuple, 0, const_str_plain_hex ); Py_INCREF( const_str_plain_hex );
-    const_str_digest_70917ffb15a47f57f6da684f370d0dae = UNSTREAM_STRING( &constant_bin[ 685110 ], 17, 0 );
-    const_str_digest_8338e37eb5f808c42fa95e9d05ac6db7 = UNSTREAM_STRING( &constant_bin[ 689554 ], 29, 0 );
+    const_str_digest_70917ffb15a47f57f6da684f370d0dae = UNSTREAM_STRING( &constant_bin[ 704311 ], 17, 0 );
+    const_str_digest_8338e37eb5f808c42fa95e9d05ac6db7 = UNSTREAM_STRING( &constant_bin[ 708755 ], 29, 0 );
     const_tuple_str_plain_reload_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_reload_tuple, 0, const_str_plain_reload ); Py_INCREF( const_str_plain_reload );
-    const_str_digest_38e09ceba1551c03e6a55a6ec88a149e = UNSTREAM_STRING( &constant_bin[ 689583 ], 53, 0 );
-    const_str_plain_latin_1_encode = UNSTREAM_STRING( &constant_bin[ 689636 ], 14, 1 );
+    const_str_digest_38e09ceba1551c03e6a55a6ec88a149e = UNSTREAM_STRING( &constant_bin[ 708784 ], 53, 0 );
+    const_str_plain_latin_1_encode = UNSTREAM_STRING( &constant_bin[ 708837 ], 14, 1 );
 
     constants_created = true;
 }

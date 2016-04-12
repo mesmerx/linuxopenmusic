@@ -59,13 +59,13 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_03c19b31271c38a2f4d265640414be35 = UNSTREAM_STRING( &constant_bin[ 666822 ], 66, 0 );
-    const_str_digest_0c6b28190f7d6771325d8d7ce8340ae7 = UNSTREAM_STRING( &constant_bin[ 666888 ], 50, 0 );
-    const_str_plain_py27compat = UNSTREAM_STRING( &constant_bin[ 666938 ], 10, 1 );
+    const_str_digest_03c19b31271c38a2f4d265640414be35 = UNSTREAM_STRING( &constant_bin[ 686023 ], 66, 0 );
+    const_str_digest_0c6b28190f7d6771325d8d7ce8340ae7 = UNSTREAM_STRING( &constant_bin[ 686089 ], 50, 0 );
+    const_str_plain_py27compat = UNSTREAM_STRING( &constant_bin[ 686139 ], 10, 1 );
     const_tuple_str_plain_message_str_plain_key_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_message_str_plain_key_tuple, 0, const_str_plain_message ); Py_INCREF( const_str_plain_message );
     PyTuple_SET_ITEM( const_tuple_str_plain_message_str_plain_key_tuple, 1, const_str_plain_key ); Py_INCREF( const_str_plain_key );
-    const_str_digest_26d01c438c2de309880760d3c93c14fc = UNSTREAM_STRING( &constant_bin[ 666948 ], 57, 0 );
+    const_str_digest_26d01c438c2de309880760d3c93c14fc = UNSTREAM_STRING( &constant_bin[ 686149 ], 57, 0 );
 
     constants_created = true;
 }

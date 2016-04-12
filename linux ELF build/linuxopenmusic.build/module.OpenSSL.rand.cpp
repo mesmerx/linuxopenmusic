@@ -29,6 +29,7 @@ PyObject *module_OpenSSL$rand;
 PyDictObject *moduledict_OpenSSL$rand;
 
 // The module constants used
+extern PyObject *const_str_plain_warn;
 extern PyObject *const_str_plain_metaclass;
 extern PyObject *const_tuple_str_plain_filename_tuple;
 extern PyObject *const_str_plain_load_file;
@@ -40,10 +41,9 @@ extern PyObject *const_str_plain___file__;
 extern PyObject *const_str_plain_bytes;
 extern PyObject *const_str_plain_exception_from_error_queue;
 extern PyObject *const_str_plain_Error;
-static PyObject *const_str_digest_ce6b7270160fd7fb6226857c728ffafb;
 extern PyObject *const_int_neg_1;
-static PyObject *const_str_digest_7071c6604ea612663314cf34d6a2faba;
 extern PyObject *const_tuple_str_plain_partial_tuple;
+extern PyObject *const_str_plain_os;
 extern PyObject *const_str_digest_c561652c58984ec0e9541542aa405594;
 extern PyObject *const_str_plain__raise_current_error;
 extern PyObject *const_str_plain_cleanup;
@@ -51,14 +51,13 @@ static PyObject *const_str_digest_3743820e34d8c02d0253ecae7b016bdf;
 extern PyObject *const_str_plain_ffi;
 static PyObject *const_str_plain_ERR_load_RAND_strings;
 extern PyObject *const_str_plain___doc__;
-static PyObject *const_str_digest_dde20a21633234ccd7b89105d3d486a4;
 extern PyObject *const_str_digest_2c0accc407028fbaba46fefdee9c6c06;
 extern PyObject *const_str_plain_path_string;
 static PyObject *const_str_plain__builtin_bytes;
 extern PyObject *const_str_plain__integer_types;
 extern PyObject *const_str_plain___package__;
-static PyObject *const_str_digest_5c46eb672e40112b5a2bc57524e13fa4;
 extern PyObject *const_str_plain_add;
+extern PyObject *const_str_plain_warnings;
 static PyObject *const_str_digest_16af7a9f403081fd1d981b5e6c521835;
 static PyObject *const_str_digest_12493eb8a98db830dcb075df472a41e8;
 extern PyObject *const_str_plain_status;
@@ -70,19 +69,24 @@ extern PyObject *const_str_plain_write_file;
 extern PyObject *const_str_plain_six;
 static PyObject *const_str_digest_07edd52ef698c2320df92ab27d58531b;
 static PyObject *const_str_plain_screen;
+extern PyObject *const_str_plain_DeprecationWarning;
 static PyObject *const_tuple_str_plain_buffer_str_plain_entropy_tuple;
 extern PyObject *const_str_plain_result_code;
+static PyObject *const_str_digest_526a70ac4f15b3da7766c69e4511dc1f;
 static PyObject *const_tuple_067b2759c3bd19e4d24be74ece39050c_tuple;
 static PyObject *const_str_plain__unspecified;
 extern PyObject *const_tuple_empty;
 extern PyObject *const_str_plain_integer_types;
 extern PyObject *const_str_plain_OpenSSL;
 static PyObject *const_tuple_str_plain_buffer_tuple;
+static PyObject *const_str_digest_2647df921c59a233d4f89dc780c9c800;
 extern PyObject *const_str_plain_new;
 extern PyObject *const_str_plain___loader__;
 static PyObject *const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple;
-static PyObject *const_str_digest_1066d63086ba77755e7ea01cf51bff03;
 extern PyObject *const_str_plain__path_string;
+static PyObject *const_str_digest_5ff57795d5934fd4434b0947d57b958b;
+extern PyObject *const_str_plain_urandom;
+static PyObject *const_str_digest_4c7773c56c54f391ceae38f241b47b71;
 static PyObject *const_str_plain_RAND_bytes;
 extern PyObject *const_str_plain_buffer;
 static PyObject *const_str_plain_egd;
@@ -93,38 +97,39 @@ extern PyObject *const_int_0;
 static PyObject *const_str_digest_37b2b78d38ecaa912601e55a3bdf03d3;
 static PyObject *const_str_plain_maxbytes;
 static PyObject *const_str_plain_RAND_write_file;
+static PyObject *const_str_digest_90a922610f6e0621a08061fc897fd7c8;
 static PyObject *const_str_plain_RAND_status;
+static PyObject *const_str_digest_f4c3c3eb1b36a44ca45fadbdf9fb1769;
 static PyObject *const_tuple_str_plain_path_str_plain_bytes_tuple;
 extern PyObject *const_tuple_str_plain_integer_types_tuple;
 extern PyObject *const_str_plain__exception_from_error_queue;
 static PyObject *const_str_digest_02858f231eb81a552a64880019ecd1fe;
-static PyObject *const_str_digest_e6d5b9a401d85bbe865bf3fb9c6f05e7;
+static PyObject *const_str_digest_9d3044f3601cf25958188d904d830d02;
 static PyObject *const_str_plain_RAND_seed;
 extern PyObject *const_str_plain_type;
 static PyObject *const_tuple_str_plain_filename_str_plain_maxbytes_tuple;
-static PyObject *const_str_digest_a6d76dad794b831f804851ed6f3dfdfc;
 extern PyObject *const_str_plain___cached__;
-static PyObject *const_str_digest_abc625ff0d1543c2fec9c94ca8bf1f4b;
 extern PyObject *const_str_plain___class__;
 extern PyObject *const_str_plain__lib;
 static PyObject *const_str_digest_f0f10b645851b46ed19324149fc32d7e;
-static PyObject *const_str_digest_eedbc60829aa79e09749e44da9ebec4a;
-extern PyObject *const_str_plain___module__;
 extern PyObject *const_str_plain_result_buffer;
+extern PyObject *const_str_plain___module__;
 extern PyObject *const_str_plain_functools;
-static PyObject *const_str_digest_4317cea7eba4e79903bfec0014a427c6;
+static PyObject *const_str_digest_c103241e1985f014e26ae6028b3457d8;
 extern PyObject *const_str_plain_filename;
 extern PyObject *const_str_plain__ffi;
-static PyObject *const_str_digest_00f641722ca9ab159a044277dcd85a2c;
 extern PyObject *const_str_plain_partial;
 extern PyObject *const_str_plain___prepare__;
 static PyObject *const_str_plain_entropy;
 extern PyObject *const_int_pos_255;
+static PyObject *const_str_digest_904ad67f6781a91cee6e2eb06ccc5efb;
 extern PyObject *const_slice_none_none_none;
+static PyObject *const_str_digest_98aa6d4337e0e77f9dbd7082ad1f7fec;
 static PyObject *const_str_plain_RAND_screen;
 static PyObject *const_str_plain_RAND_add;
+static PyObject *const_str_digest_e3203978b37216154d4e3b3f04efc10a;
 static PyObject *const_str_plain_num_bytes;
-static PyObject *const_str_plain_RAND_egd_bytes;
+static PyObject *const_str_digest_0eed70b9c7d2b453eb559b81beab68f9;
 static PyObject *const_str_plain_RAND_cleanup;
 static PyObject *module_filename_obj;
 
@@ -132,64 +137,64 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_fe60bca70d4aeb1d5e94a986f568ebec = UNSTREAM_STRING( &constant_bin[ 62251 ], 28, 0 );
-    const_str_digest_ce6b7270160fd7fb6226857c728ffafb = UNSTREAM_STRING( &constant_bin[ 62279 ], 106, 0 );
-    const_str_digest_7071c6604ea612663314cf34d6a2faba = UNSTREAM_STRING( &constant_bin[ 62385 ], 421, 0 );
-    const_str_digest_3743820e34d8c02d0253ecae7b016bdf = UNSTREAM_STRING( &constant_bin[ 62806 ], 12, 0 );
-    const_str_plain_ERR_load_RAND_strings = UNSTREAM_STRING( &constant_bin[ 62818 ], 21, 1 );
-    const_str_digest_dde20a21633234ccd7b89105d3d486a4 = UNSTREAM_STRING( &constant_bin[ 62839 ], 182, 0 );
-    const_str_plain__builtin_bytes = UNSTREAM_STRING( &constant_bin[ 63021 ], 14, 1 );
-    const_str_digest_5c46eb672e40112b5a2bc57524e13fa4 = UNSTREAM_STRING( &constant_bin[ 63035 ], 153, 0 );
-    const_str_digest_16af7a9f403081fd1d981b5e6c521835 = UNSTREAM_STRING( &constant_bin[ 63188 ], 30, 0 );
-    const_str_digest_12493eb8a98db830dcb075df472a41e8 = UNSTREAM_STRING( &constant_bin[ 63218 ], 26, 0 );
-    const_str_digest_73d52f4becc80db0b03c62031045c32f = UNSTREAM_STRING( &constant_bin[ 63244 ], 26, 0 );
-    const_str_digest_07edd52ef698c2320df92ab27d58531b = UNSTREAM_STRING( &constant_bin[ 63270 ], 48, 0 );
-    const_str_plain_screen = UNSTREAM_STRING( &constant_bin[ 63 ], 6, 1 );
+    const_str_digest_fe60bca70d4aeb1d5e94a986f568ebec = UNSTREAM_STRING( &constant_bin[ 72281 ], 28, 0 );
+    const_str_digest_3743820e34d8c02d0253ecae7b016bdf = UNSTREAM_STRING( &constant_bin[ 72309 ], 12, 0 );
+    const_str_plain_ERR_load_RAND_strings = UNSTREAM_STRING( &constant_bin[ 72321 ], 21, 1 );
+    const_str_plain__builtin_bytes = UNSTREAM_STRING( &constant_bin[ 72342 ], 14, 1 );
+    const_str_digest_16af7a9f403081fd1d981b5e6c521835 = UNSTREAM_STRING( &constant_bin[ 72356 ], 30, 0 );
+    const_str_digest_12493eb8a98db830dcb075df472a41e8 = UNSTREAM_STRING( &constant_bin[ 72386 ], 26, 0 );
+    const_str_digest_73d52f4becc80db0b03c62031045c32f = UNSTREAM_STRING( &constant_bin[ 72412 ], 26, 0 );
+    const_str_digest_07edd52ef698c2320df92ab27d58531b = UNSTREAM_STRING( &constant_bin[ 72438 ], 48, 0 );
+    const_str_plain_screen = UNSTREAM_STRING( &constant_bin[ 6 ], 6, 1 );
     const_tuple_str_plain_buffer_str_plain_entropy_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_buffer_str_plain_entropy_tuple, 0, const_str_plain_buffer ); Py_INCREF( const_str_plain_buffer );
-    const_str_plain_entropy = UNSTREAM_STRING( &constant_bin[ 62399 ], 7, 1 );
+    const_str_plain_entropy = UNSTREAM_STRING( &constant_bin[ 72386 ], 7, 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_buffer_str_plain_entropy_tuple, 1, const_str_plain_entropy ); Py_INCREF( const_str_plain_entropy );
+    const_str_digest_526a70ac4f15b3da7766c69e4511dc1f = UNSTREAM_STRING( &constant_bin[ 72486 ], 512, 0 );
     const_tuple_067b2759c3bd19e4d24be74ece39050c_tuple = PyTuple_New( 3 );
-    const_str_plain_num_bytes = UNSTREAM_STRING( &constant_bin[ 63188 ], 9, 1 );
+    const_str_plain_num_bytes = UNSTREAM_STRING( &constant_bin[ 72356 ], 9, 1 );
     PyTuple_SET_ITEM( const_tuple_067b2759c3bd19e4d24be74ece39050c_tuple, 0, const_str_plain_num_bytes ); Py_INCREF( const_str_plain_num_bytes );
     PyTuple_SET_ITEM( const_tuple_067b2759c3bd19e4d24be74ece39050c_tuple, 1, const_str_plain_result_buffer ); Py_INCREF( const_str_plain_result_buffer );
     PyTuple_SET_ITEM( const_tuple_067b2759c3bd19e4d24be74ece39050c_tuple, 2, const_str_plain_result_code ); Py_INCREF( const_str_plain_result_code );
-    const_str_plain__unspecified = UNSTREAM_STRING( &constant_bin[ 63318 ], 12, 1 );
+    const_str_plain__unspecified = UNSTREAM_STRING( &constant_bin[ 72998 ], 12, 1 );
     const_tuple_str_plain_buffer_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_buffer_tuple, 0, const_str_plain_buffer ); Py_INCREF( const_str_plain_buffer );
+    const_str_digest_2647df921c59a233d4f89dc780c9c800 = UNSTREAM_STRING( &constant_bin[ 73010 ], 275, 0 );
     const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple = PyTuple_New( 4 );
     PyTuple_SET_ITEM( const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, 0, const_str_plain_ffi ); Py_INCREF( const_str_plain_ffi );
     PyTuple_SET_ITEM( const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, 1, const_str_plain_lib ); Py_INCREF( const_str_plain_lib );
     PyTuple_SET_ITEM( const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, 2, const_str_plain_exception_from_error_queue ); Py_INCREF( const_str_plain_exception_from_error_queue );
     PyTuple_SET_ITEM( const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, 3, const_str_plain_path_string ); Py_INCREF( const_str_plain_path_string );
-    const_str_digest_1066d63086ba77755e7ea01cf51bff03 = UNSTREAM_STRING( &constant_bin[ 63330 ], 134, 0 );
-    const_str_plain_RAND_bytes = UNSTREAM_STRING( &constant_bin[ 63464 ], 10, 1 );
-    const_str_plain_egd = UNSTREAM_STRING( &constant_bin[ 63474 ], 3, 1 );
-    const_str_plain_RAND_load_file = UNSTREAM_STRING( &constant_bin[ 63477 ], 14, 1 );
-    const_str_plain_seed = UNSTREAM_STRING( &constant_bin[ 62350 ], 4, 1 );
-    const_str_digest_37b2b78d38ecaa912601e55a3bdf03d3 = UNSTREAM_STRING( &constant_bin[ 63491 ], 24, 0 );
-    const_str_plain_maxbytes = UNSTREAM_STRING( &constant_bin[ 63515 ], 8, 1 );
-    const_str_plain_RAND_write_file = UNSTREAM_STRING( &constant_bin[ 63523 ], 15, 1 );
-    const_str_plain_RAND_status = UNSTREAM_STRING( &constant_bin[ 63538 ], 11, 1 );
+    const_str_digest_5ff57795d5934fd4434b0947d57b958b = UNSTREAM_STRING( &constant_bin[ 73285 ], 42, 0 );
+    const_str_digest_4c7773c56c54f391ceae38f241b47b71 = UNSTREAM_STRING( &constant_bin[ 73327 ], 209, 0 );
+    const_str_plain_RAND_bytes = UNSTREAM_STRING( &constant_bin[ 73425 ], 10, 1 );
+    const_str_plain_egd = UNSTREAM_STRING( &constant_bin[ 73536 ], 3, 1 );
+    const_str_plain_RAND_load_file = UNSTREAM_STRING( &constant_bin[ 73539 ], 14, 1 );
+    const_str_plain_seed = UNSTREAM_STRING( &constant_bin[ 72526 ], 4, 1 );
+    const_str_digest_37b2b78d38ecaa912601e55a3bdf03d3 = UNSTREAM_STRING( &constant_bin[ 73553 ], 24, 0 );
+    const_str_plain_maxbytes = UNSTREAM_STRING( &constant_bin[ 73577 ], 8, 1 );
+    const_str_plain_RAND_write_file = UNSTREAM_STRING( &constant_bin[ 73585 ], 15, 1 );
+    const_str_digest_90a922610f6e0621a08061fc897fd7c8 = UNSTREAM_STRING( &constant_bin[ 73600 ], 46, 0 );
+    const_str_plain_RAND_status = UNSTREAM_STRING( &constant_bin[ 73646 ], 11, 1 );
+    const_str_digest_f4c3c3eb1b36a44ca45fadbdf9fb1769 = UNSTREAM_STRING( &constant_bin[ 73657 ], 380, 0 );
     const_tuple_str_plain_path_str_plain_bytes_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_path_str_plain_bytes_tuple, 0, const_str_plain_path ); Py_INCREF( const_str_plain_path );
     PyTuple_SET_ITEM( const_tuple_str_plain_path_str_plain_bytes_tuple, 1, const_str_plain_bytes ); Py_INCREF( const_str_plain_bytes );
-    const_str_digest_02858f231eb81a552a64880019ecd1fe = UNSTREAM_STRING( &constant_bin[ 63549 ], 27, 0 );
-    const_str_digest_e6d5b9a401d85bbe865bf3fb9c6f05e7 = UNSTREAM_STRING( &constant_bin[ 63576 ], 113, 0 );
-    const_str_plain_RAND_seed = UNSTREAM_STRING( &constant_bin[ 63689 ], 9, 1 );
+    const_str_digest_02858f231eb81a552a64880019ecd1fe = UNSTREAM_STRING( &constant_bin[ 74037 ], 27, 0 );
+    const_str_digest_9d3044f3601cf25958188d904d830d02 = UNSTREAM_STRING( &constant_bin[ 74064 ], 114, 0 );
+    const_str_plain_RAND_seed = UNSTREAM_STRING( &constant_bin[ 74178 ], 9, 1 );
     const_tuple_str_plain_filename_str_plain_maxbytes_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_filename_str_plain_maxbytes_tuple, 0, const_str_plain_filename ); Py_INCREF( const_str_plain_filename );
     PyTuple_SET_ITEM( const_tuple_str_plain_filename_str_plain_maxbytes_tuple, 1, const_str_plain_maxbytes ); Py_INCREF( const_str_plain_maxbytes );
-    const_str_digest_a6d76dad794b831f804851ed6f3dfdfc = UNSTREAM_STRING( &constant_bin[ 63698 ], 122, 0 );
-    const_str_digest_abc625ff0d1543c2fec9c94ca8bf1f4b = UNSTREAM_STRING( &constant_bin[ 63820 ], 53, 0 );
-    const_str_digest_f0f10b645851b46ed19324149fc32d7e = UNSTREAM_STRING( &constant_bin[ 63873 ], 28, 0 );
-    const_str_digest_eedbc60829aa79e09749e44da9ebec4a = UNSTREAM_STRING( &constant_bin[ 63901 ], 63, 0 );
-    const_str_digest_4317cea7eba4e79903bfec0014a427c6 = UNSTREAM_STRING( &constant_bin[ 63964 ], 265, 0 );
-    const_str_digest_00f641722ca9ab159a044277dcd85a2c = UNSTREAM_STRING( &constant_bin[ 64229 ], 120, 0 );
-    const_str_plain_RAND_screen = UNSTREAM_STRING( &constant_bin[ 64349 ], 11, 1 );
-    const_str_plain_RAND_add = UNSTREAM_STRING( &constant_bin[ 64360 ], 8, 1 );
-    const_str_plain_RAND_egd_bytes = UNSTREAM_STRING( &constant_bin[ 64368 ], 14, 1 );
-    const_str_plain_RAND_cleanup = UNSTREAM_STRING( &constant_bin[ 64382 ], 12, 1 );
+    const_str_digest_f0f10b645851b46ed19324149fc32d7e = UNSTREAM_STRING( &constant_bin[ 74187 ], 28, 0 );
+    const_str_digest_c103241e1985f014e26ae6028b3457d8 = UNSTREAM_STRING( &constant_bin[ 74215 ], 130, 0 );
+    const_str_digest_904ad67f6781a91cee6e2eb06ccc5efb = UNSTREAM_STRING( &constant_bin[ 74345 ], 146, 0 );
+    const_str_digest_98aa6d4337e0e77f9dbd7082ad1f7fec = UNSTREAM_STRING( &constant_bin[ 74491 ], 538, 0 );
+    const_str_plain_RAND_screen = UNSTREAM_STRING( &constant_bin[ 75029 ], 11, 1 );
+    const_str_plain_RAND_add = UNSTREAM_STRING( &constant_bin[ 75040 ], 8, 1 );
+    const_str_digest_e3203978b37216154d4e3b3f04efc10a = UNSTREAM_STRING( &constant_bin[ 75048 ], 155, 0 );
+    const_str_digest_0eed70b9c7d2b453eb559b81beab68f9 = UNSTREAM_STRING( &constant_bin[ 75203 ], 369, 0 );
+    const_str_plain_RAND_cleanup = UNSTREAM_STRING( &constant_bin[ 74299 ], 12, 1 );
 
     constants_created = true;
 }
@@ -205,30 +210,30 @@ void checkModuleConstants_OpenSSL$rand( void )
 #endif
 
 // The module code objects.
-static PyCodeObject *codeobj_b7bf93037b1e4c4e07e2eedf76f354bb;
-static PyCodeObject *codeobj_608884c6fa2faf9d1205355a0c29a712;
-static PyCodeObject *codeobj_a826280faec2237a69576251e37182b5;
-static PyCodeObject *codeobj_9b1da16828feb302a27f57ad4d0419da;
-static PyCodeObject *codeobj_eef777465162690aeb2336cb86c3ac7d;
+static PyCodeObject *codeobj_db16d544dabfa9292d4302a0a67fbcc8;
+static PyCodeObject *codeobj_fa50888a9270253d5f142cccb8a343f3;
+static PyCodeObject *codeobj_6aea24cc3854a6ca5463c84205ff3e40;
+static PyCodeObject *codeobj_617c96806f63ac7e79d28fdcb8782b62;
+static PyCodeObject *codeobj_0b6c1fde39a3d1cc5e216e60c25a3445;
 static PyCodeObject *codeobj_39df4d45a02d4a3702ec78fa5e2d8c62;
-static PyCodeObject *codeobj_737f8124cc05de72223586ec83a40ebf;
-static PyCodeObject *codeobj_18c65197aa86ace10b90c11d18f07b4a;
-static PyCodeObject *codeobj_1aa311738f68feac7bdb83ec04ca7cea;
-static PyCodeObject *codeobj_28f7e28d4e66b984413fd4255ac8fe44;
+static PyCodeObject *codeobj_26c62f80fce9beab1b2a31274659cff0;
+static PyCodeObject *codeobj_8d5722c0349e9ab56168dbd9258ef247;
+static PyCodeObject *codeobj_c5c43ea2be42670a682deb0663e05e6b;
+static PyCodeObject *codeobj_ddc63abe3a74db0e22ac1bf8322b4851;
 
 static void createModuleCodeObjects(void)
 {
     module_filename_obj = const_str_digest_07edd52ef698c2320df92ab27d58531b;
-    codeobj_b7bf93037b1e4c4e07e2eedf76f354bb = MAKE_CODEOBJ( module_filename_obj, const_str_plain_add, 53, const_tuple_str_plain_buffer_str_plain_entropy_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_608884c6fa2faf9d1205355a0c29a712 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_bytes, 29, const_tuple_067b2759c3bd19e4d24be74ece39050c_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_a826280faec2237a69576251e37182b5 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_cleanup, 120, const_tuple_empty, 0, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_9b1da16828feb302a27f57ad4d0419da = MAKE_CODEOBJ( module_filename_obj, const_str_plain_egd, 97, const_tuple_str_plain_path_str_plain_bytes_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_eef777465162690aeb2336cb86c3ac7d = MAKE_CODEOBJ( module_filename_obj, const_str_plain_load_file, 131, const_tuple_str_plain_filename_str_plain_maxbytes_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_db16d544dabfa9292d4302a0a67fbcc8 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_add, 67, const_tuple_str_plain_buffer_str_plain_entropy_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_fa50888a9270253d5f142cccb8a343f3 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_bytes, 41, const_tuple_067b2759c3bd19e4d24be74ece39050c_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_6aea24cc3854a6ca5463c84205ff3e40 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_cleanup, 147, const_tuple_empty, 0, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_617c96806f63ac7e79d28fdcb8782b62 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_egd, 115, const_tuple_str_plain_path_str_plain_bytes_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_0b6c1fde39a3d1cc5e216e60c25a3445 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_load_file, 159, const_tuple_str_plain_filename_str_plain_maxbytes_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
     codeobj_39df4d45a02d4a3702ec78fa5e2d8c62 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_rand, 1, const_tuple_empty, 0, 0, CO_NOFREE );
-    codeobj_737f8124cc05de72223586ec83a40ebf = MAKE_CODEOBJ( module_filename_obj, const_str_plain_screen, 165, const_tuple_empty, 0, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_18c65197aa86ace10b90c11d18f07b4a = MAKE_CODEOBJ( module_filename_obj, const_str_plain_seed, 72, const_tuple_str_plain_buffer_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_1aa311738f68feac7bdb83ec04ca7cea = MAKE_CODEOBJ( module_filename_obj, const_str_plain_status, 87, const_tuple_empty, 0, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_28f7e28d4e66b984413fd4255ac8fe44 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_write_file, 152, const_tuple_str_plain_filename_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_26c62f80fce9beab1b2a31274659cff0 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_screen, 195, const_tuple_empty, 0, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_8d5722c0349e9ab56168dbd9258ef247 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_seed, 91, const_tuple_str_plain_buffer_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_c5c43ea2be42670a682deb0663e05e6b = MAKE_CODEOBJ( module_filename_obj, const_str_plain_status, 106, const_tuple_empty, 0, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_ddc63abe3a74db0e22ac1bf8322b4851 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_write_file, 181, const_tuple_str_plain_filename_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
 }
 
 // The module function declarations.
@@ -309,7 +314,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_1_Error_of_OpenSSL$rand( PyObject **pyt
     Py_INCREF( tmp_assign_source_1 );
     var___module__ = tmp_assign_source_1;
 
-    tmp_assign_source_2 = const_str_digest_abc625ff0d1543c2fec9c94ca8bf1f4b;
+    tmp_assign_source_2 = const_str_digest_98aa6d4337e0e77f9dbd7082ad1f7fec;
     assert( var___doc__ == NULL );
     Py_INCREF( tmp_assign_source_2 );
     var___doc__ = tmp_assign_source_2;
@@ -528,7 +533,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_608884c6fa2faf9d1205355a0c29a712, module_OpenSSL$rand );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_fa50888a9270253d5f142cccb8a343f3, module_OpenSSL$rand );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -562,7 +567,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 36;
+        exception_lineno = 51;
         goto frame_exception_exit_1;
     }
 
@@ -574,7 +579,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 36;
+        exception_lineno = 51;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -587,7 +592,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
     }
     branch_yes_1:;
     tmp_make_exception_arg_1 = const_str_digest_f0f10b645851b46ed19324149fc32d7e;
-    frame_function->f_lineno = 37;
+    frame_function->f_lineno = 52;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_1 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( PyExc_TypeError, call_args );
@@ -595,7 +600,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
 
     assert( tmp_raise_type_1 != NULL );
     exception_type = tmp_raise_type_1;
-    exception_lineno = 37;
+    exception_lineno = 52;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_1:;
@@ -611,7 +616,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 39;
+        exception_lineno = 54;
         goto frame_exception_exit_1;
     }
 
@@ -624,7 +629,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 39;
+        exception_lineno = 54;
         goto frame_exception_exit_1;
     }
     if ( tmp_cmp_Lt_1 == 1 )
@@ -637,7 +642,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
     }
     branch_yes_2:;
     tmp_make_exception_arg_2 = const_str_digest_16af7a9f403081fd1d981b5e6c521835;
-    frame_function->f_lineno = 40;
+    frame_function->f_lineno = 55;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_2 };
         tmp_raise_type_2 = CALL_FUNCTION_WITH_ARGS1( PyExc_ValueError, call_args );
@@ -645,7 +650,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
 
     assert( tmp_raise_type_2 != NULL );
     exception_type = tmp_raise_type_2;
-    exception_lineno = 40;
+    exception_lineno = 55;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_2:;
@@ -666,7 +671,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 42;
+        exception_lineno = 57;
         goto frame_exception_exit_1;
     }
 
@@ -678,7 +683,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 42;
+        exception_lineno = 57;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = const_str_digest_c561652c58984ec0e9541542aa405594;
@@ -694,11 +699,11 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 42;
+        exception_lineno = 57;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 42;
+    frame_function->f_lineno = 57;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
         tmp_assign_source_1 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_1, call_args );
@@ -712,7 +717,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 42;
+        exception_lineno = 57;
         goto frame_exception_exit_1;
     }
     assert( var_result_buffer == NULL );
@@ -735,7 +740,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 43;
+        exception_lineno = 58;
         goto frame_exception_exit_1;
     }
 
@@ -747,7 +752,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 43;
+        exception_lineno = 58;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_3 = var_result_buffer;
@@ -762,7 +767,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 43;
+        exception_lineno = 58;
         goto frame_exception_exit_1;
     }
 
@@ -778,11 +783,11 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 43;
+        exception_lineno = 58;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 43;
+    frame_function->f_lineno = 58;
     {
         PyObject *call_args[] = { tmp_args_element_name_3, tmp_args_element_name_4 };
         tmp_assign_source_2 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, call_args );
@@ -796,7 +801,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 43;
+        exception_lineno = 58;
         goto frame_exception_exit_1;
     }
     assert( var_result_code == NULL );
@@ -813,7 +818,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 44;
+        exception_lineno = 59;
         goto frame_exception_exit_1;
     }
     if ( tmp_cmp_Eq_1 == 1 )
@@ -842,11 +847,11 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 47;
+        exception_lineno = 62;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 47;
+    frame_function->f_lineno = 62;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_3 );
     if ( tmp_unused == NULL )
     {
@@ -855,7 +860,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 47;
+        exception_lineno = 62;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -877,7 +882,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 49;
+        exception_lineno = 64;
         goto frame_exception_exit_1;
     }
 
@@ -889,7 +894,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 49;
+        exception_lineno = 64;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_5 = var_result_buffer;
@@ -904,11 +909,11 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 49;
+        exception_lineno = 64;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 49;
+    frame_function->f_lineno = 64;
     {
         PyObject *call_args[] = { tmp_args_element_name_5 };
         tmp_subscribed_name_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
@@ -922,7 +927,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 49;
+        exception_lineno = 64;
         goto frame_exception_exit_1;
     }
     tmp_subscript_name_1 = const_slice_none_none_none;
@@ -935,7 +940,7 @@ static PyObject *impl_function_1_bytes_of_OpenSSL$rand( Nuitka_FunctionObject co
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 49;
+        exception_lineno = 64;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -1144,7 +1149,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_b7bf93037b1e4c4e07e2eedf76f354bb, module_OpenSSL$rand );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_db16d544dabfa9292d4302a0a67fbcc8, module_OpenSSL$rand );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -1178,7 +1183,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 61;
+        exception_lineno = 81;
         goto frame_exception_exit_1;
     }
 
@@ -1190,7 +1195,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 61;
+        exception_lineno = 81;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -1203,7 +1208,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
     }
     branch_yes_1:;
     tmp_make_exception_arg_1 = const_str_digest_fe60bca70d4aeb1d5e94a986f568ebec;
-    frame_function->f_lineno = 62;
+    frame_function->f_lineno = 82;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_1 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( PyExc_TypeError, call_args );
@@ -1211,7 +1216,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
 
     assert( tmp_raise_type_1 != NULL );
     exception_type = tmp_raise_type_1;
-    exception_lineno = 62;
+    exception_lineno = 82;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_1:;
@@ -1227,7 +1232,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 64;
+        exception_lineno = 84;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -1240,7 +1245,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
     }
     branch_yes_2:;
     tmp_make_exception_arg_2 = const_str_digest_12493eb8a98db830dcb075df472a41e8;
-    frame_function->f_lineno = 65;
+    frame_function->f_lineno = 85;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_2 };
         tmp_raise_type_2 = CALL_FUNCTION_WITH_ARGS1( PyExc_TypeError, call_args );
@@ -1248,7 +1253,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
 
     assert( tmp_raise_type_2 != NULL );
     exception_type = tmp_raise_type_2;
-    exception_lineno = 65;
+    exception_lineno = 85;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_2:;
@@ -1269,7 +1274,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 68;
+        exception_lineno = 88;
         goto frame_exception_exit_1;
     }
 
@@ -1281,7 +1286,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 68;
+        exception_lineno = 88;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = par_buffer;
@@ -1296,7 +1301,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 68;
+        exception_lineno = 88;
         goto frame_exception_exit_1;
     }
 
@@ -1312,7 +1317,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 68;
+        exception_lineno = 88;
         goto frame_exception_exit_1;
     }
 
@@ -1324,7 +1329,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_1 );
 
-        exception_lineno = 68;
+        exception_lineno = 88;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_3 = par_entropy;
@@ -1340,11 +1345,11 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 68;
+        exception_lineno = 88;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 68;
+    frame_function->f_lineno = 88;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_1, call_args );
@@ -1359,7 +1364,7 @@ static PyObject *impl_function_2_add_of_OpenSSL$rand( Nuitka_FunctionObject cons
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 68;
+        exception_lineno = 88;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -1537,7 +1542,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_18c65197aa86ace10b90c11d18f07b4a, module_OpenSSL$rand );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_8d5722c0349e9ab56168dbd9258ef247, module_OpenSSL$rand );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -1571,7 +1576,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 79;
+        exception_lineno = 99;
         goto frame_exception_exit_1;
     }
 
@@ -1583,7 +1588,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 79;
+        exception_lineno = 99;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -1596,7 +1601,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
     }
     branch_yes_1:;
     tmp_make_exception_arg_1 = const_str_digest_fe60bca70d4aeb1d5e94a986f568ebec;
-    frame_function->f_lineno = 80;
+    frame_function->f_lineno = 100;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_1 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( PyExc_TypeError, call_args );
@@ -1604,7 +1609,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
 
     assert( tmp_raise_type_1 != NULL );
     exception_type = tmp_raise_type_1;
-    exception_lineno = 80;
+    exception_lineno = 100;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_1:;
@@ -1625,7 +1630,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 83;
+        exception_lineno = 103;
         goto frame_exception_exit_1;
     }
 
@@ -1637,7 +1642,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 83;
+        exception_lineno = 103;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = par_buffer;
@@ -1652,7 +1657,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 83;
+        exception_lineno = 103;
         goto frame_exception_exit_1;
     }
 
@@ -1668,7 +1673,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 83;
+        exception_lineno = 103;
         goto frame_exception_exit_1;
     }
 
@@ -1680,10 +1685,10 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_1 );
 
-        exception_lineno = 83;
+        exception_lineno = 103;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 83;
+    frame_function->f_lineno = 103;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
         tmp_unused = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_1, call_args );
@@ -1698,7 +1703,7 @@ static PyObject *impl_function_3_seed_of_OpenSSL$rand( Nuitka_FunctionObject con
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 83;
+        exception_lineno = 103;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -1844,7 +1849,7 @@ static PyObject *impl_function_4_status_of_OpenSSL$rand( Nuitka_FunctionObject c
     tmp_return_value = NULL;
 
     // Actual function code.
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_1aa311738f68feac7bdb83ec04ca7cea, module_OpenSSL$rand );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_c5c43ea2be42670a682deb0663e05e6b, module_OpenSSL$rand );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -1876,7 +1881,7 @@ static PyObject *impl_function_4_status_of_OpenSSL$rand( Nuitka_FunctionObject c
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 93;
+        exception_lineno = 112;
         goto frame_exception_exit_1;
     }
 
@@ -1888,10 +1893,10 @@ static PyObject *impl_function_4_status_of_OpenSSL$rand( Nuitka_FunctionObject c
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 93;
+        exception_lineno = 112;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 93;
+    frame_function->f_lineno = 112;
     tmp_return_value = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_return_value == NULL )
@@ -1901,7 +1906,7 @@ static PyObject *impl_function_4_status_of_OpenSSL$rand( Nuitka_FunctionObject c
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 93;
+        exception_lineno = 112;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -2010,8 +2015,12 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_1;
     PyObject *tmp_args_element_name_1;
     PyObject *tmp_args_element_name_2;
+    PyObject *tmp_args_element_name_3;
+    PyObject *tmp_args_element_name_4;
     PyObject *tmp_assign_source_1;
     PyObject *tmp_called_name_1;
+    PyObject *tmp_called_name_2;
+    PyObject *tmp_called_name_3;
     PyObject *tmp_compare_left_1;
     PyObject *tmp_compare_right_1;
     PyObject *tmp_frame_locals;
@@ -2027,6 +2036,8 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
     int tmp_res;
     PyObject *tmp_return_value;
     PyObject *tmp_source_name_1;
+    PyObject *tmp_source_name_2;
+    NUITKA_MAY_BE_UNUSED PyObject *tmp_unused;
     static PyFrameObject *cache_frame_function = NULL;
 
     PyFrameObject *frame_function;
@@ -2035,7 +2046,7 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_9b1da16828feb302a27f57ad4d0419da, module_OpenSSL$rand );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_617c96806f63ac7e79d28fdcb8782b62, module_OpenSSL$rand );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -2050,6 +2061,78 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
 #endif
 
     // Framed code:
+    tmp_source_name_1 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_warnings );
+
+    if (unlikely( tmp_source_name_1 == NULL ))
+    {
+        tmp_source_name_1 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_warnings );
+    }
+
+    if ( tmp_source_name_1 == NULL )
+    {
+
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "warnings" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 132;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain_warn );
+    if ( tmp_called_name_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 132;
+        goto frame_exception_exit_1;
+    }
+    tmp_args_element_name_1 = const_str_digest_90a922610f6e0621a08061fc897fd7c8;
+    tmp_args_element_name_2 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_DeprecationWarning );
+
+    if (unlikely( tmp_args_element_name_2 == NULL ))
+    {
+        tmp_args_element_name_2 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_DeprecationWarning );
+    }
+
+    if ( tmp_args_element_name_2 == NULL )
+    {
+        Py_DECREF( tmp_called_name_1 );
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "DeprecationWarning" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 133;
+        goto frame_exception_exit_1;
+    }
+
+    frame_function->f_lineno = 133;
+    {
+        PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
+        tmp_unused = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_1, call_args );
+    }
+
+    Py_DECREF( tmp_called_name_1 );
+    if ( tmp_unused == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 133;
+        goto frame_exception_exit_1;
+    }
+    Py_DECREF( tmp_unused );
     tmp_isinstance_inst_1 = par_path;
 
     tmp_isinstance_cls_1 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__builtin_bytes );
@@ -2069,7 +2152,7 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 108;
+        exception_lineno = 135;
         goto frame_exception_exit_1;
     }
 
@@ -2081,7 +2164,7 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 108;
+        exception_lineno = 135;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -2094,7 +2177,7 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
     }
     branch_yes_1:;
     tmp_make_exception_arg_1 = const_str_digest_73d52f4becc80db0b03c62031045c32f;
-    frame_function->f_lineno = 109;
+    frame_function->f_lineno = 136;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_1 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( PyExc_TypeError, call_args );
@@ -2102,7 +2185,7 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
 
     assert( tmp_raise_type_1 != NULL );
     exception_type = tmp_raise_type_1;
-    exception_lineno = 109;
+    exception_lineno = 136;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_1:;
@@ -2125,7 +2208,7 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 111;
+        exception_lineno = 138;
         goto frame_exception_exit_1;
     }
 
@@ -2161,7 +2244,7 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 113;
+        exception_lineno = 140;
         goto frame_exception_exit_1;
     }
 
@@ -2175,7 +2258,7 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 113;
+        exception_lineno = 140;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -2188,7 +2271,7 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
     }
     branch_yes_3:;
     tmp_make_exception_arg_2 = const_str_digest_37b2b78d38ecaa912601e55a3bdf03d3;
-    frame_function->f_lineno = 114;
+    frame_function->f_lineno = 141;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_2 };
         tmp_raise_type_2 = CALL_FUNCTION_WITH_ARGS1( PyExc_TypeError, call_args );
@@ -2196,64 +2279,69 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
 
     assert( tmp_raise_type_2 != NULL );
     exception_type = tmp_raise_type_2;
-    exception_lineno = 114;
+    exception_lineno = 141;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_3:;
     branch_end_2:;
-    tmp_source_name_1 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__lib );
+    tmp_called_name_2 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_seed );
 
-    if (unlikely( tmp_source_name_1 == NULL ))
+    if (unlikely( tmp_called_name_2 == NULL ))
     {
-        tmp_source_name_1 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain__lib );
+        tmp_called_name_2 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_seed );
     }
 
-    if ( tmp_source_name_1 == NULL )
+    if ( tmp_called_name_2 == NULL )
     {
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "_lib" );
+        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "seed" );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 116;
+        exception_lineno = 143;
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain_RAND_egd_bytes );
-    if ( tmp_called_name_1 == NULL )
+    tmp_source_name_2 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_os );
+
+    if (unlikely( tmp_source_name_2 == NULL ))
+    {
+        tmp_source_name_2 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_os );
+    }
+
+    if ( tmp_source_name_2 == NULL )
+    {
+
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "name '%s' is not defined", "os" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 143;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_called_name_3 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain_urandom );
+    if ( tmp_called_name_3 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 116;
+        exception_lineno = 143;
         goto frame_exception_exit_1;
     }
-    tmp_args_element_name_1 = par_path;
+    tmp_args_element_name_4 = par_bytes;
 
-    if ( tmp_args_element_name_1 == NULL )
+    if ( tmp_args_element_name_4 == NULL )
     {
-        Py_DECREF( tmp_called_name_1 );
-        exception_type = PyExc_UnboundLocalError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "path" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 116;
-        goto frame_exception_exit_1;
-    }
-
-    tmp_args_element_name_2 = par_bytes;
-
-    if ( tmp_args_element_name_2 == NULL )
-    {
-        Py_DECREF( tmp_called_name_1 );
+        Py_DECREF( tmp_called_name_3 );
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
         exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "bytes" );
@@ -2261,27 +2349,62 @@ static PyObject *impl_function_5_egd_of_OpenSSL$rand( Nuitka_FunctionObject cons
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 116;
+        exception_lineno = 143;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 116;
+    frame_function->f_lineno = 143;
     {
-        PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
-        tmp_return_value = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_1, call_args );
+        PyObject *call_args[] = { tmp_args_element_name_4 };
+        tmp_args_element_name_3 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
     }
 
-    Py_DECREF( tmp_called_name_1 );
-    if ( tmp_return_value == NULL )
+    Py_DECREF( tmp_called_name_3 );
+    if ( tmp_args_element_name_3 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 116;
+        exception_lineno = 143;
         goto frame_exception_exit_1;
     }
+    frame_function->f_lineno = 143;
+    {
+        PyObject *call_args[] = { tmp_args_element_name_3 };
+        tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, call_args );
+    }
+
+    Py_DECREF( tmp_args_element_name_3 );
+    if ( tmp_unused == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 143;
+        goto frame_exception_exit_1;
+    }
+    Py_DECREF( tmp_unused );
+    tmp_return_value = par_bytes;
+
+    if ( tmp_return_value == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "bytes" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 144;
+        goto frame_exception_exit_1;
+    }
+
+    Py_INCREF( tmp_return_value );
     goto frame_return_exit_1;
 
 #if 0
@@ -2451,7 +2574,7 @@ static PyObject *impl_function_6_cleanup_of_OpenSSL$rand( Nuitka_FunctionObject 
     tmp_return_value = NULL;
 
     // Actual function code.
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_a826280faec2237a69576251e37182b5, module_OpenSSL$rand );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_6aea24cc3854a6ca5463c84205ff3e40, module_OpenSSL$rand );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -2483,7 +2606,7 @@ static PyObject *impl_function_6_cleanup_of_OpenSSL$rand( Nuitka_FunctionObject 
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 127;
+        exception_lineno = 156;
         goto frame_exception_exit_1;
     }
 
@@ -2495,10 +2618,10 @@ static PyObject *impl_function_6_cleanup_of_OpenSSL$rand( Nuitka_FunctionObject 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 127;
+        exception_lineno = 156;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 127;
+    frame_function->f_lineno = 156;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_unused == NULL )
@@ -2508,7 +2631,7 @@ static PyObject *impl_function_6_cleanup_of_OpenSSL$rand( Nuitka_FunctionObject 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 127;
+        exception_lineno = 156;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -2633,7 +2756,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_eef777465162690aeb2336cb86c3ac7d, module_OpenSSL$rand );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_0b6c1fde39a3d1cc5e216e60c25a3445, module_OpenSSL$rand );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -2665,13 +2788,13 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 141;
+        exception_lineno = 171;
         goto frame_exception_exit_1;
     }
 
     tmp_args_element_name_1 = par_filename;
 
-    frame_function->f_lineno = 141;
+    frame_function->f_lineno = 171;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_assign_source_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -2684,7 +2807,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 141;
+        exception_lineno = 171;
         goto frame_exception_exit_1;
     }
     {
@@ -2712,7 +2835,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 143;
+        exception_lineno = 173;
         goto frame_exception_exit_1;
     }
 
@@ -2748,7 +2871,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 145;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
 
@@ -2762,7 +2885,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 145;
+        exception_lineno = 175;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -2775,7 +2898,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
     }
     branch_yes_2:;
     tmp_make_exception_arg_1 = const_str_digest_02858f231eb81a552a64880019ecd1fe;
-    frame_function->f_lineno = 146;
+    frame_function->f_lineno = 176;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_1 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( PyExc_TypeError, call_args );
@@ -2783,7 +2906,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
 
     assert( tmp_raise_type_1 != NULL );
     exception_type = tmp_raise_type_1;
-    exception_lineno = 146;
+    exception_lineno = 176;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_2:;
@@ -2805,7 +2928,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 148;
+        exception_lineno = 178;
         goto frame_exception_exit_1;
     }
 
@@ -2817,7 +2940,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 148;
+        exception_lineno = 178;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_2 = par_filename;
@@ -2832,7 +2955,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 148;
+        exception_lineno = 178;
         goto frame_exception_exit_1;
     }
 
@@ -2848,11 +2971,11 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 148;
+        exception_lineno = 178;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 148;
+    frame_function->f_lineno = 178;
     {
         PyObject *call_args[] = { tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_return_value = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, call_args );
@@ -2866,7 +2989,7 @@ static PyObject *impl_function_7_load_file_of_OpenSSL$rand( Nuitka_FunctionObjec
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 148;
+        exception_lineno = 178;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -3047,7 +3170,7 @@ static PyObject *impl_function_8_write_file_of_OpenSSL$rand( Nuitka_FunctionObje
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_28f7e28d4e66b984413fd4255ac8fe44, module_OpenSSL$rand );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_ddc63abe3a74db0e22ac1bf8322b4851, module_OpenSSL$rand );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -3079,13 +3202,13 @@ static PyObject *impl_function_8_write_file_of_OpenSSL$rand( Nuitka_FunctionObje
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 160;
+        exception_lineno = 190;
         goto frame_exception_exit_1;
     }
 
     tmp_args_element_name_1 = par_filename;
 
-    frame_function->f_lineno = 160;
+    frame_function->f_lineno = 190;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_assign_source_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -3098,7 +3221,7 @@ static PyObject *impl_function_8_write_file_of_OpenSSL$rand( Nuitka_FunctionObje
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 160;
+        exception_lineno = 190;
         goto frame_exception_exit_1;
     }
     {
@@ -3124,7 +3247,7 @@ static PyObject *impl_function_8_write_file_of_OpenSSL$rand( Nuitka_FunctionObje
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 161;
+        exception_lineno = 191;
         goto frame_exception_exit_1;
     }
 
@@ -3136,7 +3259,7 @@ static PyObject *impl_function_8_write_file_of_OpenSSL$rand( Nuitka_FunctionObje
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 161;
+        exception_lineno = 191;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_2 = par_filename;
@@ -3151,11 +3274,11 @@ static PyObject *impl_function_8_write_file_of_OpenSSL$rand( Nuitka_FunctionObje
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 161;
+        exception_lineno = 191;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 161;
+    frame_function->f_lineno = 191;
     {
         PyObject *call_args[] = { tmp_args_element_name_2 };
         tmp_return_value = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, call_args );
@@ -3169,7 +3292,7 @@ static PyObject *impl_function_8_write_file_of_OpenSSL$rand( Nuitka_FunctionObje
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 161;
+        exception_lineno = 191;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -3324,7 +3447,7 @@ static PyObject *impl_function_9_screen_of_OpenSSL$rand( Nuitka_FunctionObject c
     tmp_return_value = NULL;
 
     // Actual function code.
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_737f8124cc05de72223586ec83a40ebf, module_OpenSSL$rand );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_26c62f80fce9beab1b2a31274659cff0, module_OpenSSL$rand );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -3356,7 +3479,7 @@ static PyObject *impl_function_9_screen_of_OpenSSL$rand( Nuitka_FunctionObject c
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 172;
+        exception_lineno = 203;
         goto frame_exception_exit_1;
     }
 
@@ -3368,10 +3491,10 @@ static PyObject *impl_function_9_screen_of_OpenSSL$rand( Nuitka_FunctionObject c
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 172;
+        exception_lineno = 203;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 172;
+    frame_function->f_lineno = 203;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_unused == NULL )
@@ -3381,7 +3504,7 @@ static PyObject *impl_function_9_screen_of_OpenSSL$rand( Nuitka_FunctionObject c
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 172;
+        exception_lineno = 203;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -3472,14 +3595,14 @@ static PyObject *MAKE_FUNCTION_function_1_bytes_of_OpenSSL$rand(  )
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_608884c6fa2faf9d1205355a0c29a712,
+        codeobj_fa50888a9270253d5f142cccb8a343f3,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_OpenSSL$rand,
-        const_str_digest_1066d63086ba77755e7ea01cf51bff03
+        const_str_digest_4c7773c56c54f391ceae38f241b47b71
     );
 
     return result;
@@ -3495,14 +3618,14 @@ static PyObject *MAKE_FUNCTION_function_2_add_of_OpenSSL$rand(  )
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_b7bf93037b1e4c4e07e2eedf76f354bb,
+        codeobj_db16d544dabfa9292d4302a0a67fbcc8,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_OpenSSL$rand,
-        const_str_digest_dde20a21633234ccd7b89105d3d486a4
+        const_str_digest_f4c3c3eb1b36a44ca45fadbdf9fb1769
     );
 
     return result;
@@ -3518,14 +3641,14 @@ static PyObject *MAKE_FUNCTION_function_3_seed_of_OpenSSL$rand(  )
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_18c65197aa86ace10b90c11d18f07b4a,
+        codeobj_8d5722c0349e9ab56168dbd9258ef247,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_OpenSSL$rand,
-        const_str_digest_00f641722ca9ab159a044277dcd85a2c
+        const_str_digest_e3203978b37216154d4e3b3f04efc10a
     );
 
     return result;
@@ -3541,14 +3664,14 @@ static PyObject *MAKE_FUNCTION_function_4_status_of_OpenSSL$rand(  )
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_1aa311738f68feac7bdb83ec04ca7cea,
+        codeobj_c5c43ea2be42670a682deb0663e05e6b,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_OpenSSL$rand,
-        const_str_digest_ce6b7270160fd7fb6226857c728ffafb
+        const_str_digest_904ad67f6781a91cee6e2eb06ccc5efb
     );
 
     return result;
@@ -3564,14 +3687,14 @@ static PyObject *MAKE_FUNCTION_function_5_egd_of_OpenSSL$rand( PyObject *default
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_9b1da16828feb302a27f57ad4d0419da,
+        codeobj_617c96806f63ac7e79d28fdcb8782b62,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_OpenSSL$rand,
-        const_str_digest_7071c6604ea612663314cf34d6a2faba
+        const_str_digest_526a70ac4f15b3da7766c69e4511dc1f
     );
 
     return result;
@@ -3587,14 +3710,14 @@ static PyObject *MAKE_FUNCTION_function_6_cleanup_of_OpenSSL$rand(  )
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_a826280faec2237a69576251e37182b5,
+        codeobj_6aea24cc3854a6ca5463c84205ff3e40,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_OpenSSL$rand,
-        const_str_digest_eedbc60829aa79e09749e44da9ebec4a
+        const_str_digest_c103241e1985f014e26ae6028b3457d8
     );
 
     return result;
@@ -3610,14 +3733,14 @@ static PyObject *MAKE_FUNCTION_function_7_load_file_of_OpenSSL$rand( PyObject *d
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_eef777465162690aeb2336cb86c3ac7d,
+        codeobj_0b6c1fde39a3d1cc5e216e60c25a3445,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_OpenSSL$rand,
-        const_str_digest_4317cea7eba4e79903bfec0014a427c6
+        const_str_digest_0eed70b9c7d2b453eb559b81beab68f9
     );
 
     return result;
@@ -3633,14 +3756,14 @@ static PyObject *MAKE_FUNCTION_function_8_write_file_of_OpenSSL$rand(  )
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_28f7e28d4e66b984413fd4255ac8fe44,
+        codeobj_ddc63abe3a74db0e22ac1bf8322b4851,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_OpenSSL$rand,
-        const_str_digest_5c46eb672e40112b5a2bc57524e13fa4
+        const_str_digest_2647df921c59a233d4f89dc780c9c800
     );
 
     return result;
@@ -3656,14 +3779,14 @@ static PyObject *MAKE_FUNCTION_function_9_screen_of_OpenSSL$rand(  )
 #if PYTHON_VERSION >= 330
         NULL,
 #endif
-        codeobj_737f8124cc05de72223586ec83a40ebf,
+        codeobj_26c62f80fce9beab1b2a31274659cff0,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
         const_dict_empty,
 #endif
         module_OpenSSL$rand,
-        const_str_digest_e6d5b9a401d85bbe865bf3fb9c6f05e7
+        const_str_digest_9d3044f3601cf25958188d904d830d02
     );
 
     return result;
@@ -3856,6 +3979,8 @@ MOD_INIT_DECL( OpenSSL$rand )
     PyObject *tmp_assign_source_25;
     PyObject *tmp_assign_source_26;
     PyObject *tmp_assign_source_27;
+    PyObject *tmp_assign_source_28;
+    PyObject *tmp_assign_source_29;
     PyObject *tmp_bases_name_1;
     PyObject *tmp_called_name_1;
     PyObject *tmp_called_name_2;
@@ -3887,6 +4012,8 @@ MOD_INIT_DECL( OpenSSL$rand )
     PyObject *tmp_import_globals_4;
     PyObject *tmp_import_globals_5;
     PyObject *tmp_import_globals_6;
+    PyObject *tmp_import_globals_7;
+    PyObject *tmp_import_globals_8;
     PyObject *tmp_import_name_from_1;
     PyObject *tmp_import_name_from_2;
     PyObject *tmp_import_name_from_3;
@@ -3913,7 +4040,7 @@ MOD_INIT_DECL( OpenSSL$rand )
 
 
     // Module code.
-    tmp_assign_source_1 = const_str_digest_a6d76dad794b831f804851ed6f3dfdfc;
+    tmp_assign_source_1 = const_str_digest_5ff57795d5934fd4434b0947d57b958b;
     UPDATE_STRING_DICT0( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain___doc__, tmp_assign_source_1 );
     tmp_assign_source_2 = const_str_digest_07edd52ef698c2320df92ab27d58531b;
     UPDATE_STRING_DICT0( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain___file__, tmp_assign_source_2 );
@@ -3935,20 +4062,8 @@ MOD_INIT_DECL( OpenSSL$rand )
 
     // Framed code:
     tmp_import_globals_1 = ((PyModuleObject *)module_OpenSSL$rand)->md_dict;
-    frame_module->f_lineno = 7;
-    tmp_import_name_from_1 = IMPORT_MODULE( const_str_plain_functools, tmp_import_globals_1, tmp_import_globals_1, const_tuple_str_plain_partial_tuple, const_int_0 );
-    if ( tmp_import_name_from_1 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 7;
-        goto frame_exception_exit_1;
-    }
-    tmp_assign_source_5 = IMPORT_NAME( tmp_import_name_from_1, const_str_plain_partial );
-    Py_DECREF( tmp_import_name_from_1 );
+    frame_module->f_lineno = 5;
+    tmp_assign_source_5 = IMPORT_MODULE( const_str_plain_os, tmp_import_globals_1, tmp_import_globals_1, Py_None, const_int_0 );
     if ( tmp_assign_source_5 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -3956,25 +4071,13 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 7;
+        exception_lineno = 5;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_partial, tmp_assign_source_5 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_os, tmp_assign_source_5 );
     tmp_import_globals_2 = ((PyModuleObject *)module_OpenSSL$rand)->md_dict;
-    frame_module->f_lineno = 9;
-    tmp_import_name_from_2 = IMPORT_MODULE( const_str_plain_six, tmp_import_globals_2, tmp_import_globals_2, const_tuple_str_plain_integer_types_tuple, const_int_0 );
-    if ( tmp_import_name_from_2 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 9;
-        goto frame_exception_exit_1;
-    }
-    tmp_assign_source_6 = IMPORT_NAME( tmp_import_name_from_2, const_str_plain_integer_types );
-    Py_DECREF( tmp_import_name_from_2 );
+    frame_module->f_lineno = 6;
+    tmp_assign_source_6 = IMPORT_MODULE( const_str_plain_warnings, tmp_import_globals_2, tmp_import_globals_2, Py_None, const_int_0 );
     if ( tmp_assign_source_6 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -3982,25 +4085,25 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 9;
+        exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__integer_types, tmp_assign_source_6 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_warnings, tmp_assign_source_6 );
     tmp_import_globals_3 = ((PyModuleObject *)module_OpenSSL$rand)->md_dict;
-    frame_module->f_lineno = 11;
-    tmp_import_name_from_3 = IMPORT_MODULE( const_str_digest_2c0accc407028fbaba46fefdee9c6c06, tmp_import_globals_3, tmp_import_globals_3, const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, const_int_0 );
-    if ( tmp_import_name_from_3 == NULL )
+    frame_module->f_lineno = 8;
+    tmp_import_name_from_1 = IMPORT_MODULE( const_str_plain_functools, tmp_import_globals_3, tmp_import_globals_3, const_tuple_str_plain_partial_tuple, const_int_0 );
+    if ( tmp_import_name_from_1 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 11;
+        exception_lineno = 8;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_7 = IMPORT_NAME( tmp_import_name_from_3, const_str_plain_ffi );
-    Py_DECREF( tmp_import_name_from_3 );
+    tmp_assign_source_7 = IMPORT_NAME( tmp_import_name_from_1, const_str_plain_partial );
+    Py_DECREF( tmp_import_name_from_1 );
     if ( tmp_assign_source_7 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -4008,25 +4111,25 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 11;
+        exception_lineno = 8;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__ffi, tmp_assign_source_7 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_partial, tmp_assign_source_7 );
     tmp_import_globals_4 = ((PyModuleObject *)module_OpenSSL$rand)->md_dict;
-    frame_module->f_lineno = 11;
-    tmp_import_name_from_4 = IMPORT_MODULE( const_str_digest_2c0accc407028fbaba46fefdee9c6c06, tmp_import_globals_4, tmp_import_globals_4, const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, const_int_0 );
-    if ( tmp_import_name_from_4 == NULL )
+    frame_module->f_lineno = 10;
+    tmp_import_name_from_2 = IMPORT_MODULE( const_str_plain_six, tmp_import_globals_4, tmp_import_globals_4, const_tuple_str_plain_integer_types_tuple, const_int_0 );
+    if ( tmp_import_name_from_2 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 11;
+        exception_lineno = 10;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_8 = IMPORT_NAME( tmp_import_name_from_4, const_str_plain_lib );
-    Py_DECREF( tmp_import_name_from_4 );
+    tmp_assign_source_8 = IMPORT_NAME( tmp_import_name_from_2, const_str_plain_integer_types );
+    Py_DECREF( tmp_import_name_from_2 );
     if ( tmp_assign_source_8 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -4034,25 +4137,25 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 11;
+        exception_lineno = 10;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__lib, tmp_assign_source_8 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__integer_types, tmp_assign_source_8 );
     tmp_import_globals_5 = ((PyModuleObject *)module_OpenSSL$rand)->md_dict;
-    frame_module->f_lineno = 11;
-    tmp_import_name_from_5 = IMPORT_MODULE( const_str_digest_2c0accc407028fbaba46fefdee9c6c06, tmp_import_globals_5, tmp_import_globals_5, const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, const_int_0 );
-    if ( tmp_import_name_from_5 == NULL )
+    frame_module->f_lineno = 12;
+    tmp_import_name_from_3 = IMPORT_MODULE( const_str_digest_2c0accc407028fbaba46fefdee9c6c06, tmp_import_globals_5, tmp_import_globals_5, const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, const_int_0 );
+    if ( tmp_import_name_from_3 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 11;
+        exception_lineno = 12;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_9 = IMPORT_NAME( tmp_import_name_from_5, const_str_plain_exception_from_error_queue );
-    Py_DECREF( tmp_import_name_from_5 );
+    tmp_assign_source_9 = IMPORT_NAME( tmp_import_name_from_3, const_str_plain_ffi );
+    Py_DECREF( tmp_import_name_from_3 );
     if ( tmp_assign_source_9 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -4060,25 +4163,25 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 11;
+        exception_lineno = 12;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__exception_from_error_queue, tmp_assign_source_9 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__ffi, tmp_assign_source_9 );
     tmp_import_globals_6 = ((PyModuleObject *)module_OpenSSL$rand)->md_dict;
-    frame_module->f_lineno = 11;
-    tmp_import_name_from_6 = IMPORT_MODULE( const_str_digest_2c0accc407028fbaba46fefdee9c6c06, tmp_import_globals_6, tmp_import_globals_6, const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, const_int_0 );
-    if ( tmp_import_name_from_6 == NULL )
+    frame_module->f_lineno = 12;
+    tmp_import_name_from_4 = IMPORT_MODULE( const_str_digest_2c0accc407028fbaba46fefdee9c6c06, tmp_import_globals_6, tmp_import_globals_6, const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, const_int_0 );
+    if ( tmp_import_name_from_4 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 11;
+        exception_lineno = 12;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_10 = IMPORT_NAME( tmp_import_name_from_6, const_str_plain_path_string );
-    Py_DECREF( tmp_import_name_from_6 );
+    tmp_assign_source_10 = IMPORT_NAME( tmp_import_name_from_4, const_str_plain_lib );
+    Py_DECREF( tmp_import_name_from_4 );
     if ( tmp_assign_source_10 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -4086,20 +4189,72 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 11;
+        exception_lineno = 12;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__path_string, tmp_assign_source_10 );
-    tmp_assign_source_11 = PyTuple_New( 1 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__lib, tmp_assign_source_10 );
+    tmp_import_globals_7 = ((PyModuleObject *)module_OpenSSL$rand)->md_dict;
+    frame_module->f_lineno = 12;
+    tmp_import_name_from_5 = IMPORT_MODULE( const_str_digest_2c0accc407028fbaba46fefdee9c6c06, tmp_import_globals_7, tmp_import_globals_7, const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, const_int_0 );
+    if ( tmp_import_name_from_5 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 12;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_11 = IMPORT_NAME( tmp_import_name_from_5, const_str_plain_exception_from_error_queue );
+    Py_DECREF( tmp_import_name_from_5 );
+    if ( tmp_assign_source_11 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 12;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__exception_from_error_queue, tmp_assign_source_11 );
+    tmp_import_globals_8 = ((PyModuleObject *)module_OpenSSL$rand)->md_dict;
+    frame_module->f_lineno = 12;
+    tmp_import_name_from_6 = IMPORT_MODULE( const_str_digest_2c0accc407028fbaba46fefdee9c6c06, tmp_import_globals_8, tmp_import_globals_8, const_tuple_20025aeb152b3b20bb58cf2e14b8f078_tuple, const_int_0 );
+    if ( tmp_import_name_from_6 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 12;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_12 = IMPORT_NAME( tmp_import_name_from_6, const_str_plain_path_string );
+    Py_DECREF( tmp_import_name_from_6 );
+    if ( tmp_assign_source_12 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 12;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__path_string, tmp_assign_source_12 );
+    tmp_assign_source_13 = PyTuple_New( 1 );
     tmp_tuple_element_1 = PyExc_Exception;
     Py_INCREF( tmp_tuple_element_1 );
-    PyTuple_SET_ITEM( tmp_assign_source_11, 0, tmp_tuple_element_1 );
+    PyTuple_SET_ITEM( tmp_assign_source_13, 0, tmp_tuple_element_1 );
     assert( tmp_OpenSSL$rand_class_creation_1__bases == NULL );
-    tmp_OpenSSL$rand_class_creation_1__bases = tmp_assign_source_11;
+    tmp_OpenSSL$rand_class_creation_1__bases = tmp_assign_source_13;
 
-    tmp_assign_source_12 = PyDict_New();
+    tmp_assign_source_14 = PyDict_New();
     assert( tmp_OpenSSL$rand_class_creation_1__class_decl_dict == NULL );
-    tmp_OpenSSL$rand_class_creation_1__class_decl_dict = tmp_assign_source_12;
+    tmp_OpenSSL$rand_class_creation_1__class_decl_dict = tmp_assign_source_14;
 
     // Tried code:
     tmp_compare_left_1 = const_str_plain_metaclass;
@@ -4127,7 +4282,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
     goto condexpr_end_1;
@@ -4142,7 +4297,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -4165,7 +4320,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
     tmp_metaclass_name_1 = BUILTIN_TYPE1( tmp_type_arg_1 );
@@ -4177,7 +4332,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
     goto condexpr_end_2;
@@ -4189,20 +4344,20 @@ MOD_INIT_DECL( OpenSSL$rand )
     condexpr_end_1:;
     tmp_bases_name_1 = tmp_OpenSSL$rand_class_creation_1__bases;
 
-    tmp_assign_source_13 = SELECT_METACLASS( tmp_metaclass_name_1, tmp_bases_name_1 );
-    if ( tmp_assign_source_13 == NULL )
+    tmp_assign_source_15 = SELECT_METACLASS( tmp_metaclass_name_1, tmp_bases_name_1 );
+    if ( tmp_assign_source_15 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_metaclass_name_1 );
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
     Py_DECREF( tmp_metaclass_name_1 );
     assert( tmp_OpenSSL$rand_class_creation_1__metaclass == NULL );
-    tmp_OpenSSL$rand_class_creation_1__metaclass = tmp_assign_source_13;
+    tmp_OpenSSL$rand_class_creation_1__metaclass = tmp_assign_source_15;
 
     tmp_compare_left_2 = const_str_plain_metaclass;
     tmp_compare_right_2 = tmp_OpenSSL$rand_class_creation_1__class_decl_dict;
@@ -4229,7 +4384,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
     branch_no_1:;
@@ -4244,7 +4399,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
     if ( tmp_res == 1 )
@@ -4266,7 +4421,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
     tmp_args_name_1 = PyTuple_New( 2 );
@@ -4279,39 +4434,39 @@ MOD_INIT_DECL( OpenSSL$rand )
     PyTuple_SET_ITEM( tmp_args_name_1, 1, tmp_tuple_element_2 );
     tmp_kw_name_1 = tmp_OpenSSL$rand_class_creation_1__class_decl_dict;
 
-    frame_module->f_lineno = 18;
-    tmp_assign_source_14 = CALL_FUNCTION( tmp_called_name_1, tmp_args_name_1, tmp_kw_name_1 );
+    frame_module->f_lineno = 19;
+    tmp_assign_source_16 = CALL_FUNCTION( tmp_called_name_1, tmp_args_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_1 );
     Py_DECREF( tmp_args_name_1 );
-    if ( tmp_assign_source_14 == NULL )
+    if ( tmp_assign_source_16 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
     goto condexpr_end_3;
     condexpr_false_3:;
-    tmp_assign_source_14 = PyDict_New();
+    tmp_assign_source_16 = PyDict_New();
     condexpr_end_3:;
     assert( tmp_OpenSSL$rand_class_creation_1__prepared == NULL );
-    tmp_OpenSSL$rand_class_creation_1__prepared = tmp_assign_source_14;
+    tmp_OpenSSL$rand_class_creation_1__prepared = tmp_assign_source_16;
 
-    tmp_assign_source_15 = impl_class_1_Error_of_OpenSSL$rand( NULL, tmp_OpenSSL$rand_class_creation_1__bases, tmp_OpenSSL$rand_class_creation_1__class_decl_dict, tmp_OpenSSL$rand_class_creation_1__metaclass, tmp_OpenSSL$rand_class_creation_1__prepared );
-    if ( tmp_assign_source_15 == NULL )
+    tmp_assign_source_17 = impl_class_1_Error_of_OpenSSL$rand( NULL, tmp_OpenSSL$rand_class_creation_1__bases, tmp_OpenSSL$rand_class_creation_1__class_decl_dict, tmp_OpenSSL$rand_class_creation_1__metaclass, tmp_OpenSSL$rand_class_creation_1__prepared );
+    if ( tmp_assign_source_17 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 18;
+        exception_lineno = 19;
         goto try_except_handler_1;
     }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_Error, tmp_assign_source_15 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_Error, tmp_assign_source_17 );
     goto try_end_1;
     // Exception handler code:
     try_except_handler_1:;
@@ -4374,7 +4529,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 23;
+        exception_lineno = 34;
         goto frame_exception_exit_1;
     }
 
@@ -4395,7 +4550,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 23;
+        exception_lineno = 34;
         goto frame_exception_exit_1;
     }
 
@@ -4416,50 +4571,50 @@ MOD_INIT_DECL( OpenSSL$rand )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 23;
+        exception_lineno = 34;
         goto frame_exception_exit_1;
     }
 
-    frame_module->f_lineno = 23;
+    frame_module->f_lineno = 34;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
-        tmp_assign_source_16 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, call_args );
-    }
-
-    if ( tmp_assign_source_16 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 23;
-        goto frame_exception_exit_1;
-    }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__raise_current_error, tmp_assign_source_16 );
-    tmp_called_name_3 = LOOKUP_BUILTIN( const_str_plain_object );
-    assert( tmp_called_name_3 != NULL );
-    frame_module->f_lineno = 25;
-    tmp_assign_source_17 = CALL_FUNCTION_NO_ARGS( tmp_called_name_3 );
-    if ( tmp_assign_source_17 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 25;
-        goto frame_exception_exit_1;
-    }
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__unspecified, tmp_assign_source_17 );
-    tmp_assign_source_18 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_bytes );
-
-    if (unlikely( tmp_assign_source_18 == NULL ))
-    {
-        tmp_assign_source_18 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_bytes );
+        tmp_assign_source_18 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, call_args );
     }
 
     if ( tmp_assign_source_18 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 34;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__raise_current_error, tmp_assign_source_18 );
+    tmp_called_name_3 = LOOKUP_BUILTIN( const_str_plain_object );
+    assert( tmp_called_name_3 != NULL );
+    frame_module->f_lineno = 36;
+    tmp_assign_source_19 = CALL_FUNCTION_NO_ARGS( tmp_called_name_3 );
+    if ( tmp_assign_source_19 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 36;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__unspecified, tmp_assign_source_19 );
+    tmp_assign_source_20 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_bytes );
+
+    if (unlikely( tmp_assign_source_20 == NULL ))
+    {
+        tmp_assign_source_20 = GET_STRING_DICT_VALUE( dict_builtin, (Nuitka_StringObject *)const_str_plain_bytes );
+    }
+
+    if ( tmp_assign_source_20 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -4469,19 +4624,19 @@ MOD_INIT_DECL( OpenSSL$rand )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 27;
+        exception_lineno = 38;
         goto frame_exception_exit_1;
     }
 
-    UPDATE_STRING_DICT0( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__builtin_bytes, tmp_assign_source_18 );
-    tmp_assign_source_19 = MAKE_FUNCTION_function_1_bytes_of_OpenSSL$rand(  );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_bytes, tmp_assign_source_19 );
-    tmp_assign_source_20 = MAKE_FUNCTION_function_2_add_of_OpenSSL$rand(  );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_add, tmp_assign_source_20 );
-    tmp_assign_source_21 = MAKE_FUNCTION_function_3_seed_of_OpenSSL$rand(  );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_seed, tmp_assign_source_21 );
-    tmp_assign_source_22 = MAKE_FUNCTION_function_4_status_of_OpenSSL$rand(  );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_status, tmp_assign_source_22 );
+    UPDATE_STRING_DICT0( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__builtin_bytes, tmp_assign_source_20 );
+    tmp_assign_source_21 = MAKE_FUNCTION_function_1_bytes_of_OpenSSL$rand(  );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_bytes, tmp_assign_source_21 );
+    tmp_assign_source_22 = MAKE_FUNCTION_function_2_add_of_OpenSSL$rand(  );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_add, tmp_assign_source_22 );
+    tmp_assign_source_23 = MAKE_FUNCTION_function_3_seed_of_OpenSSL$rand(  );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_seed, tmp_assign_source_23 );
+    tmp_assign_source_24 = MAKE_FUNCTION_function_4_status_of_OpenSSL$rand(  );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_status, tmp_assign_source_24 );
     tmp_defaults_1 = PyTuple_New( 1 );
     tmp_tuple_element_3 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__unspecified );
 
@@ -4500,16 +4655,16 @@ MOD_INIT_DECL( OpenSSL$rand )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 97;
+        exception_lineno = 115;
         goto frame_exception_exit_1;
     }
 
     Py_INCREF( tmp_tuple_element_3 );
     PyTuple_SET_ITEM( tmp_defaults_1, 0, tmp_tuple_element_3 );
-    tmp_assign_source_23 = MAKE_FUNCTION_function_5_egd_of_OpenSSL$rand( tmp_defaults_1 );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_egd, tmp_assign_source_23 );
-    tmp_assign_source_24 = MAKE_FUNCTION_function_6_cleanup_of_OpenSSL$rand(  );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_cleanup, tmp_assign_source_24 );
+    tmp_assign_source_25 = MAKE_FUNCTION_function_5_egd_of_OpenSSL$rand( tmp_defaults_1 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_egd, tmp_assign_source_25 );
+    tmp_assign_source_26 = MAKE_FUNCTION_function_6_cleanup_of_OpenSSL$rand(  );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_cleanup, tmp_assign_source_26 );
     tmp_defaults_2 = PyTuple_New( 1 );
     tmp_tuple_element_4 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__unspecified );
 
@@ -4528,18 +4683,18 @@ MOD_INIT_DECL( OpenSSL$rand )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 131;
+        exception_lineno = 159;
         goto frame_exception_exit_1;
     }
 
     Py_INCREF( tmp_tuple_element_4 );
     PyTuple_SET_ITEM( tmp_defaults_2, 0, tmp_tuple_element_4 );
-    tmp_assign_source_25 = MAKE_FUNCTION_function_7_load_file_of_OpenSSL$rand( tmp_defaults_2 );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_load_file, tmp_assign_source_25 );
-    tmp_assign_source_26 = MAKE_FUNCTION_function_8_write_file_of_OpenSSL$rand(  );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_write_file, tmp_assign_source_26 );
-    tmp_assign_source_27 = MAKE_FUNCTION_function_9_screen_of_OpenSSL$rand(  );
-    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_screen, tmp_assign_source_27 );
+    tmp_assign_source_27 = MAKE_FUNCTION_function_7_load_file_of_OpenSSL$rand( tmp_defaults_2 );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_load_file, tmp_assign_source_27 );
+    tmp_assign_source_28 = MAKE_FUNCTION_function_8_write_file_of_OpenSSL$rand(  );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_write_file, tmp_assign_source_28 );
+    tmp_assign_source_29 = MAKE_FUNCTION_function_9_screen_of_OpenSSL$rand(  );
+    UPDATE_STRING_DICT1( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain_screen, tmp_assign_source_29 );
     tmp_getattr_target_1 = GET_STRING_DICT_VALUE( moduledict_OpenSSL$rand, (Nuitka_StringObject *)const_str_plain__lib );
 
     if (unlikely( tmp_getattr_target_1 == NULL ))
@@ -4557,7 +4712,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 174;
+        exception_lineno = 205;
         goto frame_exception_exit_1;
     }
 
@@ -4571,7 +4726,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 174;
+        exception_lineno = 205;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_3 = Py_None;
@@ -4594,12 +4749,12 @@ MOD_INIT_DECL( OpenSSL$rand )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 57 ], 28, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 0 ], 28, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 175;
+        exception_lineno = 206;
         goto frame_exception_exit_1;
     }
 
@@ -4621,7 +4776,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 180;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
 
@@ -4633,10 +4788,10 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 180;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
-    frame_module->f_lineno = 180;
+    frame_module->f_lineno = 211;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_4 );
     Py_DECREF( tmp_called_name_4 );
     if ( tmp_unused == NULL )
@@ -4646,7 +4801,7 @@ MOD_INIT_DECL( OpenSSL$rand )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 180;
+        exception_lineno = 211;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );

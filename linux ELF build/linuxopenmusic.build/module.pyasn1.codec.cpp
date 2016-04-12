@@ -45,10 +45,10 @@ static bool constants_created = false;
 static void createModuleConstants( void )
 {
     const_list_str_digest_3bd5a84505d22b063fd96ccc13cc7af1_list = PyList_New( 1 );
-    const_str_digest_3bd5a84505d22b063fd96ccc13cc7af1 = UNSTREAM_STRING( &constant_bin[ 584015 ], 45, 0 );
+    const_str_digest_3bd5a84505d22b063fd96ccc13cc7af1 = UNSTREAM_STRING( &constant_bin[ 603216 ], 45, 0 );
     PyList_SET_ITEM( const_list_str_digest_3bd5a84505d22b063fd96ccc13cc7af1_list, 0, const_str_digest_3bd5a84505d22b063fd96ccc13cc7af1 ); Py_INCREF( const_str_digest_3bd5a84505d22b063fd96ccc13cc7af1 );
-    const_str_digest_8515a8a9f705886c1e2334d53684c902 = UNSTREAM_STRING( &constant_bin[ 584060 ], 12, 0 );
-    const_str_digest_3550c60f26c9e320d3e5c33f2ce0a399 = UNSTREAM_STRING( &constant_bin[ 584072 ], 57, 0 );
+    const_str_digest_8515a8a9f705886c1e2334d53684c902 = UNSTREAM_STRING( &constant_bin[ 603261 ], 12, 0 );
+    const_str_digest_3550c60f26c9e320d3e5c33f2ce0a399 = UNSTREAM_STRING( &constant_bin[ 603273 ], 57, 0 );
 
     constants_created = true;
 }

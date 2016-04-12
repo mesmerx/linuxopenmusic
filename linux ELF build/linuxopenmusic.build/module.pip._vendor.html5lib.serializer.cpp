@@ -74,11 +74,11 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_35c28ed887e2fb4806c1fa6a5a1135ba = UNSTREAM_STRING( &constant_bin[ 351384 ], 17, 0 );
+    const_str_digest_35c28ed887e2fb4806c1fa6a5a1135ba = UNSTREAM_STRING( &constant_bin[ 362689 ], 17, 0 );
     const_tuple_str_plain_HTMLSerializer_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_HTMLSerializer_tuple, 0, const_str_plain_HTMLSerializer ); Py_INCREF( const_str_plain_HTMLSerializer );
-    const_str_digest_9e63de362e9a60d30a32bb52cc1e191e = UNSTREAM_STRING( &constant_bin[ 351401 ], 64, 0 );
-    const_str_plain_serializer_opts = UNSTREAM_STRING( &constant_bin[ 351465 ], 15, 1 );
+    const_str_digest_9e63de362e9a60d30a32bb52cc1e191e = UNSTREAM_STRING( &constant_bin[ 362706 ], 64, 0 );
+    const_str_plain_serializer_opts = UNSTREAM_STRING( &constant_bin[ 362770 ], 15, 1 );
     const_tuple_692b26252cc9738d71a67f22b3432392_tuple = PyTuple_New( 7 );
     PyTuple_SET_ITEM( const_tuple_692b26252cc9738d71a67f22b3432392_tuple, 0, const_str_plain_input ); Py_INCREF( const_str_plain_input );
     PyTuple_SET_ITEM( const_tuple_692b26252cc9738d71a67f22b3432392_tuple, 1, const_str_plain_tree ); Py_INCREF( const_str_plain_tree );
@@ -91,7 +91,7 @@ static void createModuleConstants( void )
     PyList_SET_ITEM( const_list_str_digest_9e63de362e9a60d30a32bb52cc1e191e_list, 0, const_str_digest_9e63de362e9a60d30a32bb52cc1e191e ); Py_INCREF( const_str_digest_9e63de362e9a60d30a32bb52cc1e191e );
     const_tuple_str_plain_treewalkers_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_treewalkers_tuple, 0, const_str_plain_treewalkers ); Py_INCREF( const_str_plain_treewalkers );
-    const_str_digest_7fce1f53733dda498c648c7d4eac2f98 = UNSTREAM_STRING( &constant_bin[ 351480 ], 76, 0 );
+    const_str_digest_7fce1f53733dda498c648c7d4eac2f98 = UNSTREAM_STRING( &constant_bin[ 362785 ], 76, 0 );
     const_tuple_str_plain_etree_str_plain_html_none_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_str_plain_etree_str_plain_html_none_tuple, 0, const_str_plain_etree ); Py_INCREF( const_str_plain_etree );
     PyTuple_SET_ITEM( const_tuple_str_plain_etree_str_plain_html_none_tuple, 1, const_str_plain_html ); Py_INCREF( const_str_plain_html );

@@ -57,14 +57,14 @@ static bool constants_created = false;
 static void createModuleConstants( void )
 {
     const_list_str_digest_2cc7a5e2e693a32d1d3bca0f6a9fa1a3_list = PyList_New( 1 );
-    const_str_digest_2cc7a5e2e693a32d1d3bca0f6a9fa1a3 = UNSTREAM_STRING( &constant_bin[ 583885 ], 39, 0 );
+    const_str_digest_2cc7a5e2e693a32d1d3bca0f6a9fa1a3 = UNSTREAM_STRING( &constant_bin[ 603086 ], 39, 0 );
     PyList_SET_ITEM( const_list_str_digest_2cc7a5e2e693a32d1d3bca0f6a9fa1a3_list, 0, const_str_digest_2cc7a5e2e693a32d1d3bca0f6a9fa1a3 ); Py_INCREF( const_str_digest_2cc7a5e2e693a32d1d3bca0f6a9fa1a3 );
-    const_str_digest_75965f54d42111634c4f999c1dad9b73 = UNSTREAM_STRING( &constant_bin[ 583924 ], 51, 0 );
+    const_str_digest_75965f54d42111634c4f999c1dad9b73 = UNSTREAM_STRING( &constant_bin[ 603125 ], 51, 0 );
     const_tuple_int_pos_2_int_pos_4_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_int_pos_2_int_pos_4_tuple, 0, const_int_pos_2 ); Py_INCREF( const_int_pos_2 );
     PyTuple_SET_ITEM( const_tuple_int_pos_2_int_pos_4_tuple, 1, const_int_pos_4 ); Py_INCREF( const_int_pos_4 );
-    const_str_digest_7c470b65775bdea9f43f6cc3f7cc7bf3 = UNSTREAM_STRING( &constant_bin[ 583975 ], 5, 0 );
-    const_str_digest_4725e7c11e3d4ee2a0458e45f4faf09a = UNSTREAM_STRING( &constant_bin[ 583980 ], 35, 0 );
+    const_str_digest_7c470b65775bdea9f43f6cc3f7cc7bf3 = UNSTREAM_STRING( &constant_bin[ 603176 ], 5, 0 );
+    const_str_digest_4725e7c11e3d4ee2a0458e45f4faf09a = UNSTREAM_STRING( &constant_bin[ 603181 ], 35, 0 );
 
     constants_created = true;
 }

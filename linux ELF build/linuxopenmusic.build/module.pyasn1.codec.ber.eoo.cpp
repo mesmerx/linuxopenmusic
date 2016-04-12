@@ -68,9 +68,9 @@ static void createModuleConstants( void )
     const_tuple_str_plain_base_str_plain_tag_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_base_str_plain_tag_tuple, 0, const_str_plain_base ); Py_INCREF( const_str_plain_base );
     PyTuple_SET_ITEM( const_tuple_str_plain_base_str_plain_tag_tuple, 1, const_str_plain_tag ); Py_INCREF( const_str_plain_tag );
-    const_str_digest_a825e74d9ae491e4c11c5482907f2c1a = UNSTREAM_STRING( &constant_bin[ 588019 ], 20, 0 );
-    const_str_digest_4d14b4f9b665d36ab92df151a8019a8d = UNSTREAM_STRING( &constant_bin[ 588039 ], 56, 0 );
-    const_str_plain_EndOfOctets = UNSTREAM_STRING( &constant_bin[ 588095 ], 11, 1 );
+    const_str_digest_a825e74d9ae491e4c11c5482907f2c1a = UNSTREAM_STRING( &constant_bin[ 607220 ], 20, 0 );
+    const_str_digest_4d14b4f9b665d36ab92df151a8019a8d = UNSTREAM_STRING( &constant_bin[ 607240 ], 56, 0 );
+    const_str_plain_EndOfOctets = UNSTREAM_STRING( &constant_bin[ 607296 ], 11, 1 );
 
     constants_created = true;
 }

@@ -41,18 +41,19 @@ extern PyObject *const_str_plain_resolve_ssl_version;
 extern PyObject *const_str_plain_ssl_wrap_socket;
 extern PyObject *const_tuple_str_plain_is_fp_closed_tuple;
 extern PyObject *const_str_plain___file__;
-extern PyObject *const_tuple_7da8310d74c3805f440f75838e183daf_tuple;
 extern PyObject *const_str_plain_connection;
 extern PyObject *const_str_plain_parse_url;
 extern PyObject *const_str_plain_SSLContext;
 extern PyObject *const_str_plain_HAS_SNI;
 static PyObject *const_str_digest_8f6784b33a12abe5dc822b9ebd0d864d;
 extern PyObject *const_str_plain_response;
+static PyObject *const_tuple_458ad534e05e12315d2a5238801e472d_tuple;
 extern PyObject *const_str_plain___doc__;
 extern PyObject *const_str_plain_resolve_cert_reqs;
 extern PyObject *const_str_plain_url;
 extern PyObject *const_str_plain_current_time;
 extern PyObject *const_str_plain_split_first;
+extern PyObject *const_str_plain_IS_PYOPENSSL;
 extern PyObject *const_str_plain_Timeout;
 extern PyObject *const_str_plain_is_fp_closed;
 extern PyObject *const_str_plain_retry;
@@ -73,7 +74,7 @@ extern PyObject *const_str_plain_Url;
 extern PyObject *const_str_plain_absolute_import;
 extern PyObject *const_str_plain___cached__;
 static PyObject *const_str_digest_cb330e6f9e68db4e58204493d89fbfc3;
-extern PyObject *const_tuple_0dc273c61a7da34b5fda7bd45edb8755_tuple;
+static PyObject *const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple;
 extern PyObject *const_str_plain_timeout;
 static PyObject *module_filename_obj;
 
@@ -82,9 +83,35 @@ static bool constants_created = false;
 static void createModuleConstants( void )
 {
     const_list_str_digest_8f6784b33a12abe5dc822b9ebd0d864d_list = PyList_New( 1 );
-    const_str_digest_8f6784b33a12abe5dc822b9ebd0d864d = UNSTREAM_STRING( &constant_bin[ 717564 ], 45, 0 );
+    const_str_digest_8f6784b33a12abe5dc822b9ebd0d864d = UNSTREAM_STRING( &constant_bin[ 741089 ], 45, 0 );
     PyList_SET_ITEM( const_list_str_digest_8f6784b33a12abe5dc822b9ebd0d864d_list, 0, const_str_digest_8f6784b33a12abe5dc822b9ebd0d864d ); Py_INCREF( const_str_digest_8f6784b33a12abe5dc822b9ebd0d864d );
-    const_str_digest_cb330e6f9e68db4e58204493d89fbfc3 = UNSTREAM_STRING( &constant_bin[ 717609 ], 57, 0 );
+    const_tuple_458ad534e05e12315d2a5238801e472d_tuple = PyTuple_New( 17 );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 0, const_str_plain_HAS_SNI ); Py_INCREF( const_str_plain_HAS_SNI );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 1, const_str_plain_IS_PYOPENSSL ); Py_INCREF( const_str_plain_IS_PYOPENSSL );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 2, const_str_plain_SSLContext ); Py_INCREF( const_str_plain_SSLContext );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 3, const_str_plain_Retry ); Py_INCREF( const_str_plain_Retry );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 4, const_str_plain_Timeout ); Py_INCREF( const_str_plain_Timeout );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 5, const_str_plain_Url ); Py_INCREF( const_str_plain_Url );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 6, const_str_plain_assert_fingerprint ); Py_INCREF( const_str_plain_assert_fingerprint );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 7, const_str_plain_current_time ); Py_INCREF( const_str_plain_current_time );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 8, const_str_plain_is_connection_dropped ); Py_INCREF( const_str_plain_is_connection_dropped );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 9, const_str_plain_is_fp_closed ); Py_INCREF( const_str_plain_is_fp_closed );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 10, const_str_plain_get_host ); Py_INCREF( const_str_plain_get_host );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 11, const_str_plain_parse_url ); Py_INCREF( const_str_plain_parse_url );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 12, const_str_plain_make_headers ); Py_INCREF( const_str_plain_make_headers );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 13, const_str_plain_resolve_cert_reqs ); Py_INCREF( const_str_plain_resolve_cert_reqs );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 14, const_str_plain_resolve_ssl_version ); Py_INCREF( const_str_plain_resolve_ssl_version );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 15, const_str_plain_split_first ); Py_INCREF( const_str_plain_split_first );
+    PyTuple_SET_ITEM( const_tuple_458ad534e05e12315d2a5238801e472d_tuple, 16, const_str_plain_ssl_wrap_socket ); Py_INCREF( const_str_plain_ssl_wrap_socket );
+    const_str_digest_cb330e6f9e68db4e58204493d89fbfc3 = UNSTREAM_STRING( &constant_bin[ 741134 ], 57, 0 );
+    const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple = PyTuple_New( 7 );
+    PyTuple_SET_ITEM( const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, 0, const_str_plain_SSLContext ); Py_INCREF( const_str_plain_SSLContext );
+    PyTuple_SET_ITEM( const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, 1, const_str_plain_HAS_SNI ); Py_INCREF( const_str_plain_HAS_SNI );
+    PyTuple_SET_ITEM( const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, 2, const_str_plain_IS_PYOPENSSL ); Py_INCREF( const_str_plain_IS_PYOPENSSL );
+    PyTuple_SET_ITEM( const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, 3, const_str_plain_assert_fingerprint ); Py_INCREF( const_str_plain_assert_fingerprint );
+    PyTuple_SET_ITEM( const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, 4, const_str_plain_resolve_cert_reqs ); Py_INCREF( const_str_plain_resolve_cert_reqs );
+    PyTuple_SET_ITEM( const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, 5, const_str_plain_resolve_ssl_version ); Py_INCREF( const_str_plain_resolve_ssl_version );
+    PyTuple_SET_ITEM( const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, 6, const_str_plain_ssl_wrap_socket ); Py_INCREF( const_str_plain_ssl_wrap_socket );
 
     constants_created = true;
 }
@@ -285,6 +312,7 @@ MOD_INIT_DECL( urllib3$util )
     PyObject *tmp_assign_source_21;
     PyObject *tmp_assign_source_22;
     PyObject *tmp_assign_source_23;
+    PyObject *tmp_assign_source_24;
     PyObject *tmp_import_globals_1;
     PyObject *tmp_import_globals_2;
     PyObject *tmp_import_globals_3;
@@ -301,6 +329,7 @@ MOD_INIT_DECL( urllib3$util )
     PyObject *tmp_import_globals_14;
     PyObject *tmp_import_globals_15;
     PyObject *tmp_import_globals_16;
+    PyObject *tmp_import_globals_17;
     PyObject *tmp_import_name_from_1;
     PyObject *tmp_import_name_from_2;
     PyObject *tmp_import_name_from_3;
@@ -317,6 +346,7 @@ MOD_INIT_DECL( urllib3$util )
     PyObject *tmp_import_name_from_14;
     PyObject *tmp_import_name_from_15;
     PyObject *tmp_import_name_from_16;
+    PyObject *tmp_import_name_from_17;
     PyFrameObject *frame_module;
 
 
@@ -426,7 +456,7 @@ MOD_INIT_DECL( urllib3$util )
     UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_is_fp_closed, tmp_assign_source_9 );
     tmp_import_globals_4 = ((PyModuleObject *)module_urllib3$util)->md_dict;
     frame_module->f_lineno = 6;
-    tmp_import_name_from_4 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_4, tmp_import_globals_4, const_tuple_0dc273c61a7da34b5fda7bd45edb8755_tuple, const_int_pos_1 );
+    tmp_import_name_from_4 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_4, tmp_import_globals_4, const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_4 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -452,7 +482,7 @@ MOD_INIT_DECL( urllib3$util )
     UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_SSLContext, tmp_assign_source_10 );
     tmp_import_globals_5 = ((PyModuleObject *)module_urllib3$util)->md_dict;
     frame_module->f_lineno = 6;
-    tmp_import_name_from_5 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_5, tmp_import_globals_5, const_tuple_0dc273c61a7da34b5fda7bd45edb8755_tuple, const_int_pos_1 );
+    tmp_import_name_from_5 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_5, tmp_import_globals_5, const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_5 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -478,7 +508,7 @@ MOD_INIT_DECL( urllib3$util )
     UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_HAS_SNI, tmp_assign_source_11 );
     tmp_import_globals_6 = ((PyModuleObject *)module_urllib3$util)->md_dict;
     frame_module->f_lineno = 6;
-    tmp_import_name_from_6 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_6, tmp_import_globals_6, const_tuple_0dc273c61a7da34b5fda7bd45edb8755_tuple, const_int_pos_1 );
+    tmp_import_name_from_6 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_6, tmp_import_globals_6, const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_6 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -489,7 +519,7 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_12 = IMPORT_NAME( tmp_import_name_from_6, const_str_plain_assert_fingerprint );
+    tmp_assign_source_12 = IMPORT_NAME( tmp_import_name_from_6, const_str_plain_IS_PYOPENSSL );
     Py_DECREF( tmp_import_name_from_6 );
     if ( tmp_assign_source_12 == NULL )
     {
@@ -501,10 +531,10 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_assert_fingerprint, tmp_assign_source_12 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_IS_PYOPENSSL, tmp_assign_source_12 );
     tmp_import_globals_7 = ((PyModuleObject *)module_urllib3$util)->md_dict;
     frame_module->f_lineno = 6;
-    tmp_import_name_from_7 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_7, tmp_import_globals_7, const_tuple_0dc273c61a7da34b5fda7bd45edb8755_tuple, const_int_pos_1 );
+    tmp_import_name_from_7 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_7, tmp_import_globals_7, const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_7 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -515,7 +545,7 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_13 = IMPORT_NAME( tmp_import_name_from_7, const_str_plain_resolve_cert_reqs );
+    tmp_assign_source_13 = IMPORT_NAME( tmp_import_name_from_7, const_str_plain_assert_fingerprint );
     Py_DECREF( tmp_import_name_from_7 );
     if ( tmp_assign_source_13 == NULL )
     {
@@ -527,10 +557,10 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_resolve_cert_reqs, tmp_assign_source_13 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_assert_fingerprint, tmp_assign_source_13 );
     tmp_import_globals_8 = ((PyModuleObject *)module_urllib3$util)->md_dict;
     frame_module->f_lineno = 6;
-    tmp_import_name_from_8 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_8, tmp_import_globals_8, const_tuple_0dc273c61a7da34b5fda7bd45edb8755_tuple, const_int_pos_1 );
+    tmp_import_name_from_8 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_8, tmp_import_globals_8, const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_8 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -541,7 +571,7 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_14 = IMPORT_NAME( tmp_import_name_from_8, const_str_plain_resolve_ssl_version );
+    tmp_assign_source_14 = IMPORT_NAME( tmp_import_name_from_8, const_str_plain_resolve_cert_reqs );
     Py_DECREF( tmp_import_name_from_8 );
     if ( tmp_assign_source_14 == NULL )
     {
@@ -553,10 +583,10 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_resolve_ssl_version, tmp_assign_source_14 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_resolve_cert_reqs, tmp_assign_source_14 );
     tmp_import_globals_9 = ((PyModuleObject *)module_urllib3$util)->md_dict;
     frame_module->f_lineno = 6;
-    tmp_import_name_from_9 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_9, tmp_import_globals_9, const_tuple_0dc273c61a7da34b5fda7bd45edb8755_tuple, const_int_pos_1 );
+    tmp_import_name_from_9 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_9, tmp_import_globals_9, const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_9 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -567,7 +597,7 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_15 = IMPORT_NAME( tmp_import_name_from_9, const_str_plain_ssl_wrap_socket );
+    tmp_assign_source_15 = IMPORT_NAME( tmp_import_name_from_9, const_str_plain_resolve_ssl_version );
     Py_DECREF( tmp_import_name_from_9 );
     if ( tmp_assign_source_15 == NULL )
     {
@@ -579,10 +609,10 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_ssl_wrap_socket, tmp_assign_source_15 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_resolve_ssl_version, tmp_assign_source_15 );
     tmp_import_globals_10 = ((PyModuleObject *)module_urllib3$util)->md_dict;
-    frame_module->f_lineno = 14;
-    tmp_import_name_from_10 = IMPORT_MODULE( const_str_plain_timeout, tmp_import_globals_10, tmp_import_globals_10, const_tuple_str_plain_current_time_str_plain_Timeout_tuple, const_int_pos_1 );
+    frame_module->f_lineno = 6;
+    tmp_import_name_from_10 = IMPORT_MODULE( const_str_plain_ssl_, tmp_import_globals_10, tmp_import_globals_10, const_tuple_ad3c89f6531f3e625d8002c4a351e879_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_10 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -590,10 +620,10 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 14;
+        exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_16 = IMPORT_NAME( tmp_import_name_from_10, const_str_plain_current_time );
+    tmp_assign_source_16 = IMPORT_NAME( tmp_import_name_from_10, const_str_plain_ssl_wrap_socket );
     Py_DECREF( tmp_import_name_from_10 );
     if ( tmp_assign_source_16 == NULL )
     {
@@ -602,12 +632,12 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 14;
+        exception_lineno = 6;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_current_time, tmp_assign_source_16 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_ssl_wrap_socket, tmp_assign_source_16 );
     tmp_import_globals_11 = ((PyModuleObject *)module_urllib3$util)->md_dict;
-    frame_module->f_lineno = 14;
+    frame_module->f_lineno = 15;
     tmp_import_name_from_11 = IMPORT_MODULE( const_str_plain_timeout, tmp_import_globals_11, tmp_import_globals_11, const_tuple_str_plain_current_time_str_plain_Timeout_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_11 == NULL )
     {
@@ -616,10 +646,10 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 14;
+        exception_lineno = 15;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_17 = IMPORT_NAME( tmp_import_name_from_11, const_str_plain_Timeout );
+    tmp_assign_source_17 = IMPORT_NAME( tmp_import_name_from_11, const_str_plain_current_time );
     Py_DECREF( tmp_import_name_from_11 );
     if ( tmp_assign_source_17 == NULL )
     {
@@ -628,13 +658,13 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 14;
+        exception_lineno = 15;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_Timeout, tmp_assign_source_17 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_current_time, tmp_assign_source_17 );
     tmp_import_globals_12 = ((PyModuleObject *)module_urllib3$util)->md_dict;
-    frame_module->f_lineno = 19;
-    tmp_import_name_from_12 = IMPORT_MODULE( const_str_plain_retry, tmp_import_globals_12, tmp_import_globals_12, const_tuple_str_plain_Retry_tuple, const_int_pos_1 );
+    frame_module->f_lineno = 15;
+    tmp_import_name_from_12 = IMPORT_MODULE( const_str_plain_timeout, tmp_import_globals_12, tmp_import_globals_12, const_tuple_str_plain_current_time_str_plain_Timeout_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_12 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -642,10 +672,10 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 19;
+        exception_lineno = 15;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_18 = IMPORT_NAME( tmp_import_name_from_12, const_str_plain_Retry );
+    tmp_assign_source_18 = IMPORT_NAME( tmp_import_name_from_12, const_str_plain_Timeout );
     Py_DECREF( tmp_import_name_from_12 );
     if ( tmp_assign_source_18 == NULL )
     {
@@ -654,13 +684,13 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 19;
+        exception_lineno = 15;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_Retry, tmp_assign_source_18 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_Timeout, tmp_assign_source_18 );
     tmp_import_globals_13 = ((PyModuleObject *)module_urllib3$util)->md_dict;
     frame_module->f_lineno = 20;
-    tmp_import_name_from_13 = IMPORT_MODULE( const_str_plain_url, tmp_import_globals_13, tmp_import_globals_13, const_tuple_a8f4bf95f064877135b9f41c797b793b_tuple, const_int_pos_1 );
+    tmp_import_name_from_13 = IMPORT_MODULE( const_str_plain_retry, tmp_import_globals_13, tmp_import_globals_13, const_tuple_str_plain_Retry_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_13 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -671,7 +701,7 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 20;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_19 = IMPORT_NAME( tmp_import_name_from_13, const_str_plain_get_host );
+    tmp_assign_source_19 = IMPORT_NAME( tmp_import_name_from_13, const_str_plain_Retry );
     Py_DECREF( tmp_import_name_from_13 );
     if ( tmp_assign_source_19 == NULL )
     {
@@ -683,9 +713,9 @@ MOD_INIT_DECL( urllib3$util )
         exception_lineno = 20;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_get_host, tmp_assign_source_19 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_Retry, tmp_assign_source_19 );
     tmp_import_globals_14 = ((PyModuleObject *)module_urllib3$util)->md_dict;
-    frame_module->f_lineno = 20;
+    frame_module->f_lineno = 21;
     tmp_import_name_from_14 = IMPORT_MODULE( const_str_plain_url, tmp_import_globals_14, tmp_import_globals_14, const_tuple_a8f4bf95f064877135b9f41c797b793b_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_14 == NULL )
     {
@@ -694,10 +724,10 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 20;
+        exception_lineno = 21;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_20 = IMPORT_NAME( tmp_import_name_from_14, const_str_plain_parse_url );
+    tmp_assign_source_20 = IMPORT_NAME( tmp_import_name_from_14, const_str_plain_get_host );
     Py_DECREF( tmp_import_name_from_14 );
     if ( tmp_assign_source_20 == NULL )
     {
@@ -706,12 +736,12 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 20;
+        exception_lineno = 21;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_parse_url, tmp_assign_source_20 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_get_host, tmp_assign_source_20 );
     tmp_import_globals_15 = ((PyModuleObject *)module_urllib3$util)->md_dict;
-    frame_module->f_lineno = 20;
+    frame_module->f_lineno = 21;
     tmp_import_name_from_15 = IMPORT_MODULE( const_str_plain_url, tmp_import_globals_15, tmp_import_globals_15, const_tuple_a8f4bf95f064877135b9f41c797b793b_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_15 == NULL )
     {
@@ -720,10 +750,10 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 20;
+        exception_lineno = 21;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_21 = IMPORT_NAME( tmp_import_name_from_15, const_str_plain_split_first );
+    tmp_assign_source_21 = IMPORT_NAME( tmp_import_name_from_15, const_str_plain_parse_url );
     Py_DECREF( tmp_import_name_from_15 );
     if ( tmp_assign_source_21 == NULL )
     {
@@ -732,12 +762,12 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 20;
+        exception_lineno = 21;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_split_first, tmp_assign_source_21 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_parse_url, tmp_assign_source_21 );
     tmp_import_globals_16 = ((PyModuleObject *)module_urllib3$util)->md_dict;
-    frame_module->f_lineno = 20;
+    frame_module->f_lineno = 21;
     tmp_import_name_from_16 = IMPORT_MODULE( const_str_plain_url, tmp_import_globals_16, tmp_import_globals_16, const_tuple_a8f4bf95f064877135b9f41c797b793b_tuple, const_int_pos_1 );
     if ( tmp_import_name_from_16 == NULL )
     {
@@ -746,10 +776,10 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 20;
+        exception_lineno = 21;
         goto frame_exception_exit_1;
     }
-    tmp_assign_source_22 = IMPORT_NAME( tmp_import_name_from_16, const_str_plain_Url );
+    tmp_assign_source_22 = IMPORT_NAME( tmp_import_name_from_16, const_str_plain_split_first );
     Py_DECREF( tmp_import_name_from_16 );
     if ( tmp_assign_source_22 == NULL )
     {
@@ -758,10 +788,36 @@ MOD_INIT_DECL( urllib3$util )
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 20;
+        exception_lineno = 21;
         goto frame_exception_exit_1;
     }
-    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_Url, tmp_assign_source_22 );
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_split_first, tmp_assign_source_22 );
+    tmp_import_globals_17 = ((PyModuleObject *)module_urllib3$util)->md_dict;
+    frame_module->f_lineno = 21;
+    tmp_import_name_from_17 = IMPORT_MODULE( const_str_plain_url, tmp_import_globals_17, tmp_import_globals_17, const_tuple_a8f4bf95f064877135b9f41c797b793b_tuple, const_int_pos_1 );
+    if ( tmp_import_name_from_17 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 21;
+        goto frame_exception_exit_1;
+    }
+    tmp_assign_source_23 = IMPORT_NAME( tmp_import_name_from_17, const_str_plain_Url );
+    Py_DECREF( tmp_import_name_from_17 );
+    if ( tmp_assign_source_23 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 21;
+        goto frame_exception_exit_1;
+    }
+    UPDATE_STRING_DICT1( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain_Url, tmp_assign_source_23 );
 
     // Restore frame exception if necessary.
 #if 0
@@ -800,8 +856,8 @@ MOD_INIT_DECL( urllib3$util )
     // Return the error.
     goto module_exception_exit;
     frame_no_exception_1:;
-    tmp_assign_source_23 = const_tuple_7da8310d74c3805f440f75838e183daf_tuple;
-    UPDATE_STRING_DICT0( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain___all__, tmp_assign_source_23 );
+    tmp_assign_source_24 = const_tuple_458ad534e05e12315d2a5238801e472d_tuple;
+    UPDATE_STRING_DICT0( moduledict_urllib3$util, (Nuitka_StringObject *)const_str_plain___all__, tmp_assign_source_24 );
 
     return MOD_RETURN_VALUE( module_urllib3$util );
     module_exception_exit:

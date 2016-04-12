@@ -106,9 +106,9 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain_is_py3 = UNSTREAM_STRING( &constant_bin[ 440930 ], 6, 1 );
-    const_str_digest_c212703b77f24e2fb0e0d52b69f340a3 = UNSTREAM_STRING( &constant_bin[ 184004 ], 38, 0 );
-    const_str_digest_69a39ea0909b53dd224dfdc9fdc598a3 = UNSTREAM_STRING( &constant_bin[ 440936 ], 14, 0 );
+    const_str_plain_is_py3 = UNSTREAM_STRING( &constant_bin[ 452182 ], 6, 1 );
+    const_str_digest_c212703b77f24e2fb0e0d52b69f340a3 = UNSTREAM_STRING( &constant_bin[ 195306 ], 38, 0 );
+    const_str_digest_69a39ea0909b53dd224dfdc9fdc598a3 = UNSTREAM_STRING( &constant_bin[ 452188 ], 14, 0 );
     const_tuple_1a6551445f1104e3b9dd672b8d5e0ed7_tuple = PyTuple_New( 5 );
     PyTuple_SET_ITEM( const_tuple_1a6551445f1104e3b9dd672b8d5e0ed7_tuple, 0, const_str_plain_urlparse ); Py_INCREF( const_str_plain_urlparse );
     PyTuple_SET_ITEM( const_tuple_1a6551445f1104e3b9dd672b8d5e0ed7_tuple, 1, const_str_plain_urlunparse ); Py_INCREF( const_str_plain_urlunparse );
@@ -126,7 +126,7 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_425a148e6e9ebba9710bda982eb03f84_tuple, 7, const_str_plain_quote_plus ); Py_INCREF( const_str_plain_quote_plus );
     PyTuple_SET_ITEM( const_tuple_425a148e6e9ebba9710bda982eb03f84_tuple, 8, const_str_plain_unquote_plus ); Py_INCREF( const_str_plain_unquote_plus );
     PyTuple_SET_ITEM( const_tuple_425a148e6e9ebba9710bda982eb03f84_tuple, 9, const_str_plain_urldefrag ); Py_INCREF( const_str_plain_urldefrag );
-    const_str_digest_574a157748715665bc83c6cc19cc693b = UNSTREAM_STRING( &constant_bin[ 440950 ], 63, 0 );
+    const_str_digest_574a157748715665bc83c6cc19cc693b = UNSTREAM_STRING( &constant_bin[ 452202 ], 63, 0 );
     const_tuple_str_plain_Morsel_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_Morsel_tuple, 0, const_str_plain_Morsel ); Py_INCREF( const_str_plain_Morsel );
     const_tuple_4efa1b2d27dfd0414f007f422718ae23_tuple = PyTuple_New( 7 );
@@ -137,9 +137,9 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_4efa1b2d27dfd0414f007f422718ae23_tuple, 4, const_str_plain_urlencode ); Py_INCREF( const_str_plain_urlencode );
     PyTuple_SET_ITEM( const_tuple_4efa1b2d27dfd0414f007f422718ae23_tuple, 5, const_str_plain_getproxies ); Py_INCREF( const_str_plain_getproxies );
     PyTuple_SET_ITEM( const_tuple_4efa1b2d27dfd0414f007f422718ae23_tuple, 6, const_str_plain_proxy_bypass ); Py_INCREF( const_str_plain_proxy_bypass );
-    const_str_plain_numeric_types = UNSTREAM_STRING( &constant_bin[ 441013 ], 13, 1 );
-    const_str_plain__ver = UNSTREAM_STRING( &constant_bin[ 4570 ], 4, 1 );
-    const_str_digest_27dc36e07483239abb04a7b1394ae9e9 = UNSTREAM_STRING( &constant_bin[ 441026 ], 27, 0 );
+    const_str_plain_numeric_types = UNSTREAM_STRING( &constant_bin[ 452265 ], 13, 1 );
+    const_str_plain__ver = UNSTREAM_STRING( &constant_bin[ 1639 ], 4, 1 );
+    const_str_digest_27dc36e07483239abb04a7b1394ae9e9 = UNSTREAM_STRING( &constant_bin[ 452278 ], 27, 0 );
     const_tuple_5286d1aca9c735d3365d3e2e3831fb81_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_5286d1aca9c735d3365d3e2e3831fb81_tuple, 0, const_str_plain_parse_http_list ); Py_INCREF( const_str_plain_parse_http_list );
     PyTuple_SET_ITEM( const_tuple_5286d1aca9c735d3365d3e2e3831fb81_tuple, 1, const_str_plain_getproxies ); Py_INCREF( const_str_plain_getproxies );

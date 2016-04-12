@@ -414,9 +414,9 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_292e344bac777e13d7a1c69c7cd49735 = UNSTREAM_STRING( &constant_bin[ 466929 ], 56, 0 );
-    const_str_digest_599ccb99c4cbf66b4698ce1578b5c539 = UNSTREAM_STRING( &constant_bin[ 466929 ], 50, 0 );
-    const_str_digest_d9636d368ee2e81dbe05427622baa8a9 = UNSTREAM_STRING( &constant_bin[ 466985 ], 86, 0 );
+    const_str_digest_292e344bac777e13d7a1c69c7cd49735 = UNSTREAM_STRING( &constant_bin[ 481991 ], 56, 0 );
+    const_str_digest_599ccb99c4cbf66b4698ce1578b5c539 = UNSTREAM_STRING( &constant_bin[ 481991 ], 50, 0 );
+    const_str_digest_d9636d368ee2e81dbe05427622baa8a9 = UNSTREAM_STRING( &constant_bin[ 482047 ], 86, 0 );
 
     constants_created = true;
 }
@@ -8643,7 +8643,7 @@ static PyObject *impl_function_18_exec__of_pip$_vendor$requests$packages$urllib3
 
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 436 ], 51, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 379 ], 51, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -13555,7 +13555,7 @@ MOD_INIT_DECL( pip$_vendor$requests$packages$urllib3$packages$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 357 ], 23, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 300 ], 23, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -16343,7 +16343,7 @@ MOD_INIT_DECL( pip$_vendor$requests$packages$urllib3$packages$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 380 ], 26, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 323 ], 26, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -17964,7 +17964,7 @@ MOD_INIT_DECL( pip$_vendor$requests$packages$urllib3$packages$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 406 ], 30, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 349 ], 30, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );

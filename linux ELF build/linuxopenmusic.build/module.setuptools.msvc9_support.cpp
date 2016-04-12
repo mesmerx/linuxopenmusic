@@ -83,24 +83,24 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain_find_vcvarsall = UNSTREAM_STRING( &constant_bin[ 657211 ], 14, 1 );
-    const_str_plain_installdir = UNSTREAM_STRING( &constant_bin[ 657225 ], 10, 1 );
-    const_str_digest_dda41c33e2574d4000cf311eb7c0a4d6 = UNSTREAM_STRING( &constant_bin[ 657235 ], 202, 0 );
-    const_str_plain_vcvarsall = UNSTREAM_STRING( &constant_bin[ 657216 ], 9, 1 );
-    const_str_plain_unpatched = UNSTREAM_STRING( &constant_bin[ 657437 ], 9, 1 );
-    const_str_plain_VC_BASE = UNSTREAM_STRING( &constant_bin[ 657446 ], 7, 1 );
-    const_str_digest_da114ccd421afe7f6a59ac06f098a19e = UNSTREAM_STRING( &constant_bin[ 657453 ], 24, 0 );
-    const_str_plain_Reg = UNSTREAM_STRING( &constant_bin[ 72647 ], 3, 1 );
-    const_str_plain_get_value = UNSTREAM_STRING( &constant_bin[ 657477 ], 9, 1 );
-    const_str_digest_9e0e38d5e074e40dfaba6a9788f0d9b4 = UNSTREAM_STRING( &constant_bin[ 657486 ], 60, 0 );
-    const_str_digest_e2188e2a7c2a802f173df39fbb1b9a0e = UNSTREAM_STRING( &constant_bin[ 657546 ], 13, 0 );
-    const_str_plain_query_vcvarsall = UNSTREAM_STRING( &constant_bin[ 657559 ], 15, 1 );
-    const_str_digest_400f0912ab977d54f12713db132abf5a = UNSTREAM_STRING( &constant_bin[ 657574 ], 44, 0 );
-    const_str_digest_53904f6c49c4759423f32e10580ee2bc = UNSTREAM_STRING( &constant_bin[ 657618 ], 37, 0 );
-    const_str_digest_561ade3c07ce4e394ed92692e5ef90f3 = UNSTREAM_STRING( &constant_bin[ 657259 ], 23, 0 );
-    const_str_plain_msvc9compiler = UNSTREAM_STRING( &constant_bin[ 657269 ], 13, 1 );
-    const_str_plain_productdir = UNSTREAM_STRING( &constant_bin[ 657655 ], 10, 1 );
-    const_str_digest_c826ae54212aae00bd1c4125314c50bb = UNSTREAM_STRING( &constant_bin[ 657665 ], 45, 0 );
+    const_str_plain_find_vcvarsall = UNSTREAM_STRING( &constant_bin[ 676412 ], 14, 1 );
+    const_str_plain_installdir = UNSTREAM_STRING( &constant_bin[ 676426 ], 10, 1 );
+    const_str_digest_dda41c33e2574d4000cf311eb7c0a4d6 = UNSTREAM_STRING( &constant_bin[ 676436 ], 202, 0 );
+    const_str_plain_vcvarsall = UNSTREAM_STRING( &constant_bin[ 676417 ], 9, 1 );
+    const_str_plain_unpatched = UNSTREAM_STRING( &constant_bin[ 676638 ], 9, 1 );
+    const_str_plain_VC_BASE = UNSTREAM_STRING( &constant_bin[ 676647 ], 7, 1 );
+    const_str_digest_da114ccd421afe7f6a59ac06f098a19e = UNSTREAM_STRING( &constant_bin[ 676654 ], 24, 0 );
+    const_str_plain_Reg = UNSTREAM_STRING( &constant_bin[ 84067 ], 3, 1 );
+    const_str_plain_get_value = UNSTREAM_STRING( &constant_bin[ 676678 ], 9, 1 );
+    const_str_digest_9e0e38d5e074e40dfaba6a9788f0d9b4 = UNSTREAM_STRING( &constant_bin[ 676687 ], 60, 0 );
+    const_str_digest_e2188e2a7c2a802f173df39fbb1b9a0e = UNSTREAM_STRING( &constant_bin[ 676747 ], 13, 0 );
+    const_str_plain_query_vcvarsall = UNSTREAM_STRING( &constant_bin[ 676760 ], 15, 1 );
+    const_str_digest_400f0912ab977d54f12713db132abf5a = UNSTREAM_STRING( &constant_bin[ 676775 ], 44, 0 );
+    const_str_digest_53904f6c49c4759423f32e10580ee2bc = UNSTREAM_STRING( &constant_bin[ 676819 ], 37, 0 );
+    const_str_digest_561ade3c07ce4e394ed92692e5ef90f3 = UNSTREAM_STRING( &constant_bin[ 676460 ], 23, 0 );
+    const_str_plain_msvc9compiler = UNSTREAM_STRING( &constant_bin[ 676470 ], 13, 1 );
+    const_str_plain_productdir = UNSTREAM_STRING( &constant_bin[ 676856 ], 10, 1 );
+    const_str_digest_c826ae54212aae00bd1c4125314c50bb = UNSTREAM_STRING( &constant_bin[ 676866 ], 45, 0 );
     const_tuple_f082c812fac80b517192a41ff823e51b_tuple = PyTuple_New( 5 );
     PyTuple_SET_ITEM( const_tuple_f082c812fac80b517192a41ff823e51b_tuple, 0, const_str_plain_version ); Py_INCREF( const_str_plain_version );
     PyTuple_SET_ITEM( const_tuple_f082c812fac80b517192a41ff823e51b_tuple, 1, const_str_plain_args ); Py_INCREF( const_str_plain_args );
@@ -115,7 +115,7 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_b43c82eb2abedae760d830c998613ff3_tuple, 4, const_str_plain_productdir ); Py_INCREF( const_str_plain_productdir );
     PyTuple_SET_ITEM( const_tuple_b43c82eb2abedae760d830c998613ff3_tuple, 5, const_str_plain_os ); Py_INCREF( const_str_plain_os );
     PyTuple_SET_ITEM( const_tuple_b43c82eb2abedae760d830c998613ff3_tuple, 6, const_str_plain_vcvarsall ); Py_INCREF( const_str_plain_vcvarsall );
-    const_str_digest_f378cd8f382e74ea3e984d7839544bec = UNSTREAM_STRING( &constant_bin[ 657710 ], 12, 0 );
+    const_str_digest_f378cd8f382e74ea3e984d7839544bec = UNSTREAM_STRING( &constant_bin[ 676911 ], 12, 0 );
 
     constants_created = true;
 }
@@ -2988,7 +2988,7 @@ MOD_INIT_DECL( setuptools$msvc9_support )
     PUBLISH_EXCEPTION( &exception_keeper_type_1, &exception_keeper_value_1, &exception_keeper_tb_1 );
     // Tried code:
     tmp_compare_left_1 = PyThreadState_GET()->exc_type;
-    tmp_compare_right_1 = PyExc_ImportError;
+    tmp_compare_right_1 = PyExc_Exception;
     tmp_exc_match_exception_match_1 = EXCEPTION_MATCH_BOOL( tmp_compare_left_1, tmp_compare_right_1 );
     if ( tmp_exc_match_exception_match_1 == -1 )
     {

@@ -68,17 +68,17 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_cb1c77bd83546de07a9d7ab36dd8ddef = UNSTREAM_STRING( &constant_bin[ 704238 ], 5, 0 );
+    const_str_digest_cb1c77bd83546de07a9d7ab36dd8ddef = UNSTREAM_STRING( &constant_bin[ 723439 ], 5, 0 );
     const_tuple_ef90c8fcf77786aee38f4335b3bd24f8_tuple = PyTuple_New( 4 );
     PyTuple_SET_ITEM( const_tuple_ef90c8fcf77786aee38f4335b3bd24f8_tuple, 0, const_str_plain_translit ); Py_INCREF( const_str_plain_translit );
     PyTuple_SET_ITEM( const_tuple_ef90c8fcf77786aee38f4335b3bd24f8_tuple, 1, const_str_plain_get_available_language_codes ); Py_INCREF( const_str_plain_get_available_language_codes );
     PyTuple_SET_ITEM( const_tuple_ef90c8fcf77786aee38f4335b3bd24f8_tuple, 2, const_str_plain_detect_language ); Py_INCREF( const_str_plain_detect_language );
     PyTuple_SET_ITEM( const_tuple_ef90c8fcf77786aee38f4335b3bd24f8_tuple, 3, const_str_plain_slugify ); Py_INCREF( const_str_plain_slugify );
     const_list_str_digest_96187701909d57b15423073640c026d6_list = PyList_New( 1 );
-    const_str_digest_96187701909d57b15423073640c026d6 = UNSTREAM_STRING( &constant_bin[ 704243 ], 46, 0 );
+    const_str_digest_96187701909d57b15423073640c026d6 = UNSTREAM_STRING( &constant_bin[ 723444 ], 46, 0 );
     PyList_SET_ITEM( const_list_str_digest_96187701909d57b15423073640c026d6_list, 0, const_str_digest_96187701909d57b15423073640c026d6 ); Py_INCREF( const_str_digest_96187701909d57b15423073640c026d6 );
-    const_str_digest_0a9765fab5c4b22bb48c8120690711fc = UNSTREAM_STRING( &constant_bin[ 704289 ], 26, 0 );
-    const_str_digest_00364efb69b089f76711f0d0d1e4e457 = UNSTREAM_STRING( &constant_bin[ 704315 ], 58, 0 );
+    const_str_digest_0a9765fab5c4b22bb48c8120690711fc = UNSTREAM_STRING( &constant_bin[ 723490 ], 26, 0 );
+    const_str_digest_00364efb69b089f76711f0d0d1e4e457 = UNSTREAM_STRING( &constant_bin[ 723516 ], 58, 0 );
     const_tuple_str_plain_get_available_language_packs_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_get_available_language_packs_tuple, 0, const_str_plain_get_available_language_packs ); Py_INCREF( const_str_plain_get_available_language_packs );
     const_tuple_e5776499f26cf6f676ecbaa893279c70_tuple = PyTuple_New( 5 );

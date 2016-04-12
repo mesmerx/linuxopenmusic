@@ -60,14 +60,14 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain_include_path = UNSTREAM_STRING( &constant_bin[ 149700 ], 12, 1 );
-    const_str_plain_get_include = UNSTREAM_STRING( &constant_bin[ 149712 ], 11, 1 );
+    const_str_plain_include_path = UNSTREAM_STRING( &constant_bin[ 161002 ], 12, 1 );
+    const_str_plain_get_include = UNSTREAM_STRING( &constant_bin[ 161014 ], 11, 1 );
     const_list_str_digest_23d2843bf5fc1f812bba0cbe3c3ed626_list = PyList_New( 1 );
-    const_str_digest_23d2843bf5fc1f812bba0cbe3c3ed626 = UNSTREAM_STRING( &constant_bin[ 149723 ], 37, 0 );
+    const_str_digest_23d2843bf5fc1f812bba0cbe3c3ed626 = UNSTREAM_STRING( &constant_bin[ 161025 ], 37, 0 );
     PyList_SET_ITEM( const_list_str_digest_23d2843bf5fc1f812bba0cbe3c3ed626_list, 0, const_str_digest_23d2843bf5fc1f812bba0cbe3c3ed626 ); Py_INCREF( const_str_digest_23d2843bf5fc1f812bba0cbe3c3ed626 );
-    const_str_digest_2b9163f8c08a41c7b8da77cfefe5137b = UNSTREAM_STRING( &constant_bin[ 149760 ], 49, 0 );
-    const_str_plain_lxml_path = UNSTREAM_STRING( &constant_bin[ 149809 ], 9, 1 );
-    const_str_digest_9861d683770e66a4e951df5d78950a09 = UNSTREAM_STRING( &constant_bin[ 149818 ], 183, 0 );
+    const_str_digest_2b9163f8c08a41c7b8da77cfefe5137b = UNSTREAM_STRING( &constant_bin[ 161062 ], 49, 0 );
+    const_str_plain_lxml_path = UNSTREAM_STRING( &constant_bin[ 161111 ], 9, 1 );
+    const_str_digest_9861d683770e66a4e951df5d78950a09 = UNSTREAM_STRING( &constant_bin[ 161120 ], 183, 0 );
     const_tuple_14c164d2ecedb284ab808b795aeabc24_tuple = PyTuple_New( 6 );
     PyTuple_SET_ITEM( const_tuple_14c164d2ecedb284ab808b795aeabc24_tuple, 0, const_str_plain_os ); Py_INCREF( const_str_plain_os );
     PyTuple_SET_ITEM( const_tuple_14c164d2ecedb284ab808b795aeabc24_tuple, 1, const_str_plain_lxml_path ); Py_INCREF( const_str_plain_lxml_path );

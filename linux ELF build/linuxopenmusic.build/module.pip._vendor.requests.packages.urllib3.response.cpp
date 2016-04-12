@@ -292,7 +292,7 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_db923b6ce716f69e16b2397103a6f12d = UNSTREAM_STRING( &constant_bin[ 467737 ], 82, 0 );
+    const_str_digest_db923b6ce716f69e16b2397103a6f12d = UNSTREAM_STRING( &constant_bin[ 482799 ], 82, 0 );
 
     constants_created = true;
 }

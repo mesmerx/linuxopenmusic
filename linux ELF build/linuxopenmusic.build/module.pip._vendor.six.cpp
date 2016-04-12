@@ -848,17 +848,17 @@ static bool constants_created = false;
 static void createModuleConstants( void )
 {
     const_tuple_str_digest_5365556667f98bf11a66a186a4c106ac_tuple = PyTuple_New( 1 );
-    const_str_digest_5365556667f98bf11a66a186a4c106ac = UNSTREAM_STRING( &constant_bin[ 490014 ], 34, 0 );
+    const_str_digest_5365556667f98bf11a66a186a4c106ac = UNSTREAM_STRING( &constant_bin[ 508905 ], 34, 0 );
     PyTuple_SET_ITEM( const_tuple_str_digest_5365556667f98bf11a66a186a4c106ac_tuple, 0, const_str_digest_5365556667f98bf11a66a186a4c106ac ); Py_INCREF( const_str_digest_5365556667f98bf11a66a186a4c106ac );
     const_tuple_str_digest_32861d340e297cdafcd1e00249733809_tuple = PyTuple_New( 1 );
-    const_str_digest_32861d340e297cdafcd1e00249733809 = UNSTREAM_STRING( &constant_bin[ 490048 ], 34, 0 );
+    const_str_digest_32861d340e297cdafcd1e00249733809 = UNSTREAM_STRING( &constant_bin[ 508939 ], 34, 0 );
     PyTuple_SET_ITEM( const_tuple_str_digest_32861d340e297cdafcd1e00249733809_tuple, 0, const_str_digest_32861d340e297cdafcd1e00249733809 ); Py_INCREF( const_str_digest_32861d340e297cdafcd1e00249733809 );
     const_tuple_str_digest_4e1cb82685804b200627596f113b36d5_tuple = PyTuple_New( 1 );
-    const_str_digest_4e1cb82685804b200627596f113b36d5 = UNSTREAM_STRING( &constant_bin[ 490082 ], 36, 0 );
+    const_str_digest_4e1cb82685804b200627596f113b36d5 = UNSTREAM_STRING( &constant_bin[ 508973 ], 36, 0 );
     PyTuple_SET_ITEM( const_tuple_str_digest_4e1cb82685804b200627596f113b36d5_tuple, 0, const_str_digest_4e1cb82685804b200627596f113b36d5 ); Py_INCREF( const_str_digest_4e1cb82685804b200627596f113b36d5 );
     const_tuple_str_digest_c7f09c4bcaa8f0b2514c94575d5498f3_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_digest_c7f09c4bcaa8f0b2514c94575d5498f3_tuple, 0, const_str_digest_c7f09c4bcaa8f0b2514c94575d5498f3 ); Py_INCREF( const_str_digest_c7f09c4bcaa8f0b2514c94575d5498f3 );
-    const_str_digest_92d97ef3a98c786f3a7cd6dc4fe7325c = UNSTREAM_STRING( &constant_bin[ 490118 ], 40, 0 );
+    const_str_digest_92d97ef3a98c786f3a7cd6dc4fe7325c = UNSTREAM_STRING( &constant_bin[ 509009 ], 40, 0 );
     const_tuple_53bf7adce59f708bed36747a8a752936_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_53bf7adce59f708bed36747a8a752936_tuple, 0, const_str_plain_urllib ); Py_INCREF( const_str_plain_urllib );
     PyTuple_SET_ITEM( const_tuple_53bf7adce59f708bed36747a8a752936_tuple, 1, const_str_digest_befd9b9d089f6436d56faa3a53f1e587 ); Py_INCREF( const_str_digest_befd9b9d089f6436d56faa3a53f1e587 );
@@ -871,15 +871,15 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_str_digest_3637a498443a0351090bc3a79e6f3569_tuple, 0, const_str_digest_3637a498443a0351090bc3a79e6f3569 ); Py_INCREF( const_str_digest_3637a498443a0351090bc3a79e6f3569 );
     const_tuple_str_digest_befd9b9d089f6436d56faa3a53f1e587_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_digest_befd9b9d089f6436d56faa3a53f1e587_tuple, 0, const_str_digest_befd9b9d089f6436d56faa3a53f1e587 ); Py_INCREF( const_str_digest_befd9b9d089f6436d56faa3a53f1e587 );
-    const_str_digest_8ba25b0e47b6d7aee948f5309cd4079a = UNSTREAM_STRING( &constant_bin[ 490158 ], 34, 0 );
+    const_str_digest_8ba25b0e47b6d7aee948f5309cd4079a = UNSTREAM_STRING( &constant_bin[ 509049 ], 34, 0 );
     const_tuple_str_digest_92d97ef3a98c786f3a7cd6dc4fe7325c_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_digest_92d97ef3a98c786f3a7cd6dc4fe7325c_tuple, 0, const_str_digest_92d97ef3a98c786f3a7cd6dc4fe7325c ); Py_INCREF( const_str_digest_92d97ef3a98c786f3a7cd6dc4fe7325c );
-    const_str_digest_afae0a72b94256cc05bb1fc4f363e46a = UNSTREAM_STRING( &constant_bin[ 490192 ], 37, 0 );
+    const_str_digest_afae0a72b94256cc05bb1fc4f363e46a = UNSTREAM_STRING( &constant_bin[ 509083 ], 37, 0 );
     const_tuple_056a886f0994fc31cd45a69375512860_tuple = PyTuple_New( 3 );
     PyTuple_SET_ITEM( const_tuple_056a886f0994fc31cd45a69375512860_tuple, 0, const_str_plain_urllib_error ); Py_INCREF( const_str_plain_urllib_error );
     PyTuple_SET_ITEM( const_tuple_056a886f0994fc31cd45a69375512860_tuple, 1, const_str_digest_8ba25b0e47b6d7aee948f5309cd4079a ); Py_INCREF( const_str_digest_8ba25b0e47b6d7aee948f5309cd4079a );
     PyTuple_SET_ITEM( const_tuple_056a886f0994fc31cd45a69375512860_tuple, 2, const_str_digest_f1949150375e8b53443d58d93fe4f89e ); Py_INCREF( const_str_digest_f1949150375e8b53443d58d93fe4f89e );
-    const_str_digest_fa6b01736908a08da3bfea287ffe9487 = UNSTREAM_STRING( &constant_bin[ 490229 ], 51, 0 );
+    const_str_digest_fa6b01736908a08da3bfea287ffe9487 = UNSTREAM_STRING( &constant_bin[ 509120 ], 51, 0 );
     const_tuple_str_digest_afae0a72b94256cc05bb1fc4f363e46a_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_digest_afae0a72b94256cc05bb1fc4f363e46a_tuple, 0, const_str_digest_afae0a72b94256cc05bb1fc4f363e46a ); Py_INCREF( const_str_digest_afae0a72b94256cc05bb1fc4f363e46a );
 
@@ -18625,7 +18625,7 @@ static PyObject *impl_function_31_exec__of_pip$_vendor$six( Nuitka_FunctionObjec
 
         exception_type = PyExc_UnboundLocalError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 436 ], 51, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 379 ], 51, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -29249,7 +29249,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 357 ], 23, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 300 ], 23, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -33726,7 +33726,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 380 ], 26, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 323 ], 26, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -35193,7 +35193,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 380 ], 26, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 323 ], 26, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -35940,7 +35940,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 380 ], 26, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 323 ], 26, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -37737,7 +37737,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 380 ], 26, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 323 ], 26, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -38519,7 +38519,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 380 ], 26, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 323 ], 26, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -39196,7 +39196,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 380 ], 26, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 323 ], 26, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -41633,7 +41633,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 487 ], 28, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 430 ], 28, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -43606,7 +43606,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 515 ], 23, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 458 ], 23, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
@@ -43623,7 +43623,7 @@ MOD_INIT_DECL( pip$_vendor$six )
 
         exception_type = PyExc_NameError;
         Py_INCREF( exception_type );
-        exception_value = UNSTREAM_STRING( &constant_bin[ 538 ], 30, 0 );
+        exception_value = UNSTREAM_STRING( &constant_bin[ 481 ], 30, 0 );
         exception_tb = NULL;
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );

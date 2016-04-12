@@ -70,8 +70,8 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_39b4ef5caf6a566afaeb253ab5102c30 = UNSTREAM_STRING( &constant_bin[ 305931 ], 38, 0 );
-    const_str_digest_fb7c7a721c31f85c58ae5aa59bdb0229 = UNSTREAM_STRING( &constant_bin[ 305969 ], 74, 0 );
+    const_str_digest_39b4ef5caf6a566afaeb253ab5102c30 = UNSTREAM_STRING( &constant_bin[ 317236 ], 38, 0 );
+    const_str_digest_fb7c7a721c31f85c58ae5aa59bdb0229 = UNSTREAM_STRING( &constant_bin[ 317274 ], 74, 0 );
     const_tuple_str_plain_HTMLSanitizerMixin_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_HTMLSanitizerMixin_tuple, 0, const_str_plain_HTMLSanitizerMixin ); Py_INCREF( const_str_plain_HTMLSanitizerMixin );
 

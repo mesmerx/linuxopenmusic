@@ -74,10 +74,10 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_plain_int2oct = UNSTREAM_STRING( &constant_bin[ 110409 ], 7, 1 );
-    const_str_digest_73972705cb7b9c1da0f81741e72d83d8 = UNSTREAM_STRING( &constant_bin[ 588638 ], 56, 0 );
-    const_str_plain_octs2str = UNSTREAM_STRING( &constant_bin[ 588694 ], 8, 1 );
-    const_str_plain_str2octs = UNSTREAM_STRING( &constant_bin[ 588702 ], 8, 1 );
+    const_str_plain_int2oct = UNSTREAM_STRING( &constant_bin[ 121729 ], 7, 1 );
+    const_str_digest_73972705cb7b9c1da0f81741e72d83d8 = UNSTREAM_STRING( &constant_bin[ 607839 ], 56, 0 );
+    const_str_plain_octs2str = UNSTREAM_STRING( &constant_bin[ 607895 ], 8, 1 );
+    const_str_plain_str2octs = UNSTREAM_STRING( &constant_bin[ 607903 ], 8, 1 );
 
     constants_created = true;
 }

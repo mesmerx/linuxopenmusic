@@ -92,8 +92,8 @@ static void createModuleConstants( void )
 {
     const_tuple_str_plain_PROJECT_DIR_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_PROJECT_DIR_tuple, 0, const_str_plain_PROJECT_DIR ); Py_INCREF( const_str_plain_PROJECT_DIR );
-    const_str_plain_full_app_path = UNSTREAM_STRING( &constant_bin[ 713397 ], 13, 1 );
-    const_str_plain_app_path = UNSTREAM_STRING( &constant_bin[ 713402 ], 8, 1 );
+    const_str_plain_full_app_path = UNSTREAM_STRING( &constant_bin[ 732598 ], 13, 1 );
+    const_str_plain_app_path = UNSTREAM_STRING( &constant_bin[ 732603 ], 8, 1 );
     const_tuple_45a37db78ce312f5ddb423257905d7af_tuple = PyTuple_New( 6 );
     PyTuple_SET_ITEM( const_tuple_45a37db78ce312f5ddb423257905d7af_tuple, 0, const_str_plain_LANGUAGES_DIR ); Py_INCREF( const_str_plain_LANGUAGES_DIR );
     PyTuple_SET_ITEM( const_tuple_45a37db78ce312f5ddb423257905d7af_tuple, 1, const_str_plain_LANGUAGE_PACK_MODULE_NAME ); Py_INCREF( const_str_plain_LANGUAGE_PACK_MODULE_NAME );
@@ -103,12 +103,12 @@ static void createModuleConstants( void )
     PyTuple_SET_ITEM( const_tuple_45a37db78ce312f5ddb423257905d7af_tuple, 5, const_str_plain_e ); Py_INCREF( const_str_plain_e );
     const_tuple_str_plain_LANGUAGES_DIR_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_LANGUAGES_DIR_tuple, 0, const_str_plain_LANGUAGES_DIR ); Py_INCREF( const_str_plain_LANGUAGES_DIR );
-    const_str_digest_255d3ace54e2e9274259eb711a0f62b1 = UNSTREAM_STRING( &constant_bin[ 713410 ], 25, 0 );
-    const_str_plain_discover = UNSTREAM_STRING( &constant_bin[ 542167 ], 8, 1 );
-    const_str_digest_2720d63773d3015f51d8679e940df4f3 = UNSTREAM_STRING( &constant_bin[ 713435 ], 60, 0 );
+    const_str_digest_255d3ace54e2e9274259eb711a0f62b1 = UNSTREAM_STRING( &constant_bin[ 732611 ], 25, 0 );
+    const_str_plain_discover = UNSTREAM_STRING( &constant_bin[ 561058 ], 8, 1 );
+    const_str_digest_2720d63773d3015f51d8679e940df4f3 = UNSTREAM_STRING( &constant_bin[ 732636 ], 60, 0 );
     const_tuple_str_plain_import_module_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_import_module_tuple, 0, const_str_plain_import_module ); Py_INCREF( const_str_plain_import_module );
-    const_str_digest_f1d6a96c8cc5c8099e30a844a2ff3327 = UNSTREAM_STRING( &constant_bin[ 713495 ], 58, 0 );
+    const_str_digest_f1d6a96c8cc5c8099e30a844a2ff3327 = UNSTREAM_STRING( &constant_bin[ 732696 ], 58, 0 );
     const_tuple_str_plain_LANGUAGE_PACK_MODULE_NAME_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_LANGUAGE_PACK_MODULE_NAME_tuple, 0, const_str_plain_LANGUAGE_PACK_MODULE_NAME ); Py_INCREF( const_str_plain_LANGUAGE_PACK_MODULE_NAME );
 

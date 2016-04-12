@@ -122,6 +122,7 @@ extern PyObject *const_str_digest_a27eb7f5f7e2992428b2eebafb617831;
 extern PyObject *const_str_plain_value;
 extern PyObject *const_tuple_str_plain_self_tuple;
 extern PyObject *const_str_digest_3375b08dee8bfdec0bb39402913b81e2;
+extern PyObject *const_str_plain_clean_exit;
 extern PyObject *const_str_plain_e;
 extern PyObject *const_tuple_str_digest_a62b7cff9fd4ca2a8eaad598860048c0_str_empty_tuple;
 extern PyObject *const_str_plain_line;
@@ -292,8 +293,8 @@ static bool constants_created = false;
 
 static void createModuleConstants( void )
 {
-    const_str_digest_58d55cc0c39ccfcef76de1f9740cddf4 = UNSTREAM_STRING( &constant_bin[ 183824 ], 16, 0 );
-    const_str_digest_a9db2db0c66062f26b07dc19b55b9b4c = UNSTREAM_STRING( &constant_bin[ 717512 ], 52, 0 );
+    const_str_digest_58d55cc0c39ccfcef76de1f9740cddf4 = UNSTREAM_STRING( &constant_bin[ 195126 ], 16, 0 );
+    const_str_digest_a9db2db0c66062f26b07dc19b55b9b4c = UNSTREAM_STRING( &constant_bin[ 741037 ], 52, 0 );
 
     constants_created = true;
 }
@@ -322,29 +323,29 @@ static PyCodeObject *codeobj_28e3783f1407233f9b103973c6e107f9;
 static PyCodeObject *codeobj_19e8fe0804116b621424c63c655dec9f;
 static PyCodeObject *codeobj_f970f80d88cfa989aeb58f5fbdb528f9;
 static PyCodeObject *codeobj_df0a83ff87ea1f1bd572aa1f2e5f8efd;
-static PyCodeObject *codeobj_0407d38777d2e46def68c4eebb9deb41;
+static PyCodeObject *codeobj_181aa0de3e16efb8e4fe3d40d66e9c63;
 static PyCodeObject *codeobj_f165725263b482c6670b5818ef6f5d5c;
-static PyCodeObject *codeobj_514a50c7441175f13a0ddd44605d4bc0;
-static PyCodeObject *codeobj_f0f4cc4c860aecfdfe5be43fa4ac9d64;
-static PyCodeObject *codeobj_d2085022e641183d7c10453f4a9080a2;
+static PyCodeObject *codeobj_eb958fcf03f800cc4f576e9d758b64e6;
+static PyCodeObject *codeobj_b36c98742d5c4dacd779c814d056df3c;
+static PyCodeObject *codeobj_b6e67ee2b9cfa80f1836814e319dd408;
 static PyCodeObject *codeobj_20870435381170181f94f98277f9fb2a;
 static PyCodeObject *codeobj_821c2ad1f7509cafd47f072ece56f22d;
 static PyCodeObject *codeobj_447e3b10a024c8b5fb0f99874c4b32e6;
-static PyCodeObject *codeobj_ed1bdb4f3af82779b180ba2ee85cf6bc;
-static PyCodeObject *codeobj_1be55398d0eb668edd84fb5de51d29c6;
-static PyCodeObject *codeobj_d54cc97eb321ac3c1438f0943a06f9b9;
+static PyCodeObject *codeobj_cd8f28d6d5b17a629c8f1062cc2af370;
+static PyCodeObject *codeobj_4f59a8702b1d6881546f27c4ad87558e;
+static PyCodeObject *codeobj_360781c14f79e1bfdf2f8d8dabd7eeb5;
 static PyCodeObject *codeobj_54249c8d5145a75177450f576586431c;
-static PyCodeObject *codeobj_f6f339732776d29226e9d3c461271037;
-static PyCodeObject *codeobj_f54ad4a25abea3f3032d7fa0f554620d;
-static PyCodeObject *codeobj_44063cb569ac67d790b48968bb597773;
-static PyCodeObject *codeobj_f3066fd9145fbb1adf43ef5449fb7804;
-static PyCodeObject *codeobj_d15f2378316d8707197a0bf229fdd87f;
-static PyCodeObject *codeobj_0839703259afa49629855e741c72a4ca;
-static PyCodeObject *codeobj_5c109e3bd36b31843662459a2f70b48e;
+static PyCodeObject *codeobj_a3d0db1e8c69d5b33ffd590a045d7ee2;
+static PyCodeObject *codeobj_31a59550d307284d438f80e99cbdaeee;
+static PyCodeObject *codeobj_e411c50a918f68c027673cc9ec896049;
+static PyCodeObject *codeobj_5c1c6ed66c69d3a55e74cdc9efb7560e;
+static PyCodeObject *codeobj_713a2982572c572a782a073f34ce6b4e;
+static PyCodeObject *codeobj_74f9c5a75a40c194ca4d47c9bbd3616d;
+static PyCodeObject *codeobj_833a16bc2c20475555178ee326ff5c6f;
 static PyCodeObject *codeobj_2c1f220de71b2a6f155c135dfa296f47;
 static PyCodeObject *codeobj_a335d0ebbf4f09641f8dcc33b64618bf;
-static PyCodeObject *codeobj_91040f58b7a550fabd32dab748d900db;
-static PyCodeObject *codeobj_20156cf93a13bb28f092d0f252017a12;
+static PyCodeObject *codeobj_cca8b357d82b082129483a9f40bdfb94;
+static PyCodeObject *codeobj_34401790e7aae121b33e6a3f60e845ae;
 static PyCodeObject *codeobj_c70253faf67a4a1d3dff3505f63d6df5;
 
 static void createModuleCodeObjects(void)
@@ -363,29 +364,29 @@ static void createModuleCodeObjects(void)
     codeobj_19e8fe0804116b621424c63c655dec9f = MAKE_CODEOBJ( module_filename_obj, const_str_plain__error_catcher, 215, const_tuple_str_plain_self_tuple, 1, 0, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS );
     codeobj_f970f80d88cfa989aeb58f5fbdb528f9 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__flush_decoder, 204, const_tuple_str_plain_self_str_plain_buf_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
     codeobj_df0a83ff87ea1f1bd572aa1f2e5f8efd = MAKE_CODEOBJ( module_filename_obj, const_str_plain__get_decoder, 61, const_tuple_str_plain_mode_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_0407d38777d2e46def68c4eebb9deb41 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__handle_chunk, 441, const_tuple_730760646a8d9700be00732810f68de5_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_181aa0de3e16efb8e4fe3d40d66e9c63 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__handle_chunk, 453, const_tuple_730760646a8d9700be00732810f68de5_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
     codeobj_f165725263b482c6670b5818ef6f5d5c = MAKE_CODEOBJ( module_filename_obj, const_str_plain__init_decoder, 176, const_tuple_str_plain_self_str_plain_content_encoding_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_514a50c7441175f13a0ddd44605d4bc0 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__update_chunk_length, 427, const_tuple_str_plain_self_str_plain_line_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_f0f4cc4c860aecfdfe5be43fa4ac9d64 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_close, 386, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_d2085022e641183d7c10453f4a9080a2 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_closed, 390, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_eb958fcf03f800cc4f576e9d758b64e6 = MAKE_CODEOBJ( module_filename_obj, const_str_plain__update_chunk_length, 439, const_tuple_str_plain_self_str_plain_line_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_b36c98742d5c4dacd779c814d056df3c = MAKE_CODEOBJ( module_filename_obj, const_str_plain_close, 395, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_b6e67ee2b9cfa80f1836814e319dd408 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_closed, 402, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
     codeobj_20870435381170181f94f98277f9fb2a = MAKE_CODEOBJ( module_filename_obj, const_str_plain_data, 159, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
     codeobj_821c2ad1f7509cafd47f072ece56f22d = MAKE_CODEOBJ( module_filename_obj, const_str_plain_decompress, 28, const_tuple_str_plain_self_str_plain_data_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
     codeobj_447e3b10a024c8b5fb0f99874c4b32e6 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_decompress, 55, const_tuple_str_plain_self_str_plain_data_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_ed1bdb4f3af82779b180ba2ee85cf6bc = MAKE_CODEOBJ( module_filename_obj, const_str_plain_fileno, 401, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_1be55398d0eb668edd84fb5de51d29c6 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_flush, 410, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_d54cc97eb321ac3c1438f0943a06f9b9 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_from_httplib, 349, const_tuple_f65e67a4f2338543820e6e1659c4c896_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
+    codeobj_cd8f28d6d5b17a629c8f1062cc2af370 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_fileno, 413, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_4f59a8702b1d6881546f27c4ad87558e = MAKE_CODEOBJ( module_filename_obj, const_str_plain_flush, 422, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_360781c14f79e1bfdf2f8d8dabd7eeb5 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_from_httplib, 358, const_tuple_f65e67a4f2338543820e6e1659c4c896_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARKEYWORDS | CO_NOFREE );
     codeobj_54249c8d5145a75177450f576586431c = MAKE_CODEOBJ( module_filename_obj, const_str_plain_get_redirect_location, 139, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_f6f339732776d29226e9d3c461271037 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_getheader, 382, const_tuple_str_plain_self_str_plain_name_str_plain_default_tuple, 3, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_f54ad4a25abea3f3032d7fa0f554620d = MAKE_CODEOBJ( module_filename_obj, const_str_plain_getheaders, 379, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_44063cb569ac67d790b48968bb597773 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_read, 263, const_tuple_5cf26fa52a2a82ccc4031c810811e769_tuple, 4, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_f3066fd9145fbb1adf43ef5449fb7804 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_read_chunked, 463, const_tuple_str_plain_self_str_plain_amt_str_plain_decode_content_tuple, 3, 0, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_d15f2378316d8707197a0bf229fdd87f = MAKE_CODEOBJ( module_filename_obj, const_str_plain_read_chunked, 463, const_tuple_str_plain_self_str_plain_amt_str_plain_decode_content_tuple, 3, 0, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS );
-    codeobj_0839703259afa49629855e741c72a4ca = MAKE_CODEOBJ( module_filename_obj, const_str_plain_readable, 414, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_5c109e3bd36b31843662459a2f70b48e = MAKE_CODEOBJ( module_filename_obj, const_str_plain_readinto, 418, const_tuple_str_plain_self_str_plain_b_str_plain_temp_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_a3d0db1e8c69d5b33ffd590a045d7ee2 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_getheader, 391, const_tuple_str_plain_self_str_plain_name_str_plain_default_tuple, 3, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_31a59550d307284d438f80e99cbdaeee = MAKE_CODEOBJ( module_filename_obj, const_str_plain_getheaders, 388, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_e411c50a918f68c027673cc9ec896049 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_read, 272, const_tuple_5cf26fa52a2a82ccc4031c810811e769_tuple, 4, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_5c1c6ed66c69d3a55e74cdc9efb7560e = MAKE_CODEOBJ( module_filename_obj, const_str_plain_read_chunked, 475, const_tuple_str_plain_self_str_plain_amt_str_plain_decode_content_tuple, 3, 0, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_713a2982572c572a782a073f34ce6b4e = MAKE_CODEOBJ( module_filename_obj, const_str_plain_read_chunked, 475, const_tuple_str_plain_self_str_plain_amt_str_plain_decode_content_tuple, 3, 0, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS );
+    codeobj_74f9c5a75a40c194ca4d47c9bbd3616d = MAKE_CODEOBJ( module_filename_obj, const_str_plain_readable, 426, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_833a16bc2c20475555178ee326ff5c6f = MAKE_CODEOBJ( module_filename_obj, const_str_plain_readinto, 430, const_tuple_str_plain_self_str_plain_b_str_plain_temp_tuple, 2, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
     codeobj_2c1f220de71b2a6f155c135dfa296f47 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_release_conn, 152, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
     codeobj_a335d0ebbf4f09641f8dcc33b64618bf = MAKE_CODEOBJ( module_filename_obj, const_str_plain_response, 1, const_tuple_empty, 0, 0, CO_NOFREE );
-    codeobj_91040f58b7a550fabd32dab748d900db = MAKE_CODEOBJ( module_filename_obj, const_str_plain_stream, 323, const_tuple_str_plain_self_str_plain_amt_str_plain_decode_content_tuple, 3, 0, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
-    codeobj_20156cf93a13bb28f092d0f252017a12 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_stream, 323, const_tuple_str_plain_self_str_plain_amt_str_plain_decode_content_tuple, 3, 0, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS );
+    codeobj_cca8b357d82b082129483a9f40bdfb94 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_stream, 332, const_tuple_str_plain_self_str_plain_amt_str_plain_decode_content_tuple, 3, 0, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
+    codeobj_34401790e7aae121b33e6a3f60e845ae = MAKE_CODEOBJ( module_filename_obj, const_str_plain_stream, 332, const_tuple_str_plain_self_str_plain_amt_str_plain_decode_content_tuple, 3, 0, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS );
     codeobj_c70253faf67a4a1d3dff3505f63d6df5 = MAKE_CODEOBJ( module_filename_obj, const_str_plain_tell, 168, const_tuple_str_plain_self_tuple, 1, 0, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE );
 }
 
@@ -3990,7 +3991,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPResponse_of_urllib3$response( PyO
     tmp_called_name_3 = LOOKUP_BUILTIN( const_str_plain_classmethod );
     assert( tmp_called_name_3 != NULL );
     tmp_args_element_name_3 = MAKE_FUNCTION_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib3$response(  );
-    frame_function->f_lineno = 349;
+    frame_function->f_lineno = 358;
     {
         PyObject *call_args[] = { tmp_args_element_name_3 };
         tmp_assign_source_17 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -4004,7 +4005,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPResponse_of_urllib3$response( PyO
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 349;
+        exception_lineno = 358;
         goto frame_exception_exit_1;
     }
     assert( var_from_httplib == NULL );
@@ -4026,7 +4027,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPResponse_of_urllib3$response( PyO
     tmp_called_name_4 = LOOKUP_BUILTIN( const_str_plain_property );
     assert( tmp_called_name_4 != NULL );
     tmp_args_element_name_4 = MAKE_FUNCTION_function_16_closed_of_class_3_HTTPResponse_of_urllib3$response(  );
-    frame_function->f_lineno = 390;
+    frame_function->f_lineno = 402;
     {
         PyObject *call_args[] = { tmp_args_element_name_4 };
         tmp_assign_source_21 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
@@ -4040,7 +4041,7 @@ NUITKA_LOCAL_MODULE PyObject *impl_class_3_HTTPResponse_of_urllib3$response( PyO
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 390;
+        exception_lineno = 402;
         goto frame_exception_exit_1;
     }
     assert( var_closed == NULL );
@@ -10040,6 +10041,7 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     assert( Nuitka_Generator_Check( (PyObject *)generator ) );
 
     // Local variable initialization
+    PyObject *var_clean_exit = NULL;
     PyObject *var_e = NULL;
     PyObject *exception_type = NULL, *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
@@ -10072,32 +10074,18 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     PyObject *exception_keeper_value_7;
     PyTracebackObject *exception_keeper_tb_7;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_7;
-    PyObject *exception_keeper_type_8;
-    PyObject *exception_keeper_value_8;
-    PyTracebackObject *exception_keeper_tb_8;
-    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_8;
-    PyObject *exception_keeper_type_9;
-    PyObject *exception_keeper_value_9;
-    PyTracebackObject *exception_keeper_tb_9;
-    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_9;
     PyObject *exception_preserved_type_1;
     PyObject *exception_preserved_value_1;
     PyTracebackObject *exception_preserved_tb_1;
     PyObject *exception_preserved_type_2;
     PyObject *exception_preserved_value_2;
     PyTracebackObject *exception_preserved_tb_2;
-    PyObject *exception_preserved_type_3;
-    PyObject *exception_preserved_value_3;
-    PyTracebackObject *exception_preserved_tb_3;
     int tmp_and_left_truth_1;
     int tmp_and_left_truth_2;
-    int tmp_and_left_truth_3;
     PyObject *tmp_and_left_value_1;
     PyObject *tmp_and_left_value_2;
-    PyObject *tmp_and_left_value_3;
     PyObject *tmp_and_right_value_1;
     PyObject *tmp_and_right_value_2;
-    PyObject *tmp_and_right_value_3;
     PyObject *tmp_args_element_name_1;
     PyObject *tmp_args_element_name_2;
     PyObject *tmp_args_element_name_3;
@@ -10108,6 +10096,7 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     PyObject *tmp_args_element_name_8;
     PyObject *tmp_assign_source_1;
     PyObject *tmp_assign_source_2;
+    PyObject *tmp_assign_source_3;
     PyObject *tmp_called_name_1;
     PyObject *tmp_called_name_2;
     PyObject *tmp_called_name_3;
@@ -10117,35 +10106,31 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     PyObject *tmp_called_name_7;
     PyObject *tmp_called_name_8;
     PyObject *tmp_called_name_9;
-    PyObject *tmp_called_name_10;
     int tmp_cmp_NotIn_1;
     PyObject *tmp_compare_left_1;
     PyObject *tmp_compare_left_2;
     PyObject *tmp_compare_left_3;
     PyObject *tmp_compare_left_4;
-    PyObject *tmp_compare_left_5;
-    PyObject *tmp_compare_left_6;
     PyObject *tmp_compare_right_1;
     PyObject *tmp_compare_right_2;
     PyObject *tmp_compare_right_3;
     PyObject *tmp_compare_right_4;
-    PyObject *tmp_compare_right_5;
-    PyObject *tmp_compare_right_6;
     int tmp_cond_truth_1;
     int tmp_cond_truth_2;
     int tmp_cond_truth_3;
+    int tmp_cond_truth_4;
+    int tmp_cond_truth_5;
     PyObject *tmp_cond_value_1;
     PyObject *tmp_cond_value_2;
     PyObject *tmp_cond_value_3;
+    PyObject *tmp_cond_value_4;
+    PyObject *tmp_cond_value_5;
     int tmp_exc_match_exception_match_1;
     int tmp_exc_match_exception_match_2;
     int tmp_exc_match_exception_match_3;
-    int tmp_exc_match_exception_match_4;
     PyObject *tmp_expression_name_1;
     PyObject *tmp_frame_locals;
-    bool tmp_isnot_1;
     PyObject *tmp_left_name_1;
-    PyObject *tmp_operand_name_1;
     PyObject *tmp_raise_type_1;
     PyObject *tmp_raise_type_2;
     PyObject *tmp_raise_type_3;
@@ -10166,8 +10151,6 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     PyObject *tmp_source_name_14;
     PyObject *tmp_source_name_15;
     PyObject *tmp_source_name_16;
-    PyObject *tmp_source_name_17;
-    PyObject *tmp_source_name_18;
     PyObject *tmp_tuple_element_1;
     PyObject *tmp_unicode_arg_1;
     NUITKA_MAY_BE_UNUSED PyObject *tmp_unused;
@@ -10239,7 +10222,11 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         }
     }
 
-    // Tried code:
+    tmp_assign_source_1 = Py_False;
+    assert( var_clean_exit == NULL );
+    Py_INCREF( tmp_assign_source_1 );
+    var_clean_exit = tmp_assign_source_1;
+
     // Tried code:
     // Tried code:
     tmp_expression_name_1 = Py_None;
@@ -10251,12 +10238,12 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 226;
-        goto try_except_handler_4;
+        exception_lineno = 228;
+        goto try_except_handler_3;
     }
     goto try_end_1;
     // Exception handler code:
-    try_except_handler_4:;
+    try_except_handler_3:;
     exception_keeper_type_1 = exception_type;
     exception_keeper_value_1 = exception_value;
     exception_keeper_tb_1 = exception_tb;
@@ -10305,8 +10292,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 228;
-        goto try_except_handler_5;
+        exception_lineno = 230;
+        goto try_except_handler_4;
     }
 
     tmp_exc_match_exception_match_1 = EXCEPTION_MATCH_BOOL( tmp_compare_left_1, tmp_compare_right_1 );
@@ -10317,8 +10304,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 228;
-        goto try_except_handler_5;
+        exception_lineno = 230;
+        goto try_except_handler_4;
     }
     if ( tmp_exc_match_exception_match_1 == 1 )
     {
@@ -10346,8 +10333,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 231;
-        goto try_except_handler_5;
+        exception_lineno = 233;
+        goto try_except_handler_4;
     }
 
     tmp_source_name_1 = PyCell_GET( generator->m_closure[0] );
@@ -10362,8 +10349,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 231;
-        goto try_except_handler_5;
+        exception_lineno = 233;
+        goto try_except_handler_4;
     }
 
     tmp_args_element_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain__pool );
@@ -10374,12 +10361,12 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 231;
-        goto try_except_handler_5;
+        exception_lineno = 233;
+        goto try_except_handler_4;
     }
     tmp_args_element_name_2 = Py_None;
     tmp_args_element_name_3 = const_str_digest_5141c13fc1586905d04453154b9d176e;
-    generator->m_frame->f_lineno = 231;
+    generator->m_frame->f_lineno = 233;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2, tmp_args_element_name_3 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_1, call_args );
@@ -10393,13 +10380,13 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 231;
-        goto try_except_handler_5;
+        exception_lineno = 233;
+        goto try_except_handler_4;
     }
     exception_type = tmp_raise_type_1;
-    exception_lineno = 231;
+    exception_lineno = 233;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
-    goto try_except_handler_5;
+    goto try_except_handler_4;
     goto branch_end_1;
     branch_no_1:;
     tmp_compare_left_2 = PyThreadState_GET()->exc_type;
@@ -10420,8 +10407,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 233;
-        goto try_except_handler_5;
+        exception_lineno = 235;
+        goto try_except_handler_4;
     }
 
     tmp_exc_match_exception_match_2 = EXCEPTION_MATCH_BOOL( tmp_compare_left_2, tmp_compare_right_2 );
@@ -10432,8 +10419,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 233;
-        goto try_except_handler_5;
+        exception_lineno = 235;
+        goto try_except_handler_4;
     }
     if ( tmp_exc_match_exception_match_2 == 1 )
     {
@@ -10444,10 +10431,10 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         goto branch_no_2;
     }
     branch_yes_2:;
-    tmp_assign_source_1 = PyThreadState_GET()->exc_value;
+    tmp_assign_source_2 = PyThreadState_GET()->exc_value;
     assert( var_e == NULL );
-    Py_INCREF( tmp_assign_source_1 );
-    var_e = tmp_assign_source_1;
+    Py_INCREF( tmp_assign_source_2 );
+    var_e = tmp_assign_source_2;
 
     // Tried code:
     tmp_compare_left_3 = const_str_digest_67fc44cf811e69ed10c4b2dfd2549d69;
@@ -10461,8 +10448,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 235;
-        goto try_except_handler_6;
+        exception_lineno = 237;
+        goto try_except_handler_5;
     }
     tmp_cmp_NotIn_1 = PySequence_Contains( tmp_compare_right_3, tmp_compare_left_3 );
     assert( !(tmp_cmp_NotIn_1 == -1) );
@@ -10478,7 +10465,7 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     branch_yes_3:;
     RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
     if (exception_tb && exception_tb->tb_frame == generator->m_frame) generator->m_frame->f_lineno = exception_tb->tb_lineno;
-    goto try_except_handler_6;
+    goto try_except_handler_5;
     branch_no_3:;
     tmp_called_name_2 = GET_STRING_DICT_VALUE( moduledict_urllib3$response, (Nuitka_StringObject *)const_str_plain_ReadTimeoutError );
 
@@ -10497,8 +10484,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 240;
-        goto try_except_handler_6;
+        exception_lineno = 242;
+        goto try_except_handler_5;
     }
 
     tmp_source_name_2 = PyCell_GET( generator->m_closure[0] );
@@ -10513,8 +10500,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 240;
-        goto try_except_handler_6;
+        exception_lineno = 242;
+        goto try_except_handler_5;
     }
 
     tmp_args_element_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain__pool );
@@ -10525,12 +10512,12 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 240;
-        goto try_except_handler_6;
+        exception_lineno = 242;
+        goto try_except_handler_5;
     }
     tmp_args_element_name_5 = Py_None;
     tmp_args_element_name_6 = const_str_digest_5141c13fc1586905d04453154b9d176e;
-    generator->m_frame->f_lineno = 240;
+    generator->m_frame->f_lineno = 242;
     {
         PyObject *call_args[] = { tmp_args_element_name_4, tmp_args_element_name_5, tmp_args_element_name_6 };
         tmp_raise_type_2 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_2, call_args );
@@ -10544,18 +10531,18 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 240;
-        goto try_except_handler_6;
+        exception_lineno = 242;
+        goto try_except_handler_5;
     }
     exception_type = tmp_raise_type_2;
-    exception_lineno = 240;
+    exception_lineno = 242;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
-    goto try_except_handler_6;
+    goto try_except_handler_5;
     // tried codes exits in all cases
     NUITKA_CANNOT_GET_HERE( genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTPResponse_of_urllib3$response );
     return;
     // Exception handler code:
-    try_except_handler_6:;
+    try_except_handler_5:;
     exception_keeper_type_2 = exception_type;
     exception_keeper_value_2 = exception_value;
     exception_keeper_tb_2 = exception_tb;
@@ -10574,7 +10561,7 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     exception_tb = exception_keeper_tb_2;
     exception_lineno = exception_keeper_lineno_2;
 
-    goto try_except_handler_5;
+    goto try_except_handler_4;
     // End of try:
     goto branch_end_2;
     branch_no_2:;
@@ -10597,8 +10584,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 242;
-        goto try_except_handler_5;
+        exception_lineno = 244;
+        goto try_except_handler_4;
     }
 
     Py_INCREF( tmp_tuple_element_1 );
@@ -10620,8 +10607,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 242;
-        goto try_except_handler_5;
+        exception_lineno = 244;
+        goto try_except_handler_4;
     }
 
     Py_INCREF( tmp_tuple_element_1 );
@@ -10634,8 +10621,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_right_4 );
 
-        exception_lineno = 242;
-        goto try_except_handler_5;
+        exception_lineno = 244;
+        goto try_except_handler_4;
     }
     Py_DECREF( tmp_compare_right_4 );
     if ( tmp_exc_match_exception_match_3 == 1 )
@@ -10647,10 +10634,10 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         goto branch_no_4;
     }
     branch_yes_4:;
-    tmp_assign_source_2 = PyThreadState_GET()->exc_value;
+    tmp_assign_source_3 = PyThreadState_GET()->exc_value;
     {
         PyObject *old = var_e;
-        var_e = tmp_assign_source_2;
+        var_e = tmp_assign_source_3;
         Py_INCREF( var_e );
         Py_XDECREF( old );
     }
@@ -10673,8 +10660,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 244;
-        goto try_except_handler_7;
+        exception_lineno = 246;
+        goto try_except_handler_6;
     }
 
     tmp_left_name_1 = const_str_digest_dc6e1bc5c5d41f5446ae6509fcb24069;
@@ -10688,8 +10675,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 244;
-        goto try_except_handler_7;
+        exception_lineno = 246;
+        goto try_except_handler_6;
     }
     tmp_args_element_name_8 = var_e;
 
@@ -10703,11 +10690,11 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 244;
-        goto try_except_handler_7;
+        exception_lineno = 246;
+        goto try_except_handler_6;
     }
 
-    generator->m_frame->f_lineno = 244;
+    generator->m_frame->f_lineno = 246;
     {
         PyObject *call_args[] = { tmp_args_element_name_7, tmp_args_element_name_8 };
         tmp_raise_type_3 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_3, call_args );
@@ -10721,18 +10708,18 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 244;
-        goto try_except_handler_7;
+        exception_lineno = 246;
+        goto try_except_handler_6;
     }
     exception_type = tmp_raise_type_3;
-    exception_lineno = 244;
+    exception_lineno = 246;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
-    goto try_except_handler_7;
+    goto try_except_handler_6;
     // tried codes exits in all cases
     NUITKA_CANNOT_GET_HERE( genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTPResponse_of_urllib3$response );
     return;
     // Exception handler code:
-    try_except_handler_7:;
+    try_except_handler_6:;
     exception_keeper_type_3 = exception_type;
     exception_keeper_value_3 = exception_value;
     exception_keeper_tb_3 = exception_tb;
@@ -10751,13 +10738,13 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     exception_tb = exception_keeper_tb_3;
     exception_lineno = exception_keeper_lineno_3;
 
-    goto try_except_handler_5;
+    goto try_except_handler_4;
     // End of try:
     goto branch_end_4;
     branch_no_4:;
     RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
     if (exception_tb && exception_tb->tb_frame == generator->m_frame) generator->m_frame->f_lineno = exception_tb->tb_lineno;
-    goto try_except_handler_5;
+    goto try_except_handler_4;
     branch_end_4:;
     branch_end_2:;
     branch_end_1:;
@@ -10765,7 +10752,7 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     NUITKA_CANNOT_GET_HERE( genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTPResponse_of_urllib3$response );
     return;
     // Exception handler code:
-    try_except_handler_5:;
+    try_except_handler_4:;
     exception_keeper_type_4 = exception_type;
     exception_keeper_value_4 = exception_value;
     exception_keeper_tb_4 = exception_tb;
@@ -10783,13 +10770,13 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     exception_tb = exception_keeper_tb_4;
     exception_lineno = exception_keeper_lineno_4;
 
-    goto try_except_handler_3;
+    goto try_except_handler_2;
     // End of try:
     // End of try:
     try_end_1:;
     goto try_end_2;
     // Exception handler code:
-    try_except_handler_3:;
+    try_except_handler_2:;
     exception_keeper_type_5 = exception_type;
     exception_keeper_value_5 = exception_value;
     exception_keeper_tb_5 = exception_tb;
@@ -10820,26 +10807,40 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     PyException_SetTraceback( exception_keeper_value_5, (PyObject *)exception_keeper_tb_5 );
     PUBLISH_EXCEPTION( &exception_keeper_type_5, &exception_keeper_value_5, &exception_keeper_tb_5 );
     // Tried code:
-    tmp_compare_left_5 = PyThreadState_GET()->exc_type;
-    tmp_compare_right_5 = PyExc_Exception;
-    tmp_exc_match_exception_match_4 = EXCEPTION_MATCH_BOOL( tmp_compare_left_5, tmp_compare_right_5 );
-    if ( tmp_exc_match_exception_match_4 == -1 )
+    tmp_cond_value_1 = var_clean_exit;
+
+    if ( tmp_cond_value_1 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "clean_exit" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 254;
+        goto try_except_handler_7;
+    }
+
+    tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
+    if ( tmp_cond_truth_1 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 246;
-        goto try_except_handler_8;
+        exception_lineno = 254;
+        goto try_except_handler_7;
     }
-    if ( tmp_exc_match_exception_match_4 == 1 )
+    if ( tmp_cond_truth_1 == 1 )
     {
-        goto branch_yes_5;
+        goto branch_no_5;
     }
     else
     {
-        goto branch_no_5;
+        goto branch_yes_5;
     }
     branch_yes_5:;
     tmp_source_name_3 = PyCell_GET( generator->m_closure[0] );
@@ -10854,42 +10855,42 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 249;
-        goto try_except_handler_8;
+        exception_lineno = 258;
+        goto try_except_handler_7;
     }
 
-    tmp_and_left_value_1 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain__original_response );
-    if ( tmp_and_left_value_1 == NULL )
+    tmp_cond_value_2 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain__original_response );
+    if ( tmp_cond_value_2 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 249;
-        goto try_except_handler_8;
+        exception_lineno = 258;
+        goto try_except_handler_7;
     }
-    tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
-    if ( tmp_and_left_truth_1 == -1 )
+    tmp_cond_truth_2 = CHECK_IF_TRUE( tmp_cond_value_2 );
+    if ( tmp_cond_truth_2 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_and_left_value_1 );
+        Py_DECREF( tmp_cond_value_2 );
 
-        exception_lineno = 249;
-        goto try_except_handler_8;
+        exception_lineno = 258;
+        goto try_except_handler_7;
     }
-    if ( tmp_and_left_truth_1 == 1 )
+    Py_DECREF( tmp_cond_value_2 );
+    if ( tmp_cond_truth_2 == 1 )
     {
-        goto and_right_1;
+        goto branch_yes_6;
     }
     else
     {
-        goto and_left_1;
+        goto branch_no_6;
     }
-    and_right_1:;
-    Py_DECREF( tmp_and_left_value_1 );
+    branch_yes_6:;
     tmp_source_name_5 = PyCell_GET( generator->m_closure[0] );
 
     if ( tmp_source_name_5 == NULL )
@@ -10902,8 +10903,8 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 249;
-        goto try_except_handler_8;
+        exception_lineno = 259;
+        goto try_except_handler_7;
     }
 
     tmp_source_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_5, const_str_plain__original_response );
@@ -10914,10 +10915,10 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 249;
-        goto try_except_handler_8;
+        exception_lineno = 259;
+        goto try_except_handler_7;
     }
-    tmp_called_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_4, const_str_plain_isclosed );
+    tmp_called_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_4, const_str_plain_close );
     Py_DECREF( tmp_source_name_4 );
     if ( tmp_called_name_4 == NULL )
     {
@@ -10926,64 +10927,27 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 249;
-        goto try_except_handler_8;
+        exception_lineno = 259;
+        goto try_except_handler_7;
     }
-    generator->m_frame->f_lineno = 249;
-    tmp_operand_name_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_4 );
+    generator->m_frame->f_lineno = 259;
+    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_4 );
     Py_DECREF( tmp_called_name_4 );
-    if ( tmp_operand_name_1 == NULL )
+    if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 249;
-        goto try_except_handler_8;
+        exception_lineno = 259;
+        goto try_except_handler_7;
     }
-    tmp_and_right_value_1 = UNARY_OPERATION( UNARY_NOT, tmp_operand_name_1 );
-    Py_DECREF( tmp_operand_name_1 );
-    if ( tmp_and_right_value_1 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
+    Py_DECREF( tmp_unused );
+    branch_no_6:;
+    tmp_source_name_6 = PyCell_GET( generator->m_closure[0] );
 
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 249;
-        goto try_except_handler_8;
-    }
-    Py_INCREF( tmp_and_right_value_1 );
-    tmp_cond_value_1 = tmp_and_right_value_1;
-    goto and_end_1;
-    and_left_1:;
-    tmp_cond_value_1 = tmp_and_left_value_1;
-    and_end_1:;
-    tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
-    if ( tmp_cond_truth_1 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_cond_value_1 );
-
-        exception_lineno = 249;
-        goto try_except_handler_8;
-    }
-    Py_DECREF( tmp_cond_value_1 );
-    if ( tmp_cond_truth_1 == 1 )
-    {
-        goto branch_yes_6;
-    }
-    else
-    {
-        goto branch_no_6;
-    }
-    branch_yes_6:;
-    tmp_source_name_7 = PyCell_GET( generator->m_closure[0] );
-
-    if ( tmp_source_name_7 == NULL )
+    if ( tmp_source_name_6 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -10993,48 +10957,42 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 250;
-        goto try_except_handler_8;
+        exception_lineno = 264;
+        goto try_except_handler_7;
     }
 
-    tmp_source_name_6 = LOOKUP_ATTRIBUTE( tmp_source_name_7, const_str_plain__original_response );
-    if ( tmp_source_name_6 == NULL )
+    tmp_cond_value_3 = LOOKUP_ATTRIBUTE( tmp_source_name_6, const_str_plain__connection );
+    if ( tmp_cond_value_3 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 250;
-        goto try_except_handler_8;
+        exception_lineno = 264;
+        goto try_except_handler_7;
     }
-    tmp_called_name_5 = LOOKUP_ATTRIBUTE( tmp_source_name_6, const_str_plain_close );
-    Py_DECREF( tmp_source_name_6 );
-    if ( tmp_called_name_5 == NULL )
+    tmp_cond_truth_3 = CHECK_IF_TRUE( tmp_cond_value_3 );
+    if ( tmp_cond_truth_3 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_cond_value_3 );
 
-
-        exception_lineno = 250;
-        goto try_except_handler_8;
+        exception_lineno = 264;
+        goto try_except_handler_7;
     }
-    generator->m_frame->f_lineno = 250;
-    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_5 );
-    Py_DECREF( tmp_called_name_5 );
-    if ( tmp_unused == NULL )
+    Py_DECREF( tmp_cond_value_3 );
+    if ( tmp_cond_truth_3 == 1 )
     {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 250;
-        goto try_except_handler_8;
+        goto branch_yes_7;
     }
-    Py_DECREF( tmp_unused );
-    branch_no_6:;
+    else
+    {
+        goto branch_no_7;
+    }
+    branch_yes_7:;
     tmp_source_name_8 = PyCell_GET( generator->m_closure[0] );
 
     if ( tmp_source_name_8 == NULL )
@@ -11047,36 +11005,52 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 255;
-        goto try_except_handler_8;
+        exception_lineno = 265;
+        goto try_except_handler_7;
     }
 
-    tmp_compare_left_6 = LOOKUP_ATTRIBUTE( tmp_source_name_8, const_str_plain__connection );
-    if ( tmp_compare_left_6 == NULL )
+    tmp_source_name_7 = LOOKUP_ATTRIBUTE( tmp_source_name_8, const_str_plain__connection );
+    if ( tmp_source_name_7 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 255;
-        goto try_except_handler_8;
+        exception_lineno = 265;
+        goto try_except_handler_7;
     }
-    tmp_compare_right_6 = Py_None;
-    tmp_isnot_1 = ( tmp_compare_left_6 != tmp_compare_right_6 );
-    Py_DECREF( tmp_compare_left_6 );
-    if ( tmp_isnot_1 )
+    tmp_called_name_5 = LOOKUP_ATTRIBUTE( tmp_source_name_7, const_str_plain_close );
+    Py_DECREF( tmp_source_name_7 );
+    if ( tmp_called_name_5 == NULL )
     {
-        goto branch_yes_7;
-    }
-    else
-    {
-        goto branch_no_7;
-    }
-    branch_yes_7:;
-    tmp_source_name_10 = PyCell_GET( generator->m_closure[0] );
+        assert( ERROR_OCCURRED() );
 
-    if ( tmp_source_name_10 == NULL )
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 265;
+        goto try_except_handler_7;
+    }
+    generator->m_frame->f_lineno = 265;
+    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_5 );
+    Py_DECREF( tmp_called_name_5 );
+    if ( tmp_unused == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 265;
+        goto try_except_handler_7;
+    }
+    Py_DECREF( tmp_unused );
+    branch_no_7:;
+    branch_no_5:;
+    tmp_source_name_9 = PyCell_GET( generator->m_closure[0] );
+
+    if ( tmp_source_name_9 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -11086,23 +11060,71 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 256;
-        goto try_except_handler_8;
+        exception_lineno = 269;
+        goto try_except_handler_7;
     }
 
-    tmp_source_name_9 = LOOKUP_ATTRIBUTE( tmp_source_name_10, const_str_plain__connection );
-    if ( tmp_source_name_9 == NULL )
+    tmp_and_left_value_1 = LOOKUP_ATTRIBUTE( tmp_source_name_9, const_str_plain__original_response );
+    if ( tmp_and_left_value_1 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 256;
-        goto try_except_handler_8;
+        exception_lineno = 269;
+        goto try_except_handler_7;
     }
-    tmp_called_name_6 = LOOKUP_ATTRIBUTE( tmp_source_name_9, const_str_plain_close );
-    Py_DECREF( tmp_source_name_9 );
+    tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
+    if ( tmp_and_left_truth_1 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_and_left_value_1 );
+
+        exception_lineno = 269;
+        goto try_except_handler_7;
+    }
+    if ( tmp_and_left_truth_1 == 1 )
+    {
+        goto and_right_1;
+    }
+    else
+    {
+        goto and_left_1;
+    }
+    and_right_1:;
+    Py_DECREF( tmp_and_left_value_1 );
+    tmp_source_name_11 = PyCell_GET( generator->m_closure[0] );
+
+    if ( tmp_source_name_11 == NULL )
+    {
+
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "free variable '%s' referenced before assignment in enclosing scope", "self" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 269;
+        goto try_except_handler_7;
+    }
+
+    tmp_source_name_10 = LOOKUP_ATTRIBUTE( tmp_source_name_11, const_str_plain__original_response );
+    if ( tmp_source_name_10 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 269;
+        goto try_except_handler_7;
+    }
+    tmp_called_name_6 = LOOKUP_ATTRIBUTE( tmp_source_name_10, const_str_plain_isclosed );
+    Py_DECREF( tmp_source_name_10 );
     if ( tmp_called_name_6 == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -11110,12 +11132,78 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 256;
-        goto try_except_handler_8;
+        exception_lineno = 269;
+        goto try_except_handler_7;
     }
-    generator->m_frame->f_lineno = 256;
-    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_6 );
+    generator->m_frame->f_lineno = 269;
+    tmp_and_right_value_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_6 );
     Py_DECREF( tmp_called_name_6 );
+    if ( tmp_and_right_value_1 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 269;
+        goto try_except_handler_7;
+    }
+    tmp_cond_value_4 = tmp_and_right_value_1;
+    goto and_end_1;
+    and_left_1:;
+    tmp_cond_value_4 = tmp_and_left_value_1;
+    and_end_1:;
+    tmp_cond_truth_4 = CHECK_IF_TRUE( tmp_cond_value_4 );
+    if ( tmp_cond_truth_4 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_cond_value_4 );
+
+        exception_lineno = 269;
+        goto try_except_handler_7;
+    }
+    Py_DECREF( tmp_cond_value_4 );
+    if ( tmp_cond_truth_4 == 1 )
+    {
+        goto branch_yes_8;
+    }
+    else
+    {
+        goto branch_no_8;
+    }
+    branch_yes_8:;
+    tmp_source_name_12 = PyCell_GET( generator->m_closure[0] );
+
+    if ( tmp_source_name_12 == NULL )
+    {
+
+        exception_type = PyExc_NameError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "free variable '%s' referenced before assignment in enclosing scope", "self" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 270;
+        goto try_except_handler_7;
+    }
+
+    tmp_called_name_7 = LOOKUP_ATTRIBUTE( tmp_source_name_12, const_str_plain_release_conn );
+    if ( tmp_called_name_7 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 270;
+        goto try_except_handler_7;
+    }
+    generator->m_frame->f_lineno = 270;
+    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_7 );
+    Py_DECREF( tmp_called_name_7 );
     if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -11123,25 +11211,19 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 256;
-        goto try_except_handler_8;
+        exception_lineno = 270;
+        goto try_except_handler_7;
     }
     Py_DECREF( tmp_unused );
-    branch_no_7:;
+    branch_no_8:;
     RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
     if (exception_tb && exception_tb->tb_frame == generator->m_frame) generator->m_frame->f_lineno = exception_tb->tb_lineno;
-    goto try_except_handler_8;
-    goto branch_end_5;
-    branch_no_5:;
-    RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-    if (exception_tb && exception_tb->tb_frame == generator->m_frame) generator->m_frame->f_lineno = exception_tb->tb_lineno;
-    goto try_except_handler_8;
-    branch_end_5:;
+    goto try_except_handler_7;
     // tried codes exits in all cases
     NUITKA_CANNOT_GET_HERE( genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTPResponse_of_urllib3$response );
     return;
     // Exception handler code:
-    try_except_handler_8:;
+    try_except_handler_7:;
     exception_keeper_type_6 = exception_type;
     exception_keeper_value_6 = exception_value;
     exception_keeper_tb_6 = exception_tb;
@@ -11159,91 +11241,13 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     exception_tb = exception_keeper_tb_6;
     exception_lineno = exception_keeper_lineno_6;
 
-    goto try_except_handler_2;
+    goto frame_exception_exit_1;
     // End of try:
     // End of try:
     try_end_2:;
-    goto try_end_3;
-    // Exception handler code:
-    try_except_handler_2:;
-    exception_keeper_type_7 = exception_type;
-    exception_keeper_value_7 = exception_value;
-    exception_keeper_tb_7 = exception_tb;
-    exception_keeper_lineno_7 = exception_lineno;
-    exception_type = NULL;
-    exception_value = NULL;
-    exception_tb = NULL;
-    exception_lineno = -1;
+    Py_XDECREF( var_clean_exit );
+    var_clean_exit = NULL;
 
-    // Preserve existing published exception.
-    exception_preserved_type_3 = PyThreadState_GET()->exc_type;
-    Py_XINCREF( exception_preserved_type_3 );
-    exception_preserved_value_3 = PyThreadState_GET()->exc_value;
-    Py_XINCREF( exception_preserved_value_3 );
-    exception_preserved_tb_3 = (PyTracebackObject *)PyThreadState_GET()->exc_traceback;
-    Py_XINCREF( exception_preserved_tb_3 );
-
-    if ( exception_keeper_tb_7 == NULL )
-    {
-        exception_keeper_tb_7 = MAKE_TRACEBACK( generator->m_frame, exception_keeper_lineno_7 );
-    }
-    else if ( exception_keeper_lineno_7 != -1 )
-    {
-        exception_keeper_tb_7 = ADD_TRACEBACK( exception_keeper_tb_7, generator->m_frame, exception_keeper_lineno_7 );
-    }
-
-    NORMALIZE_EXCEPTION( &exception_keeper_type_7, &exception_keeper_value_7, &exception_keeper_tb_7 );
-    PyException_SetTraceback( exception_keeper_value_7, (PyObject *)exception_keeper_tb_7 );
-    PUBLISH_EXCEPTION( &exception_keeper_type_7, &exception_keeper_value_7, &exception_keeper_tb_7 );
-    // Tried code:
-    tmp_source_name_11 = PyCell_GET( generator->m_closure[0] );
-
-    if ( tmp_source_name_11 == NULL )
-    {
-
-        exception_type = PyExc_NameError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "free variable '%s' referenced before assignment in enclosing scope", "self" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 260;
-        goto try_except_handler_9;
-    }
-
-    tmp_and_left_value_2 = LOOKUP_ATTRIBUTE( tmp_source_name_11, const_str_plain__original_response );
-    if ( tmp_and_left_value_2 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 260;
-        goto try_except_handler_9;
-    }
-    tmp_and_left_truth_2 = CHECK_IF_TRUE( tmp_and_left_value_2 );
-    if ( tmp_and_left_truth_2 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_and_left_value_2 );
-
-        exception_lineno = 260;
-        goto try_except_handler_9;
-    }
-    if ( tmp_and_left_truth_2 == 1 )
-    {
-        goto and_right_2;
-    }
-    else
-    {
-        goto and_left_2;
-    }
-    and_right_2:;
-    Py_DECREF( tmp_and_left_value_2 );
     tmp_source_name_13 = PyCell_GET( generator->m_closure[0] );
 
     if ( tmp_source_name_13 == NULL )
@@ -11256,143 +11260,42 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 260;
-        goto try_except_handler_9;
+        exception_lineno = 269;
+        goto frame_exception_exit_1;
     }
 
-    tmp_source_name_12 = LOOKUP_ATTRIBUTE( tmp_source_name_13, const_str_plain__original_response );
-    if ( tmp_source_name_12 == NULL )
+    tmp_and_left_value_2 = LOOKUP_ATTRIBUTE( tmp_source_name_13, const_str_plain__original_response );
+    if ( tmp_and_left_value_2 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 260;
-        goto try_except_handler_9;
+        exception_lineno = 269;
+        goto frame_exception_exit_1;
     }
-    tmp_called_name_7 = LOOKUP_ATTRIBUTE( tmp_source_name_12, const_str_plain_isclosed );
-    Py_DECREF( tmp_source_name_12 );
-    if ( tmp_called_name_7 == NULL )
+    tmp_and_left_truth_2 = CHECK_IF_TRUE( tmp_and_left_value_2 );
+    if ( tmp_and_left_truth_2 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_and_left_value_2 );
 
-
-        exception_lineno = 260;
-        goto try_except_handler_9;
+        exception_lineno = 269;
+        goto frame_exception_exit_1;
     }
-    generator->m_frame->f_lineno = 260;
-    tmp_and_right_value_2 = CALL_FUNCTION_NO_ARGS( tmp_called_name_7 );
-    Py_DECREF( tmp_called_name_7 );
-    if ( tmp_and_right_value_2 == NULL )
+    if ( tmp_and_left_truth_2 == 1 )
     {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 260;
-        goto try_except_handler_9;
-    }
-    tmp_cond_value_2 = tmp_and_right_value_2;
-    goto and_end_2;
-    and_left_2:;
-    tmp_cond_value_2 = tmp_and_left_value_2;
-    and_end_2:;
-    tmp_cond_truth_2 = CHECK_IF_TRUE( tmp_cond_value_2 );
-    if ( tmp_cond_truth_2 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_cond_value_2 );
-
-        exception_lineno = 260;
-        goto try_except_handler_9;
-    }
-    Py_DECREF( tmp_cond_value_2 );
-    if ( tmp_cond_truth_2 == 1 )
-    {
-        goto branch_yes_8;
+        goto and_right_2;
     }
     else
     {
-        goto branch_no_8;
+        goto and_left_2;
     }
-    branch_yes_8:;
-    tmp_source_name_14 = PyCell_GET( generator->m_closure[0] );
-
-    if ( tmp_source_name_14 == NULL )
-    {
-
-        exception_type = PyExc_NameError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "free variable '%s' referenced before assignment in enclosing scope", "self" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 261;
-        goto try_except_handler_9;
-    }
-
-    tmp_called_name_8 = LOOKUP_ATTRIBUTE( tmp_source_name_14, const_str_plain_release_conn );
-    if ( tmp_called_name_8 == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 261;
-        goto try_except_handler_9;
-    }
-    generator->m_frame->f_lineno = 261;
-    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_8 );
-    Py_DECREF( tmp_called_name_8 );
-    if ( tmp_unused == NULL )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-
-
-        exception_lineno = 261;
-        goto try_except_handler_9;
-    }
-    Py_DECREF( tmp_unused );
-    branch_no_8:;
-    RERAISE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-    if (exception_tb && exception_tb->tb_frame == generator->m_frame) generator->m_frame->f_lineno = exception_tb->tb_lineno;
-    goto try_except_handler_9;
-    // tried codes exits in all cases
-    NUITKA_CANNOT_GET_HERE( genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTPResponse_of_urllib3$response );
-    return;
-    // Exception handler code:
-    try_except_handler_9:;
-    exception_keeper_type_8 = exception_type;
-    exception_keeper_value_8 = exception_value;
-    exception_keeper_tb_8 = exception_tb;
-    exception_keeper_lineno_8 = exception_lineno;
-    exception_type = NULL;
-    exception_value = NULL;
-    exception_tb = NULL;
-    exception_lineno = -1;
-
-    // Restore previous exception.
-    SET_CURRENT_EXCEPTION( exception_preserved_type_3, exception_preserved_value_3, exception_preserved_tb_3 );
-    // Re-raise.
-    exception_type = exception_keeper_type_8;
-    exception_value = exception_keeper_value_8;
-    exception_tb = exception_keeper_tb_8;
-    exception_lineno = exception_keeper_lineno_8;
-
-    goto frame_exception_exit_1;
-    // End of try:
-    // End of try:
-    try_end_3:;
+    and_right_2:;
+    Py_DECREF( tmp_and_left_value_2 );
     tmp_source_name_15 = PyCell_GET( generator->m_closure[0] );
 
     if ( tmp_source_name_15 == NULL )
@@ -11405,112 +11308,64 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 260;
+        exception_lineno = 269;
         goto frame_exception_exit_1;
     }
 
-    tmp_and_left_value_3 = LOOKUP_ATTRIBUTE( tmp_source_name_15, const_str_plain__original_response );
-    if ( tmp_and_left_value_3 == NULL )
+    tmp_source_name_14 = LOOKUP_ATTRIBUTE( tmp_source_name_15, const_str_plain__original_response );
+    if ( tmp_source_name_14 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 260;
+        exception_lineno = 269;
         goto frame_exception_exit_1;
     }
-    tmp_and_left_truth_3 = CHECK_IF_TRUE( tmp_and_left_value_3 );
-    if ( tmp_and_left_truth_3 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_and_left_value_3 );
-
-        exception_lineno = 260;
-        goto frame_exception_exit_1;
-    }
-    if ( tmp_and_left_truth_3 == 1 )
-    {
-        goto and_right_3;
-    }
-    else
-    {
-        goto and_left_3;
-    }
-    and_right_3:;
-    Py_DECREF( tmp_and_left_value_3 );
-    tmp_source_name_17 = PyCell_GET( generator->m_closure[0] );
-
-    if ( tmp_source_name_17 == NULL )
-    {
-
-        exception_type = PyExc_NameError;
-        Py_INCREF( exception_type );
-        exception_value = PyUnicode_FromFormat( "free variable '%s' referenced before assignment in enclosing scope", "self" );
-        exception_tb = NULL;
-        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
-        CHAIN_EXCEPTION( exception_value );
-
-        exception_lineno = 260;
-        goto frame_exception_exit_1;
-    }
-
-    tmp_source_name_16 = LOOKUP_ATTRIBUTE( tmp_source_name_17, const_str_plain__original_response );
-    if ( tmp_source_name_16 == NULL )
+    tmp_called_name_8 = LOOKUP_ATTRIBUTE( tmp_source_name_14, const_str_plain_isclosed );
+    Py_DECREF( tmp_source_name_14 );
+    if ( tmp_called_name_8 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 260;
+        exception_lineno = 269;
         goto frame_exception_exit_1;
     }
-    tmp_called_name_9 = LOOKUP_ATTRIBUTE( tmp_source_name_16, const_str_plain_isclosed );
-    Py_DECREF( tmp_source_name_16 );
-    if ( tmp_called_name_9 == NULL )
+    generator->m_frame->f_lineno = 269;
+    tmp_and_right_value_2 = CALL_FUNCTION_NO_ARGS( tmp_called_name_8 );
+    Py_DECREF( tmp_called_name_8 );
+    if ( tmp_and_right_value_2 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 260;
+        exception_lineno = 269;
         goto frame_exception_exit_1;
     }
-    generator->m_frame->f_lineno = 260;
-    tmp_and_right_value_3 = CALL_FUNCTION_NO_ARGS( tmp_called_name_9 );
-    Py_DECREF( tmp_called_name_9 );
-    if ( tmp_and_right_value_3 == NULL )
+    tmp_cond_value_5 = tmp_and_right_value_2;
+    goto and_end_2;
+    and_left_2:;
+    tmp_cond_value_5 = tmp_and_left_value_2;
+    and_end_2:;
+    tmp_cond_truth_5 = CHECK_IF_TRUE( tmp_cond_value_5 );
+    if ( tmp_cond_truth_5 == -1 )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_cond_value_5 );
 
-
-        exception_lineno = 260;
+        exception_lineno = 269;
         goto frame_exception_exit_1;
     }
-    tmp_cond_value_3 = tmp_and_right_value_3;
-    goto and_end_3;
-    and_left_3:;
-    tmp_cond_value_3 = tmp_and_left_value_3;
-    and_end_3:;
-    tmp_cond_truth_3 = CHECK_IF_TRUE( tmp_cond_value_3 );
-    if ( tmp_cond_truth_3 == -1 )
-    {
-        assert( ERROR_OCCURRED() );
-
-        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-        Py_DECREF( tmp_cond_value_3 );
-
-        exception_lineno = 260;
-        goto frame_exception_exit_1;
-    }
-    Py_DECREF( tmp_cond_value_3 );
-    if ( tmp_cond_truth_3 == 1 )
+    Py_DECREF( tmp_cond_value_5 );
+    if ( tmp_cond_truth_5 == 1 )
     {
         goto branch_yes_9;
     }
@@ -11519,9 +11374,9 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         goto branch_no_9;
     }
     branch_yes_9:;
-    tmp_source_name_18 = PyCell_GET( generator->m_closure[0] );
+    tmp_source_name_16 = PyCell_GET( generator->m_closure[0] );
 
-    if ( tmp_source_name_18 == NULL )
+    if ( tmp_source_name_16 == NULL )
     {
 
         exception_type = PyExc_NameError;
@@ -11531,24 +11386,24 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 261;
+        exception_lineno = 270;
         goto frame_exception_exit_1;
     }
 
-    tmp_called_name_10 = LOOKUP_ATTRIBUTE( tmp_source_name_18, const_str_plain_release_conn );
-    if ( tmp_called_name_10 == NULL )
+    tmp_called_name_9 = LOOKUP_ATTRIBUTE( tmp_source_name_16, const_str_plain_release_conn );
+    if ( tmp_called_name_9 == NULL )
     {
         assert( ERROR_OCCURRED() );
 
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 261;
+        exception_lineno = 270;
         goto frame_exception_exit_1;
     }
-    generator->m_frame->f_lineno = 261;
-    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_10 );
-    Py_DECREF( tmp_called_name_10 );
+    generator->m_frame->f_lineno = 270;
+    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_9 );
+    Py_DECREF( tmp_called_name_9 );
     if ( tmp_unused == NULL )
     {
         assert( ERROR_OCCURRED() );
@@ -11556,7 +11411,7 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 261;
+        exception_lineno = 270;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -11611,6 +11466,17 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
                 assert( res == 0 );
             }
 
+            if ( var_clean_exit )
+            {
+                int res = PyDict_SetItem(
+                    tmp_frame_locals,
+                    const_str_plain_clean_exit,
+                    var_clean_exit
+                );
+
+                assert( res == 0 );
+            }
+
             if ( var_e )
             {
                 int res = PyDict_SetItem(
@@ -11639,30 +11505,36 @@ static void genobj_1__error_catcher_of_function_9__error_catcher_of_class_3_HTTP
     goto try_except_handler_1;
     frame_no_exception_1:;
 
-    goto try_end_4;
+    goto try_end_3;
     // Exception handler code:
     try_except_handler_1:;
-    exception_keeper_type_9 = exception_type;
-    exception_keeper_value_9 = exception_value;
-    exception_keeper_tb_9 = exception_tb;
-    exception_keeper_lineno_9 = exception_lineno;
+    exception_keeper_type_7 = exception_type;
+    exception_keeper_value_7 = exception_value;
+    exception_keeper_tb_7 = exception_tb;
+    exception_keeper_lineno_7 = exception_lineno;
     exception_type = NULL;
     exception_value = NULL;
     exception_tb = NULL;
     exception_lineno = -1;
 
+    Py_XDECREF( var_clean_exit );
+    var_clean_exit = NULL;
+
     Py_XDECREF( var_e );
     var_e = NULL;
 
     // Re-raise.
-    exception_type = exception_keeper_type_9;
-    exception_value = exception_keeper_value_9;
-    exception_tb = exception_keeper_tb_9;
-    exception_lineno = exception_keeper_lineno_9;
+    exception_type = exception_keeper_type_7;
+    exception_value = exception_keeper_value_7;
+    exception_tb = exception_keeper_tb_7;
+    exception_lineno = exception_keeper_lineno_7;
 
     goto function_exception_exit;
     // End of try:
-    try_end_4:;
+    try_end_3:;
+    Py_XDECREF( var_clean_exit );
+    var_clean_exit = NULL;
+
 
     RESTORE_ERROR_OCCURRED( PyExc_StopIteration, NULL, NULL );
     Py_INCREF( PyExc_StopIteration );
@@ -11834,7 +11706,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_44063cb569ac67d790b48968bb597773, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_e411c50a918f68c027673cc9ec896049, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -11859,10 +11731,10 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 284;
+        exception_lineno = 293;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 284;
+    frame_function->f_lineno = 293;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_unused == NULL )
@@ -11872,7 +11744,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 284;
+        exception_lineno = 293;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -11901,7 +11773,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 286;
+        exception_lineno = 295;
         goto frame_exception_exit_1;
     }
 
@@ -11913,7 +11785,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 286;
+        exception_lineno = 295;
         goto frame_exception_exit_1;
     }
     {
@@ -11935,7 +11807,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 288;
+        exception_lineno = 297;
         goto frame_exception_exit_1;
     }
 
@@ -11947,7 +11819,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 288;
+        exception_lineno = 297;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_2 = Py_None;
@@ -11989,7 +11861,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 294;
+        exception_lineno = 303;
         goto try_except_handler_2;
     }
 
@@ -12001,10 +11873,10 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 294;
+        exception_lineno = 303;
         goto try_except_handler_2;
     }
-    frame_function->f_lineno = 294;
+    frame_function->f_lineno = 303;
     tmp_assign_source_4 = CALL_FUNCTION_NO_ARGS( tmp_called_name_2 );
     Py_DECREF( tmp_called_name_2 );
     if ( tmp_assign_source_4 == NULL )
@@ -12014,7 +11886,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 294;
+        exception_lineno = 303;
         goto try_except_handler_2;
     }
     assert( tmp_with_1__source == NULL );
@@ -12030,7 +11902,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 294;
+        exception_lineno = 303;
         goto try_except_handler_2;
     }
     assert( tmp_with_1__exit == NULL );
@@ -12046,10 +11918,10 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 294;
+        exception_lineno = 303;
         goto try_except_handler_2;
     }
-    frame_function->f_lineno = 294;
+    frame_function->f_lineno = 303;
     tmp_assign_source_6 = CALL_FUNCTION_NO_ARGS( tmp_called_name_3 );
     Py_DECREF( tmp_called_name_3 );
     if ( tmp_assign_source_6 == NULL )
@@ -12059,7 +11931,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 294;
+        exception_lineno = 303;
         goto try_except_handler_2;
     }
     assert( tmp_with_1__enter == NULL );
@@ -12097,7 +11969,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 297;
+        exception_lineno = 306;
         goto try_except_handler_4;
     }
 
@@ -12109,7 +11981,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 297;
+        exception_lineno = 306;
         goto try_except_handler_4;
     }
     tmp_called_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_7, const_str_plain_read );
@@ -12121,10 +11993,10 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 297;
+        exception_lineno = 306;
         goto try_except_handler_4;
     }
-    frame_function->f_lineno = 297;
+    frame_function->f_lineno = 306;
     tmp_assign_source_8 = CALL_FUNCTION_NO_ARGS( tmp_called_name_4 );
     Py_DECREF( tmp_called_name_4 );
     if ( tmp_assign_source_8 == NULL )
@@ -12134,7 +12006,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 297;
+        exception_lineno = 306;
         goto try_except_handler_4;
     }
     {
@@ -12174,7 +12046,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 301;
+        exception_lineno = 310;
         goto try_except_handler_4;
     }
 
@@ -12186,7 +12058,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 301;
+        exception_lineno = 310;
         goto try_except_handler_4;
     }
     tmp_called_name_5 = LOOKUP_ATTRIBUTE( tmp_source_name_9, const_str_plain_read );
@@ -12198,7 +12070,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 301;
+        exception_lineno = 310;
         goto try_except_handler_4;
     }
     tmp_args_element_name_1 = par_amt;
@@ -12213,11 +12085,11 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 301;
+        exception_lineno = 310;
         goto try_except_handler_4;
     }
 
-    frame_function->f_lineno = 301;
+    frame_function->f_lineno = 310;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_assign_source_11 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_5, call_args );
@@ -12231,7 +12103,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 301;
+        exception_lineno = 310;
         goto try_except_handler_4;
     }
     {
@@ -12252,7 +12124,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 302;
+        exception_lineno = 311;
         goto try_except_handler_4;
     }
 
@@ -12265,7 +12137,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 302;
+        exception_lineno = 311;
         goto try_except_handler_4;
     }
     tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
@@ -12276,7 +12148,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_and_left_value_1 );
 
-        exception_lineno = 302;
+        exception_lineno = 311;
         goto try_except_handler_4;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -12301,7 +12173,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 302;
+        exception_lineno = 311;
         goto try_except_handler_4;
     }
 
@@ -12313,7 +12185,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 302;
+        exception_lineno = 311;
         goto try_except_handler_4;
     }
     Py_INCREF( tmp_and_right_value_1 );
@@ -12330,7 +12202,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 302;
+        exception_lineno = 311;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -12355,7 +12227,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 310;
+        exception_lineno = 319;
         goto try_except_handler_4;
     }
 
@@ -12367,7 +12239,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 310;
+        exception_lineno = 319;
         goto try_except_handler_4;
     }
     tmp_called_name_6 = LOOKUP_ATTRIBUTE( tmp_source_name_11, const_str_plain_close );
@@ -12379,10 +12251,10 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 310;
+        exception_lineno = 319;
         goto try_except_handler_4;
     }
-    frame_function->f_lineno = 310;
+    frame_function->f_lineno = 319;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_6 );
     Py_DECREF( tmp_called_name_6 );
     if ( tmp_unused == NULL )
@@ -12392,7 +12264,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 310;
+        exception_lineno = 319;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_unused );
@@ -12449,7 +12321,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 294;
+        exception_lineno = 303;
         goto try_except_handler_5;
     }
     if ( tmp_exc_match_exception_match_1 == 1 )
@@ -12474,7 +12346,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
     tmp_args_element_name_2 = PyThreadState_GET()->exc_type;
     tmp_args_element_name_3 = PyThreadState_GET()->exc_value;
     tmp_args_element_name_4 = PyThreadState_GET()->exc_traceback;
-    frame_function->f_lineno = 311;
+    frame_function->f_lineno = 320;
     {
         PyObject *call_args[] = { tmp_args_element_name_2, tmp_args_element_name_3, tmp_args_element_name_4 };
         tmp_cond_value_2 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_7, call_args );
@@ -12487,7 +12359,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 311;
+        exception_lineno = 320;
         goto try_except_handler_5;
     }
     tmp_cond_truth_2 = CHECK_IF_TRUE( tmp_cond_value_2 );
@@ -12498,7 +12370,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_2 );
 
-        exception_lineno = 311;
+        exception_lineno = 320;
         goto try_except_handler_5;
     }
     Py_DECREF( tmp_cond_value_2 );
@@ -12579,7 +12451,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
     branch_yes_7:;
     tmp_called_name_8 = tmp_with_1__exit;
 
-    frame_function->f_lineno = 311;
+    frame_function->f_lineno = 320;
     tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_8, &PyTuple_GET_ITEM( const_tuple_none_none_none_tuple, 0 ) );
 
     if ( tmp_unused == NULL )
@@ -12592,7 +12464,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         Py_XDECREF( exception_keeper_value_3 );
         Py_XDECREF( exception_keeper_tb_3 );
 
-        exception_lineno = 311;
+        exception_lineno = 320;
         goto try_except_handler_2;
     }
     Py_DECREF( tmp_unused );
@@ -12621,7 +12493,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
     branch_yes_8:;
     tmp_called_name_9 = tmp_with_1__exit;
 
-    frame_function->f_lineno = 311;
+    frame_function->f_lineno = 320;
     tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_9, &PyTuple_GET_ITEM( const_tuple_none_none_none_tuple, 0 ) );
 
     if ( tmp_unused == NULL )
@@ -12631,7 +12503,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 311;
+        exception_lineno = 320;
         goto try_except_handler_2;
     }
     Py_DECREF( tmp_unused );
@@ -12693,7 +12565,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 313;
+        exception_lineno = 322;
         goto frame_exception_exit_1;
     }
 
@@ -12705,7 +12577,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 313;
+        exception_lineno = 322;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_3 == 1 )
@@ -12729,7 +12601,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 314;
+        exception_lineno = 323;
         goto frame_exception_exit_1;
     }
 
@@ -12741,7 +12613,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 314;
+        exception_lineno = 323;
         goto frame_exception_exit_1;
     }
     assert( tmp_inplace_assign_attr_1__start == NULL );
@@ -12762,7 +12634,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 314;
+        exception_lineno = 323;
         goto try_except_handler_6;
     }
 
@@ -12774,7 +12646,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 314;
+        exception_lineno = 323;
         goto try_except_handler_6;
     }
     tmp_assign_source_15 = BINARY_OPERATION( PyNumber_InPlaceAdd, tmp_left_name_1, tmp_right_name_1 );
@@ -12786,7 +12658,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 314;
+        exception_lineno = 323;
         goto try_except_handler_6;
     }
     assert( tmp_inplace_assign_attr_1__end == NULL );
@@ -12821,7 +12693,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 314;
+        exception_lineno = 323;
         goto try_except_handler_7;
     }
 
@@ -12833,7 +12705,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 314;
+        exception_lineno = 323;
         goto try_except_handler_7;
     }
     branch_no_10:;
@@ -12903,7 +12775,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 316;
+        exception_lineno = 325;
         goto frame_exception_exit_1;
     }
 
@@ -12915,7 +12787,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 316;
+        exception_lineno = 325;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_5 = var_data;
@@ -12930,7 +12802,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 316;
+        exception_lineno = 325;
         goto frame_exception_exit_1;
     }
 
@@ -12946,7 +12818,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 316;
+        exception_lineno = 325;
         goto frame_exception_exit_1;
     }
 
@@ -12962,11 +12834,11 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 316;
+        exception_lineno = 325;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 316;
+    frame_function->f_lineno = 325;
     {
         PyObject *call_args[] = { tmp_args_element_name_5, tmp_args_element_name_6, tmp_args_element_name_7 };
         tmp_assign_source_16 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_10, call_args );
@@ -12980,7 +12852,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 316;
+        exception_lineno = 325;
         goto frame_exception_exit_1;
     }
     {
@@ -13001,7 +12873,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 318;
+        exception_lineno = 327;
         goto frame_exception_exit_1;
     }
 
@@ -13013,7 +12885,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 318;
+        exception_lineno = 327;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_4 == 1 )
@@ -13039,7 +12911,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 319;
+        exception_lineno = 328;
         goto frame_exception_exit_1;
     }
 
@@ -13051,7 +12923,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 319;
+        exception_lineno = 328;
         goto frame_exception_exit_1;
     }
     branch_no_11:;
@@ -13068,7 +12940,7 @@ static PyObject *impl_function_10_read_of_class_3_HTTPResponse_of_urllib3$respon
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 321;
+        exception_lineno = 330;
         goto frame_exception_exit_1;
     }
 
@@ -13318,7 +13190,7 @@ static PyObject *impl_function_11_stream_of_class_3_HTTPResponse_of_urllib3$resp
 #if PYTHON_VERSION >= 350
             self->m_qualname,
 #endif
-            codeobj_20156cf93a13bb28f092d0f252017a12,
+            codeobj_34401790e7aae121b33e6a3f60e845ae,
             closure,
             3
         );
@@ -13431,7 +13303,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_generator, codeobj_91040f58b7a550fabd32dab748d900db, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_generator, codeobj_cca8b357d82b082129483a9f40bdfb94, module_urllib3$response );
     generator->m_frame = cache_frame_generator;
     Py_INCREF( generator->m_frame );
 
@@ -13485,7 +13357,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
 
         if (exception_tb == NULL)
         {
-            exception_lineno = 323;
+            exception_lineno = 332;
             goto frame_exception_exit_1;
         }
         else
@@ -13506,7 +13378,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 339;
+        exception_lineno = 348;
         goto frame_exception_exit_1;
     }
 
@@ -13518,7 +13390,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 339;
+        exception_lineno = 348;
         goto frame_exception_exit_1;
     }
     tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
@@ -13529,7 +13401,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 339;
+        exception_lineno = 348;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -13554,7 +13426,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 340;
+        exception_lineno = 349;
         goto frame_exception_exit_1;
     }
 
@@ -13566,7 +13438,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 340;
+        exception_lineno = 349;
         goto frame_exception_exit_1;
     }
     tmp_args_name_1 = PyTuple_New( 1 );
@@ -13583,7 +13455,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 340;
+        exception_lineno = 349;
         goto frame_exception_exit_1;
     }
 
@@ -13605,12 +13477,12 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 340;
+        exception_lineno = 349;
         goto frame_exception_exit_1;
     }
 
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_1, tmp_dict_value_1 );
-    generator->m_frame->f_lineno = 340;
+    generator->m_frame->f_lineno = 349;
     tmp_iter_arg_1 = CALL_FUNCTION( tmp_called_name_1, tmp_args_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_1 );
     Py_DECREF( tmp_args_name_1 );
@@ -13622,7 +13494,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 340;
+        exception_lineno = 349;
         goto frame_exception_exit_1;
     }
     tmp_assign_source_1 = MAKE_ITERATOR( tmp_iter_arg_1 );
@@ -13634,7 +13506,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 340;
+        exception_lineno = 349;
         goto frame_exception_exit_1;
     }
     assert( tmp_for_loop_1__for_iterator == NULL );
@@ -13656,7 +13528,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         {
 
             FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
-            generator->m_frame->f_lineno = 340;
+            generator->m_frame->f_lineno = 349;
             goto try_except_handler_2;
         }
     }
@@ -13686,7 +13558,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 341;
+        exception_lineno = 350;
         goto try_except_handler_2;
     }
     if ( CONSIDER_THREADING() == false )
@@ -13696,7 +13568,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 340;
+        exception_lineno = 349;
         goto try_except_handler_2;
     }
     goto loop_start_1;
@@ -13754,7 +13626,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 343;
+        exception_lineno = 352;
         goto frame_exception_exit_1;
     }
 
@@ -13770,7 +13642,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 343;
+        exception_lineno = 352;
         goto frame_exception_exit_1;
     }
 
@@ -13782,10 +13654,10 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 343;
+        exception_lineno = 352;
         goto frame_exception_exit_1;
     }
-    generator->m_frame->f_lineno = 343;
+    generator->m_frame->f_lineno = 352;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_cond_value_2 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, call_args );
@@ -13799,7 +13671,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 343;
+        exception_lineno = 352;
         goto frame_exception_exit_1;
     }
     tmp_cond_truth_2 = CHECK_IF_TRUE( tmp_cond_value_2 );
@@ -13810,7 +13682,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_2 );
 
-        exception_lineno = 343;
+        exception_lineno = 352;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_2 );
@@ -13837,7 +13709,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 344;
+        exception_lineno = 353;
         goto frame_exception_exit_1;
     }
 
@@ -13849,7 +13721,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 344;
+        exception_lineno = 353;
         goto frame_exception_exit_1;
     }
     tmp_kw_name_2 = _PyDict_NewPresized( 2 );
@@ -13867,7 +13739,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 344;
+        exception_lineno = 353;
         goto frame_exception_exit_1;
     }
 
@@ -13886,12 +13758,12 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 344;
+        exception_lineno = 353;
         goto frame_exception_exit_1;
     }
 
     PyDict_SetItem( tmp_kw_name_2, tmp_dict_key_3, tmp_dict_value_3 );
-    generator->m_frame->f_lineno = 344;
+    generator->m_frame->f_lineno = 353;
     tmp_assign_source_4 = CALL_FUNCTION_WITH_KEYARGS( tmp_called_name_3, tmp_kw_name_2 );
     Py_DECREF( tmp_called_name_3 );
     Py_DECREF( tmp_kw_name_2 );
@@ -13902,7 +13774,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 344;
+        exception_lineno = 353;
         goto frame_exception_exit_1;
     }
     {
@@ -13921,7 +13793,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 346;
+        exception_lineno = 355;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_3 == 1 )
@@ -13943,7 +13815,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 347;
+        exception_lineno = 356;
         goto frame_exception_exit_1;
     }
     branch_no_3:;
@@ -13954,7 +13826,7 @@ static void genobj_1_stream_of_function_11_stream_of_class_3_HTTPResponse_of_url
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 343;
+        exception_lineno = 352;
         goto frame_exception_exit_1;
     }
     goto loop_start_2;
@@ -14192,7 +14064,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_d54cc97eb321ac3c1438f0943a06f9b9, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_360781c14f79e1bfdf2f8d8dabd7eeb5, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -14217,7 +14089,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 358;
+        exception_lineno = 367;
         goto frame_exception_exit_1;
     }
     assert( var_headers == NULL );
@@ -14242,7 +14114,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 360;
+        exception_lineno = 369;
         goto frame_exception_exit_1;
     }
 
@@ -14254,7 +14126,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 360;
+        exception_lineno = 369;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -14283,7 +14155,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 361;
+        exception_lineno = 370;
         goto frame_exception_exit_1;
     }
 
@@ -14295,7 +14167,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 361;
+        exception_lineno = 370;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -14324,7 +14196,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 362;
+        exception_lineno = 371;
         goto frame_exception_exit_1;
     }
 
@@ -14340,7 +14212,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 362;
+        exception_lineno = 371;
         goto frame_exception_exit_1;
     }
 
@@ -14352,10 +14224,10 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 362;
+        exception_lineno = 371;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 362;
+    frame_function->f_lineno = 371;
     tmp_args_element_name_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_2 );
     Py_DECREF( tmp_called_name_2 );
     if ( tmp_args_element_name_1 == NULL )
@@ -14365,10 +14237,10 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 362;
+        exception_lineno = 371;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 362;
+    frame_function->f_lineno = 371;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_assign_source_2 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -14382,7 +14254,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 362;
+        exception_lineno = 371;
         goto frame_exception_exit_1;
     }
     {
@@ -14410,7 +14282,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 364;
+        exception_lineno = 373;
         goto frame_exception_exit_1;
     }
 
@@ -14422,7 +14294,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 364;
+        exception_lineno = 373;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_2 = var_headers;
@@ -14437,11 +14309,11 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 364;
+        exception_lineno = 373;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 364;
+    frame_function->f_lineno = 373;
     {
         PyObject *call_args[] = { tmp_args_element_name_2 };
         tmp_assign_source_3 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -14455,7 +14327,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 364;
+        exception_lineno = 373;
         goto frame_exception_exit_1;
     }
     {
@@ -14478,7 +14350,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 367;
+        exception_lineno = 376;
         goto frame_exception_exit_1;
     }
 
@@ -14492,7 +14364,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 367;
+        exception_lineno = 376;
         goto frame_exception_exit_1;
     }
     assert( var_strict == NULL );
@@ -14514,7 +14386,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 368;
+        exception_lineno = 377;
         goto frame_exception_exit_1;
     }
 
@@ -14532,7 +14404,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 369;
+        exception_lineno = 378;
         goto frame_exception_exit_1;
     }
 
@@ -14550,7 +14422,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 370;
+        exception_lineno = 379;
         goto frame_exception_exit_1;
     }
 
@@ -14562,7 +14434,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 370;
+        exception_lineno = 379;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_dircall_arg2_1, tmp_dict_key_3, tmp_dict_value_3 );
@@ -14580,7 +14452,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 371;
+        exception_lineno = 380;
         goto frame_exception_exit_1;
     }
 
@@ -14592,7 +14464,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 371;
+        exception_lineno = 380;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_dircall_arg2_1, tmp_dict_key_4, tmp_dict_value_4 );
@@ -14610,7 +14482,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 372;
+        exception_lineno = 381;
         goto frame_exception_exit_1;
     }
 
@@ -14622,7 +14494,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_dircall_arg2_1 );
 
-        exception_lineno = 372;
+        exception_lineno = 381;
         goto frame_exception_exit_1;
     }
     PyDict_SetItem( tmp_dircall_arg2_1, tmp_dict_key_5, tmp_dict_value_5 );
@@ -14640,7 +14512,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 373;
+        exception_lineno = 382;
         goto frame_exception_exit_1;
     }
 
@@ -14658,7 +14530,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 374;
+        exception_lineno = 383;
         goto frame_exception_exit_1;
     }
 
@@ -14679,7 +14551,7 @@ static PyObject *impl_function_12_from_httplib_of_class_3_HTTPResponse_of_urllib
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 375;
+        exception_lineno = 384;
         goto frame_exception_exit_1;
     }
     assert( var_resp == NULL );
@@ -14915,7 +14787,7 @@ static PyObject *impl_function_13_getheaders_of_class_3_HTTPResponse_of_urllib3$
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_f54ad4a25abea3f3032d7fa0f554620d, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_31a59550d307284d438f80e99cbdaeee, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -14940,7 +14812,7 @@ static PyObject *impl_function_13_getheaders_of_class_3_HTTPResponse_of_urllib3$
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 380;
+        exception_lineno = 389;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -15105,7 +14977,7 @@ static PyObject *impl_function_14_getheader_of_class_3_HTTPResponse_of_urllib3$r
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_f6f339732776d29226e9d3c461271037, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_a3d0db1e8c69d5b33ffd590a045d7ee2, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -15130,7 +15002,7 @@ static PyObject *impl_function_14_getheader_of_class_3_HTTPResponse_of_urllib3$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 383;
+        exception_lineno = 392;
         goto frame_exception_exit_1;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain_get );
@@ -15142,14 +15014,14 @@ static PyObject *impl_function_14_getheader_of_class_3_HTTPResponse_of_urllib3$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 383;
+        exception_lineno = 392;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_1 = par_name;
 
     tmp_args_element_name_2 = par_default;
 
-    frame_function->f_lineno = 383;
+    frame_function->f_lineno = 392;
     {
         PyObject *call_args[] = { tmp_args_element_name_1, tmp_args_element_name_2 };
         tmp_return_value = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_1, call_args );
@@ -15163,7 +15035,7 @@ static PyObject *impl_function_14_getheader_of_class_3_HTTPResponse_of_urllib3$r
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 383;
+        exception_lineno = 392;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -15346,13 +15218,19 @@ static PyObject *impl_function_15_close_of_class_3_HTTPResponse_of_urllib3$respo
     PyTracebackObject *exception_keeper_tb_1;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_1;
     PyObject *tmp_called_name_1;
+    PyObject *tmp_called_name_2;
     int tmp_cond_truth_1;
+    int tmp_cond_truth_2;
     PyObject *tmp_cond_value_1;
+    PyObject *tmp_cond_value_2;
     PyObject *tmp_frame_locals;
     PyObject *tmp_return_value;
     PyObject *tmp_source_name_1;
     PyObject *tmp_source_name_2;
     PyObject *tmp_source_name_3;
+    PyObject *tmp_source_name_4;
+    PyObject *tmp_source_name_5;
+    PyObject *tmp_source_name_6;
     NUITKA_MAY_BE_UNUSED PyObject *tmp_unused;
     static PyFrameObject *cache_frame_function = NULL;
 
@@ -15362,7 +15240,7 @@ static PyObject *impl_function_15_close_of_class_3_HTTPResponse_of_urllib3$respo
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_f0f4cc4c860aecfdfe5be43fa4ac9d64, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_b36c98742d5c4dacd779c814d056df3c, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -15387,7 +15265,7 @@ static PyObject *impl_function_15_close_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 387;
+        exception_lineno = 396;
         goto frame_exception_exit_1;
     }
     tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
@@ -15398,7 +15276,7 @@ static PyObject *impl_function_15_close_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 387;
+        exception_lineno = 396;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -15423,7 +15301,7 @@ static PyObject *impl_function_15_close_of_class_3_HTTPResponse_of_urllib3$respo
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 388;
+        exception_lineno = 397;
         goto frame_exception_exit_1;
     }
 
@@ -15435,7 +15313,7 @@ static PyObject *impl_function_15_close_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 388;
+        exception_lineno = 397;
         goto frame_exception_exit_1;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain_close );
@@ -15447,10 +15325,10 @@ static PyObject *impl_function_15_close_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 388;
+        exception_lineno = 397;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 388;
+    frame_function->f_lineno = 397;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_unused == NULL )
@@ -15460,11 +15338,113 @@ static PyObject *impl_function_15_close_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 388;
+        exception_lineno = 397;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
     branch_no_1:;
+    tmp_source_name_4 = par_self;
+
+    if ( tmp_source_name_4 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "self" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 399;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_cond_value_2 = LOOKUP_ATTRIBUTE( tmp_source_name_4, const_str_plain__connection );
+    if ( tmp_cond_value_2 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 399;
+        goto frame_exception_exit_1;
+    }
+    tmp_cond_truth_2 = CHECK_IF_TRUE( tmp_cond_value_2 );
+    if ( tmp_cond_truth_2 == -1 )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+        Py_DECREF( tmp_cond_value_2 );
+
+        exception_lineno = 399;
+        goto frame_exception_exit_1;
+    }
+    Py_DECREF( tmp_cond_value_2 );
+    if ( tmp_cond_truth_2 == 1 )
+    {
+        goto branch_yes_2;
+    }
+    else
+    {
+        goto branch_no_2;
+    }
+    branch_yes_2:;
+    tmp_source_name_6 = par_self;
+
+    if ( tmp_source_name_6 == NULL )
+    {
+
+        exception_type = PyExc_UnboundLocalError;
+        Py_INCREF( exception_type );
+        exception_value = PyUnicode_FromFormat( "local variable '%s' referenced before assignment", "self" );
+        exception_tb = NULL;
+        NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
+        CHAIN_EXCEPTION( exception_value );
+
+        exception_lineno = 400;
+        goto frame_exception_exit_1;
+    }
+
+    tmp_source_name_5 = LOOKUP_ATTRIBUTE( tmp_source_name_6, const_str_plain__connection );
+    if ( tmp_source_name_5 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 400;
+        goto frame_exception_exit_1;
+    }
+    tmp_called_name_2 = LOOKUP_ATTRIBUTE( tmp_source_name_5, const_str_plain_close );
+    Py_DECREF( tmp_source_name_5 );
+    if ( tmp_called_name_2 == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 400;
+        goto frame_exception_exit_1;
+    }
+    frame_function->f_lineno = 400;
+    tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_2 );
+    Py_DECREF( tmp_called_name_2 );
+    if ( tmp_unused == NULL )
+    {
+        assert( ERROR_OCCURRED() );
+
+        FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
+
+
+        exception_lineno = 400;
+        goto frame_exception_exit_1;
+    }
+    Py_DECREF( tmp_unused );
+    branch_no_2:;
 
 #if 0
     RESTORE_FRAME_EXCEPTION( frame_function );
@@ -15627,7 +15607,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_d2085022e641183d7c10453f4a9080a2, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_b6e67ee2b9cfa80f1836814e319dd408, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -15652,7 +15632,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 392;
+        exception_lineno = 404;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_1 = Py_None;
@@ -15684,7 +15664,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 394;
+        exception_lineno = 406;
         goto frame_exception_exit_1;
     }
 
@@ -15696,7 +15676,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 394;
+        exception_lineno = 406;
         goto frame_exception_exit_1;
     }
     tmp_hasattr_attr_1 = const_str_plain_closed;
@@ -15709,7 +15689,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 394;
+        exception_lineno = 406;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -15733,7 +15713,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 395;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
 
@@ -15745,7 +15725,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 395;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
     tmp_return_value = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain_closed );
@@ -15757,7 +15737,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 395;
+        exception_lineno = 407;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -15775,7 +15755,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 396;
+        exception_lineno = 408;
         goto frame_exception_exit_1;
     }
 
@@ -15787,7 +15767,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 396;
+        exception_lineno = 408;
         goto frame_exception_exit_1;
     }
     tmp_hasattr_attr_2 = const_str_plain_isclosed;
@@ -15800,7 +15780,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 396;
+        exception_lineno = 408;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -15824,7 +15804,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 397;
+        exception_lineno = 409;
         goto frame_exception_exit_1;
     }
 
@@ -15836,7 +15816,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 397;
+        exception_lineno = 409;
         goto frame_exception_exit_1;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_6, const_str_plain_isclosed );
@@ -15848,10 +15828,10 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 397;
+        exception_lineno = 409;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 397;
+    frame_function->f_lineno = 409;
     tmp_return_value = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_return_value == NULL )
@@ -15861,7 +15841,7 @@ static PyObject *impl_function_16_closed_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 397;
+        exception_lineno = 409;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -16042,7 +16022,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_ed1bdb4f3af82779b180ba2ee85cf6bc, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_cd8f28d6d5b17a629c8f1062cc2af370, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -16067,7 +16047,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 402;
+        exception_lineno = 414;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_1 = Py_None;
@@ -16083,7 +16063,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
     }
     branch_yes_1:;
     tmp_make_exception_arg_1 = const_str_digest_5c256aa147815cb63972929236f4cfd3;
-    frame_function->f_lineno = 403;
+    frame_function->f_lineno = 415;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_1 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( PyExc_IOError, call_args );
@@ -16091,7 +16071,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
 
     assert( tmp_raise_type_1 != NULL );
     exception_type = tmp_raise_type_1;
-    exception_lineno = 403;
+    exception_lineno = 415;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     goto branch_end_1;
@@ -16108,7 +16088,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 404;
+        exception_lineno = 416;
         goto frame_exception_exit_1;
     }
 
@@ -16120,7 +16100,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 404;
+        exception_lineno = 416;
         goto frame_exception_exit_1;
     }
     tmp_hasattr_attr_1 = const_str_plain_fileno;
@@ -16133,7 +16113,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 404;
+        exception_lineno = 416;
         goto frame_exception_exit_1;
     }
     if ( tmp_res == 1 )
@@ -16157,7 +16137,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 405;
+        exception_lineno = 417;
         goto frame_exception_exit_1;
     }
 
@@ -16169,7 +16149,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 405;
+        exception_lineno = 417;
         goto frame_exception_exit_1;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain_fileno );
@@ -16181,10 +16161,10 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 405;
+        exception_lineno = 417;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 405;
+    frame_function->f_lineno = 417;
     tmp_return_value = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_return_value == NULL )
@@ -16194,14 +16174,14 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 405;
+        exception_lineno = 417;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
     goto branch_end_2;
     branch_no_2:;
     tmp_make_exception_arg_2 = const_str_digest_cda89e76498b26a9b99e78acdb5ae71a;
-    frame_function->f_lineno = 407;
+    frame_function->f_lineno = 419;
     {
         PyObject *call_args[] = { tmp_make_exception_arg_2 };
         tmp_raise_type_2 = CALL_FUNCTION_WITH_ARGS1( PyExc_IOError, call_args );
@@ -16209,7 +16189,7 @@ static PyObject *impl_function_17_fileno_of_class_3_HTTPResponse_of_urllib3$resp
 
     assert( tmp_raise_type_2 != NULL );
     exception_type = tmp_raise_type_2;
-    exception_lineno = 407;
+    exception_lineno = 419;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_end_2:;
@@ -16382,7 +16362,7 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_1be55398d0eb668edd84fb5de51d29c6, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_4f59a8702b1d6881546f27c4ad87558e, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -16407,7 +16387,7 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 411;
+        exception_lineno = 423;
         goto frame_exception_exit_1;
     }
     tmp_compexpr_right_1 = Py_None;
@@ -16436,7 +16416,7 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 411;
+        exception_lineno = 423;
         goto frame_exception_exit_1;
     }
 
@@ -16448,7 +16428,7 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 411;
+        exception_lineno = 423;
         goto frame_exception_exit_1;
     }
     tmp_hasattr_attr_1 = const_str_plain_flush;
@@ -16461,7 +16441,7 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 411;
+        exception_lineno = 423;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_1 = tmp_and_right_value_1;
@@ -16477,7 +16457,7 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 411;
+        exception_lineno = 423;
         goto frame_exception_exit_1;
     }
     if ( tmp_cond_truth_1 == 1 )
@@ -16501,7 +16481,7 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 412;
+        exception_lineno = 424;
         goto frame_exception_exit_1;
     }
 
@@ -16513,7 +16493,7 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 412;
+        exception_lineno = 424;
         goto frame_exception_exit_1;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain_flush );
@@ -16525,10 +16505,10 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 412;
+        exception_lineno = 424;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 412;
+    frame_function->f_lineno = 424;
     tmp_return_value = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_return_value == NULL )
@@ -16538,7 +16518,7 @@ static PyObject *impl_function_18_flush_of_class_3_HTTPResponse_of_urllib3$respo
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 412;
+        exception_lineno = 424;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -16766,7 +16746,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_5c109e3bd36b31843662459a2f70b48e, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_833a16bc2c20475555178ee326ff5c6f, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -16791,7 +16771,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 420;
+        exception_lineno = 432;
         goto frame_exception_exit_1;
     }
     tmp_len_arg_1 = par_b;
@@ -16804,10 +16784,10 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_1 );
 
-        exception_lineno = 420;
+        exception_lineno = 432;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 420;
+    frame_function->f_lineno = 432;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_assign_source_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -16822,7 +16802,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 420;
+        exception_lineno = 432;
         goto frame_exception_exit_1;
     }
     assert( var_temp == NULL );
@@ -16838,7 +16818,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 421;
+        exception_lineno = 433;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_1 = const_int_0;
@@ -16850,7 +16830,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_left_1 );
 
-        exception_lineno = 421;
+        exception_lineno = 433;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_compare_left_1 );
@@ -16880,7 +16860,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 424;
+        exception_lineno = 436;
         goto frame_exception_exit_1;
     }
 
@@ -16896,7 +16876,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 424;
+        exception_lineno = 436;
         goto frame_exception_exit_1;
     }
 
@@ -16913,7 +16893,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 424;
+        exception_lineno = 436;
         goto frame_exception_exit_1;
     }
 
@@ -16925,7 +16905,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 424;
+        exception_lineno = 436;
         goto frame_exception_exit_1;
     }
     tmp_step_name_1 = Py_None;
@@ -16941,7 +16921,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 424;
+        exception_lineno = 436;
         goto frame_exception_exit_1;
     }
     tmp_len_arg_4 = var_temp;
@@ -16956,7 +16936,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 425;
+        exception_lineno = 437;
         goto frame_exception_exit_1;
     }
 
@@ -16968,7 +16948,7 @@ static PyObject *impl_function_20_readinto_of_class_3_HTTPResponse_of_urllib3$re
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 425;
+        exception_lineno = 437;
         goto frame_exception_exit_1;
     }
     goto frame_return_exit_1;
@@ -17202,7 +17182,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_514a50c7441175f13a0ddd44605d4bc0, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_eb958fcf03f800cc4f576e9d758b64e6, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -17227,7 +17207,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 430;
+        exception_lineno = 442;
         goto frame_exception_exit_1;
     }
     tmp_compare_right_1 = Py_None;
@@ -17258,7 +17238,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 432;
+        exception_lineno = 444;
         goto frame_exception_exit_1;
     }
 
@@ -17270,7 +17250,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 432;
+        exception_lineno = 444;
         goto frame_exception_exit_1;
     }
     tmp_source_name_2 = LOOKUP_ATTRIBUTE( tmp_source_name_3, const_str_plain_fp );
@@ -17282,7 +17262,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 432;
+        exception_lineno = 444;
         goto frame_exception_exit_1;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_2, const_str_plain_readline );
@@ -17294,10 +17274,10 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 432;
+        exception_lineno = 444;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 432;
+    frame_function->f_lineno = 444;
     tmp_assign_source_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_assign_source_1 == NULL )
@@ -17307,7 +17287,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 432;
+        exception_lineno = 444;
         goto frame_exception_exit_1;
     }
     assert( var_line == NULL );
@@ -17323,10 +17303,10 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 433;
+        exception_lineno = 445;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 433;
+    frame_function->f_lineno = 445;
     tmp_subscribed_name_1 = CALL_FUNCTION_WITH_ARGS2( tmp_called_name_2, &PyTuple_GET_ITEM( const_tuple_bytes_chr_59_int_pos_1_tuple, 0 ) );
 
     Py_DECREF( tmp_called_name_2 );
@@ -17337,7 +17317,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 433;
+        exception_lineno = 445;
         goto frame_exception_exit_1;
     }
     tmp_subscript_name_1 = const_int_0;
@@ -17350,7 +17330,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 433;
+        exception_lineno = 445;
         goto frame_exception_exit_1;
     }
     {
@@ -17371,7 +17351,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 435;
+        exception_lineno = 447;
         goto try_except_handler_2;
     }
     tmp_assattr_target_1 = par_self;
@@ -17386,7 +17366,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 435;
+        exception_lineno = 447;
         goto try_except_handler_2;
     }
 
@@ -17398,7 +17378,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assattr_name_1 );
 
-        exception_lineno = 435;
+        exception_lineno = 447;
         goto try_except_handler_2;
     }
     Py_DECREF( tmp_assattr_name_1 );
@@ -17445,7 +17425,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 436;
+        exception_lineno = 448;
         goto try_except_handler_3;
     }
     if ( tmp_exc_match_exception_match_1 == 1 )
@@ -17469,7 +17449,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 438;
+        exception_lineno = 450;
         goto try_except_handler_3;
     }
 
@@ -17481,10 +17461,10 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 438;
+        exception_lineno = 450;
         goto try_except_handler_3;
     }
-    frame_function->f_lineno = 438;
+    frame_function->f_lineno = 450;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_3 );
     Py_DECREF( tmp_called_name_3 );
     if ( tmp_unused == NULL )
@@ -17494,7 +17474,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 438;
+        exception_lineno = 450;
         goto try_except_handler_3;
     }
     Py_DECREF( tmp_unused );
@@ -17515,7 +17495,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 439;
+        exception_lineno = 451;
         goto try_except_handler_3;
     }
 
@@ -17527,7 +17507,7 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 439;
+        exception_lineno = 451;
         goto try_except_handler_3;
     }
     tmp_args_element_name_1 = var_line;
@@ -17542,11 +17522,11 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 439;
+        exception_lineno = 451;
         goto try_except_handler_3;
     }
 
-    frame_function->f_lineno = 439;
+    frame_function->f_lineno = 451;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
@@ -17560,11 +17540,11 @@ static PyObject *impl_function_21__update_chunk_length_of_class_3_HTTPResponse_o
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 439;
+        exception_lineno = 451;
         goto try_except_handler_3;
     }
     exception_type = tmp_raise_type_1;
-    exception_lineno = 439;
+    exception_lineno = 451;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto try_except_handler_3;
     goto branch_end_2;
@@ -17835,7 +17815,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_0407d38777d2e46def68c4eebb9deb41, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_function, codeobj_181aa0de3e16efb8e4fe3d40d66e9c63, module_urllib3$response );
     frame_function = cache_frame_function;
 
     // Push the new frame as the currently active one.
@@ -17873,7 +17853,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 444;
+        exception_lineno = 456;
         goto frame_exception_exit_1;
     }
     tmp_called_name_1 = LOOKUP_ATTRIBUTE( tmp_source_name_1, const_str_plain__safe_read );
@@ -17885,7 +17865,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 444;
+        exception_lineno = 456;
         goto frame_exception_exit_1;
     }
     tmp_source_name_3 = par_self;
@@ -17900,7 +17880,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 444;
+        exception_lineno = 456;
         goto frame_exception_exit_1;
     }
 
@@ -17912,10 +17892,10 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_1 );
 
-        exception_lineno = 444;
+        exception_lineno = 456;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 444;
+    frame_function->f_lineno = 456;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_assign_source_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_1, call_args );
@@ -17930,7 +17910,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 444;
+        exception_lineno = 456;
         goto frame_exception_exit_1;
     }
     assert( var_chunk == NULL );
@@ -17954,7 +17934,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 446;
+        exception_lineno = 458;
         goto frame_exception_exit_1;
     }
 
@@ -17966,7 +17946,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 446;
+        exception_lineno = 458;
         goto frame_exception_exit_1;
     }
     tmp_called_name_2 = LOOKUP_ATTRIBUTE( tmp_source_name_4, const_str_plain__safe_read );
@@ -17978,10 +17958,10 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 446;
+        exception_lineno = 458;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 446;
+    frame_function->f_lineno = 458;
     tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, &PyTuple_GET_ITEM( const_tuple_int_pos_2_tuple, 0 ) );
 
     Py_DECREF( tmp_called_name_2 );
@@ -17992,7 +17972,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 446;
+        exception_lineno = 458;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -18009,7 +17989,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 447;
+        exception_lineno = 459;
         goto frame_exception_exit_1;
     }
 
@@ -18021,7 +18001,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 447;
+        exception_lineno = 459;
         goto frame_exception_exit_1;
     }
     goto branch_end_1;
@@ -18038,7 +18018,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 448;
+        exception_lineno = 460;
         goto frame_exception_exit_1;
     }
 
@@ -18052,7 +18032,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 448;
+        exception_lineno = 460;
         goto frame_exception_exit_1;
     }
     tmp_cmp_Lt_1 = RICH_COMPARE_BOOL_LT( tmp_compare_left_2, tmp_compare_right_2 );
@@ -18063,7 +18043,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_right_2 );
 
-        exception_lineno = 448;
+        exception_lineno = 460;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_compare_right_2 );
@@ -18088,7 +18068,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 449;
+        exception_lineno = 461;
         goto frame_exception_exit_1;
     }
 
@@ -18100,7 +18080,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 449;
+        exception_lineno = 461;
         goto frame_exception_exit_1;
     }
     tmp_called_name_3 = LOOKUP_ATTRIBUTE( tmp_source_name_7, const_str_plain__safe_read );
@@ -18112,7 +18092,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 449;
+        exception_lineno = 461;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_2 = par_amt;
@@ -18127,11 +18107,11 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 449;
+        exception_lineno = 461;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 449;
+    frame_function->f_lineno = 461;
     {
         PyObject *call_args[] = { tmp_args_element_name_2 };
         tmp_assign_source_3 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -18145,7 +18125,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 449;
+        exception_lineno = 461;
         goto frame_exception_exit_1;
     }
     assert( var_value == NULL );
@@ -18163,7 +18143,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 450;
+        exception_lineno = 462;
         goto frame_exception_exit_1;
     }
 
@@ -18175,7 +18155,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 450;
+        exception_lineno = 462;
         goto frame_exception_exit_1;
     }
     tmp_right_name_1 = par_amt;
@@ -18190,7 +18170,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 450;
+        exception_lineno = 462;
         goto frame_exception_exit_1;
     }
 
@@ -18203,7 +18183,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 450;
+        exception_lineno = 462;
         goto frame_exception_exit_1;
     }
     tmp_assattr_target_2 = par_self;
@@ -18218,7 +18198,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 450;
+        exception_lineno = 462;
         goto frame_exception_exit_1;
     }
 
@@ -18230,7 +18210,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_assattr_name_2 );
 
-        exception_lineno = 450;
+        exception_lineno = 462;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_assattr_name_2 );
@@ -18246,7 +18226,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 451;
+        exception_lineno = 463;
         goto frame_exception_exit_1;
     }
 
@@ -18268,7 +18248,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 452;
+        exception_lineno = 464;
         goto frame_exception_exit_1;
     }
 
@@ -18284,7 +18264,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 452;
+        exception_lineno = 464;
         goto frame_exception_exit_1;
     }
 
@@ -18296,7 +18276,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 452;
+        exception_lineno = 464;
         goto frame_exception_exit_1;
     }
     tmp_cmp_Eq_1 = RICH_COMPARE_BOOL_EQ( tmp_compare_left_3, tmp_compare_right_3 );
@@ -18307,7 +18287,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_right_3 );
 
-        exception_lineno = 452;
+        exception_lineno = 464;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_compare_right_3 );
@@ -18332,7 +18312,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 453;
+        exception_lineno = 465;
         goto frame_exception_exit_1;
     }
 
@@ -18344,7 +18324,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 453;
+        exception_lineno = 465;
         goto frame_exception_exit_1;
     }
     tmp_called_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_11, const_str_plain__safe_read );
@@ -18356,7 +18336,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 453;
+        exception_lineno = 465;
         goto frame_exception_exit_1;
     }
     tmp_args_element_name_3 = par_amt;
@@ -18371,11 +18351,11 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 453;
+        exception_lineno = 465;
         goto frame_exception_exit_1;
     }
 
-    frame_function->f_lineno = 453;
+    frame_function->f_lineno = 465;
     {
         PyObject *call_args[] = { tmp_args_element_name_3 };
         tmp_assign_source_5 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_4, call_args );
@@ -18389,7 +18369,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 453;
+        exception_lineno = 465;
         goto frame_exception_exit_1;
     }
     {
@@ -18410,7 +18390,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 454;
+        exception_lineno = 466;
         goto frame_exception_exit_1;
     }
 
@@ -18422,7 +18402,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 454;
+        exception_lineno = 466;
         goto frame_exception_exit_1;
     }
     tmp_called_name_5 = LOOKUP_ATTRIBUTE( tmp_source_name_13, const_str_plain__safe_read );
@@ -18434,10 +18414,10 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 454;
+        exception_lineno = 466;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 454;
+    frame_function->f_lineno = 466;
     tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_5, &PyTuple_GET_ITEM( const_tuple_int_pos_2_tuple, 0 ) );
 
     Py_DECREF( tmp_called_name_5 );
@@ -18448,7 +18428,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 454;
+        exception_lineno = 466;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -18465,7 +18445,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 455;
+        exception_lineno = 467;
         goto frame_exception_exit_1;
     }
 
@@ -18477,7 +18457,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 455;
+        exception_lineno = 467;
         goto frame_exception_exit_1;
     }
     tmp_assign_source_6 = var_value;
@@ -18492,7 +18472,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 456;
+        exception_lineno = 468;
         goto frame_exception_exit_1;
     }
 
@@ -18514,7 +18494,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 458;
+        exception_lineno = 470;
         goto frame_exception_exit_1;
     }
 
@@ -18526,7 +18506,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 458;
+        exception_lineno = 470;
         goto frame_exception_exit_1;
     }
     tmp_called_name_6 = LOOKUP_ATTRIBUTE( tmp_source_name_15, const_str_plain__safe_read );
@@ -18538,7 +18518,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 458;
+        exception_lineno = 470;
         goto frame_exception_exit_1;
     }
     tmp_source_name_17 = par_self;
@@ -18553,7 +18533,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 458;
+        exception_lineno = 470;
         goto frame_exception_exit_1;
     }
 
@@ -18565,10 +18545,10 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_called_name_6 );
 
-        exception_lineno = 458;
+        exception_lineno = 470;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 458;
+    frame_function->f_lineno = 470;
     {
         PyObject *call_args[] = { tmp_args_element_name_4 };
         tmp_assign_source_7 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_6, call_args );
@@ -18583,7 +18563,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 458;
+        exception_lineno = 470;
         goto frame_exception_exit_1;
     }
     assert( var_returned_chunk == NULL );
@@ -18601,7 +18581,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 459;
+        exception_lineno = 471;
         goto frame_exception_exit_1;
     }
 
@@ -18613,7 +18593,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 459;
+        exception_lineno = 471;
         goto frame_exception_exit_1;
     }
     tmp_called_name_7 = LOOKUP_ATTRIBUTE( tmp_source_name_18, const_str_plain__safe_read );
@@ -18625,10 +18605,10 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 459;
+        exception_lineno = 471;
         goto frame_exception_exit_1;
     }
-    frame_function->f_lineno = 459;
+    frame_function->f_lineno = 471;
     tmp_unused = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_7, &PyTuple_GET_ITEM( const_tuple_int_pos_2_tuple, 0 ) );
 
     Py_DECREF( tmp_called_name_7 );
@@ -18639,7 +18619,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 459;
+        exception_lineno = 471;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -18656,7 +18636,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 460;
+        exception_lineno = 472;
         goto frame_exception_exit_1;
     }
 
@@ -18668,7 +18648,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 460;
+        exception_lineno = 472;
         goto frame_exception_exit_1;
     }
     branch_end_3:;
@@ -18686,7 +18666,7 @@ static PyObject *impl_function_22__handle_chunk_of_class_3_HTTPResponse_of_urlli
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 461;
+        exception_lineno = 473;
         goto frame_exception_exit_1;
     }
 
@@ -18919,7 +18899,7 @@ static PyObject *impl_function_23_read_chunked_of_class_3_HTTPResponse_of_urllib
 #if PYTHON_VERSION >= 350
             self->m_qualname,
 #endif
-            codeobj_d15f2378316d8707197a0bf229fdd87f,
+            codeobj_713a2982572c572a782a073f34ce6b4e,
             closure,
             3
         );
@@ -19113,7 +19093,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
 
     // Actual function code.
     // Tried code:
-    MAKE_OR_REUSE_FRAME( cache_frame_generator, codeobj_f3066fd9145fbb1adf43ef5449fb7804, module_urllib3$response );
+    MAKE_OR_REUSE_FRAME( cache_frame_generator, codeobj_5c1c6ed66c69d3a55e74cdc9efb7560e, module_urllib3$response );
     generator->m_frame = cache_frame_generator;
     Py_INCREF( generator->m_frame );
 
@@ -19167,7 +19147,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
 
         if (exception_tb == NULL)
         {
-            exception_lineno = 463;
+            exception_lineno = 475;
             goto frame_exception_exit_1;
         }
         else
@@ -19188,7 +19168,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 472;
+        exception_lineno = 484;
         goto frame_exception_exit_1;
     }
 
@@ -19200,10 +19180,10 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 472;
+        exception_lineno = 484;
         goto frame_exception_exit_1;
     }
-    generator->m_frame->f_lineno = 472;
+    generator->m_frame->f_lineno = 484;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_1 );
     Py_DECREF( tmp_called_name_1 );
     if ( tmp_unused == NULL )
@@ -19213,7 +19193,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 472;
+        exception_lineno = 484;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -19229,7 +19209,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 474;
+        exception_lineno = 486;
         goto frame_exception_exit_1;
     }
 
@@ -19241,7 +19221,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 474;
+        exception_lineno = 486;
         goto frame_exception_exit_1;
     }
     tmp_cond_truth_1 = CHECK_IF_TRUE( tmp_cond_value_1 );
@@ -19252,7 +19232,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_1 );
 
-        exception_lineno = 474;
+        exception_lineno = 486;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_1 );
@@ -19282,11 +19262,11 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 475;
+        exception_lineno = 487;
         goto frame_exception_exit_1;
     }
 
-    generator->m_frame->f_lineno = 476;
+    generator->m_frame->f_lineno = 488;
     tmp_raise_type_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_2, &PyTuple_GET_ITEM( const_tuple_str_digest_6fceb2e9778412869b1de7adcdb00cc8_tuple, 0 ) );
 
     if ( tmp_raise_type_1 == NULL )
@@ -19296,11 +19276,11 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 476;
+        exception_lineno = 488;
         goto frame_exception_exit_1;
     }
     exception_type = tmp_raise_type_1;
-    exception_lineno = 476;
+    exception_lineno = 488;
     RAISE_EXCEPTION_WITH_TYPE( &exception_type, &exception_value, &exception_tb );
     goto frame_exception_exit_1;
     branch_no_1:;
@@ -19316,7 +19296,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 480;
+        exception_lineno = 492;
         goto frame_exception_exit_1;
     }
 
@@ -19328,7 +19308,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 480;
+        exception_lineno = 492;
         goto frame_exception_exit_1;
     }
     tmp_and_left_truth_1 = CHECK_IF_TRUE( tmp_and_left_value_1 );
@@ -19339,7 +19319,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_and_left_value_1 );
 
-        exception_lineno = 480;
+        exception_lineno = 492;
         goto frame_exception_exit_1;
     }
     if ( tmp_and_left_truth_1 == 1 )
@@ -19369,7 +19349,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 480;
+        exception_lineno = 492;
         goto frame_exception_exit_1;
     }
 
@@ -19385,7 +19365,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 480;
+        exception_lineno = 492;
         goto frame_exception_exit_1;
     }
 
@@ -19397,10 +19377,10 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 480;
+        exception_lineno = 492;
         goto frame_exception_exit_1;
     }
-    generator->m_frame->f_lineno = 480;
+    generator->m_frame->f_lineno = 492;
     {
         PyObject *call_args[] = { tmp_args_element_name_1 };
         tmp_and_right_value_1 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_3, call_args );
@@ -19414,7 +19394,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 480;
+        exception_lineno = 492;
         goto frame_exception_exit_1;
     }
     tmp_cond_value_2 = tmp_and_right_value_1;
@@ -19430,7 +19410,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_2 );
 
-        exception_lineno = 480;
+        exception_lineno = 492;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_cond_value_2 );
@@ -19455,7 +19435,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 481;
+        exception_lineno = 493;
         goto frame_exception_exit_1;
     }
 
@@ -19467,7 +19447,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 481;
+        exception_lineno = 493;
         goto frame_exception_exit_1;
     }
     tmp_called_name_4 = LOOKUP_ATTRIBUTE( tmp_source_name_5, const_str_plain_close );
@@ -19479,10 +19459,10 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 481;
+        exception_lineno = 493;
         goto frame_exception_exit_1;
     }
-    generator->m_frame->f_lineno = 481;
+    generator->m_frame->f_lineno = 493;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_4 );
     Py_DECREF( tmp_called_name_4 );
     if ( tmp_unused == NULL )
@@ -19492,7 +19472,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 481;
+        exception_lineno = 493;
         goto frame_exception_exit_1;
     }
     Py_DECREF( tmp_unused );
@@ -19513,7 +19493,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 484;
+        exception_lineno = 496;
         goto try_except_handler_2;
     }
 
@@ -19525,10 +19505,10 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 484;
+        exception_lineno = 496;
         goto try_except_handler_2;
     }
-    generator->m_frame->f_lineno = 484;
+    generator->m_frame->f_lineno = 496;
     tmp_assign_source_1 = CALL_FUNCTION_NO_ARGS( tmp_called_name_5 );
     Py_DECREF( tmp_called_name_5 );
     if ( tmp_assign_source_1 == NULL )
@@ -19538,7 +19518,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 484;
+        exception_lineno = 496;
         goto try_except_handler_2;
     }
     assert( tmp_with_1__source == NULL );
@@ -19554,7 +19534,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 484;
+        exception_lineno = 496;
         goto try_except_handler_2;
     }
     assert( tmp_with_1__exit == NULL );
@@ -19570,10 +19550,10 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 484;
+        exception_lineno = 496;
         goto try_except_handler_2;
     }
-    generator->m_frame->f_lineno = 484;
+    generator->m_frame->f_lineno = 496;
     tmp_assign_source_3 = CALL_FUNCTION_NO_ARGS( tmp_called_name_6 );
     Py_DECREF( tmp_called_name_6 );
     if ( tmp_assign_source_3 == NULL )
@@ -19583,7 +19563,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 484;
+        exception_lineno = 496;
         goto try_except_handler_2;
     }
     assert( tmp_with_1__enter == NULL );
@@ -19609,7 +19589,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 486;
+        exception_lineno = 498;
         goto try_except_handler_4;
     }
 
@@ -19621,10 +19601,10 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 486;
+        exception_lineno = 498;
         goto try_except_handler_4;
     }
-    generator->m_frame->f_lineno = 486;
+    generator->m_frame->f_lineno = 498;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_7 );
     Py_DECREF( tmp_called_name_7 );
     if ( tmp_unused == NULL )
@@ -19634,7 +19614,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 486;
+        exception_lineno = 498;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_unused );
@@ -19650,7 +19630,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 487;
+        exception_lineno = 499;
         goto try_except_handler_4;
     }
 
@@ -19662,7 +19642,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 487;
+        exception_lineno = 499;
         goto try_except_handler_4;
     }
     tmp_compare_right_1 = const_int_0;
@@ -19674,7 +19654,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_compare_left_1 );
 
-        exception_lineno = 487;
+        exception_lineno = 499;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_compare_left_1 );
@@ -19701,7 +19681,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 489;
+        exception_lineno = 501;
         goto try_except_handler_4;
     }
 
@@ -19713,7 +19693,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 489;
+        exception_lineno = 501;
         goto try_except_handler_4;
     }
     tmp_args_element_name_2 = PyCell_GET( generator->m_closure[0] );
@@ -19728,11 +19708,11 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 489;
+        exception_lineno = 501;
         goto try_except_handler_4;
     }
 
-    generator->m_frame->f_lineno = 489;
+    generator->m_frame->f_lineno = 501;
     {
         PyObject *call_args[] = { tmp_args_element_name_2 };
         tmp_assign_source_5 = CALL_FUNCTION_WITH_ARGS1( tmp_called_name_8, call_args );
@@ -19746,7 +19726,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 489;
+        exception_lineno = 501;
         goto try_except_handler_4;
     }
     {
@@ -19767,7 +19747,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 490;
+        exception_lineno = 502;
         goto try_except_handler_4;
     }
 
@@ -19779,7 +19759,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 490;
+        exception_lineno = 502;
         goto try_except_handler_4;
     }
     tmp_args_name_1 = PyTuple_New( 1 );
@@ -19796,7 +19776,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 490;
+        exception_lineno = 502;
         goto try_except_handler_4;
     }
 
@@ -19818,7 +19798,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 490;
+        exception_lineno = 502;
         goto try_except_handler_4;
     }
 
@@ -19826,7 +19806,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
     tmp_dict_key_2 = const_str_plain_flush_decoder;
     tmp_dict_value_2 = Py_False;
     PyDict_SetItem( tmp_kw_name_1, tmp_dict_key_2, tmp_dict_value_2 );
-    generator->m_frame->f_lineno = 491;
+    generator->m_frame->f_lineno = 503;
     tmp_assign_source_6 = CALL_FUNCTION( tmp_called_name_9, tmp_args_name_1, tmp_kw_name_1 );
     Py_DECREF( tmp_called_name_9 );
     Py_DECREF( tmp_args_name_1 );
@@ -19838,7 +19818,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 491;
+        exception_lineno = 503;
         goto try_except_handler_4;
     }
     {
@@ -19857,7 +19837,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 492;
+        exception_lineno = 504;
         goto try_except_handler_4;
     }
     if ( tmp_cond_truth_3 == 1 )
@@ -19879,7 +19859,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 493;
+        exception_lineno = 505;
         goto try_except_handler_4;
     }
     branch_no_4:;
@@ -19890,7 +19870,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 485;
+        exception_lineno = 497;
         goto try_except_handler_4;
     }
     goto loop_start_1;
@@ -19907,7 +19887,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 495;
+        exception_lineno = 507;
         goto try_except_handler_4;
     }
 
@@ -19919,7 +19899,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 495;
+        exception_lineno = 507;
         goto try_except_handler_4;
     }
     if ( tmp_cond_truth_4 == 1 )
@@ -19943,7 +19923,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 499;
+        exception_lineno = 511;
         goto try_except_handler_4;
     }
 
@@ -19955,10 +19935,10 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 499;
+        exception_lineno = 511;
         goto try_except_handler_4;
     }
-    generator->m_frame->f_lineno = 499;
+    generator->m_frame->f_lineno = 511;
     tmp_assign_source_7 = CALL_FUNCTION_NO_ARGS( tmp_called_name_10 );
     Py_DECREF( tmp_called_name_10 );
     if ( tmp_assign_source_7 == NULL )
@@ -19968,7 +19948,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 499;
+        exception_lineno = 511;
         goto try_except_handler_4;
     }
     {
@@ -19987,7 +19967,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 500;
+        exception_lineno = 512;
         goto try_except_handler_4;
     }
     if ( tmp_cond_truth_5 == 1 )
@@ -20009,7 +19989,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 501;
+        exception_lineno = 513;
         goto try_except_handler_4;
     }
     branch_no_6:;
@@ -20027,7 +20007,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 505;
+        exception_lineno = 517;
         goto try_except_handler_4;
     }
 
@@ -20039,7 +20019,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 505;
+        exception_lineno = 517;
         goto try_except_handler_4;
     }
     tmp_source_name_15 = LOOKUP_ATTRIBUTE( tmp_source_name_16, const_str_plain_fp );
@@ -20051,7 +20031,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 505;
+        exception_lineno = 517;
         goto try_except_handler_4;
     }
     tmp_called_name_11 = LOOKUP_ATTRIBUTE( tmp_source_name_15, const_str_plain_readline );
@@ -20063,10 +20043,10 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 505;
+        exception_lineno = 517;
         goto try_except_handler_4;
     }
-    generator->m_frame->f_lineno = 505;
+    generator->m_frame->f_lineno = 517;
     tmp_assign_source_8 = CALL_FUNCTION_NO_ARGS( tmp_called_name_11 );
     Py_DECREF( tmp_called_name_11 );
     if ( tmp_assign_source_8 == NULL )
@@ -20076,7 +20056,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 505;
+        exception_lineno = 517;
         goto try_except_handler_4;
     }
     {
@@ -20095,7 +20075,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 506;
+        exception_lineno = 518;
         goto try_except_handler_4;
     }
     if ( tmp_cond_truth_6 == 1 )
@@ -20121,7 +20101,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 509;
+        exception_lineno = 521;
         goto try_except_handler_4;
     }
 
@@ -20134,7 +20114,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 509;
+        exception_lineno = 521;
         goto try_except_handler_4;
     }
     if ( tmp_cmp_Eq_2 == 1 )
@@ -20155,7 +20135,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 504;
+        exception_lineno = 516;
         goto try_except_handler_4;
     }
     goto loop_start_2;
@@ -20172,7 +20152,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 513;
+        exception_lineno = 525;
         goto try_except_handler_4;
     }
 
@@ -20184,7 +20164,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 513;
+        exception_lineno = 525;
         goto try_except_handler_4;
     }
     tmp_cond_truth_7 = CHECK_IF_TRUE( tmp_cond_value_7 );
@@ -20195,7 +20175,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_7 );
 
-        exception_lineno = 513;
+        exception_lineno = 525;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_cond_value_7 );
@@ -20220,7 +20200,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         NORMALIZE_EXCEPTION( &exception_type, &exception_value, &exception_tb );
         CHAIN_EXCEPTION( exception_value );
 
-        exception_lineno = 514;
+        exception_lineno = 526;
         goto try_except_handler_4;
     }
 
@@ -20232,7 +20212,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 514;
+        exception_lineno = 526;
         goto try_except_handler_4;
     }
     tmp_called_name_12 = LOOKUP_ATTRIBUTE( tmp_source_name_19, const_str_plain_close );
@@ -20244,10 +20224,10 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 514;
+        exception_lineno = 526;
         goto try_except_handler_4;
     }
-    generator->m_frame->f_lineno = 514;
+    generator->m_frame->f_lineno = 526;
     tmp_unused = CALL_FUNCTION_NO_ARGS( tmp_called_name_12 );
     Py_DECREF( tmp_called_name_12 );
     if ( tmp_unused == NULL )
@@ -20257,7 +20237,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 514;
+        exception_lineno = 526;
         goto try_except_handler_4;
     }
     Py_DECREF( tmp_unused );
@@ -20305,7 +20285,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 484;
+        exception_lineno = 496;
         goto try_except_handler_5;
     }
     if ( tmp_exc_match_exception_match_1 == 1 )
@@ -20330,7 +20310,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
     tmp_args_element_name_3 = PyThreadState_GET()->exc_type;
     tmp_args_element_name_4 = PyThreadState_GET()->exc_value;
     tmp_args_element_name_5 = PyThreadState_GET()->exc_traceback;
-    generator->m_frame->f_lineno = 514;
+    generator->m_frame->f_lineno = 526;
     {
         PyObject *call_args[] = { tmp_args_element_name_3, tmp_args_element_name_4, tmp_args_element_name_5 };
         tmp_cond_value_8 = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_13, call_args );
@@ -20343,7 +20323,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 514;
+        exception_lineno = 526;
         goto try_except_handler_5;
     }
     tmp_cond_truth_8 = CHECK_IF_TRUE( tmp_cond_value_8 );
@@ -20354,7 +20334,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
         Py_DECREF( tmp_cond_value_8 );
 
-        exception_lineno = 514;
+        exception_lineno = 526;
         goto try_except_handler_5;
     }
     Py_DECREF( tmp_cond_value_8 );
@@ -20435,7 +20415,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
     branch_yes_12:;
     tmp_called_name_14 = tmp_with_1__exit;
 
-    generator->m_frame->f_lineno = 514;
+    generator->m_frame->f_lineno = 526;
     tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_14, &PyTuple_GET_ITEM( const_tuple_none_none_none_tuple, 0 ) );
 
     if ( tmp_unused == NULL )
@@ -20448,7 +20428,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         Py_XDECREF( exception_keeper_value_3 );
         Py_XDECREF( exception_keeper_tb_3 );
 
-        exception_lineno = 514;
+        exception_lineno = 526;
         goto try_except_handler_2;
     }
     Py_DECREF( tmp_unused );
@@ -20477,7 +20457,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
     branch_yes_13:;
     tmp_called_name_15 = tmp_with_1__exit;
 
-    generator->m_frame->f_lineno = 514;
+    generator->m_frame->f_lineno = 526;
     tmp_unused = CALL_FUNCTION_WITH_ARGS3( tmp_called_name_15, &PyTuple_GET_ITEM( const_tuple_none_none_none_tuple, 0 ) );
 
     if ( tmp_unused == NULL )
@@ -20487,7 +20467,7 @@ static void genobj_1_read_chunked_of_function_23_read_chunked_of_class_3_HTTPRes
         FETCH_ERROR_OCCURRED( &exception_type, &exception_value, &exception_tb );
 
 
-        exception_lineno = 514;
+        exception_lineno = 526;
         goto try_except_handler_2;
     }
     Py_DECREF( tmp_unused );
@@ -20748,7 +20728,7 @@ static PyObject *MAKE_FUNCTION_function_10_read_of_class_3_HTTPResponse_of_urlli
 #if PYTHON_VERSION >= 330
         const_str_digest_b5074ac92dc72b508f7b239b36f07471,
 #endif
-        codeobj_44063cb569ac67d790b48968bb597773,
+        codeobj_e411c50a918f68c027673cc9ec896049,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -20771,7 +20751,7 @@ static PyObject *MAKE_FUNCTION_function_11_stream_of_class_3_HTTPResponse_of_url
 #if PYTHON_VERSION >= 330
         const_str_digest_3cd0a7aaf12d4cbd86fc72d422b326f4,
 #endif
-        codeobj_91040f58b7a550fabd32dab748d900db,
+        codeobj_cca8b357d82b082129483a9f40bdfb94,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -20794,7 +20774,7 @@ static PyObject *MAKE_FUNCTION_function_12_from_httplib_of_class_3_HTTPResponse_
 #if PYTHON_VERSION >= 330
         const_str_digest_9ce8bb5871d1a4a4875d7d719702c4d8,
 #endif
-        codeobj_d54cc97eb321ac3c1438f0943a06f9b9,
+        codeobj_360781c14f79e1bfdf2f8d8dabd7eeb5,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -20817,7 +20797,7 @@ static PyObject *MAKE_FUNCTION_function_13_getheaders_of_class_3_HTTPResponse_of
 #if PYTHON_VERSION >= 330
         const_str_digest_d0590bcd4a83d66ed17deb5c9e144342,
 #endif
-        codeobj_f54ad4a25abea3f3032d7fa0f554620d,
+        codeobj_31a59550d307284d438f80e99cbdaeee,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -20840,7 +20820,7 @@ static PyObject *MAKE_FUNCTION_function_14_getheader_of_class_3_HTTPResponse_of_
 #if PYTHON_VERSION >= 330
         const_str_digest_08df6de959dae9d1c247c2ab041993af,
 #endif
-        codeobj_f6f339732776d29226e9d3c461271037,
+        codeobj_a3d0db1e8c69d5b33ffd590a045d7ee2,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -20863,7 +20843,7 @@ static PyObject *MAKE_FUNCTION_function_15_close_of_class_3_HTTPResponse_of_urll
 #if PYTHON_VERSION >= 330
         const_str_digest_a4b32799dc86145fd28c19bf16dfae94,
 #endif
-        codeobj_f0f4cc4c860aecfdfe5be43fa4ac9d64,
+        codeobj_b36c98742d5c4dacd779c814d056df3c,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -20886,7 +20866,7 @@ static PyObject *MAKE_FUNCTION_function_16_closed_of_class_3_HTTPResponse_of_url
 #if PYTHON_VERSION >= 330
         const_str_digest_228bd71510125698bfd3916924a48c8a,
 #endif
-        codeobj_d2085022e641183d7c10453f4a9080a2,
+        codeobj_b6e67ee2b9cfa80f1836814e319dd408,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -20909,7 +20889,7 @@ static PyObject *MAKE_FUNCTION_function_17_fileno_of_class_3_HTTPResponse_of_url
 #if PYTHON_VERSION >= 330
         const_str_digest_563a5c1e73e73d543e7c4f1e0d7b34c2,
 #endif
-        codeobj_ed1bdb4f3af82779b180ba2ee85cf6bc,
+        codeobj_cd8f28d6d5b17a629c8f1062cc2af370,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -20932,7 +20912,7 @@ static PyObject *MAKE_FUNCTION_function_18_flush_of_class_3_HTTPResponse_of_urll
 #if PYTHON_VERSION >= 330
         const_str_digest_e955e200ce7076f63dbfb9e11568aad1,
 #endif
-        codeobj_1be55398d0eb668edd84fb5de51d29c6,
+        codeobj_4f59a8702b1d6881546f27c4ad87558e,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -20955,7 +20935,7 @@ static PyObject *MAKE_FUNCTION_function_19_readable_of_class_3_HTTPResponse_of_u
 #if PYTHON_VERSION >= 330
         const_str_digest_d186d35140b6e607ac0c8b2c63fdeb29,
 #endif
-        codeobj_0839703259afa49629855e741c72a4ca,
+        codeobj_74f9c5a75a40c194ca4d47c9bbd3616d,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -21070,7 +21050,7 @@ static PyObject *MAKE_FUNCTION_function_20_readinto_of_class_3_HTTPResponse_of_u
 #if PYTHON_VERSION >= 330
         const_str_digest_db4856f755729d4e70f8bd5ec95c6022,
 #endif
-        codeobj_5c109e3bd36b31843662459a2f70b48e,
+        codeobj_833a16bc2c20475555178ee326ff5c6f,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -21093,7 +21073,7 @@ static PyObject *MAKE_FUNCTION_function_21__update_chunk_length_of_class_3_HTTPR
 #if PYTHON_VERSION >= 330
         const_str_digest_65095c3b5746599c303dcd768114424e,
 #endif
-        codeobj_514a50c7441175f13a0ddd44605d4bc0,
+        codeobj_eb958fcf03f800cc4f576e9d758b64e6,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -21116,7 +21096,7 @@ static PyObject *MAKE_FUNCTION_function_22__handle_chunk_of_class_3_HTTPResponse
 #if PYTHON_VERSION >= 330
         const_str_digest_78d65665335b4950719b749c8c89ab2e,
 #endif
-        codeobj_0407d38777d2e46def68c4eebb9deb41,
+        codeobj_181aa0de3e16efb8e4fe3d40d66e9c63,
         NULL,
 #if PYTHON_VERSION >= 300
         NULL,
@@ -21139,7 +21119,7 @@ static PyObject *MAKE_FUNCTION_function_23_read_chunked_of_class_3_HTTPResponse_
 #if PYTHON_VERSION >= 330
         const_str_digest_3375b08dee8bfdec0bb39402913b81e2,
 #endif
-        codeobj_f3066fd9145fbb1adf43ef5449fb7804,
+        codeobj_5c1c6ed66c69d3a55e74cdc9efb7560e,
         defaults,
 #if PYTHON_VERSION >= 300
         NULL,

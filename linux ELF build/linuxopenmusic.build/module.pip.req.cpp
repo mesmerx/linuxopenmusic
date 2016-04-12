@@ -62,14 +62,14 @@ static bool constants_created = false;
 static void createModuleConstants( void )
 {
     const_list_str_digest_c4f824d86a32d8b35189248194ff7eb0_list = PyList_New( 1 );
-    const_str_digest_c4f824d86a32d8b35189248194ff7eb0 = UNSTREAM_STRING( &constant_bin[ 530971 ], 40, 0 );
+    const_str_digest_c4f824d86a32d8b35189248194ff7eb0 = UNSTREAM_STRING( &constant_bin[ 549862 ], 40, 0 );
     PyList_SET_ITEM( const_list_str_digest_c4f824d86a32d8b35189248194ff7eb0_list, 0, const_str_digest_c4f824d86a32d8b35189248194ff7eb0 ); Py_INCREF( const_str_digest_c4f824d86a32d8b35189248194ff7eb0 );
     const_tuple_str_plain_RequirementSet_str_plain_Requirements_tuple = PyTuple_New( 2 );
     PyTuple_SET_ITEM( const_tuple_str_plain_RequirementSet_str_plain_Requirements_tuple, 0, const_str_plain_RequirementSet ); Py_INCREF( const_str_plain_RequirementSet );
     PyTuple_SET_ITEM( const_tuple_str_plain_RequirementSet_str_plain_Requirements_tuple, 1, const_str_plain_Requirements ); Py_INCREF( const_str_plain_Requirements );
     const_tuple_str_plain_parse_requirements_tuple = PyTuple_New( 1 );
     PyTuple_SET_ITEM( const_tuple_str_plain_parse_requirements_tuple, 0, const_str_plain_parse_requirements ); Py_INCREF( const_str_plain_parse_requirements );
-    const_str_digest_e1c5bd967e7379897c8b51d4d14882ef = UNSTREAM_STRING( &constant_bin[ 531011 ], 52, 0 );
+    const_str_digest_e1c5bd967e7379897c8b51d4d14882ef = UNSTREAM_STRING( &constant_bin[ 549902 ], 52, 0 );
     const_list_d3f7f6da45db97d01c2eb416941725d9_list = PyList_New( 4 );
     PyList_SET_ITEM( const_list_d3f7f6da45db97d01c2eb416941725d9_list, 0, const_str_plain_RequirementSet ); Py_INCREF( const_str_plain_RequirementSet );
     PyList_SET_ITEM( const_list_d3f7f6da45db97d01c2eb416941725d9_list, 1, const_str_plain_Requirements ); Py_INCREF( const_str_plain_Requirements );
