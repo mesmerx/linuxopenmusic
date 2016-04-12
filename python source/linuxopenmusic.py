@@ -82,25 +82,37 @@ def progress(download_t, download_d, upload_t, upload_d):
                                     download_d / download_t, speed_s, ' ' * 10)
     sys.stderr.write(p)
     sys.stderr.flush()
-
-def baixar(nome,link):
-    c = pycurl.Curl()
-    c.setopt(c.URL, link)
-    if os.path.exists(nome+'.mp3'):
-        print ("arquivo existe resumindo se precisar")
-        with open(nome+'.mp3', 'ab') as f:
-            c.setopt(pycurl.RESUME_FROM, os.path.getsize(nome+'.mp3'))
-            c.setopt(c.WRITEFUNCTION, f.write)
-            c.setopt(c.NOPROGRESS, 0)
-            c.setopt(c.PROGRESSFUNCTION, progress)
-            c.perform()
-    else:
-        print ("arquivo nao existe, baixando")
-        with open(nome+'.mp3', 'wb') as f:
+def baixarf(nome,link):
+    with open(nome+'.mp3', 'ab') as f:
+                c = pycurl.Curl()
+                c.setopt(c.URL, link)
+                c.setopt(pycurl.RESUME_FROM, os.path.getsize(nome+'.mp3'))
                 c.setopt(c.WRITEFUNCTION, f.write)
                 c.setopt(c.NOPROGRESS, 0)
                 c.setopt(c.PROGRESSFUNCTION, progress)
                 c.perform()
+def baixar(nome,link):
+    c = pycurl.Curl()
+    c.setopt(c.URL, link)
+    c.setopt(c.NOBODY, 1)
+    c.perform()
+    size=c.getinfo(c.CONTENT_LENGTH_DOWNLOAD)
+    if size<=200:
+        artista=nome.split("-")[1]
+        musica=nome.split("-")[0]
+        busca(None, musica,artista)
+        buscaf(musica,artista)
+    else:
+        if os.path.exists(nome+'.mp3'):
+            if float(os.path.getsize(nome+'.mp3'))>=size:
+                print ("arquivo ja baixado")
+            else: 
+                print ("arquivo existe resumindo")
+                baixarf(nome,link)
+        else:
+            print ("arquivo nao existe, baixando")
+            baixarf(nome,link)
+            
 def refresh_token():
     payload = { 'grant_type': 'client_credentials'}
     auth_header = 'NDUwMGY3ODdiZDM4NGQzMTg4NGI0MzMyMTllMTQ1OWU6ZDRiOTFmMTRmMTBlNDQyYWJkYmJiYjY1OGNlYjg1NDY='
@@ -121,6 +133,7 @@ def login():
     return
 
 def busca(ge,busca,artista):
+    os.system('clear')
     if ge is not None:
         qs = urlencode({'act': 'popular', 'genre': ge})
         g.go('http://vk.com/audios328513317?%s' % qs)
@@ -146,12 +159,14 @@ def busca(ge,busca,artista):
     for n in nomeartista:
         artista=str(n)
         if "]=1" in artista:
+            artista=artista.encode("utf8",'replace')
             artista=artista.decode("ascii",'ignore')
             artista=artista.replace('<span class="match">','')
             artista=artista.replace('</span>','')
             artista=artista.replace('</a>','')
             artista=artista.replace("/","-")    
             artista=artista.replace('"',"'")
+            artista=artista.replace("'"," ")
             artista=artista.split(">")[1]
             artistas.append(artista)
     print ("(2) geting links")    
@@ -168,7 +183,8 @@ def busca(ge,busca,artista):
             links.append(link.split('"')[5])
     print ("(3) geting song names")
     for n in nomemusica:
-        musica=translit(n, 'ru', reversed=True)
+        musica=str(n)
+        musica=translit(musica,'ru',reversed=True)
         musica=musica.encode("utf8","replace")
         musica=musica.decode("ascii",'ignore')
         if 'id="ac_title"' in musica:
@@ -211,7 +227,7 @@ sql_command = """
     artista VARCHAR(30)
     );"""
 cursor.execute(sql_command)
-def buscaf(termos2,artista):
+def buscaf(termos2,artista,g=0):
     links= []
     musicas= []
     artistas= []
@@ -226,13 +242,18 @@ def buscaf(termos2,artista):
     cursor.execute(sqlb)
     data=cursor.fetchall()
     global i
-    if (len(data)==0 ) or (args.force_update is True): 
+    if ((len(data)==0 )and (g!=1)) or (args.force_update is True): 
         if i==0:
             login()
         i=1
         print ("buscando")
         print (termos2)
         busca(None,termos2,artista)
+        buscaf(termos2,artista,1)
+    elif ((len(data)==0 ) and (g==1)) or (args.force_update is True):
+        print ("musica nao achada nos nossos bancos de dados, desculpe -.-")
+        d = open('songnotfound.txt','a')
+        d.write("%s-%s\n"%(termos2,artista))
     else:
         os.system('clear')
         print (" um total de %s musicas encontradas \n listando a seguir:"% len(data))
@@ -286,9 +307,9 @@ def listaspotify(user, playlist):
         continuar=json.loads(r)
         parar=continuar["items"]
         for n in continuar["items"]:
-            spotifymusica.append(str(n['track']['name'].encode('utf8')).replace("b'","").replace('b"',"")[:-1])
-            spotifyartista.append(str(n['track']['artists'][0]['name'].encode('utf8')).replace("b'","").replace('b"',"")[:-1])
-            spotifyalbum.append(str(n['track']['album']['name'].encode('utf8')).replace("b'","").replace('b"',"")[:-1])
+            spotifymusica.append(str(n['track']['name'].encode('utf8')).replace("b'","").replace('b"',"")[:-1].replace('"',"'").replace("'"," "))
+            spotifyartista.append(str(n['track']['artists'][0]['name'].encode('utf8')).replace("b'","").replace('b"',"")[:-1].replace('"',"'").replace("'"," "))
+            spotifyalbum.append(str(n['track']['album']['name'].encode('utf8')).replace("b'","").replace('b"',"")[:-1].replace('"',"'").replace("'"," "))
         i=i+1
         offset=100*i
     
@@ -319,13 +340,18 @@ if args.spotify is not None:
         for n in spotifymusica:
             print ("[%i] musica:%s - artista:%s - album:%s"%(f+1,spotifymusica[f],spotifyartista[f],spotifyalbum[f])) 
             f=f+1
-        print ("quais deseja baixar, bote numero ',' para sequencial")
-        if sys.version_info >= (3, 0):
-            voptn = input("insert the numbers: ")
-        else:
-            voptn = raw_input("insert the numbers: ")  
-        a = voptn.split(" ")
         t=0
+        if args.number_downloads is not None:
+            for n in spotifymusica:
+                buscaf(spotifymusica[int(t)],spotifyartista[int(t)])   
+                t=t+1
+        else:
+            print ("quais deseja baixar, bote numero , para sequencial")
+            if sys.version_info >= (3, 0):
+                voptn = input("insert the numbers: ")
+            else:
+                voptn = raw_input("insert the numbers: ")
+            a = voptn.split(" ") 
         for p in a:
             if "," in p:
                 b=p.split(",",1)
@@ -339,7 +365,7 @@ if args.spotify is not None:
                     buscaf(spotifymusica[int(n)-1],spotifyartista[int(n)-1])
                         
 if (args.search is not None ) or (args.list is not None ): 
-    if args.list is not None:
+    if args.list is 	not None:
         with open(args.list, encoding='utf-8') as f:
             content = f.read().splitlines()
         for m in content:
@@ -365,4 +391,4 @@ if args.update is True:
     login()
     generos=[0,1,2,3,5,21,6,4,7,8,17,1001,10,11,13,14,15,16,22]    
     for ge in generos:
-        busca(ge,None)
+        busca(ge,None,None)
