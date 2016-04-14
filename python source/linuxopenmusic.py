@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
+# -*- coding: UTF-8 -*-
 def install_and_import(package):
     import importlib
     try:
@@ -10,7 +10,6 @@ def install_and_import(package):
     finally:
         globals()[package] = importlib.import_module(package)
 install_and_import('sqlite3')
-install_and_import('transliterate')
 install_and_import('sys')
 install_and_import('getopt')
 install_and_import('re')
@@ -31,7 +30,6 @@ if sys.version_info >= (3, 0):
 else:
     from urllib import urlencode
 from humanize import naturalsize
-from transliterate import translit, get_available_language_codes
 from grab import Grab
 from bs4 import BeautifulSoup
     
@@ -49,7 +47,11 @@ parser.add_argument('-L','--save-list',help='update', action='store_true')
 parser.add_argument('-a','--artista',help='update')
 parser.add_argument('-A','--only_artista',help='update', action='store_true')
 
+f=open("baixadas.txt","a")
+f.write("")
 
+f=open("songnotfound.txt","a")
+f.write("")
 
 args = parser.parse_args()
 connection = sqlite3.connect("database.db")
@@ -97,21 +99,27 @@ def baixar(nome,link):
     c.setopt(c.NOBODY, 1)
     c.perform()
     size=c.getinfo(c.CONTENT_LENGTH_DOWNLOAD)
+    artista=nome.split("-")[1]
+    musica=nome.split("-")[0]
     if size<=200:
-        artista=nome.split("-")[1]
-        musica=nome.split("-")[0]
-        busca(None, musica,artista)
-        buscaf(musica,artista)
+        busca(None, musica,artista,None)
+        buscaf(musica,artista,None)
     else:
         if os.path.exists(nome+'.mp3'):
             if float(os.path.getsize(nome+'.mp3'))>=size:
                 print ("arquivo ja baixado")
+                f=open("baixadas.txt","a")
+                f.write("musica:%s artista:%s \n"%(musica,artista))
             else: 
                 print ("arquivo existe resumindo")
                 baixarf(nome,link)
+                f=open("baixadas.txt","a")
+                f.write("musica:%s artista:%s \n"%(musica,artista))
         else:
             print ("arquivo nao existe, baixando")
             baixarf(nome,link)
+            f=open("baixadas.txt","a")
+            f.write("musica:%s artista:%s \n"%(musica,artista))
             
 def refresh_token():
     payload = { 'grant_type': 'client_credentials'}
@@ -132,7 +140,7 @@ def login():
     print ("login done")
     return
 
-def busca(ge,busca,artista):
+def busca(ge,busca,artista,porc):
     os.system('clear')
     if ge is not None:
         qs = urlencode({'act': 'popular', 'genre': ge})
@@ -146,6 +154,8 @@ def busca(ge,busca,artista):
             qs = urlencode({'c[q]': a+"+"+artista, 'c[section]': 'audio'})
         g.go('http://vk.com/search?%s' % qs)
         gen=99    
+    print (porc)
+    print ("musica:%s artista:%s"%(busca,artista))
     print ("now saving informarion for the downloads, this will be slow")
     links = []
     musicas = []
@@ -159,8 +169,6 @@ def busca(ge,busca,artista):
     for n in nomeartista:
         artista=str(n)
         if "]=1" in artista:
-            artista=artista.encode("utf8",'replace')
-            artista=artista.decode("ascii",'ignore')
             artista=artista.replace('<span class="match">','')
             artista=artista.replace('</span>','')
             artista=artista.replace('</a>','')
@@ -184,9 +192,6 @@ def busca(ge,busca,artista):
     print ("(3) geting song names")
     for n in nomemusica:
         musica=str(n)
-        musica=translit(musica,'ru',reversed=True)
-        musica=musica.encode("utf8","replace")
-        musica=musica.decode("ascii",'ignore')
         if 'id="ac_title"' in musica:
             continue
         musica=musica.replace('<span class="title" id="','')
@@ -198,7 +203,9 @@ def busca(ge,busca,artista):
         else:    
             musica=musica.split('>')[1]
         musica=musica.replace("/","-")    
-        musica=musica.replace('"',"'")
+        musica=musica.replace('"',"'")   
+        musica=musica.replace(':',"_")
+        musica=musica.replace('-',"_")
         musicas.append(musica)
         i=0
     print ("fazendo update")
@@ -227,74 +234,91 @@ sql_command = """
     artista VARCHAR(30)
     );"""
 cursor.execute(sql_command)
-def buscaf(termos2,artista,g=0):
+
+def buscaf(termos2,artista,porc="100%",g=0):
     links= []
     musicas= []
     artistas= []
     termos2=termos2.replace("'"," ")
     buscas=termos2.split(" ")
-    termos="nome LIKE '%%'"
-    for n in buscas:
-        termos=termos+" AND nome LIKE '%"+n+"%'"
-    if artista is not None:
-        termos=termos+" AND artista LIKE '%"+artista+"%'"
-    sqlb="SELECT * FROM musica WHERE (%s)"%termos
-    cursor.execute(sqlb)
-    data=cursor.fetchall()
-    global i
-    if ((len(data)==0 )and (g!=1)) or (args.force_update is True): 
+    with open("baixadas.txt", encoding='utf-8') as f:
+        content = f.read()
+    with open("songnotfound.txt", encoding='utf-8') as f:
+        content2 =f.read()
+    if (termos2 in content2):
+        print (termos2)
+        return 
+    else:
+        termos="nome LIKE '%%'"
+        for n in buscas:
+            termos=termos+" AND nome LIKE '%"+n+"%'"
+        if artista is not None:
+            termos=termos+" AND artista LIKE '%"+artista+"%'"
+        sqlb="SELECT * FROM musica WHERE (%s)"%termos
+        cursor.execute(sqlb)
+        data=cursor.fetchall()
+        global i
         if i==0:
             login()
-        i=1
-        print ("buscando")
-        print (termos2)
-        busca(None,termos2,artista)
-        buscaf(termos2,artista,1)
-    elif ((len(data)==0 ) and (g==1)) or (args.force_update is True):
-        print ("musica nao achada nos nossos bancos de dados, desculpe -.-")
-        d = open('songnotfound.txt','a')
-        d.write("%s-%s\n"%(termos2,artista))
-    else:
-        os.system('clear')
-        print (" um total de %s musicas encontradas \n listando a seguir:"% len(data))
-        for p in data:
-            links.append(p[2])
-            musicas.append(p[3])
-            artistas.append(p[4])
-        k=0
-        for p in musicas:
-            print ("[%i] %s - %s"%(k+1,musicas[k],artistas[k]))
-            k=k+1
-        if args.number_downloads is not None:
-            if args.number_downloads ==0:
-                a=["1,%s"%(len(musicas))]
-            else:
-                a=["1,%s"%(args.number_downloads)]
+            i=1
+        if (args.force_update is True):
+            busca(None,termos2,artista,porc)
+        elif ((len(data)==0 )and (g!=1)): 
+            print ("buscando")
+            print (termos2)
+            busca(None,termos2,artista,porc)
+            buscaf(termos2,artista,None,1)
+        elif ((len(data)==0 ) and (g==1)):
+            print ("musica nao achada nos nossos bancos de dados, desculpe -.-")
+            d = open('songnotfound.txt','a')
+            d.write("musica:%s artista:%s\n"%(termos2,artista))
         else:
-            print ("quais deseja baixar, bote numero , para sequencial")
-            if sys.version_info >= (3, 0):
-                voptn = input("insert the numbers: ")
+            os.system('clear')
+            print (porc)
+            print ("musica: %s artista:%s"%(termos2,artista))
+            print (" um total de %s musicas encontradas \n listando a seguir:"% len(data))
+            for p in data:
+                links.append(p[2])
+                musicas.append(p[3])
+                artistas.append(p[4])
+            k=0
+            for p in musicas:
+                print ("[%i] %s - %s"%(k+1,musicas[k],artistas[k]))
+                k=k+1
+            if args.number_downloads is not None:
+                if args.number_downloads ==0:
+                    a=["1,%s"%(len(musicas))]
+                else:
+                    a=["1,%s"%(args.number_downloads)]
             else:
-                voptn = raw_input("insert the numbers: ")
-            a = voptn.split(" ")
-        for p in a:
-            if "," in p:
-                b=p.split(",",1)
-                first,last = int(b[0]),int(b[1])
-                for n in range(first,last+1):
-                    print ("downloading")
-                    print ("music: %s artist: %s"%(musicas[int(n)-1],artistas[int(n)-1]))
-                    baixar(musicas[n-1]+"-"+artistas[n-1],links[n-1])
-                    
-                    
-            else:
-                for n in p:    
-                    print ("downloading")
-                    n=int(n)
-                    print ("music: %s artist: %s"%(musicas[int(n)-1],artistas[int(n)-1]))
-                    baixar(musicas[n-1]+"-"+artistas[n-1],links[n-1])
-                    
-        print ("all songs has been downloaded, have a nice day")
+                print ("quais deseja baixar, bote numero , para sequencial")
+                if sys.version_info >= (3, 0):
+                    voptn = input("insert the numbers: ")
+                else:
+                    voptn = raw_input("insert the numbers: ")
+                a = voptn.split(" ")
+            for p in a:
+                if "," in p:
+                    b=p.split(",",1)
+                    first,last = int(b[0]),int(b[1])
+                    for n in range(first,last+1):
+                        print ("downloading")
+                        print ("music: %s artist: %s"%(musicas[int(n)-1],artistas[int(n)-1]))
+                        if (musicas[int(n)-1] in content):
+                            print (musicas[int(n)-1])
+                            return 
+                        baixar(musicas[n-1]+"-"+artistas[n-1],links[n-1])            
+                else:
+                    for n in p:    
+                        print ("downloading")
+                        n=int(n)
+                        print ("music: %s artist: %s"%(musicas[int(n)-1],artistas[int(n)-1]))
+                        if (musicas[int(n)-1] in content):
+                            print (musicas[int(n)-1])
+                            return 
+                        baixar(musicas[n-1]+"-"+artistas[n-1],links[n-1])
+                        
+            print ("all songs has been downloaded, have a nice day")
 import array
 def listaspotify(user, playlist):
     offset=0
@@ -307,9 +331,9 @@ def listaspotify(user, playlist):
         continuar=json.loads(r)
         parar=continuar["items"]
         for n in continuar["items"]:
-            spotifymusica.append(str(n['track']['name'].encode('utf8')).replace("b'","").replace('b"',"")[:-1].replace('"',"'").replace("'"," "))
-            spotifyartista.append(str(n['track']['artists'][0]['name'].encode('utf8')).replace("b'","").replace('b"',"")[:-1].replace('"',"'").replace("'"," "))
-            spotifyalbum.append(str(n['track']['album']['name'].encode('utf8')).replace("b'","").replace('b"',"")[:-1].replace('"',"'").replace("'"," "))
+            spotifymusica.append(re.sub('[0-2][0-9][0-9][0-9]','',str(n['track']['name']).replace('"',"'").replace("'"," ").replace("-","").replace("Version","").replace("Remastered","").replace("Stereo","")))
+            spotifyartista.append(str(n['track']['artists'][0]['name']).replace('"',"'").replace("'"," "))
+            spotifyalbum.append(str(n['track']['album']['name']).replace('"',"'").replace("'"," "))
         i=i+1
         offset=100*i
     
@@ -331,8 +355,8 @@ if args.spotify is not None:
     if (args.force_update is True):
         print ("atualizando db")
         for n in spotifymusica:
-            print (str(float(f)/float(len(spotifymusica))*100)+"%")
-            buscaf(spotifymusica[int(f)-1],spotifyartista[int(f)-1])
+            porc=(str(float(f)/float(len(spotifymusica))*100)+"%")
+            buscaf(spotifymusica[int(f)-1],spotifyartista[int(f)-1],porc,0)
             f=f+1
     else:
         os.system('clear')
@@ -343,7 +367,8 @@ if args.spotify is not None:
         t=0
         if args.number_downloads is not None:
             for n in spotifymusica:
-                buscaf(spotifymusica[int(t)],spotifyartista[int(t)])   
+                porc=(str(float(t)/float(len(spotifymusica))*100)+"%")
+                buscaf(spotifymusica[int(t)],spotifyartista[int(t)],porc,0)   
                 t=t+1
         else:
             print ("quais deseja baixar, bote numero , para sequencial")
@@ -358,11 +383,13 @@ if args.spotify is not None:
                 first,last = int(b[0]),int(b[1])
                 for n in range(first,last+1):
                     os.system('clear')
-                    buscaf(spotifymusica[int(n)-1],spotifyartista[int(n)-1])
+                    porc=(str(float(n)/float(last)*100)+"%")
+                    buscaf(spotifymusica[int(n)-1],spotifyartista[int(n)-1],porc,0)
             else:
                 for n in p:
                     os.system('clear')
-                    buscaf(spotifymusica[int(n)-1],spotifyartista[int(n)-1])
+                    porc=(str(float(n)/float(len(spotifymusica))*100)+"%")
+                    buscaf(spotifymusica[int(n)-1],spotifyartista[int(n)-1],porc,0)
                         
 if (args.search is not None ) or (args.list is not None ): 
     if args.list is 	not None:
@@ -380,15 +407,15 @@ if (args.search is not None ) or (args.list is not None ):
                 artista=m.split("artista:")[1]
                 if "musica:" in artista:
                     artista=artista.split("musica:")[0]
-            buscaf(musica,artista)
+            buscaf(musica,artista,None,0)
     else:
-        buscaf(args.search,args.artista)
+        buscaf(args.search,args.artista,None,0)
 
 if (args.search is None ) and (args.artista is not None):
-        buscaf("",args.artista)    
+        buscaf("",args.artista,None,0)    
     
 if args.update is True:
     login()
     generos=[0,1,2,3,5,21,6,4,7,8,17,1001,10,11,13,14,15,16,22]    
     for ge in generos:
-        busca(ge,None,None)
+        busca(ge,None,None,None)
